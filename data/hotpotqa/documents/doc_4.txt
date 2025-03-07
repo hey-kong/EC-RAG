@@ -1,0 +1,867 @@
+Passage 1:
+Gary L. Bennett
+Gary L. Bennett (born January 17, 1940) is an American scientist and engineer, specializing in aerospace and energy.  He has worked for NASA and the US Department of Energy (DOE) on advanced space power systems and advanced space propulsion systems.  His professional career has included work on the Voyager, Galileo, and Ulysses space missions, and is currently working as a consultant in aerospace power and propulsion systems. He is also a science fiction author (The Star Sailors).
+
+Biography
+Bennett was born in Twin Falls, Idaho. He joined the NASA headquarters in June 1988 as the Manager of Advanced Space Power Systems in the transportation division of the Office of Advanced Concepts and Technology. There, he managed a number of transportation technology programs including hybrid propulsion, electric propulsion, low-thrust chemical propulsion, and other advanced propulsion concepts (e.g., fusion, antimatter). He was also the first program manager of the advanced technology insertion program for the Pluto Fast Flyby (now New Horizons) mission and the TIMED space physics mission.
+Prior to coming to NASA, Bennett held key positions in DoE's space radioisotope power program, including serving as Director of Safety and Nuclear Operations for the radioisotope power sources that were used on the Galileo mission to Jupiter and that are being used on the Ulysses mission to explore the polar regions of the Sun.  This same radioisotope power source design was then flown on the Cassini mission to Saturn and on the New Horizons mission to Jupiter.
+Previous positions included Chief of the Research Support Branch in the US Nuclear Regulatory Commission (NRC) where Bennett was instrumental in creating and managing NRC's reactor operational safety research program.
+Bennett was the flight safety manager for the radioisotope power sources currently in use on the Voyager 1 and Voyager 2 spacecraft (which went to Jupiter, Saturn, Uranus, Neptune and beyond) and on Lincoln Laboratory's LES 8 and LES 9 communications satellites.
+Bennett also worked as a physicist in the NERVA (Nuclear Engine for Rocket Vehicle Applications) program at what was then NASA's Lewis Research Center (now the John H. Glenn Research Center) in Cleveland, Ohio.  He did fundamental reactor safety research at what is now the Department of Energy's Idaho National Laboratory (INL).
+From 1980 to 1988, he was a member of or adviser to US delegations to the two subcommittees of the United Nations Committee on the Peaceful Uses of Outer Space and he prepared the official US position papers on the use of nuclear power sources in outer space.
+From 1988 to 1990, Bennett chaired the Steering Group of the Interagency Advanced Power Group (IAPG), the national coordinating group for federally sponsored space and terrestrial power research.  During his tenure and under his initiative the IAPG saw its greatest increase in membership.
+Bennett received his PhD in physics from Washington State University in 1970; a Master of Nuclear Science degree in 1966, and a BSc degree in physics from the University of Idaho in 1962; and an Associate of Arts degree from Boise Junior College (now Boise State University) in 1960.
+Since 1995, he has been active in promoting the teaching of science (specifically evolution) and received the Friend of Darwin Award. Bennett has also been a champion of the First Amendment and was elected to the National Advisory Council of Americans United for Separation of Church and State.
+
+Selected works
+Bennett has authored or coauthored over 160 technical papers, reports and articles on power, propulsion, and space missions.
+Science fiction
+
+G.L. Bennett (1980). The Star Sailors. ISBN 978-0-312-75582-9.Chapters in:
+
+M.S. El-Genk (1997). A Critical Review of Space Nuclear Power and Propulsion, 1984-1993. ISBN 978-1-56396-317-9.
+D.M. Rowe (1995). CRC Handbook of Thermoelectrics. ISBN 978-0-8493-0146-9.
+R.A. Meyers (2001). Encyclopedia of Physical Science and Technology (3rd ed.). ISBN 978-0-12-227410-7.
+
+Awards
+In 2000, he received the Friend of Darwin Award by the National Center for Science Education
+In 1996, he received the Schreiber-Spence Space Achievement Award for his leadership of the safety and nuclear operations for the Galileo and Ulysses radioisotope power source programs.
+In 1995, he shared in the American Institute of Aeronautics and Astronautics (AIAA) Aerospace Power Systems Award and Medal for his leadership of the Ulysses radioisotope power source program.
+In 1994, he received the Silver & Gold Award from the University of Idaho Alumni Association
+In 1990, he received the Distinguished Alumnus Award from Boise State University
+
+Associations
+American Institute of Aeronautics and Astronautics (fellow)
+American Physical Society (fellow)
+British Interplanetary Society (fellow)
+Passage 2:
+Planetary protection
+Planetary protection is a guiding principle in the design of an interplanetary mission, aiming to prevent biological contamination of both the target celestial body and the Earth in the case of sample-return missions. Planetary protection reflects both the unknown nature of the space environment and the desire of the scientific community to preserve the pristine nature of celestial bodies until they can be studied in detail.There are two types of interplanetary contamination. Forward contamination is the transfer of viable organisms from Earth to another celestial body.  Back contamination is the transfer of extraterrestrial organisms, if they exist, back to the Earth's biosphere.
+
+History
+The potential problem of lunar and planetary contamination was first raised at the International Astronautical Federation VIIth Congress in Rome in 1956.In 1958 the U.S. National Academy of Sciences (NAS) passed a resolution stating, “The National Academy of Sciences of the United States of America urges that scientists plan lunar and planetary studies with great care and deep concern so that initial operations do not compromise and make impossible forever after critical scientific experiments.” This led to creation of the ad hoc Committee on Contamination by Extraterrestrial Exploration (CETEX), which met for a year and recommended that interplanetary spacecraft be sterilized, and stated, “The need for sterilization is only temporary. Mars and possibly Venus need to remain uncontaminated only until study by manned ships becomes possible”.In 1959, planetary protection was transferred to the newly formed Committee on Space Research (COSPAR). COSPAR in 1964 issued Resolution 26 affirming that:
+
+the search for extraterrestrial life is an important objective of space research, that the planet of Mars may offer the only feasible opportunity to conduct this search during the foreseeable future, that contamination of this planet would make such a search far more difficult and possibly even prevent for all time an unequivocal result, that all practical steps should be taken to ensure that Mars be not biologically contaminated until such time as this search has been satisfactorily carried out, and that cooperation in proper scheduling of experiments and use of adequate spacecraft sterilization techniques is required on the part of all deep space probe launching authorities to avoid such contamination.
+In 1967, the US, USSR, and UK ratified the United Nations Outer Space Treaty.  The legal basis for planetary protection lies in Article IX of this treaty:
+"Article IX: ... States Parties to the Treaty shall pursue studies of outer space, including the Moon and other celestial bodies, and conduct exploration of them so as to avoid their harmful contamination and also adverse changes in the environment of the Earth resulting from the introduction of extraterrestrial matter and, where necessary, shall adopt appropriate measures for this purpose... 
+This treaty has since been signed and ratified by 104 nation-states. Another 24 have signed but not ratified.  All the current space-faring nation-states, along with all current aspiring space-faring nation-states, have both signed and ratified the treaty.The Outer Space Treaty has consistent and widespread international support, and as a result of this, together with the fact that it is based on the 1963 declaration which was adopted by consensus in the UN National Assembly, it has taken on the status of customary international law. The provisions of the Outer Space Treaty are therefore binding on all states, even those who have neither signed nor ratified it.For forward contamination, the phrase to be interpreted is "harmful contamination".  Two legal reviews came to differing interpretations of this clause (both reviews were unofficial). However the currently accepted interpretation is that “any contamination which would result in harm to a state’s experiments or programs is to be avoided”. NASA policy states explicitly that “the conduct of scientific investigations of possible extraterrestrial life forms, precursors, and remnants must not be jeopardized”.
+
+COSPAR recommendations and categories
+The Committee on Space Research (COSPAR) meets every two years, in a gathering of 2000 to 3000 scientists, and one of its tasks is to develop recommendations for avoiding interplanetary contamination. Its legal basis is Article IX of the Outer Space Treaty  (see history below for details).
+Its recommendations depend on the type of space mission and the celestial body explored.  COSPAR categorizes the missions into 5 groups:
+
+Category I: Any mission to locations not of direct interest for chemical evolution or the origin of life, such as the  Sun or Mercury. No planetary protection requirements.
+Category II: Any mission to locations of significant interest for chemical evolution and the origin of life, but only a remote chance that spacecraft-borne contamination could compromise investigations. Examples include the Moon, Venus, and comets. Requires simple documentation only, primarily to outline intended or potential impact targets, and an end of mission report of any inadvertent impact site if such occurred.
+Category III: Flyby and orbiter missions to locations of significant interest for chemical evolution or the origin of life, and with a significant chance that contamination could compromise investigations e.g., Mars, Europa, Enceladus. Requires more involved documentation than Category II. Other requirements, depending on the mission, may include trajectory biasing, clean room assembly, bioburden reduction, and if impact is a possibility, inventory of organics.
+Category IV: Lander or probe missions to the same locations as Category III. Measures to be applied depend on the target body and the planned operations. "Sterilization of the entire spacecraft may be required for landers and rovers with life-detection experiments, and for those landing in or moving to a region where terrestrial microorganisms may survive and grow, or where indigenous life may be present. For other landers and rovers, the requirements would be for decontamination and partial sterilization of the landed hardware."Missions to Mars in category IV are subclassified further:Category IVa. Landers that do not search for Martian life - uses the Viking lander pre-sterilization requirements, a maximum of 300,000 spores per spacecraft and 300 spores per square meter.
+Category IVb. Landers that search for Martian life.  Adds stringent extra requirements to prevent contamination of samples.
+Category IVc. Any component that accesses a Martian special region (see below) must be sterilized to at least to the Viking post-sterilization biological burden levels of 30 spores total per spacecraft.Category V: This is further divided into unrestricted and restricted sample return.Unrestricted Category V: samples from locations judged by scientific opinion to have no indigenous lifeforms. No special requirements.
+Restricted Category V: (where scientific opinion is unsure) the requirements include: absolute prohibition of destructive impact upon return, containment of all returned hardware which directly contacted the target body, and containment of any unsterilized sample returned to Earth.For Category IV missions, a certain level of biological burden is allowed for the mission. In general this is expressed as a 'probability of contamination', required to be less than one chance in 10,000 of forward contamination per mission, but in the case of Mars Category IV missions (above) the requirement has been translated into a count of Bacillus spores per surface area, as an easy to use assay method.More extensive documentation is also required for Category IV. Other procedures required, depending on the mission, may include trajectory biasing, the use of clean rooms during spacecraft assembly and testing, bioload reduction, partial sterilization of the hardware having direct contact with the target body, a bioshield for that hardware, and, in rare cases, complete sterilization of the entire spacecraft.For restricted Category V missions, the current recommendation is that no uncontained samples should be returned unless sterilized. Since sterilization of the returned samples would destroy much of their science value, current proposals involve containment and quarantine procedures. For details, see Containment and quarantine below. Category V missions also have to fulfill the requirements of Category IV to protect the target body from forward contamination.
+
+Mars special regions
+A special region is a region classified by COSPAR where terrestrial organisms could readily propagate, or thought to have a high potential for existence of Martian life forms. This is understood to apply to any region on Mars where liquid water occurs, or can occasionally occur, based on the current understanding of requirements for life.
+If a hard landing risks biological contamination of a special region, then the whole lander system must be sterilized to COSPAR category IVc.
+
+Target categories
+Some targets are easily categorized. Others are assigned provisional categories by COSPAR, pending future discoveries and research.
+The 2009 COSPAR Workshop on Planetary Protection for Outer Planet Satellites and Small Solar System Bodies covered this in some detail. Most of these assessments are from that report, with some future refinements. This workshop also gave more precise definitions for some of the categories:
+
+Category I
+“not of direct interest for understanding the process of chemical evolution or the origin of life.” 
+Io, Sun, Mercury, undifferentiated metamorphosed asteroids
+
+Category II
+… where there is only a remote chance that contamination carried by a spacecraft could jeopardize future exploration”. In this case we define “remote chance” as “the absence of niches (places where terrestrial microorganisms could proliferate) and/or a very low likelihood of transfer to those places.” 
+Callisto, comets, asteroids of category P, D, and C, Venus, Kuiper belt objects (KBO) < 1/2 size of Pluto.
+
+Provisional Category II
+Ganymede, Titan, Triton, the Pluto–Charon system, and other large KBOs (> 1/2 size of Pluto), CeresProvisionally, they assigned these objects to Category II. However, they state that more research is needed, because there is a remote possibility that the tidal interactions of Pluto and Charon could maintain some water reservoir below the surface. Similar considerations apply to the other larger KBOs.
+Triton is insufficiently well understood at present to say it is definitely devoid of liquid water. The only close up observations to date are those of Voyager 2.
+In a detailed discussion of Titan, scientists concluded that there was no danger of contamination of its surface, except short term adding of negligible amounts of organics, but Titan could have a below surface water reservoir that communicates with the surface, and if so, this could be contaminated.
+In the case of Ganymede, the question is, given that its surface shows pervasive signs of resurfacing, is there any communication with its subsurface ocean? They found no known mechanism by which this could happen, and the Galileo spacecraft found no evidence of cryovolcanism. Initially, they assigned it as Priority B minus, meaning that precursor missions are needed to assess its category before any surface missions. However, after further discussion they provisionally assigned it to Category II, so no precursor missions are required, depending on future research.
+If there is cryovolcanism on Ganymede or Titan, the undersurface reservoir is thought to be 50 – 150 km below the surface. They were unable to find a process that could transfer the surface melted water back down through 50 km of ice to the under surface sea. This is why both Ganymede and Titan were assigned a reasonably firm provisional Category II, but pending results of future research.
+Icy bodies that show signs of recent resurfacing need further discussion and might need to be assigned to a new category depending on future research. This approach has been applied, for instance, to missions to Ceres. The planetary protection Category is subject for review during the mission of the Ceres orbiter (Dawn) depending on the results found.
+
+Category III / IV
+“…where there is a significant chance that contamination carried by a spacecraft could jeopardize future exploration.” We define “significant chance” as “the presence of niches (places where terrestrial microorganisms could proliferate) and the likelihood of transfer to those places.” 
+Mars because of possible subsurface habitats.
+Europa because of its subsurface ocean.
+Enceladus because of evidence of water plumes.
+
+Category V
+Unrestricted Category V: “Earth-return missions from bodies deemed by scientific opinion to have no indigenous life forms.”
+Restricted Category V: "Earth-return missions from bodies deemed by scientific opinion to be of significant interest to the process of chemical evolution or the origin of life."
+In the category V for sample return the conclusions so far are:
+Unrestricted Category V: Venus, the Moon.
+Restricted Category V: Mars, Europa, Enceladus.
+
+The Coleman–Sagan equation
+The aim of the current regulations is to keep the number of microorganisms low enough so that the probability of contamination of Mars (and other targets) is acceptable. It is not an objective to make the probability of contamination zero.
+The aim is to keep the probability of contamination of 1 chance in 10,000 of contamination per mission flown. This figure is obtained typically by multiplying together the number of microorganisms on the spacecraft, the probability of growth on the target body, and a series of bioload reduction factors.
+In detail the method used is the Coleman–Sagan equation.
+  
+    
+      
+        P
+        
+          c
+        
+      
+      =
+      
+        N
+        
+          0
+        
+      
+      R
+      
+        P
+        
+          S
+        
+      
+      
+        P
+        
+          t
+        
+      
+      
+        P
+        
+          R
+        
+      
+      
+        P
+        
+          g
+        
+      
+    
+    P_{c}=N_{0}RP_{S}P_{t}P_{R}P_{g}
+  .
+where 
+
+  
+    
+      N
+      
+        0
+      
+    
+    N_{0}
+   = the number of microorganisms on the spacecraft initially
+
+  
+    R
+    R
+   = Reduction due to conditions on spacecraft before and after launch
+
+  
+    
+      P
+      
+        S
+      
+    
+    P_{S}
+   = Probability that microorganisms on the spacecraft reach the surface of the planet
+
+  
+    
+      P
+      
+        t
+      
+    
+    P_{t}
+   = Probability that spacecraft will hit the planet - this is 1 for a lander
+
+  
+    
+      P
+      
+        R
+      
+    
+    P_{R}
+   = Probability of microorganism to be released in the environment when on the ground, usually set to 1 for crashlanding.
+
+  
+    
+      P
+      
+        g
+      
+    
+    P_{g}
+   = Probability of growth. For targets with liquid water this is set to 1 for sake of the calculation.Then the requirement is 
+  
+    
+      
+        P
+        
+          c
+        
+      
+      <
+      
+        10
+        
+          −
+          4
+        
+      
+    
+    P_{c}<10^{-4}
+  
+The 
+  
+    
+      10
+      
+        −
+        4
+      
+    
+    10^{-4}
+   is a number chosen by Sagan et al., somewhat arbitrarily. Sagan and Coleman assumed that about 60 missions to the Mars surface would occur before the exobiology of Mars is thoroughly understood, 54 of those successful, and 30 flybys or orbiters, and the number was chosen to endure a probability to keep the planet free from contamination of at least 99.9% over the duration of the exploration period.
+
+Critiques
+The Coleman–Sagan equation has been criticised because the individual parameters are often not known to better than a magnitude or so. For example, the thickness of the surface ice of Europa is unknown, and may be thin in places, which can give rise to a high level of uncertainty in the equation. It has also been criticised because of the inherent assumption made of an end to the protection period and future human exploration. In the case of Europa, this would only protect it with reasonable probability for the duration of the period of exploration.Greenberg has suggested an alternative, to use the natural contamination standard — that our missions to Europa should not have a higher chance of contaminating it than the chance of contamination by meteorites from Earth.
+As long as the probability of people infecting other planets with terrestrial microbes is substantially smaller than the probability that such contamination happens naturally, exploration activities would, in our view, be doing no harm. We call this concept the natural contamination standard.
+Another approach for Europa is the use of binary decision trees which is favoured by the Committee on Planetary Protection Standards for Icy Bodies in the Outer Solar System under the auspices of the Space Studies Board. This goes through a series of seven steps, leading to a final decision on whether to go ahead with the mission or not.
+Recommendation: Approaches to achieving planetary protection should not rely on the multiplication of bioload estimates and probabilities to calculate the likelihood of contaminating Solar System bodies with terrestrial organisms unless scientific data unequivocally define the values, statistical variation, and mutual independence of every factor used in the equation.Recommendation: Approaches to achieving planetary protection for missions to icy Solar System bodies should employ a series of binary decisions that consider one factor at a time to determine the appropriate level of planetary protection procedures to use.
+
+Containment and quarantine for restricted Category V sample return
+In the case of restricted Category V missions, Earth would be protected through quarantine of sample and astronauts in a yet to be built Biosafety level 4 facility. In the case of a Mars sample return, missions would be designed so that no part of the capsule that encounters the Mars surface is exposed to the Earth environment. One way to do that is to enclose the sample container within a larger outer container from Earth, in the vacuum of space. The integrity of any seals is essential and the system must also be monitored to check for the possibility of micro-meteorite damage during return to Earth.The recommendation of the ESF report is that
+“No uncontained Mars materials, including space craft surfaces that have been exposed to the Mars environment should be returned to Earth unless sterilised"..."For unsterilised samples returned to Earth, a programme of life detection and biohazard testing, or a proven sterilisation process, shall be undertaken as an absolute precondition for the controlled distribution of any portion of the sample.”
+No restricted category V returns have been carried out. During the Apollo program, the sample-returns were regulated through the Extra-Terrestrial Exposure Law. This was rescinded in 1991, so new regulations would need to be enacted. The Apollo era quarantine procedures are of interest as the only attempt to date of a return to Earth of a sample that, at the time, was thought to have a remote possibility of including extraterrestrial life.
+Samples and astronauts were quarantined in the Lunar Receiving Laboratory. The methods used would be considered inadequate for containment by modern standards. Also the lunar receiving laboratory would be judged a failure by its own design criteria as the sample return didn't contain the lunar material, with two failure points during the Apollo 11 return mission, at the splashdown and at the facility itself.
+However the Lunar Receiving Laboratory was built quickly with only two years from start to finish, a time period now considered inadequate. Lessons learned from it can help with design of any Mars sample return receiving facility.Design criteria for a proposed Mars Sample Return Facility, and for the return mission, have been developed by the American National Research Council, and the European Space Foundation. They concluded that it could be based on biohazard 4 containment but with more stringent requirements to contain unknown microorganisms possibly as small as or smaller than the smallest Earth microorganisms known, the ultramicrobacteria. The ESF study also recommended that it should be designed to contain the smaller gene transfer agents if possible, as these could potentially transfer DNA from martian microorganisms to terrestrial microorganisms if they have a shared evolutionary ancestry. It also needs to double as a clean room facility to protect the samples from terrestrial contamination that could confuse the sensitive life detection tests that would be used on the samples.
+Before a sample return, new quarantine laws would be required. Environmental assessment would also be required, and various other domestic and international laws not present during the Apollo era would need to be negotiated.
+
+Decontamination procedures
+For all spacecraft missions requiring decontamination, the starting point is clean room assembly in US federal standard class 100 cleanrooms. These are rooms with fewer than 100 particles of size 0.5 µm or larger per cubic foot. Engineers wear cleanroom suits with only their eyes exposed. Components are sterilized individually before assembly, as far as possible, and they clean surfaces frequently with alcohol wipes during assembly. Spores of Bacillus subtilis was chosen for not only its ability to readily generate spores, but its well-established use as a model species. It is a useful tracker of UV irradiation effects because of its high resilience to a variety of extreme conditions. As such it is an important indicator species for forward contamination in the context of planetary protection.
+For Category IVa missions (Mars landers that do not search for Martian life), the aim is to reduce the bioburden to 300,000 bacterial spores on any surface from which the spores could get into the Martian environment. Any heat tolerant components are heat sterilized to 114 °C. Sensitive electronics such as the core box of the rover including the computer, are sealed and vented through high-efficiency filters to keep any microbes inside.For more sensitive missions such as Category IVc (to Mars special regions), a far higher level of sterilization is required. These need to be similar to levels implemented on the Viking landers, which were sterilized for a surface which, at the time, was thought to be potentially hospitable to life similar to special regions on Mars today.
+In microbiology, it is usually impossible to prove that there are no microorganisms left viable, since many microorganisms are either not yet studied, or not cultivable. Instead, sterilization is done using a series of tenfold reductions of the numbers of microorganisms present. After a sufficient number of tenfold reductions, the chance that there any microorganisms left will be extremely low.The two Viking Mars landers were sterilized using dry heat sterilization.  After preliminary cleaning to reduce the bioburden to levels similar to present day Category IVa spacecraft, the Viking spacecraft were heat-treated for 30 hours at 112 °C, nominal 125 °C (five hours at 112 °C was considered enough to reduce the population tenfold even for enclosed parts of the spacecraft, so this was enough for a million-fold reduction of the originally low population).Modern materials however are often not designed to handle such temperatures, especially since modern spacecraft often use "commercial off the shelf" components. Problems encountered include nanoscale features only a few atoms thick, plastic packaging, and conductive epoxy attachment methods. Also many instrument sensors cannot be exposed to high temperature, and high temperature can interfere with critical alignments of instruments.As a result, new methods are needed to sterilize a modern spacecraft to the higher categories such as Category IVc for Mars, similar to Viking. Methods under evaluation, or already approved, include:
+
+Vapour phase hydrogen peroxide - effective, but can affect finishes, lubricants and materials that use aromatic rings and sulfur bonds. This has been established, reviewed, and a NASA/ESA specification for use of VHP has been approved by the Planetary Protection Officer, but it has not yet been formally published.
+Ethylene oxide - this is widely used in the medical industry, and can be used for materials not compatible with hydrogen peroxide. It is under consideration for missions such as ExoMars.
+Gamma radiation and electron beams have been suggested as a method of sterilization, as they are used extensively in the medical industry. They need to be tested for compatibility with spacecraft materials and hardware geometries, and are not yet ready for review.Some other methods are of interest as they can sterilize the spacecraft after arrival on the planet.
+Supercritical carbon dioxide snow (Mars) - is most effective against traces of organic compounds rather than whole microorganisms. Has the advantage though that it eliminates the organic traces - while other methods kill the microorganisms, they leave organic traces that can confuse life detection instruments. Is under study by JPL and ESA.
+Passive sterilization through UV radiation (Mars). Highly effective against many microorganisms, but not all, as a Bacillus strain found in spacecraft assembly facilities is particularly resistant to UV radiation. Is also complicated by possible shadowing by dust and spacecraft hardware.
+Passive sterilization through particle fluxes (Europa). Plans for missions to Europa take credit for reductions due to this.
+
+Bioburden detection and assessment
+The spore count is used as an indirect measure of the number of microorganisms present. Typically 99% of microorganisms by species will be non-spore forming and able to survive in dormant states, and so the actual number of viable dormant microorganisms remaining on the sterilized spacecraft is expected to be many times the number of spore-forming microorganisms.
+One new spore method approved is the "Rapid Spore Assay". This is based on commercial rapid assay systems, detects spores directly and not just viable microorganisms and gives results in 5 hours instead of 72 hours.
+
+Challenges
+It is also long been recognized that spacecraft cleaning rooms harbour polyextremophiles as the only microbes able to survive in them. For example, in a recent study, microbes from swabs of the Curiosity rover were subjected to desiccation, UV exposure, cold and pH extremes. Nearly 11% of the 377 strains survived more than one of these severe conditions. The genomes of resistant spore producing Bacillus sp. have been studied and genome level traits potentially linked to the resistance have been reported.This does not mean that these microbes have contaminated Mars. This is just the first stage of the process of bioburden reduction. To contaminate Mars they also have to survive the low temperature, vacuum, UV and ionizing radiation during the months long journey to Mars, and then have to encounter a habitat on Mars and start reproducing there. Whether this has happened or not is a matter of probability. The aim of planetary protection is to make this probability as low as possible. The currently accepted target probability of contamination per mission is to reduce it to less than 0.01%, though in the special case of Mars, scientists also rely on the hostile conditions on Mars to take the place of the final stage of heat treatment decimal reduction used for Viking. But with current technology scientists cannot reduce probabilities to zero.
+
+New methods
+Two recent molecular methods have been approved for assessment of microbial contamination on 
+spacecraft surfaces.
+Adenosine triphosphate (ATP) detection - this is a key element in cellular metabolism. This method is able to detect non cultivable organisms. It can also be triggered by non viable biological material so can give a "false positive".
+Limulus Amebocyte Lysate assay - detects lipopolysaccharides (LPS). This compound is only present in Gram-negative bacteria. The standard assay analyses spores from microbes that are primarily Gram-positive, making it difficult to relate the two methods.
+
+Impact prevention
+This particularly applies to orbital missions, Category III, as they are sterilized to a lower standard than missions to the surface. It is also relevant to landers, as an impact gives more opportunity for forward contamination, and impact could be on an unplanned target, such as a special region on Mars.
+The requirement for an orbital mission is that it needs to remain in orbit for at least 20 years after arrival at Mars with probability of at least 99% and for 50 years with probability at least 95%. This requirement can be dropped if the mission is sterilized to Viking sterilization standard.In the Viking era (1970s), the requirement was given as a single figure, that any orbital mission should have a probability of less than 0.003% probability of impact during the current exploratory phase of exploration of Mars.For both landers and orbiters, the technique of trajectory biasing is used during approach to the target. The spacecraft trajectory is designed so that if communications are lost, it will miss the target.
+
+Issues with impact prevention
+Despite these measures there has been one notable failure of impact prevention. The Mars Climate Orbiter which was sterilized only to Category III, crashed on Mars in 1999 due to a mix-up of imperial and metric units. The office of planetary protection stated that it is likely that it burnt up in the atmosphere, but if it survived to the ground, then it could cause forward contamination.Mars Observer is another Category III mission with potential planetary contamination. Communications were lost three days before its orbital insertion maneuver in 1993. It seems most likely it did not succeed in entering into orbit around Mars and simply continued past on a heliocentric orbit. If it did succeed in following its automatic programming, and attempted the manoeuvre, however, there is a chance it crashed on Mars.Three landers have had hard landings on Mars.  These are Schiaparelli EDM lander, the Mars Polar Lander, and Deep Space 2. These were all sterilized for surface missions but not for special regions (Viking pre-sterilization only). Mars Polar Lander, and Deep Space 2 crashed into the polar regions which are now treated as special regions because of the possibility of forming liquid brines.
+
+Controversies
+Meteorite argument
+Alberto G. Fairén and Dirk Schulze-Makuch published an article in Nature recommending that planetary protection measures need to be scaled down. They gave as their main reason for this, that exchange of meteorites between Earth and Mars means that any life on Earth that could survive on Mars has already got there and vice versa.Robert Zubrin used similar arguments in favour of his view that the back contamination risk has no scientific validity.
+
+Rebuttal by NRC
+The meteorite argument was examined by the NRC in the context of back contamination. It is thought that all the Martian meteorites originate in relatively few impacts every few million years on Mars. The impactors would be kilometers in diameter and the craters they form on Mars tens of kilometers in diameter. Models of impacts on Mars are consistent with these findings.Earth receives a steady stream of meteorites from Mars, but they come from relatively few original impactors, and transfer was more likely in the early Solar System. Also some life forms viable on both Mars and on Earth might be unable to survive transfer on a meteorite, and there is so far no direct evidence of any transfer of life from Mars to Earth in this way.
+The NRC concluded that though transfer is possible, the evidence from meteorite exchange does not eliminate the need for back contamination protection methods.Impacts on Earth able to send microorganisms to Mars are also infrequent. Impactors of 10 km across or larger can send debris to Mars through the Earth's atmosphere but these occur rarely, and were more common in the early Solar System.
+
+Proposal to end planetary protection for Mars
+In their 2013 paper "The Over Protection of Mars", Alberto Fairén and Dirk Schulze-Makuch suggested that we no longer need to protect Mars, essentially using Zubrin's meteorite transfer argument. This was rebutted in a follow up article "Appropriate Protection of Mars", in Nature by the current and previous planetary protection officers Catharine Conley and John Rummel.
+
+Critique of Category V containment measures
+The scientific consensus is that the potential for large-scale effects, either through pathogenesis or ecological disruption, is extremely small. Nevertheless, returned samples from Mars will be treated as potentially biohazardous until scientists can determine that the returned samples are safe. The goal is to reduce the probability of release of a Mars particle to less than one in a million.
+
+Policy proposals
+Non-biological contamination
+A COSPAR workshop in 2010, looked at issues to do with protecting areas from non biological contamination. They recommended that COSPAR expand its remit to include such issues. Recommendations of the workshop include:
+
+Recommendation 3 COSPAR should add a separate and parallel policy to provide guidance on requirements/best practices for protection of non-living/nonlife-related aspects of Outer Space and celestial bodies
+Some ideas proposed include protected special regions, or "Planetary Parks" to keep regions of the Solar System pristine for future scientific investigation, and also for ethical reasons.
+
+Proposed extensions
+Astrobiologist Christopher McKay has argued that until we have better understanding of Mars, our explorations should be biologically reversible. For instance if all the microorganisms introduced to Mars so far remain dormant within the spacecraft, they could in principle be removed in the future, leaving Mars completely free of contamination from modern Earth lifeforms.
+In the 2010 workshop one of the recommendations for future consideration was to extend the period for contamination prevention to the maximum viable lifetime of dormant microorganisms introduced to the planet.
+
+"'Recommendation 4.' COSPAR should consider that the appropriate protection of potential indigenous extraterrestrial life shall include avoiding the harmful contamination of any habitable environment —whether extant or foreseeable— within the maximum potential time of viability of any terrestrial organisms (including microbial spores) that may be introduced into that environment by human or robotic activity."
+In the case of Europa, a similar idea has been suggested, that it is not enough to keep it free from contamination during our current exploration period. It might be that Europa is of sufficient scientific interest that the human race has a duty to keep it pristine for future generations to study as well. This was the majority view of the 2000 task force examining Europa, though there was a minority view of the same task force that such strong protection measures are not required.
+
+"One consequence of this view is that Europa must be protected from contamination for an open-ended period, until it can be demonstrated that no ocean exists or that no organisms are present. Thus, we need to be concerned that over a time scale on the order of 10 million to 100 million years (an approximate age for the surface of Europa), any contaminating material is likely to be carried into the deep ice crust or into the underlying ocean."
+In July 2018, the National Academies of Sciences, Engineering, and Medicine issued a Review and Assessment of Planetary Protection Policy Development Processes. In part, the report urges NASA to create a broad strategic plan that covers both forward and back contamination. The report also expresses concern about private industry missions, for which there is no governmental regulatory authority.
+
+Protecting objects beyond the Solar System
+The proposal by the German physicist Claudius Gros, that the technology of the Breakthrough Starshot project may be utilized to establish a biosphere of unicellular organisms on otherwise only transiently habitable exoplanets, has sparked a discussion, to what extent planetary protection should be extended to exoplanets. Gros argues that the extended timescales of
+interstellar missions imply that planetary and exoplanetary protection have different ethical groundings.
+
+See also
+Astrobiology – Science concerned with life in the universe
+ExoMars – Astrobiology programme
+List of microorganisms tested in outer space
+Mars 2020 – Astrobiology Mars rover mission by NASA
+Panspermia – Hypothesis on the interstellar spreading of primordial life
+Passage 3:
+Transit (astronomy)
+In astronomy, a transit (or astronomical transit) is a phenomenon when a celestial body passes directly between a larger body and the observer. As viewed from a particular vantage point, the transiting body appears to move across the face of the larger body, covering a small portion of it.The word "transit" refers to cases where the nearer object appears smaller than the more distant object. Cases where the nearer object appears larger and completely hides the more distant object are known as occultations.
+However, the probability of seeing a transiting planet is low because it is dependent on the alignment of the three objects in a nearly perfectly straight line. Many parameters of  a planet and its parent star can be determined based on the transit.
+
+In the Solar System
+One example of a transit involves the motion of a planet between a terrestrial observer and the Sun. This can happen only with inferior planets, namely Mercury and Venus (see transit of Mercury and transit of Venus). However, because a transit is dependent on the point of observation, the Earth itself transits the Sun if observed from Mars. In the solar transit by the Moon captured during calibration of the STEREO B spacecraft's ultraviolet imaging, the Moon appears much smaller than it does when seen from Earth, because the spacecraft–Moon separation was several times greater than the Earth–Moon distance.
+The term can also be used to describe the motion of a satellite across its parent planet, for instance one of the Galilean satellites (Io, Europa, Ganymede, Callisto) across Jupiter, as seen from Earth.
+Although rare, cases where four bodies are lined up do happen. One of these events occurred on 27 June 1586, when Mercury transited the Sun as seen from Venus at the same time as a transit of Mercury from Saturn and a transit of Venus from Saturn.
+
+Notable observations
+No missions were planned to coincide with the transit of Earth visible from Mars on 11 May 1984 and the Viking missions had been terminated a year previously. Consequently, the next opportunity to observe such an alignment will be in 2084.
+On 21 December 2012, the Cassini–Huygens probe, in orbit around Saturn, observed the planet Venus transiting the Sun.On 3 June 2014, the Mars rover Curiosity observed the planet Mercury transiting the Sun, marking the first time a planetary transit has been observed from a celestial body besides Earth.
+
+Mutual planetary transits
+In rare cases, one planet can pass in front of another. If the nearer planet appears smaller than the more distant one, the event is called a mutual planetary transit.
+
+Outside the Solar System
+Exoplanet Detection
+
+The transit method can be used to discover exoplanets. As a planet eclipses/transits its host star it will block a portion of the light from the star. If the planet transits in-between the star and the observer the change in light can be measured to construct a light curve. Light curves are measured with a charge-coupled device. The light curve of a star can disclose several physical characteristics of the planet and star, such as density. Multiple transit events must be measured to determine the characteristics which tend to occur at regular intervals. Multiple planets orbiting the same host star can cause transit-timing variations (TTV). TTV is caused by the gravitational forces of all orbiting bodies acting upon each other. The probability of seeing a transit from Earth is low, however. The probability is given by the following equation.
+
+  
+    
+      
+        
+          P
+          
+            transit
+          
+        
+        =
+        (
+        
+          R
+          
+            star
+          
+        
+        +
+        
+          R
+          
+            planet
+          
+        
+        )
+        
+          /
+        
+        a
+        ,
+      
+    
+    {\displaystyle P_{\text{transit}}=(R_{\text{star}}+R_{\text{planet}})/a,}
+  where Rstar and Rplanet are the radius of the star and planet, respectively, and a is the semi-major axis. Because of the low probability of a transit in any specific system, large selections of the sky must be regularly observed in order to see a transit. Hot Jupiters are more likely to be seen because of their larger radius and short semi-major axis. In order to find Earth-sized planets, red dwarf stars are observed because of their small radius. Even though transiting has a low probability it has proven itself to be a good technique for discovering exoplanets.
+In recent years, the discovery of extrasolar planets has prompted interest in the possibility of detecting their transits across their own stellar primaries. HD 209458b was the first such transiting planet to be detected.
+The transit of celestial objects is one of the few key phenomena used today for the study of exoplanetary systems. Today, transit photometry is the leading form of exoplanet discovery. As an exoplanet moves in front of its host star there is a dimming in the luminosity of the host star that can be measured. Larger planets make the dip in luminosity more noticeable and easier to detect. Followup observations using other methods are often carried out to ensure it is a planet.
+There are currently (December 2018) 2345 planets confirmed with Kepler light curves for stellar host.
+
+Contacts
+During a transit there are four "contacts", when the circumference of the small circle (small body disk) touches the circumference of the large circle (large body disk) at a single point.  Historically, measuring the precise time of each point of contact was one of the most accurate ways to determine the positions of astronomical bodies.  The contacts happen in the following order:
+
+First contact: the smaller body is entirely outside the larger body, moving inward ("exterior ingress")
+Second contact: the smaller body is entirely inside the larger body, moving further inward ("interior ingress")
+Third contact: the smaller body is entirely inside the larger body, moving outward ("interior egress")
+Fourth contact: the smaller body is entirely outside the larger body, moving outward ("exterior egress")A fifth named point is that of greatest transit, when the apparent centers of the two bodies are nearest to each other, halfway through the transit.
+
+Missions
+Since transit photometry allows for scanning large celestial areas with a simple procedure, it has been the most popular and successful form of finding exoplanets in the past decade and includes many projects, some of which have already been retired, others in use today, and some in progress of being planned and created. The most successful projects include HATNet, KELT, Kepler, and WASP, and some new and developmental stage missions such as TESS, HATPI, and others which can be found among the List of Exoplanet Search Projects.
+
+HATNet
+HATNet Project is a set of northern telescopes in Fred Lawrence Whipple Observatory, Arizona and Mauna Kea Observatories, HI, and southern telescopes around the globe, in Africa, Australia, and South America, under the HATSouth branch of the project. These are small aperture telescopes, just like KELT, and look at a wide field which allows them to scan a large area of the sky for possible transiting planets. In addition, their multitude and spread around the world allows for 24/7 observation of the sky so that more short-period transits can be caught.A third sub-project, HATPI, is currently under construction and will survey most of the night sky seen from its location in Chile.
+
+KELT
+KELT is a terrestrial telescope mission designed to search for transiting systems of planets of magnitude 8<M<10. It began operation in October 2004 in Winer Observatory and has a southern companion telescope added in 2009. KELT North observes "26-degree wide strip of sky that is overhead from North America during the year", while KELT South observes single target areas of the size 26 by 26 degrees. Both telescopes can detect and identify transit events as small as a 1% flux dip, which allows for detection of planetary systems similar to those in our planetary system.
+
+Kepler / K2
+The Kepler satellite served the Kepler mission between 7 March 2009 and 11 May 2013, where it observed one part of the sky in search of transiting planets within a 115 square degrees of the sky around the Cygnus, Lyra, and Draco constellations. After that, the satellite continued operating until 15 November 2018, this time changing its field along the ecliptic to a new area roughly every 75 days due to reaction wheel failure.
+
+TESS
+TESS was launched on 18 April 2018, and is planned to survey most of the sky by observing it strips defined along the right ascension lines for 27 days each. Each area surveyed is 27 by 90 degrees. Because of the positioning of sections, the area near TESS's rotational axis will be surveyed for up to 1 year, allowing for the identification of planetary systems with longer orbital periods.
+
+See also
+Eclipse
+Kepler Mission
+Occultation
+Syzygy (astronomy)
+Conjunction (astronomy)
+Opposition (planets)
+Transit of asteroids
+Transit of Deimos from Mars
+Transit of Phobos from Mars
+Transit of Vulcan
+Transit of Mercury from Mars
+Transit of Earth from Mars
+Passage 4:
+Roche limit
+In celestial mechanics, the Roche limit, also called Roche radius, is the distance from a celestial body within which a second celestial body, held together only by its own force of gravity, will disintegrate because the first body's tidal forces exceed the second body's self-gravitation. Inside the Roche limit, orbiting material disperses and forms rings, whereas outside the limit, material tends to coalesce. The Roche radius depends on the radius of the first body and on the ratio of the bodies' densities.
+The term is named after Édouard Roche (French: [ʁɔʃ], English:  ROSH), the French astronomer who first calculated this theoretical limit in 1848.
+
+Explanation
+The Roche limit typically applies to a satellite's disintegrating due to tidal forces induced by its primary, the body around which it orbits. Parts of the satellite that are closer to the primary are attracted more strongly by gravity from the primary than parts that are farther away; this disparity effectively pulls the near and far parts of the satellite apart from each other, and if the disparity (combined with any centrifugal effects due to the object's spin) is larger than the force of gravity holding the satellite together, it can pull the satellite apart. Some real satellites, both natural and artificial, can orbit within their Roche limits because they are held together by forces other than gravitation. Objects resting on the surface of such a satellite would be lifted away by tidal forces. A weaker satellite, such as a comet, could be broken up when it passes within its Roche limit.
+Since, within the Roche limit, tidal forces overwhelm the gravitational forces that might otherwise hold the satellite together, no satellite can gravitationally coalesce out of smaller particles within that limit. Indeed, almost all known planetary rings are located within their Roche limit. (Notable exceptions are Saturn's E-Ring and Phoebe ring. These two rings could possibly be remnants from the planet's proto-planetary accretion disc that failed to coalesce into moonlets, or conversely have formed when a moon passed within its Roche limit and broke apart.)
+The Roche limit is not the only factor that causes comets to break apart. Splitting by thermal stress, internal gas pressure and rotational splitting are other ways for a comet to split under stress.
+
+Determination
+The limiting distance to which a satellite can approach without breaking up depends on the rigidity of the satellite. At one extreme, a completely rigid satellite will maintain its shape until tidal forces break it apart. At the other extreme, a highly fluid satellite gradually deforms leading to increased tidal forces, causing the satellite to elongate, further compounding the tidal forces and causing it to break apart more readily.
+Most real satellites would lie somewhere between these two extremes, with tensile strength rendering the satellite neither perfectly rigid nor perfectly fluid. For example, a rubble-pile asteroid will behave more like a fluid than a solid rocky one; an icy body will behave quite rigidly at first but become more fluid as tidal heating accumulates and its ices begin to melt.
+But note that, as defined above, the Roche limit refers to a body held together solely by the gravitational forces which cause otherwise unconnected particles to coalesce, thus forming the body in question. The Roche limit is also usually calculated for the case of a circular orbit, although it is straightforward to modify the calculation to apply to the case (for example) of a body passing the primary on a parabolic or hyperbolic trajectory.
+
+Rigid satellites
+The rigid-body Roche limit is a simplified calculation for a spherical satellite. Irregular shapes such as those of tidal deformation on the body or the primary it orbits are neglected. It is assumed to be in hydrostatic equilibrium. These assumptions, although unrealistic, greatly simplify calculations.
+The Roche limit for a rigid spherical satellite is the distance, 
+  
+    
+      
+        d
+      
+    
+    {\displaystyle d}
+  , from the primary at which the gravitational force on a test mass at the surface of the object is exactly equal to the tidal force pulling the mass away from the object:
+
+  
+    
+      
+        d
+        =
+        
+          R
+          
+            M
+          
+        
+        
+          
+            (
+            
+              2
+              
+                
+                  
+                    ρ
+                    
+                      M
+                    
+                  
+                  
+                    ρ
+                    
+                      m
+                    
+                  
+                
+              
+            
+            )
+          
+          
+            
+              1
+              3
+            
+          
+        
+      
+    
+    {\displaystyle d=R_{M}\left(2{\frac {\rho _{M}}{\rho _{m}}}\right)^{\frac {1}{3}}}
+  where 
+  
+    
+      
+        
+          R
+          
+            M
+          
+        
+      
+    
+    {\displaystyle R_{M}}
+   is the radius of the primary, 
+  
+    
+      
+        
+          ρ
+          
+            M
+          
+        
+      
+    
+    {\displaystyle \rho _{M}}
+   is the density of the primary, and 
+  
+    
+      
+        
+          ρ
+          
+            m
+          
+        
+      
+    
+    {\displaystyle \rho _{m}}
+   is the density of the satellite. This can be equivalently written as
+
+  
+    
+      
+        d
+        =
+        
+          R
+          
+            m
+          
+        
+        
+          
+            (
+            
+              2
+              
+                
+                  
+                    M
+                    
+                      M
+                    
+                  
+                  
+                    M
+                    
+                      m
+                    
+                  
+                
+              
+            
+            )
+          
+          
+            
+              1
+              3
+            
+          
+        
+      
+    
+    {\displaystyle d=R_{m}\left(2{\frac {M_{M}}{M_{m}}}\right)^{\frac {1}{3}}}
+  where 
+  
+    
+      
+        
+          R
+          
+            m
+          
+        
+      
+    
+    {\displaystyle R_{m}}
+   is the radius of the secondary, 
+  
+    
+      
+        
+          M
+          
+            M
+          
+        
+      
+    
+    {\displaystyle M_{M}}
+   is the mass of the primary, and 
+  
+    
+      
+        
+          M
+          
+            m
+          
+        
+      
+    
+    {\displaystyle M_{m}}
+   is the mass of the secondary.
+This does not depend on the size of the objects, but on the ratio of densities. This is the orbital distance inside of which loose material (e.g. regolith) on the surface of the satellite closest to the primary would be pulled away, and likewise material on the side opposite the primary will also go away from, rather than toward, the satellite.
+
+Fluid satellites
+A more accurate approach for calculating the Roche limit takes the deformation of the satellite into account. An extreme example would be a tidally locked liquid satellite orbiting a planet, where any force acting upon the satellite would deform it into a prolate spheroid.
+The calculation is complex and its result cannot be represented in an exact algebraic formula. Roche himself derived the following approximate solution for the Roche limit:
+
+  
+    
+      
+        d
+        ≈
+        2.44
+        R
+        
+          
+            (
+            
+              
+                
+                  ρ
+                  
+                    M
+                  
+                
+                
+                  ρ
+                  
+                    m
+                  
+                
+              
+            
+            )
+          
+          
+            1
+            
+              /
+            
+            3
+          
+        
+      
+    
+    {\displaystyle d\approx 2.44R\left({\frac {\rho _{M}}{\rho _{m}}}\right)^{1/3}}
+  However, a better approximation that takes into account the primary's oblateness and the satellite's mass is:
+
+  
+    
+      
+        d
+        ≈
+        2.423
+        R
+        
+          
+            (
+            
+              
+                
+                  ρ
+                  
+                    M
+                  
+                
+                
+                  ρ
+                  
+                    m
+                  
+                
+              
+            
+            )
+          
+          
+            1
+            
+              /
+            
+            3
+          
+        
+        
+          
+            (
+            
+              
+                
+                  (
+                  1
+                  +
+                  
+                    
+                      m
+                      
+                        3
+                        M
+                      
+                    
+                  
+                  )
+                  +
+                  
+                    
+                      c
+                      
+                        3
+                        R
+                      
+                    
+                  
+                  (
+                  1
+                  +
+                  
+                    
+                      m
+                      M
+                    
+                  
+                  )
+                
+                
+                  1
+                  −
+                  c
+                  
+                    /
+                  
+                  R
+                
+              
+            
+            )
+          
+          
+            1
+            
+              /
+            
+            3
+          
+        
+      
+    
+    {\displaystyle d\approx 2.423R\left({\frac {\rho _{M}}{\rho _{m}}}\right)^{1/3}\left({\frac {(1+{\frac {m}{3M}})+{\frac {c}{3R}}(1+{\frac {m}{M}})}{1-c/R}}\right)^{1/3}}
+  where 
+  
+    
+      
+        c
+        
+          /
+        
+        R
+      
+    
+    {\displaystyle c/R}
+   is the oblateness of the primary. The numerical factor is calculated with the aid of a computer.
+The fluid solution is appropriate for bodies that are only loosely held together, such as a comet. For instance, comet Shoemaker–Levy 9's decaying orbit around Jupiter passed within its Roche limit in July 1992, causing it to fragment into a number of smaller pieces. On its next approach in 1994 the fragments crashed into the planet. Shoemaker–Levy 9 was first observed in 1993, but its orbit indicated that it had been captured by Jupiter a few decades prior.
+
+See also
+Roche lobe
+Chandrasekhar limit
+Hill sphere
+Spaghettification (the extreme case of tidal distortion)
+Black hole
+Triton (moon) (Neptune's satellite)
+Comet Shoemaker–Levy 9
+Passage 5:
+Ulysses (spacecraft)
+Ulysses ( yoo-LISS-eez, UK also  YOO-liss-eez) was a robotic space probe whose primary mission was to orbit the Sun and study it at all latitudes. It was launched in 1990 and made three "fast latitude scans" of the Sun in 1994/1995, 2000/2001, and 2007/2008. In addition, the probe studied several comets. Ulysses was a joint venture of the European Space Agency (ESA) and the United States' National Aeronautics and Space Administration (NASA), under leadership of ESA with participation from Canada's National Research Council. The last day for mission operations on Ulysses was 30 June 2009.To study the Sun at all latitudes, the probe needed to change its orbital inclination and leave the plane of the Solar System. To change the orbital inclination of a spacecraft to about 80° requires a large change in heliocentric velocity, the energy to achieve which far exceeded the capabilities of any launch vehicle. To reach the desired orbit around the Sun, the mission's planners chose a gravity assist maneuver around Jupiter, but this Jupiter encounter meant that Ulysses could not be powered by solar cells. The probe was powered instead by a radioisotope thermoelectric generator (RTG).
+The spacecraft was originally named Odysseus, because of its lengthy and indirect trajectory to study the solar poles. It was renamed Ulysses, the Latin translation of "Odysseus", at ESA's request in honor not only of Homer's mythological hero but also of Dante's character in the Inferno. Ulysses was originally scheduled for launch in May 1986 aboard the Space Shuttle Challenger on STS-61-F. Due to the 28 January 1986 loss of Challenger, the launch of Ulysses was delayed until 6 October 1990 aboard Discovery (mission STS-41).
+
+Spacecraft
+The spacecraft was designed by ESA and built by Dornier Systems, a German aircraft manufacturer. The body was roughly a box, approximately 3.2 m × 3.3 m × 2.1 m (10.5 ft × 10.8 ft × 6.9 ft) in size. The box mounted the 1.65 m (5 ft 5 in) dish antenna and the GPHS-RTG radioisotope thermoelectric generator (RTG) power source. The box was divided into noisy and quiet sections. The noisy section abutted the RTG; the quiet section housed the instrument electronics. Particularly "loud" components, such as the preamps for the radio dipole, were mounted outside the structure entirely, and the box acted as a Faraday cage.
+Ulysses was spin-stabilised about its z-axis which roughly coincides with the axis of the dish antenna. The RTG, whip antennas, and instrument boom were placed to stabilize this axis, with the spin rate nominally at 5 rpm. Inside the body was a hydrazine fuel tank. Hydrazine monopropellant was used for course corrections inbound to Jupiter, and later used exclusively to repoint the spin axis (and thus, the antenna) at Earth. The spacecraft was controlled by eight thrusters in two blocks. Thrusters were pulsed in the time domain to perform rotation or translation. Four sun sensors detected orientation. For fine attitude control, the S-band antenna feed was mounted slightly off-axis. This offset feed combined with the spacecraft spin introduced an apparent oscillation to a radio signal transmitted from Earth when received on board the spacecraft. The amplitude and phase of this oscillation were proportional to the orientation of the spin axis relative to the Earth direction. This method of determining the relative orientation is called conical scanning and was used by early radars for automated tracking of targets and was also very common in early infrared guided missiles.
+The spacecraft used S-band for uplinked commands and downlinked telemetry, through dual redundant 5-watt transceivers. The spacecraft used X-band for science return (downlink only), using dual 20 watts TWTAs until the failure of the last remaining TWTA in January 2008. Both bands used the dish antenna with prime-focus feeds, unlike the Cassegrain feeds of most other spacecraft dishes.
+Dual tape recorders, each of approximately 45-megabit capacity, stored science data between the nominal eight-hour communications sessions during the prime and extended mission phases.
+The spacecraft was designed to withstand both the heat of the inner Solar System and the cold at Jupiter's distance. Extensive blanketing and electric heaters protected the probe against the cold temperatures of the outer Solar System.
+Multiple computer systems (CPUs/microprocessors/Data Processing Units) are used in several of the scientific instruments, including several radiation-hardened RCA CDP1802 microprocessors. Documented 1802 usage includes dual-redundant 1802s in the COSPIN, and at least one 1802 each in the GRB, HI-SCALE, SWICS, SWOOPS and URAP instruments, with other possible microprocessors incorporated elsewhere.Total mass at launch was 371 kg (818 lb), of which 33.5 kg was hydrazine propellant used for attitude control and orbit correction.
+
+Instruments
+The twelve different Instruments came from ESA and NASA. The first design was based on two probes, one by NASA and one by ESA, but the probe of NASA was defunded and in the end the instruments of the cancelled probe were mounted on Ulyssses.
+Radio/Plasma antennas: Two beryllium copper antennas were unreeled outwards from the body, perpendicular to the RTG and spin axis. Together this dipole spanned 72 meters (236.2 ft). A third antenna, of hollow beryllium copper, was deployed from the body, along the spin axis opposite the dish. It was a monopole antenna, 7.5 meters (24.6 ft) long. These measured radio waves generated by plasma releases, or the plasma itself as it passed over the spacecraft. This receiver ensemble was sensitive from DC to 1 MHz.
+Experiment Boom: A third type of boom, shorter and much more rigid, extended from the last side of the spacecraft, opposite the RTG. This was a hollow carbon-fiber tube, of 50 mm (2 in.) diameter. It can be seen in the photo as the silver rod stowed alongside the body. It carried four types of instruments: a solid-state X-ray instrument, composed of two silicon detectors, to study X-rays from solar flares and Jupiter's aurorae; the Gamma-Ray Burst experiment, consisting of two CsI scintillator crystals with photomultipliers; two different magnetometers, a helium vector magnetometer and a fluxgate magnetometer; and a two-axis magnetic search coil antenna measured AC magnetic fields.
+Body-Mounted Instruments: Detectors for electrons, ions, neutral gas, dust, and cosmic rays were mounted on the spacecraft body around the quiet section.
+Lastly, the radio communications link could be used to search for gravitational waves (through Doppler shifts) and to probe the Sun's atmosphere through radio occultation. No gravitational waves were detected.
+Total instrument mass was 55 kg.
+Magnetometer (MAG): MAG measured the magnetic field in the heliosphere. Measurements of Jupiter's magnetic field were also performed.
+Solar Wind Plasma Experiment (SWOOPS): detected the solar wind at all solar distances and latitudes and in three dimensions. It measured positive ions and electrons.
+Solar Wind Ion Composition Instrument (SWICS): determined composition, temperature and speed of the atoms and ions that comprise the solar wind.
+Unified Radio and Plasma Wave Instrument (URAP): picked up radio waves from the Sun and electromagnetic waves generated in the solar wind close to the spacecraft.
+Energetic Particle Instrument (EPAC) and GAS: EPAC investigated the energy, fluxes and distribution of energetic particles in the heliosphere. GAS studied the uncharged gases (helium) of interstellar origin.
+Low-Energy Ion and Electron Experiment (HI-SCALE): investigated the energy, fluxes and distribution of energetic particles in the heliosphere.
+Cosmic Ray and Solar Particle Instrument (COSPIN): investigated the energy, fluxes and distribution of energetic particles and galactic cosmic rays in the heliosphere.
+Solar X-ray and Cosmic Gamma-Ray Burst Instrument (GRB): studied cosmic gamma ray bursts and X-rays from solar flares.
+Dust Experiment (DUST): Direct measurements of interplanetary and interstellar dust grains to investigate their properties as functions of the distance from the Sun and solar latitude.
+
+Mission
+Planning
+Until Ulysses, the Sun had only been observed from low solar latitudes. The Earth's orbit defines the ecliptic plane, which differs from the Sun's equatorial plane by only 7.25°. Even spacecraft directly orbiting the Sun do so in planes close to the ecliptic because a direct launch into a high-inclination solar orbit would require a prohibitively large launch vehicle.
+Several spacecraft (Mariner 10, Pioneer 11, and Voyagers 1 and 2) had performed gravity assist maneuvers in the 1970s. Those maneuvers were to reach other planets also orbiting close to the ecliptic, so they were mostly in-plane changes. However, gravity assists are not limited to in-plane maneuvers; a suitable flyby of Jupiter could produce a significant plane change. An Out-Of-The-Ecliptic mission (OOE) was thereby proposed. See article Pioneer H.
+Originally, two spacecraft were to be built by NASA and ESA, as the International Solar Polar Mission. One would be sent over Jupiter, then under the Sun. The other would fly under Jupiter, then over the Sun. This would provide simultaneous coverage. Due to cutbacks, the U.S. spacecraft was cancelled in 1981. One spacecraft was designed, and the project recast as Ulysses, due to the indirect and untried flight path. NASA would provide the Radioisotope Thermoelectric Generator (RTG) and launch services, ESA would build the spacecraft assigned to Astrium GmbH, Friedrichshafen, Germany (formerly Dornier Systems). The instruments would be split into teams from universities and research institutes in Europe and the United States. This process provided the 12 instruments on board.
+The changes delayed launch from February 1983 to May 1986 when it was to be deployed by the Space Shuttle Challenger (boosted by the proposed Centaur G Prime upper stage. However, the Challenger disaster forced a two-and-a-half year stand down of the shuttle fleet, mandated the cancellation of the Centaur-G upper stage, and pushed the launch date to October 1990.
+
+Launch
+Ulysses was deployed into low Earth orbit from the Space Shuttle Discovery. From there, it was propelled on a trajectory to Jupiter by a combination of solid rocket motors. This upper stage consisted of a two-stage Boeing IUS (Inertial Upper Stage), plus a McDonnell Douglas PAM-S (Payload Assist Module-Special). The IUS was inertially stabilised and actively guided during its burn. The PAM-S was unguided and it and Ulysses were spun up to 80 rpm for stability at the start of its burn. On burnout of the PAM-S, the motor and spacecraft stack was yo-yo de-spun (weights deployed at the end of cables) to below 8 rpm prior to separation of the spacecraft. On leaving Earth, the spacecraft became the fastest ever artificially-accelerated spacecraft, and held that title until the New Horizons probe was launched.
+On its way to Jupiter, the spacecraft was in an elliptical non-Hohmann transfer orbit. At this time, Ulysses had a low orbital inclination to the ecliptic.
+
+Jupiter swing-by
+It arrived at Jupiter on 8 February 1992 for a swing-by maneuver that increased its inclination to the ecliptic by 80.2°. The giant planet's gravity bent the spacecraft's flight path southward and away from the ecliptic plane. This put it into a final orbit around the Sun that would take it past the Sun's north and south poles. The size and shape of the orbit were adjusted to a much smaller degree so that aphelion remained at approximately 5 AU, Jupiter's distance from the Sun, and perihelion was somewhat greater than 1 AU, the Earth's distance from the Sun. The orbital period is approximately six years.
+
+Polar regions of the Sun
+Between 1994 and 1995 it explored both the southern and northern polar regions of the Sun, respectively.
+
+Comet C/1996 B2 (Hyakutake)
+On 1 May 1996, the spacecraft unexpectedly crossed the ion tail of Comet Hyakutake (C/1996 B2), revealing the tail to be at least 3.8 AU in length.
+
+Comet C/1999 T1 (McNaught–Hartley)
+An encounter with a comet tail happened again in 2004  when Ulysses flew through the ion tailings of C/1999 T1 (McNaught-Hartley). A coronal mass ejection carried the cometary material to Ulysses.
+
+Second Jupiter encounter
+Ulysses approached aphelion in 2003/2004 and made further distant observations of Jupiter.
+
+Comet C/2006 P1 (McNaught)
+In 2007, Ulysses passed through the tail of comet C/2006 P1 (McNaught). The results were surprisingly different from its pass through Hyakutake's tail, with the measured solar wind velocity dropping from approximately 700 kilometers per second (1,566,000 mph) to less than 400 kilometers per second (895,000 mph).
+
+Extended mission
+ESA's Science Program Committee approved the fourth extension of the Ulysses mission to March 2004  thereby allowing it to operate over the Sun's poles for the third time in 2007 and 2008. After it became clear that the power output from the spacecraft's RTG would be insufficient to operate science instruments and keep the attitude control fuel, hydrazine, from freezing, instrument power sharing was initiated. Up until then, the most important instruments had been kept online constantly, whilst others were deactivated. When the probe neared the Sun, its power-hungry heaters were turned off and all instruments were turned on.On 22 February 2008, 17 years and 4 months after the launch of the spacecraft, ESA and NASA announced that the mission operations for Ulysses would likely cease within a few months. On 12 April 2008, NASA announced that the end date will be 1 July 2008.The spacecraft operated successfully for over four times its design life. A component within the last remaining working chain of X-band downlink subsystem failed on 15 January 2008. The other chain in the X-band subsystem had previously failed in 2003.Downlink to Earth resumed on S-band, but the beamwidth of the high gain antenna in the S-band was not as narrow as in the X–band, so that the received downlink signal was much weaker, hence reducing the achievable data rate. As the spacecraft traveled on its outbound trajectory to the orbit of Jupiter, the downlink signal would have eventually fallen below the receiving capability of even the largest antennas (70 meters - 229.7 feet - in diameter) of the Deep Space Network.
+Even before the downlink signal was lost due to distance, the hydrazine attitude control fuel on board the spacecraft was considered likely to freeze, as the radioisotope thermal generators (RTGs) failed to generate enough power for the heaters to overcome radiative heat loss into space. Once the hydrazine froze, the spacecraft would no longer be able to maneuver to keep its high gain antenna pointing towards Earth, and the downlink signal would then be lost in a matter of days. The failure of the X-band communications subsystem hastened this, because the coldest part of the fuel pipework was routed over the X-band traveling-wave tube amplifiers, because they generated enough heat during operation to keep the propellant plumbing warm.
+The previously announced mission end date of 1 July 2008, came and went but mission operations continued albeit in a reduced capacity. The availability of science data gathering was limited to only when Ulysses was in contact with a ground station due to the deteriorating S-band downlink margin no longer being able to support simultaneous real-time data and tape recorder playback. When the spacecraft was out of contact with a ground station, the S-band transmitter was switched off and the power was diverted to the internal heaters to add to the warming of the hydrazine. On 30 June 2009, ground controllers sent commands to switch to the low gain antennas. This stopped communications with the spacecraft, in combination with previous commands to shut down its transmitter entirely.
+
+Results
+During cruise phases, Ulysses provided unique data. As the only spacecraft out of the ecliptic with a gamma-ray instrument, Ulysses was an important part of the InterPlanetary Network (IPN). The IPN detects gamma ray bursts (GRBs); since gamma rays cannot be focused with mirrors, it was very difficult to locate GRBs with enough accuracy to study them further. Instead, several spacecraft can locate the burst through multilateration. Each spacecraft has a gamma-ray detector, with readouts noted in tiny fractions of a second. By comparing the arrival times of gamma showers with the separations of the spacecraft, a location can be determined, for follow-up with other telescopes. Because gamma rays travel at the speed of light, wide separations are needed. Typically, a determination came from comparing: one of several spacecraft orbiting the Earth, an inner-Solar-system probe (to Mars, Venus, or an asteroid), and Ulysses. When Ulysses crossed the ecliptic twice per orbit, many GRB determinations lost accuracy.
+Additional discoveries:
+Data provided by Ulysses led to the discovery that the Sun's magnetic field interacts with the Solar System in a more complex fashion than previously assumed.
+Data provided by Ulysses led to the discovery that dust coming into the Solar System from deep space was 30 times more abundant than previously expected.
+In 2007–2008 data provided by Ulysses led to the determination that the magnetic field emanating from the Sun's poles is much weaker than previously observed.
+That the solar wind has "grown progressively weaker during the mission and is currently at its weakest since the start of the Space Age".
+
+Fate
+Ulysses will most likely continue in heliocentric orbit around the Sun indefinitely. However, there is a chance that in one of its re-encounters with Jupiter a close fly-by with one of the Jovian moons would be enough to alter its course and so the probe would enter a hyperbolic trajectory around the Sun and leave the Solar System.
+
+See also
+Advanced Composition Explorer – NASA satellite of the Explorer program
+List of heliophysics missions
+List of missions to the outer planets
+Parker Solar Probe – NASA robotic space probe of the outer corona of the Sun
+Solar and Heliospheric Observatory – European space observatory
+STEREO – Solar observation mission (2006–present)
+TRACE – NASA satellite of the Explorer program
+WIND – NASA probe to study solar wind, at L1 since 1995
+Solar Orbiter – European space-based solar observatory

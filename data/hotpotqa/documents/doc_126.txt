@@ -1,0 +1,634 @@
+Passage 1:
+List of word board games
+This is a list of board games. See the article on game classification for other alternatives, or see Category:Board games for a list of board game articles.
+
+Single-player board games
+Some board games have solo variants, such as Arkham Horror and Agricola. Others are specifically designed for one player.
+
+Two-player abstract strategy games
+In abstract strategy games, players know the entire game state at all times, and random generators such as dice are not used.
+
+Two-player board games
+Multi-player elimination board games
+Participants are typically eliminated before game end.
+
+European race games
+Multiplayer games without elimination
+Everyone can play along to the end. These games are especially suited for mixed play with adults and children.
+
+Economics strategy games
+Games involving scarce resources and strategy.
+
+Games of physical skill
+Coordination, finesse, or other physical skills are necessary. Also known as dexterity games.
+
+Children's games
+The rules are easy to learn and the outcome is mostly or entirely due to chance.
+
+Cooperative games
+Cooperative games in which all players need to work together to win.
+
+Word games
+These games are based on construction of words to score points.
+
+Gaming systems
+These are sets that can be used to play multiple games.
+
+See also
+Spiel des Jahres (Game of the Year)
+Games 100
+List of board wargames
+List of Japanese board games
+List of mancala games
+List of board game publishers
+List of game manufacturers
+List of cross and circle games
+
+External links
+Board Game Geek
+Boardgames.org
+A Zen Guide to Board Games
+Gamerate Game database
+Board Games Land
+Board Game Theories
+Passage 2:
+Glossary of board games
+This glossary of board games explains commonly used terms in board games, in alphabetical order. For a list of board games, see List of board games; for terms specific to chess, see Glossary of chess; for terms specific to chess problems, see Glossary of chess problems.
+
+A
+active  
+See in play.
+
+B
+bear off  
+To remove game piece(s) from the board and out of play. Past tense: borne off.
+
+bit  
+See piece.
+
+Black  
+Used often to refer to one of the players in two-player games. Black's pieces are typically a dark color but not necessarily black (e.g. in English draughts official play they are red). Cf. White. See also White and Black in chess.
+
+board  
+Short for gameboard.
+
+C
+capture  
+A method that removes another player's piece(s) from the board. For example: in checkers, if a player jumps an opponent's piece, that piece is captured. Captured pieces are typically removed from the game. In some games, captured pieces remain in hand and can be reentered into active play (e.g. shogi, Bughouse chess). See also Game mechanics § Capture/eliminate.
+
+card  
+A piece of cardboard often bearing instructions, and usually chosen randomly from a deck by shuffling.
+
+cell  
+See hex and space.
+
+checker  
+See piece.
+
+checkerboard 
+A square gameboard with alternating dark and light-colored squares.
+
+chessboard 
+The square gameboard used in chess, having 64 squares of alternating dark and light-colors.
+
+column  
+See file.
+
+component  
+A physical item included in the game. E.g. the box itself, the board, the cards, the tokens, zipper-lock bags, inserts, rule books, etc. See also equipment.
+
+counter  
+See piece.
+
+currency  
+A scoring mechanic used by some games to determine the winner, e.g. money (Monopoly) or counters (Zohn Ahl).
+
+custodian capture 
+A capture method whereby an enemy piece is captured by being blocked on adjacent sides by opponent pieces. (Typically laterally on two sides as in Tablut and Hasami shogi, or laterally on four sides as in Go. Capture by blocking on two sides diagonally is done in Stone Warriors, and surrounding on three sides is required in Bizingo.) Also called escort capture and interception capture.
+
+custodian method 
+See custodian capture.
+
+D
+deck  
+A stack of cards.
+
+die  
+sing. of dice.
+
+dice  
+Modern cubic dice are used to generate random numbers in many games – e.g. a single die in Trivial Pursuit, or two dice per player in backgammon. Role-playing games typically use one or more polyhedral dice. Games such as Pachisi and chaupur traditionally use cowrie shells. The games Zohn Ahl and Hyena chase use dice sticks. The game yut uses yut sticks.
+
+direction of play  
+The order of turns in a multiplayer game, e.g. clockwise around the board means the player to the left has the next turn. 
+  
+disc  
+See piece.   
+ 
+displacement capture  
+A capture method whereby a capturing piece replaces the captured piece on its square, cell, or point on the gameboard.
+
+doublet  
+1.  The same number displayed by two dice.
+2.  The number displayed by one or more die is doubled.
+3.  The union of two game pieces to move as one.
+
+E
+empty board  
+Many games start with all pieces out of play; for example, Nine men's morris, Conspirateurs, Entropy, and Go (if a handicap is not employed). Some gameboards feature staging areas for the pieces before any are put into play; for example, Ludo and Malefiz.
+
+enemy  
+An enemy piece is a piece in the same army or set of pieces controlled by the opponent; or, in a multiplayer game, a piece controlled by the partner of an opponent.
+
+Engine-building  
+A board game genre and gameplay mechanic that involves adding and modifying combinations of abilities or resources to assemble a virtuous circle of increasingly powerful and productive outcomes. A successfully built engine can create a snowball or domino effect.
+
+equipment  
+Refers to physical components required to play a game, e.g. pieces, gameboard, dice.
+
+escort capture  
+See custodian capture.
+
+exchange  
+For games featuring captures, the capture of a piece followed immediately by the opponent's recapture.
+
+F
+file 
+A straight line of spaces running from top to bottom of a gameboard at right angle to a rank. Also called column.
+
+friendly  
+A piece in the same army or set of pieces controlled by a player; or, in a multiplayer game, a piece controlled by a player's partner.
+
+G
+gameboard  
+Or game board. The (usually quadrilateral) marked surface on which one plays a board game. The namesake of the board game, gameboards would seem to be a necessary and sufficient condition of the genre, though card games that do not use a standard deck of cards (as well as games that use neither cards nor a gameboard) are often colloquially included. Most games use a standardized and unchanging board (chess, Go, and backgammon each have such a board), but some games use a modular board whose component tiles or cards can assume varying layouts from one session to another, or even during gameplay.
+
+game component  
+See component.
+
+game equipment  
+See equipment.
+
+game piece  
+See piece.
+
+gameplay  
+The execution of a game; or specifically its strategy, tactics, conventions, or mechanics.
+
+gamer  
+A person who plays board game(s). See also player.
+ 
+gamespace  
+A gameboard for a three-dimensional game (e.g., the 5×5×5 cubic board for Raumschach).
+
+grace  
+An extra turn.
+
+H
+handicap  
+An advantage given to a weaker side at the start of a game to level the winning chances against a stronger opponent. Go has formal handicap systems (see Go handicaps); chess has traditional handicap methods not used in rated competitions (see Chess handicap).
+
+hex  
+In hexagon-based board games, this is the common term for a standard space on the board. This is most often used in wargaming, though many abstract strategy games such as Abalone, Agon, hexagonal chess, GIPF project games, and connection games use hexagonal layouts.
+
+huff  
+The forfeiture of a piece as a penalty for infringing a rule.
+
+I
+in hand  
+A piece in hand is one currently not in play on the gameboard, but may be entered into play on a turn. Examples are captured pieces in shogi or Bughouse chess, able to be dropped into play as a move; or pieces that begin the game in a staging area off the main board, as in Ludo or Chessence.
+
+in play  
+A piece active on the main board, not in hand or in a staging area. Antonym: out of play.
+
+interception capture  
+See custodian capture.
+
+intervention capture  
+A capture method the reverse of the custodian method: a player captures two opponent pieces by moving to occupy the empty space between them.
+
+J
+jump  
+To move a piece over one or more pieces or spaces on the gameboard. Depending on the context, jumping may include  capturing an opponent's piece. See also Game mechanics § Capture/eliminate.
+
+L
+leap  
+See jump.
+
+M
+man  
+In chess, a piece or a pawn. In draughts, an uncrowned (i.e. not a king) piece.
+
+meeple  
+A game piece that represents a person in concept, shaped like an approximation of a person.
+
+mill  
+Three or more pieces in a line of adjacent spaces.
+
+move  
+See turn.
+
+O
+odds  
+See handicap.
+
+open board  
+A gameboard with no pieces, or one piece, in play. Typically for demonstration or instruction.
+
+order of play  
+See direction of play.
+
+orthogonal  
+A horizontal (straight left or right) or vertical (straight forward or backward) direction a piece moves on a gameboard.
+
+out of play  
+A piece not active on the main board, it might be in hand or in a staging area. Antonym: in play.
+
+over the board 
+A game played face to face with the opponent, as opposed to playing remotely (online or other means, for e.g. correspondence chess).
+
+P
+pass  
+The voluntary or involuntary forfeiture of a turn by a player.
+
+pie rule  
+Used in some two-player games to eliminate any advantage of moving first. After the first player's opening move, the second player may optionally swap sides.
+
+piece  
+Or bit, checker, chip, counter, disc, draughtsman, game piece, man, meeple, mover, pawn, player piece, playing piece, singleton, stone, token, unit. A player's representative on the gameboard made of a piece of material made to look like a known object (such as a scale model of a person, animal, or inanimate object) or otherwise general symbol. Each player may control one or more pieces. Some games involve commanding multiple pieces, such as chess pieces or Monopoly houses and hotels, that have unique designations and capabilities within the parameters of the game; in other games, such as Go, all pieces controlled by a player have the same capabilities. In some modern board games, such as Clue, there are other pieces that are not a player's representative (i.e. weapons). In some games, such as mancala games, pieces may not represent or belong to any particular player. Mancala pieces are undifferentiated and  typically seeds but sometimes beans, coins, cowry shells, ivory balls, or pebbles. Note that in chess usage the term piece in some contexts only refers to some of the pieces, which are also known as chessmen. See also Counter (board wargames).
+playboard  
+See gameboard.
+
+player  
+The participant(s) in the game. See also gamer.
+
+playing area 
+The spaces on a gameboard for use by pieces in play.
+
+playspace 
+See playing area.
+
+point  
+See space.
+
+polyhedral dice  
+Dice that are not cubes, usually some kind of Platonic solid. Polyhedral dice are generally referred to through the construction "d + number of sides" (ex. d4, d8, d12, d20). See also dice.
+
+R
+rank 
+A straight line of spaces running from one side to the other across a gameboard at right angle to a file. Also called row.
+
+replacement capture  
+See displacement capture.
+
+row  
+See rank.
+
+rule  
+A condition or stipulation by which a game is played.
+
+ruleset  
+The comprehensive set of rules which define and govern a game.
+
+S
+singleton  
+A game piece that is isolated and often prone to attack.
+
+space  
+A physical unit of progress on a gameboard delimited by a distinct border, and not further divisible according to the game's rules. Alternatively, a unique position on the board on which a piece in play may be located. For example, in Go, the pieces are placed on grid line intersections called points, and not in the areas bounded by the borders, as in chess. The bounded area geometries can be square (e.g. chess), rectangular (e.g. shogi), hexagonal (e.g. Chinese Checkers), triangular (e.g. Bizingo), quadrilateral (e.g. three-player chess), cubic (e.g. Raumschach), or other shapes (e.g. Circular chess). Cf. gamespace. See also Game mechanics § Movement.
+
+square  
+See space.
+
+staging area  
+A space set aside from the main gameboard to contain pieces in hand. In Ludo, the staging areas are called yards. In shogi, pieces in hand are placed on komadai.
+
+starting area  
+See staging area.  
+  
+stone  
+See piece.
+
+swap  
+See exchange.
+
+T
+take  
+See capture.
+
+token  
+See piece.
+
+trade  
+See exchange.
+
+triplet  
+The same number displayed by three dice.
+
+turn  
+A player's opportunity to move a piece or make a decision that influences gameplay. Turns to move usually alternate equally between competing players or teams. See also Turn-based game.
+
+W
+White  
+Used often to refer to one of the players in two-player games. White's pieces are typically a light color but not necessarily white (e.g. backgammon sets use various colors for White; shogi sets have no color distinction between sides). White often moves first but not always (e.g. Black moves first in English draughts, shogi, and Go). Cf. Black. See also White and Black in chess.
+
+Worker Placement 
+A genre of board games in which players take turns selecting an action while optimizing their resources and making meaningful decisions.
+
+Notes
+Passage 3:
+Bear games
+Bear games is a category of board games of which many have historical roots in the Roman Empire. They were played in parts of the Empire as far away as Turkey and France and are still played today, especially in Italy.  All of the games are two-player abstract strategy board games.  Normally, the game is played with three hunters and one bear on a patterned board.  It bears similarity to the hunt games such as the Fox games, Rimau-rimau, and Bagha-Chall, however, there are no captures involved.  The three hunters are trying to hem in the bear, and block its movements.
+The closest relative of the Bear games are the Hare games.  In this case, the hares are the "hunters" (a reversal in the naming procedure where the bear in the Bear games is the "hunted"), and there are three of them which is the same number of hunters in the Bear games.  The difference is that the hares cannot move backwards in any way, whereas, the hunters can move in any direction.  As a result, the boards used are also different.  Another close relative is the game called Watermelon Chess.  In one of the Bear game variants, the board is the same as that of Watermelon Chess.  Furthermore, the game Sz'Kwa also uses the same board, although it is not actually related to the Bear games since the rules and game play are completely different.
+
+Goal
+The hunters attempt to hem in the bear and block its movements.  The goal of the bear is to avoid this fate.  As an optional rule, if the hunters cannot stalemate the bear in a given number of moves, e.g. 40 moves, the bear wins.
+
+Equipment
+There are a variety of patterned boards anywhere from round to rectangular boards.  The first link below shows seven.  There are normally three hunters, and one bear, however, these quantities especially for the hunters can change drastically depending upon the variant.
+
+Rules
+Initial positions of the pieces vary depending upon the variant.  Usually the bear is placed in the middle of the board, and the hunters are placed together on one end of the board.  One player plays the hunters (normally three pieces), and the other player plays the bear.
+Both hunters and bears move one space at a time following the pattern on the board.  Only one piece may be moved by each player.  Players alternate their turns.  There are no captures in this game.
+As an optional rule – the bear wins if the hunters cannot stalemate the bear in a given number of moves, e.g. 40 moves.
+
+Analysis
+With perfect play, the hunters win.
+This is a great example of a game where the humans have an edge over the computer.  In some variants, the Zillions of Games program takes longer to win a game for the hunters as compared to human players.
+
+Related Games
+Hare games
+Watermelon Chess
+Sz'Kwa
+Fox games
+Rimau-rimau
+Bagha-Chall
+Main Tapal Empat
+Adugo
+Passage 4:
+BoardGameGeek
+BoardGameGeek (BGG) is an online forum for board gaming hobbyists and a game database that holds reviews, images and videos for over 125,600 different tabletop games, including European-style board games, wargames, and card games. In addition to the game database, the site allows users to rate games on a 1–10 scale and publishes a ranked list of board games.As of 10 March 2019, boardgamegeek.com has an Alexa rank of
+1,745.
+
+History
+BoardGameGeek was founded in January 2000 by Scott Alden and Derk Solko, and marked its 20th anniversary on 20 January 2020.Since 2005, BoardGameGeek hosts an annual board game convention, BGG.CON, that has a focus on playing games, and where winners of the Golden Geek Awards are announced. New games are showcased and convention staff is provided to teach rules. There is also an annual Spring BGG.CON which is family friendly, and an annual BGG@Sea which is held on a cruise.
+In 2010, BoardGameGeek received the Diana Jones Award, which recognized it as "a resource without peer for board and card gamers, the recognized authority of this online community." The New York Times has called BoardGameGeek "the hub of board gaming on the Internet."In 2020, BoardGameGeek was inducted into the Origins Award Hall of Fame.The site has branched out into other fields by using the same system for RPGs and video games (rpggeek.com and videogamegeek.com).
+
+Golden Geek Award
+Since 2006, the site annually awards the best new board games of the year with the Golden Geek Award. Winners are selected based on a vote by registered users.
+
+2006–2009
+2010–2019
+RPG and Video Game awardsRPG and Video game awards were introduced in 2014 and awarded through 2017. Only 1 category was awarded in 2018, and none in following years.
+
+2020–present
+2020 saw many awards replaced with new categories, such as "Board Game of the Year" replaced with "Game of the Year, Light", "Medium" and "Heavy".
+
+See also
+Going Cardboard (documentary)
+Passage 5:
+David Parlett
+David Parlett (born 18 May 1939 in London) is a games scholar, historian, and translator from South London, who has studied both card games and board games. He is the president of the British Skat Association.
+
+Life
+David Sidney Parlett was born in London on 18 May 1939 to Sidney Thomas Parlett and Eleanor May Parlett, née Nunan. He is one of three brothers. During the Second World War, Parlett lived in Barry, Glamorgan. Parlett was educated at Battersea Grammar School and the University College of Wales in Aberystwyth. He has a BA in Modern Languages. Parlett was a technical writer with PR companies and later a freelance write for Games & Puzzles magazine. He is married to Barbara and they have a son and a daughter.
+
+Works
+His published works include many popular books on games such as Penguin Book of Card Games, as well as the more academic volumes The Oxford Guide to Card Games and The Oxford History of Board Games, both now out of print. Parlett has also invented many card games and board games.  The most successful of these is Hare and Tortoise (1974). Its German edition was awarded Spiel des Jahres (Game of the Year) in 1979.
+Parlett is a Quaker.
+
+Books
+Games and gaming
+All the Best Card Games
+Anarquía y Otros Juegos Sociales de Cartas
+Botticelli and Beyond
+Card Games for Everyone
+Family Card Games
+Know the Game: Patience
+Original Card Games
+Solitaire: Aces Up and 399 other Card Games
+Teach Yourself Card Games
+Teach Yourself Card Games for Four
+Teach Yourself Card Games for One
+Teach Yourself Card Games for Three
+Teach Yourself Card Games for Two
+Teach Yourself Poker and Brag
+The Guinness Book of Word Games
+The Oxford Dictionary of Card Games
+The Oxford Guide to Card Games / A History of Card Games
+The Oxford History of Board Games reprinted as History of Board Games
+The Penguin Book of Card Games
+The Penguin Book of Patience
+The Penguin Book of Word Games
+The Penguin Encyclopedia of Card Games
+The Popular Dictionary of Card Games
+
+Other subjects
+A Short Dictionary of Languages
+Dalcroze Today (translation of Marie-Laure Bachmann's work)
+Learning a Language Alone
+Selections from the Carmina Burana (translations)
+
+Games invented
+Board games
+Since 1974, David Parlett has published numerous games, including the following:
+Around the World in 80 Days (2016)
+Asterix: Das Kartenspiel (1990)
+Chicken Out! (2017)
+Die Wilden Kerle (The Wild Kids) (2017)
+Hare and Tortoise (1973)
+Katarenga (Colorado) (2017)
+LifeCards
+Metal Mickey's All Around the House Game (1982)
+Ninety-Nine (1974) / Four Seasons (2016)
+Pot Black: Snooker Dice (1980)
+Rainbow Junior Scrabble (1989)
+Roman Poker (2015)
+Shoulder to Shoulder (1975)
+Star Wars: Duell der Mächte (2015)
+Sushi Spiel (Chinese Take-Away)
+The Gnümies Party Game (2001)
+The Puzzle of Oz (2012)
+Zoo Party / 7Safari (2000) / Alles für die Katz
+
+Card games
+Parlett has invented more than 70 original card games that can be played with a standard deck of playing cards.
+
+Solitaire games
+Archway
+Black Hole
+Gay Gordons
+Penguin
+Passage 6:
+Yut
+Yut nori, also known as yunnori, nyout, and yoot, is a traditional board game played in Korea, especially during Korean New Year. The game is also called cheok-sa (척사; 擲柶) or sa-hui (사희; 柶戲). The combining-form -nori means 'game'.
+Although the origins of this popular family game are unclear, some research suggests that yut was played as early as the Three Kingdoms (57 BCE – 668 CE). The Taiping Imperial Reader states that people of Baekje played a board game similar to po yut, which is believed to be similar to Pachisi, a board game originating in India.There is a folk explanation for the game, describing a bet by some villagers to raise five different kind of livestock: pigs, dogs, sheep, cows and horses. Each of the villagers would raise only one type.
+The board and the game are known to have been used in casting hexagrams, particularly in mountain-areas and small farming-villages, but this is no longer practiced.
+
+Equipment
+The board (mal-pan, 말판) is normally made of stitched cloth. The modern board is a rectangular shape, but historically there was also a round variation. There are four straight courses and two diagonal ones. Each of the straight courses comes with five stations, the diagonal ones have five stations, too, but one is shared. This brings the number of stations to twenty-nine in total. The board is also known to sometimes be drawn onto the floor.
+Instead of dice, yut-sticks are used. (These are similar to those used in the Egyptian board game Senet.) There are two kinds of yut-stick: jang-jak yut (장작 윷) and bam yut (밤 윷). Jang-jak yut are made of firewood. There are four sticks of about 15 cm in length and from 2 cm to 3 cm. in diameter. These sticks are split into halves. Chestnut-wood is most commonly used, but birch-wood is also common. These woods are chosen for their weight and the fresh sound they make when playing. Bam yut, on the other hand, are wooden sticks of about 3 cm in length. They have a diameter of about 1 cm, and also are split into halves. The bam yut are played in a small bowl, shaken in the palm, and then released.
+There are small tokens (marks) used for the game, called mal (말, literally a "horse"). There are four tokens for each team, although there are no common rules what a token can be made of. The only rule is that the mals of the opponent teams must be clearly distinguishable. Apart from black and white plastic tokens generally found today, common mals are coins, buttons, small pebbles, or even chess beads (both from Western chess and Korean chess). When choosing the mal, some Koreans consider its speed, because the faster a horse runs, the better it is thought to run.
+
+Yut sticks
+The sticks are cast to determine how far a token can advance. The score is determined by counting the sticks that are over, and those that are up. Each combination has a name. One stick over (flat side up) and three sticks up (round side up) is called "do" (도, pig). Two sticks up and two sticks over is called "gae" (개, dog). One stick up and three sticks over is called "geol" (걸, sheep). All sticks over is called "yut" (윷, cow), whereas all sticks up is called "mo" (모, horse). A "do" is worth one space advancement, a "gae" is worth two space advancement, a "geol" is worth 3 space advancement, "yut" is worth 4 space advancement, and "mo" is worth 5 space advancement. When the sticks come to the result of either "yut" or "mo", the player has another chance of throwing the sticks up again (optional- some people prefer not to play with this rule). If you get "yut" or "mo" consecutively, you play (throw) again.
+
+Game rules
+The game is played between two partners or two teams who play in turns, sometimes it is played with more teams. There is no limit in the number of participants in a game, which means that the game can be played by a considerable group. When played with large groups it is not uncommon for some group members never to cast the sticks: they still participate discussing the strategy.
+The start of the game is determined by each team casting the yut-sticks. The team with the highest score starts first.
+Each team then casts the sticks in turn, then moves a mal according to the score achieved. One turn usually consists of only one cast.  However, a player achieving a yut or mo earns an extra cast for the turn; if the player casts a yut or mo at the second cast, they earn an extra cast again, so there is no limit to the number of times a player can cast again before the end of a turn, provided they keep casting yuts or mos. The respective scores can be played separately if wished, each given to another mal (or group of mals, see below), but a score earned from one cast cannot be split into two moves—for example, a geol (advance three steps) cannot be split into a do (one step) and a gae (two steps).
+
+As long as there are mals outside the board, a team can either put a new mal onto the board according to the scores it got, or move a mal already on the board. The mals travel around the board and can move forward only. However, when landing on one of the big stations (in the corner and the centre), the team can choose to take the shorter way should they wish to. There are four possible courses, the default course being longest one with no abbreviation (No. 4).
+If a mal lands on a station occupied by the opponent's team, the opponent's mal is removed from the course and returned to the starting position, and the current player is allowed to cast again.
+If a mal lands on a station occupied by the own team, these mals can form a group and travel together from that point on.  However, this bears a risk: If an opponent lands their mal on a station occupied by a group of mals of the opponent, all mals in the group are removed from the course.
+For example, if one casts two yuts and one do at their first turn in the game, possible moves would include (see The Stations below for the station names):
+
+Put a mal on the board at the yut station (uses the first yut score); advance to mo (uses the do score), then to sok-yut (uses the second yut).
+Put a mal on the board at the yut station (uses first yut score); put another mal on the board at the same yut station (uses the second yut score), causing the two mals to move together from then on; advance them to mo (uses the do).
+Put a mal on the board at the yut station (uses the first yut); advance to duet-geol (uses the second yut), then to duet-yut (uses the do).The game is won by the team who brings all their mals home first, that is complete the course with all their mals. A course is completed if a mal passes the station where the game is started (cham-meoki). Landing on cham-meoki is no finish, but any score going "beyond" this station completes a home run. Yut is often played for three or more wins.
+
+Special rules
+The game is sometimes enhanced by labeling one, two, or three of the yut stick on their flat side. The Seoul rule can be played if one of the sticks is labelled Seoul (서울). If this stick is the only one facing down (do so that the letters Seoul can be read), a mal can be placed directly into the centre (bang), which in this case is called Seoul. If all the mals are already on the course, this counts as a do. The Busan rule is similar. One of the yut sticks is labelled Busan (부산). Rather than to the centre, the mal travels directly to the far corner (mo). Again, this only applies if this is the only stick facing down, and not all mals are on the course already.
+There is also the back rule, where one of the sticks is labelled back (후퇴). If this is the only stick facing down, one of the mals has to go back one step. Depending on the rules used, if none of the mals are on the course, then this is counted as either a do or a skipped turn.  Alternatively, if the do rule is not being used, the other most common rule is for a mal to be placed onto the arrow next to the start. The mal remains there until another back is cast. In this case, however, the mal completes the course at once. Furthermore, if a mal is placed on the do spot, and then gets a back, then they will be on the cham-meoki spot and then will exit the malpan when a do, gae or geul, yut or mo is thrown. Another back will put them on the nal-yut spot.
+
+Social meaning
+The game is a popular board game throughout Korea, and it is considered a game of deep tradition. The game is often treated as a social spectacle with onlookers and team members shouting loudly, encouraging each other, or wishing for a certain score. This game is played in almost every Seollal gathering and is commonly played in almost any region of the world with a significant Korean population.  The rare scores of yut and mo in particular cause excitement, particularly if cast more than one at a time.
+The Australian film and theatre group, Yut Art, takes its names from the game as a result of the excitement and crowd participation associated with its activities.
+
+The stations
+Each station of the gameboard has its own name, although they are obscure to most Koreans. It is thought that the outer stations symbolize heaven, and the inner square, the earth. The whole board can be also interpreted as a reflection of universal symmetry and celestial procession, reflecting elements of Korean shamanism.The mid-Joseon writer Gim Munpyo described the Yut board as symbolising the circle of the cosmos, with the North Star in the centre, surrounded by 28 constellations.
+
+Yut Fortune
+According to the Dongguksesigi (literally meaning a Book on Eastern Country's Annual Observances), a book listing 22 Korean annual observances, on New Year's Eve or New Year's Day, there was a game of fortune-telling good and bad with a hand-thrown out of yut. The possible combinations of yut are do, gae, geol, yut, and mo, but yut and mo hit the same thing. As a result, there are 64 fortune tellings in total, and in each case, matters to be careful about behavior and the answer for the year's luck are set.
+
+See also
+Lambs and Tigers
+Korean culture
+List of cross and circle games
+Passage 7:
+Francis Tresham (game designer)
+Francis Tresham (1936 – 23 October 2019) was a British board game designer who produced board games since the early 1970s. Tresham founded and ran games company Hartland Trefoil (founded 1971), a company well-known for its Civilization board game, until its sale to MicroProse in 1997. His 1829 game was the first of the 18xx board game series and some of his board games inspired Sid Meier computer games such as Railroad Tycoon.
+Francis Tresham was the first to introduce a technology tree into his boardgames. This idea had a large influence on later board and computer games.
+He was managing director of Tresham Games, which produced 18xx-style board games. In 2013, he was one of the first inductees in the UK Games Expo Hall of Fame. He died on 23 October 2019.
+
+Published board games
+1825
+1829
+1829 Mainline
+1830
+1853
+Civilization
+Revolution: The Dutch Revolt 1568–1648
+Shocks & Scares
+Spanish Main
+The Game of Ancient Kingdoms
+Passage 8:
+Days of Wonder
+Days of Wonder is a board game publisher founded in 2002 and owned by Asmodee Group since 2014. Days of Wonder distributes its games to 25 countries. It specializes in German-style board games and has branched out to include some online games. Days of Wonder has published games in several languages including English, Dutch, French, German, Russian, and Greek. Days of Wonder was co-founded by Eric Hautemont, Mark Kaufmann and Yann Corno.
+
+History
+Days of Wonder was founded in 2002 by Mark Kaufmann, Eric Hautemont and Yann Corno. It released its first game, Gang of Four in 2002. In March 2004, the company released Ticket to Ride, designed by Alan R. Moon. In 2004, Ticket to Ride was awarded the Spiel des Jahres. In 2006, the company released a digital version of Ticket to Ride. Also in 2006, the company's game Shadows Over Camelot was named the Best Fantasy Game at the 2006 Spiel des Jahres.In 2009, Smallworld received three awards including "Best Game of the Year", "Best Family Game", and "Best Game Artwork" from the Dice Tower Gaming Awards.In 2014, Days of Wonder was acquired by French game distributor Asmodee Group.
+
+Games Published
+Below are all of the games published by Days of Wonder from 2002 to 2018:
+
+Small Box games
+Awards and honors
+See also
+Going Cardboard (Documentary)
+Passage 9:
+Tsuro
+Tsuro is a tile-based board game designed by Tom McMurchie, originally published by WizKids and now published by Calliope Games.
+Tsuro is a board game for two to eight players. To play, players compete to have the last playing piece remaining on the board. Player turns consist of placing tiles on the board from the player's hand. Then they move their respective pieces along these paths. Players are eliminated by following a path that ends at the board edge.
+There have also been a number of differently themed Tsuro editions and expansions released, beginning with Tsuro of the Seas. Although core gameplay remains the same, some versions feature expanded rules or larger boards.
+The name of the game is taken from the Japanese word tsūro (wikt:通路) meaning "route".  The word, written in kanji, appears in the art on the game board.
+
+Gameplay
+The game is played on a square board that is divided into a six-by-six grid of squares. There are eight player markers, thirty-five standard path tiles, and one Dragon tile. Before the game begins, the Dragon tile is set aside.
+To start, each player chooses a different colored playing piece and places their marker on any of the white notches that surround the edge of the board; each edge has twelve notches. The path tiles are shuffled and each player is dealt three path tiles; the remainder are left as a draw pile. Each turn includes a tile-laying phase and then a marker movement phase. The turn ends with the active player drawing another path tile.In each turn, the active player must place a tile in the square adjacent to their piece. Once placed, the piece moves along the line in front of it. If the placed tile connects to the path that another player's piece is on, the other (inactive) player must move their piece to the end of the line on the newly-placed tile. Sometimes this will cause the piece to go off the board, in which case that player is eliminated. The active player may not choose to connect their path to the edge of the board (eliminating that player), unless no other move is available. If two pieces end up on the same path, both players are out. The unused path tiles of the players that are eliminated are shuffled into the draw pile. The winner is the player with the last remaining marker on the board.
+The Dragon tile is only used when there are three or more players. When there are no more tiles to draw from, the player takes the Dragon tile. This is to indicate that they will draw from the pile after the eliminated players give up their unplayed tiles, regardless of whether they are the active player or not. The Dragon tile is set aside once the draw pile has been restocked.
+
+Tiles
+There are thirty-five possible permutations for a four-sided tile with two entry points per side and four paths linking the eight points. In the table below, tiles are named according to the connected points. Points are numbered sequentially anti-clockwise from the left point on the bottom edge, so the bottom edge contains points 1 (left) and 2 (right), the right edge contains points 3 (lower) and 4 (upper), the top edge contains points 5 (right) and 6 (left), and the left edge contains points 7 (upper) and 8 (lower). The nomenclature AB-CD-EF-GH indicates that points A and B are connected, C and D are connected, E and F are connected, and G and H are connected. A single 90° rotation anti-clockwise will increment each number by 2 (modulo 8) to determine path connections when rotated.
+
+Alternate Editions and Expansions
+History
+McMurchie received a patent for the "Squiggle game" in 1979. The 1979 patent described two different implementations; the first, commercialized largely intact as Tsuro, used the square tiles with two entry points per side and four paths, while the second used square tiles similarly with eight entry points and four paths per tile, but the entry points were changed to the middle of each side and at each corner instead. In both cases, the preferred board size was a 6×6 grid and what became the Dragon tile was initially called the NEXT card. The patent also provided specific names for player actions:
+SHORT CUTS: when a player is connected to a previously unused path, the player is required to advance their piece to the end of the newly-connected path.
+SUICIDE: an illegal move in which a player connects their own path to the edge of the board, unless no other legal move is possible).
+MEDDLING: a player's legal move which extends the path of another player; the other player is required to advance their piece to the end of the newly-connected path.
+COLLISIONS: connecting the paths of two players, forcing them both out of the game. In effect, the start of one player's path serves as the connection to the edge for the other player and vice versa.
+INHERITANCE: when a player's action results in another player (or players) being eliminated, the active player may exchange any number of cards in their own hand with the cards held by the eliminated player(s); the remaining cards from the eliminated player(s) are shuffled back into the draw pile.
+One of the patents cited by the examiner was US3309092A (1963) by Hardesty and Schenck, entitled "Competitive road building and travel game", which included a variety of square tiles, including what they called "tiles with two, three or four roads" similar in pattern to the Tsuro tiles. Dawne and Jordan Weisman, the owners of Games and Gizmos in Redmond, Washington watched McMurchie playing Squiggles and asked him if he would be interested in publishing the game. The Weismans had founded the games publishing company WizKids and reworked Squiggles into Tsuro, switching the original 1950s theme to one that was Japanese-inspired. The game was released in 2005.
+WizKids was later acquired by Topps and then NECA, and the rights for the game reverted back to Tom McMurchie. Ray Wehrs, who had been the director of sales for WizKids, purchased a license from McMurchie and founded Calliope Games in 2011 with Tsuro as its flagship product. In 2012, actor and blogger Wil Wheaton featured the game in one of his YouTube videos, causing sales to spike.
+
+Variants
+After Calliope Games began publishing Tsuro, different versions and spin-offs of the game were created.  The game also has an app for mobile devices created by Thunderbox Entertainment. The game also has been published in multiple languages including a German, a Greek and a multilingual version.
+The German version of Tsuro was published in 2007 by KOSMOS. In addition to the language translation, the game's individual player pieces were little tree figures instead of the dragon stones, and the board was made two-sided, with the other side being a 7×7 grid. The 35 unique tiles were expanded to a set of 64, with some duplication of paths, and players would randomly choose 35 (plus the Dragon/Next tile) for play on the 6×6 side of the board. The KOSMOS-published variant was licensed by a Greek publisher, Kaissa, and released in that market.The first Tsuro spin-off created was a Star Wars-themed spin-off called Asteroid Escape. This version of Tsuro was published in 2011 by Abysse Corp, exclusively in France. Asteroid Escape has additional asteroid tiles, which remove any player that lands on them instantly. They are placed on the board randomly at the start of (and occasionally during) the game, and move randomly as the game progresses, consuming any tiles or players in their path. The board is also slightly larger, 7x7 instead of 6x6. In addition, the player's individual pieces are cardboard spaceships.In 2012, Calliope Games published Tsuro of the Seas, which included similar changes, after receiving funding from Kickstarter. The game's creators included the original creator of Tsuro, Tom McMurchie, and Jordan Weisman. Tsuro of the Seas has a few changed gameplay aspects and visuals, including player pieces shaped like boats and daikaiju tiles, which are equivalent to the asteroid tiles.Tsuro of the Seas later received an expansion called Veterans of the Seas, published in 2013 by Calliope Games. This expansion includes four new types of tiles that all do different things.  There is the mystical portal tile that moves ships and daikaiju tiles to new paths on the board.  The tsunami tile moves steadily across the board, giving players a new obstacle they must overcome by rolling a die. If the player does not roll high enough they are eliminated from the game.  The whirlpool tile destroys all ships and daikaiju tiles it comes in contact with.  The cannon tiles are a defensive card players can use to defend themselves from daikaiju.Tsuro: Phoenix Rising was initially funded by Kickstarter and released in 2019 by Calliope. Like the original game, Phoenix Rising is played on a 6×6 board with 36 square tiles, each with four paths. However, the tiles in Phoenix are classified as either "center" tiles (total of 16 "center" tiles) or "edge" tiles (20 "edge" tiles). These tiles have additional entry points at the corners and the center tiles are pre-placed in the center of the board prior to starting play. Tiles are flipped or rotated during play, and the goal of the game is to create and collect seven stars by traversing paths.In 2022, Calliope Games announced that a "Luxury Limited Edition" of the original Tsuro would be released later that year; changes included upgraded materials, including carved stone tiles, satin tile storage bag, bamboo rules scroll, and wooden box, individually numbered. The limited edition set was priced at US$350.
+
+Reviews
+Pyramid
+
+See also
+Black Path Game
+Passage 10:
+Robert Charles Bell
+Robert Charles Bell (1917–2002) was the author of several books on board games, most importantly Board and Table Games 1 & 2 (reprinted as Board and Table Games from Many Civilizations).  This work won the Premier Award of the Doctors' Hobbies Exhibition, London.  He was instrumental in popularizing traditional games, and is acknowledged as one of 11 "principal sources" in David Parlett's The Oxford History of Board Games.
+
+Life
+He was born 1917 in Sudbury, Ontario and moved to England in 1928; and was educated at Haileybury College, Hertfordshire and St Bartholomew's Hospital by 1941. He became a consultant plastic surgeon and was on the editorial board of the British Journal of Plastic Surgery.  Outside medicine, Bell was a polymath who became an international authority on board games and wrote books for collectors on Tyneside Pottery and Trade Tokens. His first work on games was Board and Table Games (1960), and he later produced many articles on coin collecting for World Coins.He died in 2002. As of 2007, much of his extensive collection of games and game paraphernalia resides at the University of Durham.
+
+Categories of board and table games
+Bell gives origins, history and some game-playing details for some 180 games in the 2 volumes of his main work (Board and Table Games). He divides board games into four main categories:
+
+A race game requires the pieces to move from a start point to a finish point usually based on the throw of dice (e.g. Ludo).
+A wargame involves movement (and occasionally placement) and is typically won with the capture of all opponent pieces (e.g. draughts) or a special opponent piece (e.g. chess).
+A positional game requires the winning player to form a pattern or shape by merely placing (noughts and crosses and Go are respectively the simplest and most complex examples) or placing and moving pieces on a board (nine men's morris).
+Mancala games involve players distributing seeds across a series of holes and collecting the contents of holes that achieve specific numeric or numeric/positional status. Typically one wins by collecting the most seeds, or rendering the opponent unable to move.Bell used the basic categories suggested by Murray with some alterations.  Because his treatment extended beyond board games, Bell also included the categories of dice and domino games; and in his second volume added "Games of Words and Numbers", "Card Games Requiring Boards", and "Games of manual dexterity". In addition, there is mention of the subgenre of solitaire and puzzle games.
+Bell drew on a wide range of sources, including Edward Falkener, Stewart Culin, Willard Fiske, H. J. R. Murray, John Scarne, and many others; as well as his own research and collection.
+
+Publications
+Books about board and table games
+Robert Charles Bell MB, FRCS (R. C. Bell)
+
+Board And Table Games From Many Civilizations 1 – Oxford University Press, 1960.
+Board And Table Games From Many Civilizations 2 – Oxford University Press, 1969.Board And Table Games From Many Civilizations (revised edition with above two volumes bound into a single book) - Dover Publications, Mineola, New York, 1979. ISBN 0-486-23855-5; reprinted by Exeter Books, New York City, 1983.Tangram Teasers: A Selection Of Ch'i Ch'iau Puzzles – Corbitt & Hunter, Newcastle upon Tyne, 1965. ISBN 978-0900309069.
+Discovering Old Board Games – Shire Publications #182, 1973. ISBN 0-85263-235-5
+Discovering Backgammon – Shire Publications  #201, 1975. ISBN 0-85263-263-0
+Discovering Mah-Jong – Shire Publications #222, 1976. ISBN 0 85263 444 7
+Discovering Chess – Shire Publications #221, 1976. ISBN 0 85263 478 1. A second edition, revised by Ken Whyld, was published in 1979.
+The Boardgame Book – Bookthrift Company / Marshall Cavendish / Knapp Press / Viking Press / Penguin Books, London, 1979. ISBN 0 89535 007 6.Les Plus Beaux Jeux Du Monde (French edition of the above) – Fernand Nathan, 1979. ISBN 978-2092846216.
+Das Große Buch Der Brettspiele (German edition of the above) – ?, 1979?.Discovering Dice And Dominoes - Shire Publications #255, 1980. ISBN 0 85263 532 X.
+Oriental Games - Gulbenkian Museum of Oriental Art / University of Durham, 1981.
+Board And Table Game Antiques - Shire Publications (Shire Album 60), 1981. ISBN 0 85263 538 9.
+Games to Play: Board And Table Games For All The Family - Michael Joseph / Penguin Group / Guild Publishing, 1988. ISBN 0 7181 2993 8.
+A Compendium Of Games: Family Entertainment From Around The World – Smithmark Publications, 1999. ISBN 978-0765117083.Robbie Bell and Michael Cornelius
+
+Board Games Round The World: A Resource Book For Mathematical Investigations – Cambridge University Press, 1988. ISBN 0 521 35924 4.
+
+Other books
+R. C. Bell
+
+Commercial Coins 1787–1804 – Corbitt & Hunter, Newcastle upon Tyne, 1963.
+Copper Commercial Coins 1811–1819 – Corbitt & Hunter, Newcastle upon Tyne, 1964.
+Tradesmen's Tickets And Private Tokens 1785-1819 – Corbitt & Hunter, Newcastle upon Tyne, 1966.
+Specious Tokens And Those Struck For General Circulation 1784-1804 – Corbitt & Hunter, Newcastle upon Tyne, 1968.
+Tyneside Pottery - Littlehampton Book Services Ltd, 1971. ISBN 978-0289700532.
+Monographs On Plastic Surgery, volume 1: The Use Of Skin Grafts – Oxford University Press, 1973.
+Unofficial Farthings 1820-1870 – B.A. Seaby, London, 1975. ISBN 978-0900652400.
+The Building Medalets Of Kempson And Skidmore 1796-1797 – Frank Graham, Newcastle upon Tyne, 1978. ISBN 978-0859831055.
+Maling And Other Tyneside Pottery – Shire Publications, 1986. ISBN 978-0852637920.
+Political And Commemorative Pieces Simulating Tradesmen's Tokens 1770-1802 - ?, Felixstowe, 1987.
+Bell's Unofficial Farthings: A Supplement – Whitmore, 1994. ISBN 978-0951325735.R. C. Bell and M. A. V. Gill
+
+Potteries Of Tyneside – Frank Graham, 1973. ISBN 978-0902833777.R. C. Bell and Simon Rodway
+
+Fun at the Lathe - Guild of Master Craftsman Publications Ltd, 1998.Edited by R. C. Bell
+
+Diaries From The Days Of Sail (with an Introduction by Alan Villiers) – Holt Rinehart & Winston, 1974. ISBN 978-0030129414.
+
+Miscellaneous
+Token Tales – a series of articles, originally appearing in 'World Coins' in the 1960s and 1970s, republished by the Conder Token Collector's Club from 2003
+Games of the World – this book, edited by Frederic V. Grunfeld and published by Ballantine Books of New York in 1975, cited R.C. Bell and Léon Vié as Editorial Consultants.
+
+Notes

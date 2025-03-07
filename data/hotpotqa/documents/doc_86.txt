@@ -1,0 +1,259 @@
+Passage 1:
+Austrobaileyales
+Austrobaileyales is an order of flowering plants consisting of about 100 species of woody plants growing as trees, shrubs and lianas. The best-known species is Illicium verum, commonly known as star anise. The order belongs to the group of basal angiosperms, the ANA grade (Amborellales, Nymphaeales, and Austrobaileyales), which diverged earlier from the remaining flowering plants. Austrobaileyales is sister to all remaining extant angiosperms outside the ANA grade.The order includes just three families of flowering plants, the Austrobaileyaceae, a monotypic family containing the sole genus, Austrobaileya scandens, a woody liana, the Schisandraceae, a family of trees, shrubs, or lianas containing essential oils, and the Trimeniaceae, essential oil-bearing trees and lianas.
+
+In different classifications
+Until the early 21st century, the order was only rarely recognised by systems of classification (an exception is the Reveal system).
+The APG system, of 1998, did not recognize such an order. The APG II system, of 2003, does accept this order and places it among the basal angiosperms, that is: it does not belong to any further clade. APG II uses this circumscription:
+
+order Austrobaileyales
+family Austrobaileyaceae, one species of woody vines from Australia
+family Schisandraceae [+ family Illiciaceae], several dozen species of woody plants, found in tropical to temperate regions of East and Southeast Asia and the Caribbean. The best known of those is Star anise.
+family Trimeniaceae, half-a-dozen species of woody plants found in subtropical to tropical Southeast Asia, eastern Australia and the Pacific IslandsNote: "+ ..."=optional segregate family, that may be split off from the preceding family. The Cronquist system, of 1981, also placed the  plants in families Illiciaceae and Schisandraceae together, but as separate families, united at the rank of order, in the order Illiciales.
+Passage 2:
+Tibouchina
+Tibouchina  is a neotropical flowering plant genus in the family Melastomataceae. Species of this genus are subshrubs, shrubs or small trees and typically have purple flowers. They are native to Mexico, the Caribbean, and South America where they are found as far south as northern Argentina. Members of this genus are known as glory bushes, glory trees or princess flowers. The name Tibouchina is adapted from a Guianan indigenous name for a member of this genus. A systematic study in 2013 showed that as then circumscribed the genus was paraphyletic, and in 2019 the genus was split into a more narrowly circumscribed Tibouchina, two re-established genera Pleroma and Chaetogastra, and a new genus, Andesanthus.
+
+Description
+Tibouchina species are subshrubs, shrubs or small trees. Their leaves are opposite, usually with petioles, and often covered with scales. The inflorescence is a panicle or some modification of a panicle with reduced branching. The individual flowers have five free petals, purple or lilac in color; the color does not change as the flowers age. There are ten stamens, either all the same or dimorphic, with five larger and five smaller ones. The connective tissue below the anthers of the stamens is prolonged and modified at the base of the stamens into ventrally bilobed appendages. When mature, the seeds are contained in a dry, semiwoody capsule and are cochleate (spiralled).
+
+Taxonomy
+The genus Tibouchina was established by Aublet in 1775 in his Flora of French Guiana with the description of a single species, T. aspera, which is thus the type species. In 1885, in his treatment for Flora brasiliensis, Alfred Cogniaux used a broad concept of the genus, transferring into it many of the species at that time placed in Chaetogastra, Diplostegium, Lasiandra, Pleroma and Purpurella, among others. This broad concept was generally adopted subsequently, and around 470 taxa were at one time or another assigned to Tibouchina.
+
+Phylogeny
+A phylogenetic analysis in 2013 based on molecular data (2 plastid and 1 nuclear regions) determined that the traditional circumscription of Tibouchina was paraphyletic. Four major clades were resolved within the genus which were supported by morphological, molecular and geographic evidence. Based on the traditional code of nomenclature, the clade that the type species falls in retains the name of the genus; therefore, the clade containing Tibouchina aspera remains Tibouchina.A further molecular phylogenetic study in 2019 used the same molecular markers but included more species. It reached the same conclusion: the original broadly circumscribed Tibouchina consisted of four monophyletic clades. The authors proposed a split into four genera: a more narrowly circumscribed Tibouchina, two re-established genera Pleroma and Chaetogastra, and a new genus, Andesanthus. The relationship between Chaetogastra and the genus Brachyotum differed between a maximum likelihood analysis and a Bayesian inference analysis: the former found Brachyotum embedded within Chaetogastra, the latter found the two to be sisters. The part of their maximum likelihood cladogram which includes former Tibouchina species is as follows, using their genus names and with shading added to show the original broadly circumscribed Tibouchina s.l.:
+
+As re-circumscribed, Tibouchina is monophyletic and contains species belonging to the traditional sections T. section Tibouchina and T. section Barbigerae. Diagnostic characteristics include the presence of scale-like trichomes on the hypanthium and leaves and a long pedoconnective on lilac anthers, and the absence of glandular trichomes. Species are found in savanna habitats.
+
+Species
+As of May 2022, Plants of the World Online accepts the following species within Tibouchina:
+
+Selected former species
+Species placed in Tibouchina in its former broad sense include:
+
+Distribution and invasive potential
+All the species of Tibouchina are native to the Americas as far north as Mexico south to northern Argentina, with many found in Brazil, and others in Belize, Bolivia, Brazil, Colombia, Costa Rica, French Guiana, Guyana, Honduras, Nicaragua, Panama, Peru, Suriname, and Venezuela. Members of Tibouchina tend to be found in lowland savannas and on the lower slopes of the Andes. All Tibouchina species as well as those formerly placed in the genus are considered noxious weeds in Hawaii, because of their high potential for being invasive species. Many species, such as T. araguaiensis, T. papyrus, T. mathaei and T. nigricans, have narrow distributions, being known from only a handful of locations, while a few other species, including T. aspera, T. barbigera and T. bipenicillata, have broader distributions.
+Passage 3:
+Cyrtandra (plant)
+Cyrtandra (Neo-Latin, from Greek κυρτός, kyrtós, "curved", and ἀνήρ, anḗr, "male", in reference to their prominently curved stamens) is a genus of flowering plants containing about 600 species, with more being discovered often, and is thus the largest genus in the family Gesneriaceae. These plants are native to Southeast Asia, Australia, and the Pacific Islands, with the centre of diversity in Southeast Asia and the Malesian region. The genus is common, but many species within it are very rare, localized, and endangered endemic plants. The species can be difficult to identify because they are highly polymorphic and because they readily hybridize with each other. The plants may be small herbs, vines, shrubs, epiphytes, or trees. The genus is characterized in part by having two stamens, and most species have white flowers, with a few red-, orange-, yellow-, and pink-flowered species known. Almost all species live in rainforest habitats.It is an example of a supertramp genus.Hawaiian Cyrtandra are known as ha‘iwale.
+
+Species
+Selected species include:
+
+Cyrtandra aurantiicarpa
+Cyrtandra biserrata – Molokai cyrtandra
+Cyrtandra calyptribracteata
+Cyrtandra cleopatrae
+Cyrtandra confertiflora – lava cyrtandra
+Cyrtandra cordifolia – the Latin name means cyrtandra with heart-shaped leaves
+Cyrtandra crenata – Kahana Valley cyrtandra
+Cyrtandra cyaneoides – mapele
+Cyrtandra dentata – mountain cyrtandra
+Cyrtandra elatostemoides
+Cyrtandra elegans
+Cyrtandra ferripilosa – red-hair cyrtandra
+Cyrtandra filipes – gulch cyrtandra
+Cyrtandra garnotiana – hahala
+Cyrtandra giffardii – forest cyrtandra
+Cyrtandra gracilis – Palolo Valley cyrtandra
+Cyrtandra grandiflora – largeflower cyrtandra
+Cyrtandra grayana – Pacific cyrtandra
+Cyrtandra grayi – Gray's cyrtandra
+Cyrtandra halawensis – toothleaf cyrtandra
+Cyrtandra hashimotoi – Maui cyrtandra
+Cyrtandra hawaiensis – Hawaii cyrtandra
+Cyrtandra heinrichii – lava cyrtandra
+Cyrtandra hematos – singleflower cyrtandra
+Cyrtandra hirtigera
+Cyrtandra hypochrysoides
+Cyrtandra kalihii – Koolau Range cyrtandra
+Cyrtandra kamooloaensis – Kamo'oloa cyrtandra
+Cyrtandra kauaiensis – ulunahele
+Cyrtandra kealiae
+Cyrtandra kealiae ssp. kealiae (syn. C. limahuliensis)
+Cyrtandra kealiae ssp. urceolata
+Cyrtandra kohalae – Kohala Mountain cyrtandra
+Cyrtandra laxiflora – Oahu cyrtandra
+Cyrtandra lessoniana – Lesson's cyrtandra
+Cyrtandra macraei – upland cyrtandra
+Cyrtandra menziesii – ha'i wale
+Cyrtandra munroi – Lanaihale cyrtandra
+Cyrtandra nitens
+Cyrtandra oenobarba – shaggystem cyrtandra
+Cyrtandra olona – Kauai cyrtandra
+Cyrtandra oxybapha – Pohakea Gulch cyrtandra
+Cyrtandra paliku – cliffside cyrtandra
+Cyrtandra paludosa – kanaweo ke'oke'o
+Cyrtandra platyphylla – 'ilihia
+Cyrtandra polyantha – Niu Valley cyrtandra
+Cyrtandra pruinosa – frosted cyrtandra
+Cyrtandra pulgarensis
+Cyrtandra samoensis
+Cyrtandra sessilis – windyridge cyrtandra
+Cyrtandra subumbellata – parasol cyrtandra
+Cyrtandra tahuatensis
+Cyrtandra tintinnabula – Laupahoehoe cyrtandra
+Cyrtandra umbellifera
+Cyrtandra viridiflora – greenleaf cyrtandra
+Cyrtandra waiolani – fuzzyflower cyrtandra
+Cyrtandra wawrae – rockface cyrtandra
+Passage 4:
+Pothos (genus)
+Pothos is a genus of flowering plants in the family Araceae (tribe Potheae). It is native to China, the Indian Subcontinent, Australia, New Guinea, Southeast Asia, and various islands of the Pacific and Indian Oceans.The common houseplant Epipremnum aureum, also known as "pothos", was once classified under the genus Pothos.
+Neo P1 is a genetically engineered pothos designed to remove volatile organic compounds from ambient air.
+
+Species
+Pothos armatus C.E.C.Fisch. - Kerala
+Pothos atropurpurascens M.Hotta - Borneo
+Pothos barberianus Schott- Borneo, Malaysia, Sumatra
+Pothos beccarianus Engl. - Borneo
+Pothos brassii B.L.Burtt - Queensland
+Pothos brevistylus Engl. - Borneo
+Pothos brevivaginatus Alderw. - Sumatra
+Pothos chinensis (Raf.) Merr. - China, Tibet, Taiwan, Japan, Ryukyu Islands, Indochina, Himalayas, India, Nepal, Bhutan
+Pothos clavatus Engl. - New Guinea
+Pothos crassipedunculatus Sivad. & N.Mohanan - southern India
+Pothos curtisii Hook.f. - Thailand, Malaysia, Sumatra
+Pothos cuspidatus Alderw. - western New Guinea
+Pothos cylindricus C.Presl - Sabah, Sulawesi, Philippines
+Pothos dolichophyllus Merr. - Philippines
+Pothos dzui P.C.Boyce - Vietnam
+Pothos englerianus (Engl.) Alderw. - Sumatra
+Pothos falcifolius Engl. & K.Krause - Maluku, New Guinea
+Pothos gigantipes Buchet ex P.C.Boyce - Vietnam, Cambodia
+Pothos gracillimus Engl. & K.Krause - Papua New Guinea
+Pothos grandis Buchet ex P.C.Boyce & V.D.Nguyen - Vietnam
+Pothos hellwigii Engl. - New Guinea, Solomon Islands, Bismarck Archipelago
+Pothos hookeri Schott - Sri Lanka
+Pothos inaequilaterus (C.Presl) Engl. - Philippines
+Pothos insignis Engl. - Borneo, Palawan
+Pothos junghuhnii de Vriese - Borneo, Java, Sumatra
+Pothos keralensis A.G. Pandurangan & V.J. Nair - Kerala
+Pothos kerrii Buchet ex P.C.Boyce - Guangxi, Laos, Vietnam
+Pothos kingii Hook.f. - Thailand, Peninsular Malaysia
+Pothos lancifolius Hook.f. - Vietnam, Peninsular Malaysia
+Pothos laurifolius P.C.Boyce & A.Hay - Brunei
+Pothos leptostachyus Schott - Thailand, Peninsular Malaysia, Borneo, Sumatra
+Pothos longipes Schott - Queensland, New South Wales
+Pothos longivaginatus Alderw. - Borneo
+Pothos luzonensis (C.Presl) Schott - Luzon, Samar
+Pothos macrocephalus Scort. ex Hook.f. - Nicobar Islands, Thailand, Peninsular Malaysia, Sumatra
+Pothos mirabilis Merr. - Sabah, Kalimantan Timur
+Pothos motleyanus Schott - Kalimantan
+Pothos oliganthus P.C.Boyce & A.Hay - Sarawak
+Pothos ovatifolius Engl. - Peninsular Malaysia, Borneo, Sumatra, Philippines
+Pothos oxyphyllus Miq. - Borneo, Sumatra, Java
+Pothos papuanus Becc. ex Engl. - New Guinea, Solomon Islands
+Pothos parvispadix Nicolson - Sri Lanka
+Pothos philippinensis Engl. - Philippines
+Pothos pilulifer Buchet ex P.C.Boyce - Yunnan, Guangxi, Vietnam
+Pothos polystachyus Engl. & K.Krause - Papua New Guinea
+Pothos remotiflorus Hook. - Sri Lanka
+Pothos repens (Lour.) Druce - Guangdong, Guangxi, Hainan, Yunnan, Laos, Vietnam
+Pothos salicifolius Ridl. ex Burkill & Holttum
+Pothos scandens L. - Indian subcontinent, Indo-China, Malesia
+Pothos tener (Roxb.) Wall. - Maluku, Sulawesi, New Guinea, Solomon Islands, Bismarck Archipelago, Vanuatu 
+Pothos thomsonianus Schott - southern India
+Pothos touranensis Gagnep. - Vietnam
+Pothos versteegii Engl. - New Guinea
+Pothos volans P.C.Boyce & A.Hay - Brunei, Sarawak
+Pothos zippelii Schott - Maluku, New Guinea, Solomon Islands, Bismarck Archipelago
+Passage 5:
+Chiranthodendron
+Chiranthodendron is a flowering plant genus in the family Malvaceae. It comprises a single species of tree, Chiranthodendron pentadactylon.
+
+Names
+The tree is called the devil's, monkey's or Mexican hand tree or the hand-flower in English, the árbol de las manitas (tree of little hands) in Spanish, and mācpalxōchitl (palm flower) in Nahuatl, all on account of its distinctive red flowers, which resemble open human hands. The scientific name means "five-fingered hand-flower tree".
+
+Description
+This species is native to Guatemala and southern Mexico. On the wet slopes of these areas, trees may reach 10.5–27.5 m (34–90 ft) in height. The unusual appearance of the 'hands' has stimulated cultivation in gardens around the world, primarily in North America where it grows well near its native range. The leaves are large and shallowly lobed, with a brown indumentum on the underside. The distinctive flowers appear in late spring and early summer; the five stamens are long, curved upward, and bright red, giving the distinct impression of a clawed hand. Its fruit is a 7.5–10 cm (3.0–3.9 in) long oblong, five-lobed capsule which contains black seeds.It was originally described from a single cultivated specimen grown in Toluca in the Toluca Valley, well outside the native range. The Aztecs revered the tree.
+
+Intergeneric hybrid
+It is closely related to Fremontodendron, sufficiently to produce an intergeneric hybrid ×Chiranthofremontia lenzii Henrickson, which has yellow flowers and a reduced form of the claw.
+
+Uses
+The Aztecs and others have used solutions containing the tree's flowers as a remedy for lower abdominal pain and for heart problems. Such solutions also reduce edema and serum cholesterol levels and, because they contain the glycosides quercetin and luteolin, act as diuretics.
+Passage 6:
+Zeltnera
+Zeltnera is a genus of flowering plants in the gentian family. It was erected in 2004 when the genus Centaurium (the centauries) was split. Genetic analysis revealed that Centaurium was polyphyletic, made up of plants that could be grouped into four clades. Each became a genus. Centaurium remained, but it is now limited to the Eurasian species. The Mexican species now belong to genus Gyrandra, and the Mediterranean and Australian plants are in genus Schenkia. The new name Zeltnera was given to this genus, which contains most of the North American centauries. There are about 25 species.Plants of this genus are annual, biennial, or short-lived perennial herbs. They are taprooted or have fibrous root systems. They produce one or more branching stems which are often ridged and sometimes winged. The leaves are gathered around the lower stem or arranged along the length of the stem. They vary in shape, from linear to lance-shaped to oval, and are green or yellowish. The inflorescence is variable in arrangement. The flower has a tubular throat that opens into a flat corolla with four or five lobes. It may be any shade of pink or white, and the throat is usually paler, to white or yellowish, or occasionally patterned with green. The fruit is a small capsule containing up to 700 minute seeds. Zeltnera and Centaurium species differ mostly in the morphology of the style and stigma, as well as the shape of the fruit capsule.Zeltnera can be subdivided into three groups, a division which is supported by DNA evidence but is most obvious in terms of geography. They are casually named the "Californian group", the "Texan group", and the "Mexican group". The first group is distributed from British Columbia south through the West Coast of the United States and into Baja California. The "Texan" plants occur from Arizona to Oklahoma in the US and throughout northern Mexico. The "Mexican group" occurs in Mexico, Central America, and parts of South America. The range may extend north into Arizona.Genus Zeltnera was named for the Swiss botanists Louis and Nicole Zeltner, who have researched Centaurium and other gentians.Species include:
+Zeltnera abramsii
+Zeltnera arizonica - Arizona centaury
+Zeltnera beyrichii - quinineweed
+Zeltnera breviflora
+Zeltnera calycosa - Arizona centaury, shortflower centaury, rosita, Buckley centaury
+Zeltnera davyi - Davy's centaury
+Zeltnera exaltata - desert centaury
+Zeltnera gentryi
+Zeltnera glandulifera - sticky centaury
+Zeltnera madrensis
+Zeltnera martinii
+Zeltnera maryanna - gypsum centaury
+Zeltnera muehlenbergii - Muhlenberg's centaury
+Zeltnera multicaulis - manystem centaury
+Zeltnera namophila - springloving centaury
+Zeltnera nesomii
+Zeltnera nevadensis
+Zeltnera nudicaulis - Santa Catalina Mountain centaury
+Zeltnera pusilla
+Zeltnera quitensis - Britton's centaury
+Zeltnera setacea
+Zeltnera stricta
+Zeltnera texensis - Lady Bird's centaury
+Zeltnera trichantha - alkali centaury
+Zeltnera venusta - charming centaury, canchalagua
+Zeltnera wigginsii
+Passage 7:
+Psychotria
+Psychotria is a genus of flowering plants in the family Rubiaceae. It contains 1,582 species and is therefore one of the largest genera of flowering plants. The genus has a pantropical distribution and members of the genus are small understorey trees in tropical forests. Some species are endangered or facing extinction due to deforestation, especially species of central Africa and the Pacific.
+Many species, including Psychotria viridis, produce the psychedelic chemical dimethyltryptamine (DMT).
+
+Selected species
+Formerly placed here
+Psychotria elata = Palicourea elata
+Psychotria poeppigiana = Palicourea tomentosa
+
+Image gallery
+See also
+List of the largest genera of flowering plants
+Passage 8:
+Tibouchina heteromalla
+Pleroma heteromallum, synonyms including Tibouchina grandifolia and Tibouchina heteromalla, known by the common name silverleafed princess flower in English, is a species of evergreen flowering plant in the family Melastomataceae. It is native to French Guiana, Bolivia and Brazil.
+
+Description
+Pleroma heteromallum reaches an average height of 4–6 feet (1.2–1.8 m), with a maximum of about 8–10 feet (2.4–3.0 m) in its native habitat. The branching stem is woody and the large, silvery green leaves are simple, ovate, velvety in texture, and oppositely arranged. The inflorescence is a panicle of several purple flowers with five petals. The plant has 4–6 inches (10–15 cm) long leaves, with prominent veins that are puffed up in the middle and old leaves will often turn an orange color just prior to dropping off.
+
+Cultivation
+The plant is cultivated as an ornamental for its showy foliage and purple flowers. It is sensitive to cold but can tolerate a light frost.
+
+Gallery
+Passage 9:
+Aureusvirus
+Aureusvirus is a genus of viruses, in the family Tombusviridae. Plants serve as natural hosts. There are six species in this genus.
+
+Taxonomy
+The genus contains the following species:
+Cucumber leaf spot virus
+Elderberry aureusvirus 1
+Johnsongrass chlorotic stripe mosaic virus
+Maize white line mosaic virus
+Pothos latent virus
+Yam spherical virus
+
+Structure
+Viruses in Aureusvirus are non-enveloped, with icosahedral and  Spherical geometries, and T=3 symmetry. The diameter is around 30 nm. Genomes are linear, around 4.4kb in length.
+
+Life cycle
+Viral replication is cytoplasmic, and is lysogenic. Entry into the host cell is achieved by penetration into the host cell. Replication follows the positive stranded RNA virus replication model. Positive stranded RNA virus transcription, using the premature termination model of subgenomic RNA transcription is the method of transcription. Translation takes place by leaky scanning, and  suppression of termination. The virus exits the host cell by tubule-guided viral movement. Plants serve as the natural host. Transmission routes are mechanical, seed borne, and contact.
+Passage 10:
+Pothoideae
+Pothoideae is a subfamily of flowering plants in the family Araceae. The species in the subfamily are true aroids.
+
+Tribes and genera
+The subfamily consists of two tribes:
+
+AnthurieaeAnthurium Schott
+
+Pothoeae
+Pothos L.
+Pedicellarum M.Hotta (monotypic)
+Pothoidium Schott (monotypic)

@@ -1,0 +1,3222 @@
+Passage 1:
+Rabi cycle
+In physics, the Rabi cycle (or Rabi flop) is the cyclic behaviour of a two-level quantum system in the presence of an oscillatory driving field. A great variety of physical processes belonging to the areas of quantum computing, condensed matter, atomic and molecular physics, and nuclear and particle physics can be conveniently studied in terms of two-level quantum mechanical systems, and exhibit Rabi flopping when coupled to an optical driving field. The effect is important in quantum optics, magnetic resonance and quantum computing, and is named after Isidor Isaac Rabi.
+A two-level system is one that has two possible energy levels. These two levels are a ground state with lower energy and an excited state with higher energy. If the energy levels are not degenerate (i.e. not having equal energies), the system can absorb a quantum of energy and transition from the ground state to the "excited" state. When an atom (or some other two-level system) is illuminated by a coherent beam of photons, it will cyclically absorb photons and re-emit them by stimulated emission. One such cycle is called a Rabi cycle, and the inverse of its duration is the Rabi frequency of the photon beam. The effect can be modeled using the Jaynes–Cummings model and the Bloch vector formalism.
+
+Mathematical description
+A detailed mathematical description of the effect can be found on the page for the Rabi problem. For example, for a two-state atom (an atom in which an electron can either be in the excited or ground state) in an electromagnetic field with frequency tuned to the excitation energy, the probability of finding the atom in the excited state is found from the Bloch equations to be
+
+  
+    
+      
+        
+          |
+        
+        
+          c
+          
+            b
+          
+        
+        (
+        t
+        )
+        
+          
+            |
+          
+          
+            2
+          
+        
+        ∝
+        
+          sin
+          
+            2
+          
+        
+        ⁡
+        (
+        ω
+        t
+        
+          /
+        
+        2
+        )
+        ,
+      
+    
+    {\displaystyle |c_{b}(t)|^{2}\propto \sin ^{2}(\omega t/2),}
+  where 
+  
+    
+      
+        ω
+      
+    
+    {\displaystyle \omega }
+   is the Rabi frequency.
+More generally, one can consider a system where the two levels under consideration are not energy eigenstates. Therefore, if the system is initialized in one of these levels, time evolution will make the population of each of the levels oscillate with some characteristic frequency, whose angular frequency is also known as the Rabi frequency. The state of a two-state quantum system can be represented as vectors of a two-dimensional complex Hilbert space, which means that every state vector 
+  
+    
+      
+        
+          |
+        
+        ψ
+        ⟩
+      
+    
+    {\displaystyle |\psi \rangle }
+   is represented by complex coordinates:
+
+  
+    
+      
+        
+          |
+        
+        ψ
+        ⟩
+        =
+        
+          
+            (
+            
+              
+                
+                  
+                    c
+                    
+                      1
+                    
+                  
+                
+              
+              
+                
+                  
+                    c
+                    
+                      2
+                    
+                  
+                
+              
+            
+            )
+          
+        
+        =
+        
+          c
+          
+            1
+          
+        
+        
+          
+            (
+            
+              
+                
+                  1
+                
+              
+              
+                
+                  0
+                
+              
+            
+            )
+          
+        
+        +
+        
+          c
+          
+            2
+          
+        
+        
+          
+            (
+            
+              
+                
+                  0
+                
+              
+              
+                
+                  1
+                
+              
+            
+            )
+          
+        
+        ,
+      
+    
+    {\displaystyle |\psi \rangle ={\begin{pmatrix}c_{1}\\c_{2}\end{pmatrix}}=c_{1}{\begin{pmatrix}1\\0\end{pmatrix}}+c_{2}{\begin{pmatrix}0\\1\end{pmatrix}},}
+  where 
+  
+    
+      
+        
+          c
+          
+            1
+          
+        
+      
+    
+    {\displaystyle c_{1}}
+   and 
+  
+    
+      
+        
+          c
+          
+            2
+          
+        
+      
+    
+    {\displaystyle c_{2}}
+   are the coordinates.If the vectors are normalized, 
+  
+    
+      
+        
+          c
+          
+            1
+          
+        
+      
+    
+    {\displaystyle c_{1}}
+   and 
+  
+    
+      
+        
+          c
+          
+            2
+          
+        
+      
+    
+    {\displaystyle c_{2}}
+   are related by 
+  
+    
+      
+        
+          |
+        
+        
+          c
+          
+            1
+          
+        
+        
+          
+            |
+          
+          
+            2
+          
+        
+        +
+        
+          |
+        
+        
+          c
+          
+            2
+          
+        
+        
+          
+            |
+          
+          
+            2
+          
+        
+        =
+        1
+      
+    
+    {\displaystyle |c_{1}|^{2}+|c_{2}|^{2}=1}
+  . The basis vectors will be represented as 
+  
+    
+      
+        
+          |
+        
+        0
+        ⟩
+        =
+        
+          
+            (
+            
+              
+                
+                  1
+                
+              
+              
+                
+                  0
+                
+              
+            
+            )
+          
+        
+      
+    
+    {\displaystyle |0\rangle ={\begin{pmatrix}1\\0\end{pmatrix}}}
+   and 
+  
+    
+      
+        
+          |
+        
+        1
+        ⟩
+        =
+        
+          
+            (
+            
+              
+                
+                  0
+                
+              
+              
+                
+                  1
+                
+              
+            
+            )
+          
+        
+      
+    
+    {\displaystyle |1\rangle ={\begin{pmatrix}0\\1\end{pmatrix}}}
+  .
+All observable physical quantities associated with this systems are 2 × 2 Hermitian matrices, which means that the Hamiltonian of the system is also a similar matrix.
+
+Procedure
+One can construct an oscillation experiment through the following steps:
+Prepare the system in a fixed state; for example, 
+  
+    
+      
+        
+          |
+        
+        1
+        ⟩
+      
+    
+    {\displaystyle |1\rangle }
+  
+Let the state evolve freely, under a Hamiltonian H for time t
+Find the probability 
+  
+    
+      
+        P
+        (
+        t
+        )
+      
+    
+    {\displaystyle P(t)}
+  , that the state is in 
+  
+    
+      
+        
+          |
+        
+        1
+        ⟩
+      
+    
+    {\displaystyle |1\rangle }
+  If 
+  
+    
+      
+        
+          |
+        
+        1
+        ⟩
+      
+    
+    {\displaystyle |1\rangle }
+   is an eigenstate of H, 
+  
+    
+      
+        P
+        (
+        t
+        )
+        =
+        1
+      
+    
+    {\displaystyle P(t)=1}
+   and there will be no oscillations. Also if the two states 
+  
+    
+      
+        
+          |
+        
+        0
+        ⟩
+      
+    
+    {\displaystyle |0\rangle }
+   and 
+  
+    
+      
+        
+          |
+        
+        1
+        ⟩
+      
+    
+    {\displaystyle |1\rangle }
+   are degenerate, every state including 
+  
+    
+      
+        
+          |
+        
+        1
+        ⟩
+      
+    
+    {\displaystyle |1\rangle }
+   is an eigenstate of H. As a result, there will be no oscillations.
+On the other hand, if H has no degenerate eigenstates, and the initial state is not an eigenstate, then there will be oscillations. The most general form of the Hamiltonian of a two-state system is given
+
+  
+    
+      
+        
+          H
+        
+        =
+        
+          
+            (
+            
+              
+                
+                  
+                    a
+                    
+                      0
+                    
+                  
+                  +
+                  
+                    a
+                    
+                      3
+                    
+                  
+                
+                
+                  
+                    a
+                    
+                      1
+                    
+                  
+                  −
+                  i
+                  
+                    a
+                    
+                      2
+                    
+                  
+                
+              
+              
+                
+                  
+                    a
+                    
+                      1
+                    
+                  
+                  +
+                  i
+                  
+                    a
+                    
+                      2
+                    
+                  
+                
+                
+                  
+                    a
+                    
+                      0
+                    
+                  
+                  −
+                  
+                    a
+                    
+                      3
+                    
+                  
+                
+              
+            
+            )
+          
+        
+      
+    
+    {\displaystyle \mathbf {H} ={\begin{pmatrix}a_{0}+a_{3}&a_{1}-ia_{2}\\a_{1}+ia_{2}&a_{0}-a_{3}\end{pmatrix}}}
+  here, 
+  
+    
+      
+        
+          a
+          
+            0
+          
+        
+        ,
+        
+          a
+          
+            1
+          
+        
+        ,
+        
+          a
+          
+            2
+          
+        
+      
+    
+    {\displaystyle a_{0},a_{1},a_{2}}
+   and 
+  
+    
+      
+        
+          a
+          
+            3
+          
+        
+      
+    
+    {\displaystyle a_{3}}
+   are real numbers. This matrix can be decomposed as,
+
+  
+    
+      
+        
+          H
+        
+        =
+        
+          a
+          
+            0
+          
+        
+        ⋅
+        
+          σ
+          
+            0
+          
+        
+        +
+        
+          a
+          
+            1
+          
+        
+        ⋅
+        
+          σ
+          
+            1
+          
+        
+        +
+        
+          a
+          
+            2
+          
+        
+        ⋅
+        
+          σ
+          
+            2
+          
+        
+        +
+        
+          a
+          
+            3
+          
+        
+        ⋅
+        
+          σ
+          
+            3
+          
+        
+        ;
+      
+    
+    {\displaystyle \mathbf {H} =a_{0}\cdot \sigma _{0}+a_{1}\cdot \sigma _{1}+a_{2}\cdot \sigma _{2}+a_{3}\cdot \sigma _{3};}
+  The matrix 
+  
+    
+      
+        
+          σ
+          
+            0
+          
+        
+      
+    
+    {\displaystyle \sigma _{0}}
+   is the 2 
+  
+    
+      
+        ×
+      
+    
+    {\displaystyle \times }
+   2 identity matrix and the matrices 
+  
+    
+      
+        
+          σ
+          
+            k
+          
+        
+        
+        (
+        k
+        =
+        1
+        ,
+        2
+        ,
+        3
+        )
+      
+    
+    {\displaystyle \sigma _{k}\;(k=1,2,3)}
+   are the Pauli matrices. This decomposition simplifies the analysis of the system especially in the time-independent case where the values of 
+  
+    
+      
+        
+          a
+          
+            0
+          
+        
+        ,
+        
+          a
+          
+            1
+          
+        
+        ,
+        
+          a
+          
+            2
+          
+        
+      
+    
+    {\displaystyle a_{0},a_{1},a_{2}}
+   and 
+  
+    
+      
+        
+          a
+          
+            3
+          
+        
+      
+    
+    {\displaystyle a_{3}}
+  are constants. Consider the case of a spin-1/2 particle in a magnetic field 
+  
+    
+      
+        
+          B
+        
+        =
+        B
+        
+          
+            
+              z
+              ^
+            
+          
+        
+      
+    
+    {\displaystyle \mathbf {B} =B\mathbf {\hat {z}} }
+  . The interaction Hamiltonian for this system is
+
+  
+    
+      
+        
+          H
+        
+        =
+        −
+        
+          μ
+        
+        ⋅
+        
+          B
+        
+        =
+        −
+        γ
+        
+          S
+        
+        ⋅
+        
+          B
+        
+        =
+        −
+        γ
+         
+        B
+         
+        
+          S
+          
+            z
+          
+        
+      
+    
+    {\displaystyle \mathbf {H} =-{\boldsymbol {\mu }}\cdot \mathbf {B} =-\gamma \mathbf {S} \cdot \mathbf {B} =-\gamma \ B\ S_{z}}
+  , 
+  
+    
+      
+        
+          S
+          
+            z
+          
+        
+        =
+        
+          
+            ℏ
+            2
+          
+        
+        
+        
+          σ
+          
+            3
+          
+        
+        =
+        
+          
+            ℏ
+            2
+          
+        
+        
+          
+            (
+            
+              
+                
+                  1
+                
+                
+                  0
+                
+              
+              
+                
+                  0
+                
+                
+                  −
+                  1
+                
+              
+            
+            )
+          
+        
+        ,
+      
+    
+    {\displaystyle S_{z}={\frac {\hbar }{2}}\,\sigma _{3}={\frac {\hbar }{2}}{\begin{pmatrix}1&0\\0&-1\end{pmatrix}},}
+  where 
+  
+    
+      
+        μ
+      
+    
+    {\displaystyle \mu }
+   is the magnitude of the particle's magnetic moment, 
+  
+    
+      
+        γ
+      
+    
+    {\displaystyle \gamma }
+   is the Gyromagnetic ratio and 
+  
+    
+      
+        
+          σ
+        
+      
+    
+    {\displaystyle {\boldsymbol {\sigma }}}
+   is the vector of Pauli matrices. Here the eigenstates of Hamiltonian are eigenstates of 
+  
+    
+      
+        
+          σ
+          
+            3
+          
+        
+      
+    
+    {\displaystyle \sigma _{3}}
+  , that is 
+  
+    
+      
+        
+          |
+        
+        0
+        ⟩
+      
+    
+    {\displaystyle |0\rangle }
+   and 
+  
+    
+      
+        
+          |
+        
+        1
+        ⟩
+      
+    
+    {\displaystyle |1\rangle }
+  , with corresponding eigenvalues of 
+  
+    
+      
+        
+          E
+          
+            +
+          
+        
+        =
+        
+          
+            ℏ
+            2
+          
+        
+        γ
+        B
+         
+        ,
+         
+        
+          E
+          
+            −
+          
+        
+        =
+        −
+        
+          
+            ℏ
+            2
+          
+        
+        γ
+        B
+      
+    
+    {\displaystyle E_{+}={\frac {\hbar }{2}}\gamma B\ ,\ E_{-}=-{\frac {\hbar }{2}}\gamma B}
+  . The probability that a system in the state 
+  
+    
+      
+        
+          |
+        
+        ψ
+        ⟩
+      
+    
+    {\displaystyle |\psi \rangle }
+   can be found in the arbitrary state 
+  
+    
+      
+        
+          |
+        
+        ϕ
+        ⟩
+      
+    
+    {\displaystyle |\phi \rangle }
+   is given by 
+  
+    
+      
+        
+          
+            
+              |
+            
+            ⟨
+            ϕ
+            
+              |
+            
+            ψ
+            ⟩
+            
+              |
+            
+          
+          
+            2
+          
+        
+      
+    
+    {\displaystyle {|\langle \phi |\psi \rangle |}^{2}}
+  .
+Let the system be prepared in state 
+  
+    
+      
+        
+          |
+          
+            +
+            X
+          
+          ⟩
+        
+      
+    
+    {\displaystyle \left|+X\right\rangle }
+   at time 
+  
+    
+      
+        t
+        =
+        0
+      
+    
+    {\displaystyle t=0}
+  . Note that 
+  
+    
+      
+        
+          |
+          
+            +
+            X
+          
+          ⟩
+        
+      
+    
+    {\displaystyle \left|+X\right\rangle }
+   is an eigenstate of 
+  
+    
+      
+        
+          σ
+          
+            1
+          
+        
+      
+    
+    {\displaystyle \sigma _{1}}
+  :
+
+  
+    
+      
+        
+          |
+        
+        ψ
+        (
+        0
+        )
+        ⟩
+        =
+        
+          
+            1
+            
+              2
+            
+          
+        
+        
+          
+            (
+            
+              
+                
+                  1
+                
+              
+              
+                
+                  1
+                
+              
+            
+            )
+          
+        
+        =
+        
+          
+            1
+            
+              2
+            
+          
+        
+        
+          
+            (
+            
+              
+                
+                  1
+                
+              
+              
+                
+                  0
+                
+              
+            
+            )
+          
+        
+        +
+        
+          
+            1
+            
+              2
+            
+          
+        
+        
+          
+            (
+            
+              
+                
+                  0
+                
+              
+              
+                
+                  1
+                
+              
+            
+            )
+          
+        
+        .
+      
+    
+    {\displaystyle |\psi (0)\rangle ={\frac {1}{\sqrt {2}}}{\begin{pmatrix}1\\1\end{pmatrix}}={\frac {1}{\sqrt {2}}}{\begin{pmatrix}1\\0\end{pmatrix}}+{\frac {1}{\sqrt {2}}}{\begin{pmatrix}0\\1\end{pmatrix}}.}
+  Here the Hamiltonian is time independent. Thus by solving the stationary Schrödinger equation, the state after time t is given by  with total energy of the system 
+  
+    
+      
+        E
+      
+    
+    {\displaystyle E}
+  . So the state after time t is given by:
+
+  
+    
+      
+        
+          |
+        
+        ψ
+        (
+        t
+        )
+        ⟩
+        =
+        
+          e
+          
+            
+              
+                −
+                i
+                
+                  E
+                  
+                    +
+                  
+                
+                t
+              
+              ℏ
+            
+          
+        
+        
+          
+            1
+            
+              2
+            
+          
+        
+        
+          |
+        
+        0
+        ⟩
+        +
+        
+          e
+          
+            
+              
+                −
+                i
+                
+                  E
+                  
+                    −
+                  
+                
+                t
+              
+              ℏ
+            
+          
+        
+        
+          
+            1
+            
+              2
+            
+          
+        
+        
+          |
+        
+        1
+        ⟩
+      
+    
+    {\displaystyle |\psi (t)\rangle =e^{\frac {-iE_{+}t}{\hbar }}{\frac {1}{\sqrt {2}}}|0\rangle +e^{\frac {-iE_{-}t}{\hbar }}{\frac {1}{\sqrt {2}}}|1\rangle }
+  .Now suppose the spin is measured in x-direction at time t. The probability of finding spin-up is given by:where 
+  
+    
+      
+        ω
+      
+    
+    {\displaystyle \omega }
+   is a characteristic angular frequency given by 
+  
+    
+      
+        ω
+        =
+        
+          
+            
+              
+                E
+                
+                  +
+                
+              
+              −
+              
+                E
+                
+                  −
+                
+              
+            
+            ℏ
+          
+        
+        =
+        γ
+        B
+      
+    
+    {\displaystyle \omega ={\frac {E_{+}-E_{-}}{\hbar }}=\gamma B}
+  , where it has been assumed that 
+  
+    
+      
+        
+          E
+          
+            −
+          
+        
+        ≤
+        
+          E
+          
+            +
+          
+        
+      
+    
+    {\displaystyle E_{-}\leq E_{+}}
+  . So in this case the probability of finding spin-up in x-direction is oscillatory in time 
+  
+    
+      
+        t
+      
+    
+    {\displaystyle t}
+   when the system's spin is initially in the 
+  
+    
+      
+        
+          |
+          
+            +
+            X
+          
+          ⟩
+        
+      
+    
+    {\displaystyle \left|+X\right\rangle }
+   direction. Similarly, if we measure the spin in the 
+  
+    
+      
+        
+          |
+          
+            +
+            Z
+          
+          ⟩
+        
+      
+    
+    {\displaystyle \left|+Z\right\rangle }
+  -direction, the probability of measuring spin as 
+  
+    
+      
+        
+          
+            
+              ℏ
+              2
+            
+          
+        
+      
+    
+    {\displaystyle {\tfrac {\hbar }{2}}}
+   of the system is 
+  
+    
+      
+        
+          
+            
+              1
+              2
+            
+          
+        
+      
+    
+    {\displaystyle {\tfrac {1}{2}}}
+  . In the degenerate case where 
+  
+    
+      
+        
+          E
+          
+            +
+          
+        
+        =
+        
+          E
+          
+            −
+          
+        
+      
+    
+    {\displaystyle E_{+}=E_{-}}
+  , the characteristic frequency is 0 and there is no oscillation.
+Notice that if a system is in an eigenstate of a given Hamiltonian, the system remains in that state.
+This is true even for time dependent Hamiltonians. Taking for example 
+  
+    
+      
+        
+          
+            
+              H
+              ^
+            
+          
+        
+        =
+        −
+        γ
+         
+        
+          S
+          
+            z
+          
+        
+        B
+        sin
+        ⁡
+        (
+        ω
+        t
+        )
+      
+    
+    {\textstyle {\hat {H}}=-\gamma \ S_{z}B\sin(\omega t)}
+  ; if the system's initial spin state is 
+  
+    
+      
+        
+          |
+          
+            +
+            Y
+          
+          ⟩
+        
+      
+    
+    {\displaystyle \left|+Y\right\rangle }
+  , then the probability that a measurement of the spin in the y-direction results in 
+  
+    
+      
+        +
+        
+          
+            
+              ℏ
+              2
+            
+          
+        
+      
+    
+    {\displaystyle +{\tfrac {\hbar }{2}}}
+   at time 
+  
+    
+      
+        t
+      
+    
+    {\displaystyle t}
+   is 
+  
+    
+      
+        
+          
+            
+              |
+              
+                ⟨
+                
+                  
+                  +
+                  Y
+                  
+                    |
+                  
+                  ψ
+                  (
+                  t
+                  )
+                
+                ⟩
+              
+              |
+            
+          
+          
+            2
+          
+        
+        
+        =
+        
+          cos
+          
+            2
+          
+        
+        ⁡
+        
+          (
+          
+            
+              
+                
+                  γ
+                  B
+                
+                
+                  2
+                  ω
+                
+              
+            
+            cos
+            ⁡
+            
+              (
+              
+                ω
+                t
+              
+              )
+            
+          
+          )
+        
+      
+    
+    {\textstyle {\left|\left\langle \,+Y|\psi (t)\right\rangle \right|}^{2}\,=\cos ^{2}\left({\frac {\gamma B}{2\omega }}\cos \left({\omega t}\right)\right)}
+  .
+
+Derivation using nonperturbative procedure by means of the Pauli matrices
+Consider a Hamiltonian of the formThe eigenvalues of this matrix are given bywhere 
+  
+    
+      
+        
+          W
+        
+        =
+        
+          W
+          
+            1
+          
+        
+        +
+        i
+        
+          W
+          
+            2
+          
+        
+      
+    
+    {\displaystyle \mathbf {W} =W_{1}+iW_{2}}
+   and 
+  
+    
+      
+        
+          
+            
+              |
+              W
+              |
+            
+          
+          
+            2
+          
+        
+        =
+        
+          
+            
+              W
+              
+                1
+              
+            
+          
+          
+            2
+          
+        
+        +
+        
+          
+            
+              W
+              
+                2
+              
+            
+          
+          
+            2
+          
+        
+        =
+        W
+        
+          W
+          
+            ∗
+          
+        
+      
+    
+    {\displaystyle {\left\vert W\right\vert }^{2}={W_{1}}^{2}+{W_{2}}^{2}=WW^{*}}
+  , so we can take 
+  
+    
+      
+        
+          W
+        
+        =
+        
+          
+            |
+            W
+            |
+          
+        
+        
+          e
+          
+            i
+            ϕ
+          
+        
+      
+    
+    {\displaystyle \mathbf {W} ={\left\vert W\right\vert }e^{i\phi }}
+  .
+Now, eigenvectors for 
+  
+    
+      
+        
+          E
+          
+            +
+          
+        
+      
+    
+    {\displaystyle E_{+}}
+   can be found from equationSoApplying the normalization condition on the eigenvectors, 
+  
+    
+      
+        
+          
+            
+              |
+              a
+              |
+            
+          
+          
+            2
+          
+        
+        +
+        
+          
+            
+              |
+              b
+              |
+            
+          
+          
+            2
+          
+        
+        =
+        1
+      
+    
+    {\displaystyle {\left\vert a\right\vert }^{2}+{\left\vert b\right\vert }^{2}=1}
+  . SoLet 
+  
+    
+      
+        sin
+        ⁡
+        θ
+        =
+        
+          
+            
+              |
+              W
+              |
+            
+            
+              
+                
+                  Δ
+                
+                
+                  2
+                
+              
+              +
+              
+                
+                  
+                    |
+                    W
+                    |
+                  
+                
+                
+                  2
+                
+              
+            
+          
+        
+      
+    
+    {\displaystyle \sin \theta ={\frac {\left\vert W\right\vert }{\sqrt {{\Delta }^{2}+{\left\vert W\right\vert }^{2}}}}}
+   and 
+  
+    
+      
+        cos
+        ⁡
+        θ
+        =
+        
+          
+            Δ
+            
+              
+                
+                  Δ
+                
+                
+                  2
+                
+              
+              +
+              
+                
+                  
+                    |
+                    W
+                    |
+                  
+                
+                
+                  2
+                
+              
+            
+          
+        
+      
+    
+    {\displaystyle \cos \theta ={\frac {\Delta }{\sqrt {{\Delta }^{2}+{\left\vert W\right\vert }^{2}}}}}
+  . So 
+  
+    
+      
+        tan
+        ⁡
+        θ
+        =
+        
+          
+            
+              |
+              W
+              |
+            
+            Δ
+          
+        
+      
+    
+    {\displaystyle \tan \theta ={\frac {\left\vert W\right\vert }{\Delta }}}
+  .
+So we get 
+  
+    
+      
+        
+          
+            
+              |
+              a
+              |
+            
+          
+          
+            2
+          
+        
+        +
+        
+          
+            
+              |
+              a
+              |
+            
+          
+          
+            2
+          
+        
+        
+          
+            
+              (
+              
+                1
+                −
+                cos
+                ⁡
+                θ
+              
+              
+                )
+                
+                  2
+                
+              
+            
+            
+              
+                sin
+                
+                  2
+                
+              
+              ⁡
+              θ
+            
+          
+        
+        =
+        1
+      
+    
+    {\textstyle {\left\vert a\right\vert }^{2}+{\left\vert a\right\vert }^{2}{\frac {({1-\cos \theta })^{2}}{\sin ^{2}\theta }}=1}
+  . That is 
+  
+    
+      
+        
+          
+            
+              |
+              a
+              |
+            
+          
+          
+            2
+          
+        
+        =
+        
+          cos
+          
+            2
+          
+        
+        ⁡
+        
+          (
+          
+            
+              
+                θ
+                2
+              
+            
+          
+          )
+        
+      
+    
+    {\displaystyle {\left\vert a\right\vert }^{2}=\cos ^{2}\left({\tfrac {\theta }{2}}\right)}
+  , using the identity 
+  
+    
+      
+        tan
+        ⁡
+        (
+        
+          
+            
+              θ
+              2
+            
+          
+        
+        )
+        =
+        
+          
+            
+              
+                1
+                −
+                cos
+                ⁡
+                (
+                θ
+                )
+              
+              
+                sin
+                ⁡
+                (
+                θ
+                )
+              
+            
+          
+        
+      
+    
+    {\textstyle \tan({\tfrac {\theta }{2}})={\tfrac {1-\cos(\theta )}{\sin(\theta )}}}
+  .
+The phase of 
+  
+    
+      
+        a
+      
+    
+    {\textstyle a}
+   relative to 
+  
+    
+      
+        b
+      
+    
+    {\textstyle b}
+   should be 
+  
+    
+      
+        −
+        ϕ
+      
+    
+    {\textstyle -\phi }
+  .
+Choosing 
+  
+    
+      
+        a
+      
+    
+    {\textstyle a}
+   to be real, the eigenvector for the eigenvalue 
+  
+    
+      
+        
+          E
+          
+            +
+          
+        
+      
+    
+    {\displaystyle E_{+}}
+   is given bySimilarly, the eigenvector for eigenenergy 
+  
+    
+      
+        
+          E
+          
+            −
+          
+        
+      
+    
+    {\textstyle E_{-}}
+   isFrom these two equations, we can writeSuppose the system starts in state 
+  
+    
+      
+        
+          |
+        
+        0
+        ⟩
+      
+    
+    {\displaystyle |0\rangle }
+   at time 
+  
+    
+      
+        t
+        =
+        0
+      
+    
+    {\textstyle t=0}
+  ; that is,For a time-independent Hamiltonian, after time t, the state evolves asIf the system is in one of the eigenstates 
+  
+    
+      
+        
+          |
+        
+        
+          E
+          
+            +
+          
+        
+        ⟩
+      
+    
+    {\displaystyle |E_{+}\rangle }
+   or 
+  
+    
+      
+        
+          |
+        
+        
+          E
+          
+            −
+          
+        
+        ⟩
+      
+    
+    {\displaystyle |E_{-}\rangle }
+  , it will remain the same state. However, for a time-dependent Hamiltonian and a general initial state as shown above, the time evolution is non trivial.  The resulting formula for the Rabi oscillation is valid because the state of the spin may be viewed in a reference frame that rotates along with the field.The probability amplitude of finding the system at time t in the state 
+  
+    
+      
+        
+          |
+        
+        1
+        ⟩
+      
+    
+    {\displaystyle |1\rangle }
+   is given by 
+  
+    
+      
+        
+          ⟨
+          
+             
+            1
+            
+              |
+            
+            ψ
+            (
+            t
+            )
+          
+          ⟩
+        
+        =
+        
+          e
+          
+            i
+            ϕ
+          
+        
+        sin
+        ⁡
+        
+          (
+          
+            
+              
+                θ
+                2
+              
+            
+          
+          )
+        
+        cos
+        ⁡
+        
+          (
+          
+            
+              
+                θ
+                2
+              
+            
+          
+          )
+        
+        
+          (
+          
+            
+              e
+              
+                
+                  
+                    −
+                    i
+                    
+                      E
+                      
+                        +
+                      
+                    
+                    t
+                  
+                  ℏ
+                
+              
+            
+            −
+            
+              e
+              
+                
+                  
+                    −
+                    i
+                    
+                      E
+                      
+                        −
+                      
+                    
+                    t
+                  
+                  ℏ
+                
+              
+            
+          
+          )
+        
+      
+    
+    {\textstyle \left\langle \ 1|\psi (t)\right\rangle =e^{i\phi }\sin \left({\tfrac {\theta }{2}}\right)\cos \left({\tfrac {\theta }{2}}\right)\left(e^{\frac {-iE_{+}t}{\hbar }}-e^{\frac {-iE_{-}t}{\hbar }}\right)}
+  .
+Now the probability that a system in the state 
+  
+    
+      
+        
+          |
+        
+        ψ
+        (
+        t
+        )
+        ⟩
+      
+    
+    {\displaystyle |\psi (t)\rangle }
+   will be found to be in the state 
+  
+    
+      
+        
+          |
+        
+        1
+        ⟩
+      
+    
+    {\textstyle |1\rangle }
+   is given byThis can be simplified to 
+
+This shows that there is a finite probability of finding the system in state 
+  
+    
+      
+        
+          |
+        
+        1
+        ⟩
+      
+    
+    {\displaystyle |1\rangle }
+   when the system is originally in the state 
+  
+    
+      
+        
+          |
+        
+        0
+        ⟩
+      
+    
+    {\displaystyle |0\rangle }
+  . The probability is oscillatory with angular frequency 
+  
+    
+      
+        ω
+        =
+        
+          
+            
+              
+                E
+                
+                  +
+                
+              
+              −
+              
+                E
+                
+                  −
+                
+              
+            
+            
+              2
+              ℏ
+            
+          
+        
+        =
+        
+          
+            
+              
+                
+                  Δ
+                
+                
+                  2
+                
+              
+              +
+              
+                
+                  
+                    |
+                    W
+                    |
+                  
+                
+                
+                  2
+                
+              
+            
+            ℏ
+          
+        
+      
+    
+    {\displaystyle \omega ={\frac {E_{+}-E_{-}}{2\hbar }}={\frac {\sqrt {{\Delta }^{2}+{\left\vert W\right\vert }^{2}}}{\hbar }}}
+  , which is simply unique Bohr frequency of the system and also called Rabi frequency. The formula (1) is known as Rabi formula. Now after time t the probability that the system in state 
+  
+    
+      
+        
+          |
+        
+        0
+        ⟩
+      
+    
+    {\displaystyle |0\rangle }
+   is given by 
+  
+    
+      
+        
+          
+            
+              |
+            
+            ⟨
+             
+            0
+            
+              |
+            
+            ψ
+            (
+            t
+            )
+            ⟩
+            
+              |
+            
+          
+          
+            2
+          
+        
+        =
+        1
+        −
+        
+          sin
+          
+            2
+          
+        
+        ⁡
+        (
+        θ
+        )
+        
+          sin
+          
+            2
+          
+        
+        ⁡
+        
+          (
+          
+            
+              
+                (
+                
+                  E
+                  
+                    +
+                  
+                
+                −
+                
+                  E
+                  
+                    −
+                  
+                
+                )
+                t
+              
+              
+                2
+                ℏ
+              
+            
+          
+          )
+        
+      
+    
+    {\displaystyle {|\langle \ 0|\psi (t)\rangle |}^{2}=1-\sin ^{2}(\theta )\sin ^{2}\left({\frac {(E_{+}-E_{-})t}{2\hbar }}\right)}
+  , which is also oscillatory.
+These types of oscillations of two-level systems are called Rabi oscillations, which arise in many problems such as Neutrino oscillation, the ionized Hydrogen molecule, Quantum computing, Ammonia maser, etc.
+
+In quantum computing
+Any two-state quantum system can be used to model a qubit.  Consider a spin-
+  
+    
+      
+        
+          
+            
+              1
+              2
+            
+          
+        
+      
+    
+    {\displaystyle {\tfrac {1}{2}}}
+   system with magnetic moment 
+  
+    
+      
+        
+          μ
+        
+      
+    
+    {\displaystyle {\boldsymbol {\mu }}}
+   placed in a classical magnetic field 
+  
+    
+      
+        
+          B
+        
+        =
+        
+          B
+          
+            0
+          
+        
+         
+        
+          
+            
+              z
+              ^
+            
+          
+        
+        +
+        
+          B
+          
+            1
+          
+        
+        
+          (
+          
+            cos
+            ⁡
+            
+              (
+              ω
+              t
+              )
+            
+             
+            
+              
+                
+                  x
+                  ^
+                
+              
+            
+            −
+            sin
+            ⁡
+            
+              (
+              ω
+              t
+              )
+            
+             
+            
+              
+                
+                  y
+                  ^
+                
+              
+            
+          
+          )
+        
+      
+    
+    {\displaystyle {\boldsymbol {B}}=B_{0}\ {\hat {z}}+B_{1}\left(\cos {(\omega t)}\ {\hat {x}}-\sin {(\omega t)}\ {\hat {y}}\right)}
+  .  Let 
+  
+    
+      
+        γ
+      
+    
+    {\displaystyle \gamma }
+   be the gyromagnetic ratio for the system. The magnetic moment is thus 
+  
+    
+      
+        
+          μ
+        
+        =
+        
+          
+            ℏ
+            2
+          
+        
+        γ
+        
+          σ
+        
+      
+    
+    {\displaystyle {\boldsymbol {\mu }}={\frac {\hbar }{2}}\gamma {\boldsymbol {\sigma }}}
+  .  The Hamiltonian of this system is then given by 
+  
+    
+      
+        
+          H
+        
+        =
+        −
+        
+          μ
+        
+        ⋅
+        
+          B
+        
+        =
+        −
+        
+          
+            ℏ
+            2
+          
+        
+        
+          ω
+          
+            0
+          
+        
+        
+          σ
+          
+            z
+          
+        
+        −
+        
+          
+            ℏ
+            2
+          
+        
+        
+          ω
+          
+            1
+          
+        
+        (
+        
+          σ
+          
+            x
+          
+        
+        cos
+        ⁡
+        ω
+        t
+        −
+        
+          σ
+          
+            y
+          
+        
+        sin
+        ⁡
+        ω
+        t
+        )
+      
+    
+    {\displaystyle \mathbf {H} =-{\boldsymbol {\mu }}\cdot \mathbf {B} =-{\frac {\hbar }{2}}\omega _{0}\sigma _{z}-{\frac {\hbar }{2}}\omega _{1}(\sigma _{x}\cos \omega t-\sigma _{y}\sin \omega t)}
+   where 
+  
+    
+      
+        
+          ω
+          
+            0
+          
+        
+        =
+        γ
+        
+          B
+          
+            0
+          
+        
+      
+    
+    {\displaystyle \omega _{0}=\gamma B_{0}}
+   and 
+  
+    
+      
+        
+          ω
+          
+            1
+          
+        
+        =
+        γ
+        
+          B
+          
+            1
+          
+        
+      
+    
+    {\displaystyle \omega _{1}=\gamma B_{1}}
+  .  One can find the eigenvalues and eigenvectors of this Hamiltonian by the above-mentioned procedure.  Now, let the qubit be in state 
+  
+    
+      
+        
+          |
+        
+        0
+        ⟩
+      
+    
+    {\displaystyle |0\rangle }
+   at time 
+  
+    
+      
+        t
+        =
+        0
+      
+    
+    {\displaystyle t=0}
+  .  Then, at time 
+  
+    
+      
+        t
+      
+    
+    {\displaystyle t}
+  , the probability of it being found in state 
+  
+    
+      
+        
+          |
+        
+        1
+        ⟩
+      
+    
+    {\displaystyle |1\rangle }
+   is given by  
+  
+    
+      
+        
+          P
+          
+            0
+            →
+            1
+          
+        
+        (
+        t
+        )
+        =
+        
+          
+            (
+            
+              
+                
+                  ω
+                  
+                    1
+                  
+                
+                Ω
+              
+            
+            )
+          
+          
+            2
+          
+        
+        
+          sin
+          
+            2
+          
+        
+        ⁡
+        
+          (
+          
+            
+              
+                Ω
+                t
+              
+              2
+            
+          
+          )
+        
+      
+    
+    {\displaystyle P_{0\to 1}(t)=\left({\frac {\omega _{1}}{\Omega }}\right)^{2}\sin ^{2}\left({\frac {\Omega t}{2}}\right)}
+   where 
+  
+    
+      
+        Ω
+        =
+        
+          
+            (
+            ω
+            −
+            
+              ω
+              
+                0
+              
+            
+            
+              )
+              
+                2
+              
+            
+            +
+            
+              ω
+              
+                1
+              
+              
+                2
+              
+            
+          
+        
+      
+    
+    {\displaystyle \Omega ={\sqrt {(\omega -\omega _{0})^{2}+\omega _{1}^{2}}}}
+  .  This phenomenon is called Rabi oscillation.  Thus, the qubit oscillates between the 
+  
+    
+      
+        
+          |
+        
+        0
+        ⟩
+      
+    
+    {\displaystyle |0\rangle }
+   and 
+  
+    
+      
+        
+          |
+        
+        1
+        ⟩
+      
+    
+    {\displaystyle |1\rangle }
+   states. The maximum amplitude for oscillation is achieved at 
+  
+    
+      
+        ω
+        =
+        
+          ω
+          
+            0
+          
+        
+      
+    
+    {\displaystyle \omega =\omega _{0}}
+  , which is the condition for resonance. At resonance, the transition probability is given by 
+  
+    
+      
+        
+          P
+          
+            0
+            →
+            1
+          
+        
+        (
+        t
+        )
+        =
+        
+          sin
+          
+            2
+          
+        
+        ⁡
+        
+          (
+          
+            
+              
+                
+                  ω
+                  
+                    1
+                  
+                
+                t
+              
+              2
+            
+          
+          )
+        
+      
+    
+    {\displaystyle P_{0\to 1}(t)=\sin ^{2}\left({\frac {\omega _{1}t}{2}}\right)}
+  . To go from state 
+  
+    
+      
+        
+          |
+        
+        0
+        ⟩
+      
+    
+    {\displaystyle |0\rangle }
+   to state 
+  
+    
+      
+        
+          |
+        
+        1
+        ⟩
+      
+    
+    {\displaystyle |1\rangle }
+   it is sufficient to adjust the time 
+  
+    
+      
+        t
+      
+    
+    {\displaystyle t}
+   during which the rotating field acts such that 
+  
+    
+      
+        
+          
+            
+              
+                ω
+                
+                  1
+                
+              
+              t
+            
+            2
+          
+        
+        =
+        
+          
+            π
+            2
+          
+        
+      
+    
+    {\displaystyle {\frac {\omega _{1}t}{2}}={\frac {\pi }{2}}}
+   or 
+  
+    
+      
+        t
+        =
+        
+          
+            π
+            
+              ω
+              
+                1
+              
+            
+          
+        
+      
+    
+    {\displaystyle t={\frac {\pi }{\omega _{1}}}}
+  . This is called a 
+  
+    
+      
+        π
+      
+    
+    {\displaystyle \pi }
+   pulse. If a time intermediate between 0 and 
+  
+    
+      
+        
+          
+            π
+            
+              ω
+              
+                1
+              
+            
+          
+        
+      
+    
+    {\displaystyle {\frac {\pi }{\omega _{1}}}}
+   is chosen, we obtain a superposition of 
+  
+    
+      
+        
+          |
+        
+        0
+        ⟩
+      
+    
+    {\displaystyle |0\rangle }
+   and 
+  
+    
+      
+        
+          |
+        
+        1
+        ⟩
+      
+    
+    {\displaystyle |1\rangle }
+  . In particular for 
+  
+    
+      
+        t
+        =
+        
+          
+            π
+            
+              2
+              
+                ω
+                
+                  1
+                
+              
+            
+          
+        
+      
+    
+    {\displaystyle t={\frac {\pi }{2\omega _{1}}}}
+  , we have a 
+  
+    
+      
+        
+          
+            π
+            2
+          
+        
+      
+    
+    {\displaystyle {\frac {\pi }{2}}}
+   pulse, which acts as: 
+  
+    
+      
+        
+          |
+        
+        0
+        ⟩
+        →
+        
+          
+            
+              
+                |
+              
+              0
+              ⟩
+              +
+              i
+              
+                |
+              
+              1
+              ⟩
+            
+            
+              2
+            
+          
+        
+      
+    
+    {\displaystyle |0\rangle \to {\frac {|0\rangle +i|1\rangle }{\sqrt {2}}}}
+  . This operation has crucial importance in quantum computing. The equations are essentially identical in the case of a two level atom in the field of a laser when the generally well satisfied rotating wave approximation is made. Then 
+  
+    
+      
+        ℏ
+        
+          ω
+          
+            0
+          
+        
+      
+    
+    {\displaystyle \hbar \omega _{0}}
+   is the energy difference between the two atomic levels, 
+  
+    
+      
+        ω
+      
+    
+    {\displaystyle \omega }
+   is the frequency of laser wave and Rabi frequency 
+  
+    
+      
+        
+          ω
+          
+            1
+          
+        
+      
+    
+    {\displaystyle \omega _{1}}
+   is proportional to the product of the transition electric dipole moment of atom 
+  
+    
+      
+        
+          
+            
+              d
+              →
+            
+          
+        
+      
+    
+    {\displaystyle {\vec {d}}}
+   and electric field 
+  
+    
+      
+        
+          
+            
+              E
+              →
+            
+          
+        
+      
+    
+    {\displaystyle {\vec {E}}}
+   of the laser wave that is 
+  
+    
+      
+        
+          ω
+          
+            1
+          
+        
+        ∝
+        ℏ
+         
+        
+          
+            
+              d
+              →
+            
+          
+        
+        ⋅
+        
+          
+            
+              E
+              →
+            
+          
+        
+      
+    
+    {\displaystyle \omega _{1}\propto \hbar \ {\vec {d}}\cdot {\vec {E}}}
+  . In summary, Rabi oscillations are the basic process used to manipulate qubits. These oscillations are obtained by exposing qubits to periodic electric or magnetic fields during suitably adjusted time intervals.
+
+See also
+Atomic coherence
+Bloch sphere
+Laser pumping
+Optical pumping
+Rabi problem
+Vacuum Rabi oscillation
+Neutral particle oscillation
+Passage 2:
+Steven Kahn
+Steven Michael Kahn (born 1954) is an American physicist currently the Cassius Lamb Kirk Professor at Stanford University and formerly the I. I. Rabi Professor of Physics at Columbia University and is an Elected Fellow of the American Academy of Arts and Sciences and American Physical Society.Kahn graduated summa cum laude from Columbia College in 1975, and received a PhD in physics from University of California, Berkeley in 1980. He was a post-doctoral fellow at the Center for Astrophysics | Harvard & Smithsonian from 1980 to 1982.
+
+Honors
+Asteroid 179413 Stevekahn, discovered by astronomers with the Sloan Digital Sky Survey in 2001, was named in his honor. The official naming citation was published by IAU's WGSBN on 7 February 2022.
+Passage 3:
+Rabbi Jonathan
+Rabbi Jonathan (Hebrew: רבי יונתן, Rabi Yonatan) was a tanna of the 2nd century and schoolfellow of R. Josiah, apart from whom he is rarely quoted.
+Jonathan is generally so cited within further designation; but there is ample reason for identifying him with the less frequently occurring Jonathan (or Nathan) b. Joseph (or "Jose").
+
+Biography
+In consequence of the Hadrianic religious persecutions he determined to emigrate from Israel, and with several other scholars started on a journey to foreign parts. But his patriotism and innate love for the Holy Land would not permit him to remain abroad.Jonathan and Josiah were educated together at the academy of Ishmael ben Elisha, whose dialectic system, as opposed to that of Rabbi Akiva, they acquired. It is even reported that Jonathan all but converted Ben Azzai, a "fellow student" of Akiva, to Ishmael's system, and made him deeply regret his failure to study it more closely. Ben 'Azzai then exclaimed, "Woe is me that I have not waited on Ishmael". Nevertheless, in later years, probably after Ishmael's death, both Jonathan and Josiah adopted some of Akiva's principles. Of Jonathan it is expressly stated that "he followed the system of his teacher Akiva".
+
+Teachings
+Together, Jonathan and Josiah devoted their analytical minds to midrash halachah, interpreting laws as they understood them from the corresponding Scriptural texts, but not suggesting them. Only one halakhah unconnected with a Scriptural text bears their names. Their argumentations are mostly embodied in the Mekhilta (about thirty) and in the Sifre to Numbers (over forty). Neither Jonathan nor Josiah appears in Rebbi's compilation of the Mishnah, with the exception of a single teaching, in the name of Jonathan Of other ancient compilations, the Tosefta cites these scholars once, while the Sifra mentions them twice by their names; once "Jonathan ben Joseph" occurs; and some of R. Josiah's midrashim are cited, but anonymously.Contrary to the astrological views of his times, Jonathan taught the Scriptural idea of natural phenomena; quoting Jeremiah 10:2, he added: "Eclipses may frighten Gentiles, but they have no significance for Jews". To the question as to the permissibility of profaning the Sabbath to save human life he answered, "The Law says 'The children of Israel shall keep the Sabbath, to observe the Sabbath throughout their generations'; but one may profane one Sabbath in order to preserve a man that he may observe many Sabbaths". According to him, an am ha'aretz is one who has children and does not train them in the knowledge of the Law. Jonathan contradicted the general opinion of earlier and contemporaneous rabbis that a ben sorer umoreh ("rebellious son"; Deuteronomy 21:18-21) never was and never will be executed, and that the ir nidachat never did and never will occur; he declared that he himself had sat on the grave of an executed rebellious son and had seen a ruined ir nidachat.
+
+Quotes
+Jonathan was the author of many aphorisms, among them:
+
+He that observes the Torah in poverty shall in the end observe it in wealth; and he that neglects the Torah in wealth shall in the end neglect it in poverty.The angry man is controlled by many and variegated manifestations of hell.Consoling the mourner, visiting the sick, and practical beneficence bring heavenly grace into the world.
+Passage 4:
+Albert Potter Wills
+Albert Potter Wills (1873–1937) was an American physicist who researched magnetic materials and was the PhD advisor of the Nobel Prize winner Isidor Isaac Rabi.
+During his career he investigated magnetic susceptibilities, magnetic shielding, magnetostriction, conduction of electricity through mercury vapor, and hydrodynamics. He also wrote a textbook on vector analysis.
+Wills received his PhD from Clark University in 1897 under Arthur Gordon Webster with a thesis entitled: On the susceptibility of diamagnetic and weakly magnetic substances.
+During 1898–1899 Wills worked at the University of Göttingen and the University of Berlin. During 1899–1902 he was at Bryn Mawr College and 1902–1903 at the Cooper Hewitt Laboratory. His final appointment, 1903–1937, was at Columbia University.
+In 1909 at Columbia University, Max Planck gave eight lectures in German. Wills translated the lectures into English, and in 1915 Columbia University Press published his translation.
+Passage 5:
+Isidor Isaac Rabi
+Isidor Isaac Rabi (; born Israel Isaac Rabi, July 29, 1898 – January 11, 1988) was an American physicist who won the Nobel Prize in Physics in 1944 for his discovery of nuclear magnetic resonance, which is used in magnetic resonance imaging. He was also one of the first scientists in the United States to work on the cavity magnetron, which is used in microwave radar and microwave ovens.
+Born into a traditional Polish-Jewish family in Rymanów, Galicia, Rabi came to the United States as an infant and was raised in New York's Lower East Side. He entered Cornell University as an electrical engineering student in 1916, but soon switched to chemistry. Later, he became interested in physics. He continued his studies at Columbia University, where he was awarded his doctorate for a thesis on the magnetic susceptibility of certain crystals. In 1927, he headed for Europe, where he met and worked with many of the finest physicists of the time.
+In 1929, Rabi returned to the United States, where Columbia offered him a faculty position. In collaboration with Gregory Breit, he developed the Breit–Rabi equation and predicted that the Stern–Gerlach experiment could be modified to confirm the properties of the atomic nucleus. His techniques for using nuclear magnetic resonance to discern the magnetic moment and nuclear spin of atoms earned him the Nobel Prize in Physics in 1944. Nuclear magnetic resonance became an important tool for nuclear physics and chemistry, and the subsequent development of magnetic resonance imaging from it has also made it important to the field of medicine.
+During World War II he worked on radar at the Massachusetts Institute of Technology (MIT) Radiation Laboratory (RadLab) and on the Manhattan Project. After the war, he served on the General Advisory Committee (GAC) of the Atomic Energy Commission, and was chairman from 1952 to 1956. He also served on the Science Advisory Committees (SACs) of the Office of Defense Mobilization and the Army's Ballistic Research Laboratory, and was Science Advisor to President Dwight D. Eisenhower. He was involved with the establishment of the Brookhaven National Laboratory in 1946, and later, as United States delegate to UNESCO, with the creation  of CERN in 1952. When Columbia created the rank of University Professor in 1964, Rabi was the first to receive that position. A special chair was named after him in 1985. He retired from teaching in 1967, but remained active in the department and held the title of University Professor Emeritus and Special Lecturer until his death.
+
+Early years
+Israel Isaac Rabi was born on July 29, 1898, into a Polish-Jewish Orthodox family in Rymanów, Galicia, in what was then part of Austria-Hungary but is now Poland. Soon after he was born, his father, David Rabi, emigrated to the United States. The younger Rabi and his mother, Sheindel, joined David there a few months later, and the family moved into a two-room apartment on the Lower East Side of Manhattan. At home the family spoke Yiddish. When Rabi was enrolled in school, Sheindel said his name was Izzy, and a school official, thinking it was short for Isidor, put that down as his name. Henceforth, that became his official name. Later, in response to anti-Semitism, he started writing his name as Isidor Isaac Rabi, and was known professionally as I.I. Rabi. To most of his friends and family, including his sister Gertrude, who was born in 1903, he was known simply as "Rabi", which was pronounced "Robby". In 1907, the family moved to Brownsville, Brooklyn, where they ran a grocery store.As a boy, Rabi was interested in science. He read science books borrowed from the public library and built his own radio set. His first scientific paper, on the design of a radio condenser, was published in Modern Electrics when he was in elementary school. After reading about Copernican heliocentrism, he became an atheist. "It's all very simple", he told his parents, adding, "Who needs God?" As a compromise with his parents, for his Bar Mitzvah, which was held at home, he gave a speech in Yiddish about how an electric light works. He attended the Manual Training High School in Brooklyn, from which he graduated in 1916. Later that year, he entered Cornell University as an electrical engineering student, but soon switched to chemistry. After the American entry into World War I in 1917, he joined the Student Army Training Corps at Cornell. For his senior thesis, he investigated the oxidation states of manganese. He was awarded his Bachelor of Science degree in June 1919, but since at the time Jews were largely excluded from employment in the chemical industry and academia, he did not receive any job offers. He worked briefly at the Lederle Laboratories, and then as a bookkeeper.
+
+Education
+In 1922 Rabi returned to Cornell as a graduate chemistry student, and began studying physics. In 1923 he met, and began courting, Helen Newmark, a summer-semester student at Hunter College. To be near her when she returned home, he continued his studies at Columbia University, where his supervisor was Albert Wills. In June 1924 Rabi landed a job as a part-time tutor at the City College of New York. Wills, whose specialty was magnetism, suggested that Rabi write his doctoral thesis on the magnetic susceptibility of sodium vapor. The topic did not appeal to Rabi, but after William Lawrence Bragg gave a seminar at Columbia about the electric susceptibility of certain crystals called Tutton's salts, Rabi decided to research their magnetic susceptibility, and Wills agreed to be his supervisor.Measuring the magnetic resonance of crystals first involved growing the crystals, a simple procedure often done by elementary school students. The crystals then had to be prepared by skillfully cutting them into sections with facets that had an orientation different from the internal structure of the crystal, and the response to a magnetic field had to be painstakingly measured. While his crystals were growing, Rabi read James Clerk Maxwell's 1873 A Treatise on Electricity and Magnetism, which inspired an easier method. He lowered a crystal on a glass fiber attached to a torsion balance into a solution whose magnetic susceptibility could be varied between two magnetic poles. When it matched that of the crystal, the magnet could be turned on and off without disturbing the crystal. The new method not only required much less work, it also produced a more accurate result. Rabi sent his thesis, entitled On the Principal Magnetic Susceptibilities of Crystals, to Physical Review on July 16, 1926. He married Helen the next day. The paper attracted little fanfare in academic circles, although it was read by Kariamanickam Srinivasa Krishnan, who used the method in his own investigations of crystals. Rabi concluded that he needed to promote his work as well as publish it.Like many other young physicists, Rabi was closely following momentous events in Europe. He was astounded by the Stern–Gerlach experiment, which convinced him of the validity of quantum mechanics. With Ralph Kronig, Francis Bitter, Mark Zemansky and others, he set out to extend the Schrödinger equation to symmetric top molecules and find the energy states of such a mechanical system. The problem was that none of them could solve the resulting equation, a second-order partial differential equation. Rabi found the answer in a book by the 19th-century mathematician Carl Gustav Jacob Jacobi. The equation had the form of a hypergeometric equation to which Jacobi had found a solution. Kronig and Rabi wrote up their result and sent it to Physical Review, which published it in 1927.
+
+Europe
+In May 1927, Rabi was appointed a Barnard Fellow. This came with a stipend of $1,500 ($25,270 in 2022 dollars) for the period from September 1927 to June 1928. He immediately applied for a year's leave of absence from the City College of New York so he could study in Europe. When this was refused, he resigned. On reaching Zürich, where he hoped to work for Erwin Schrödinger, he met two fellow Americans, Julius Adams Stratton and Linus Pauling. They found that Schrödinger was leaving, as he had been appointed head of the Theoretical Institute at Friedrich Wilhelm University in Berlin. Rabi therefore decided to seek a position with Arnold Sommerfeld at the University of Munich instead. In Munich, he found two more Americans, Howard Percy Robertson and Edward Condon. Sommerfeld accepted Rabi as a postdoctoral student. German physicists Rudolf Peierls and Hans Bethe were also working with Sommerfeld at the time, but the three Americans became especially close.On Wills' advice, Rabi traveled to Leeds for the 97th annual meeting of the British Association for the Advancement of Science, where he heard Werner Heisenberg present a paper on quantum mechanics. Afterwards, Rabi moved to Copenhagen, where he volunteered to work for Niels Bohr. Bohr was on vacation, but Rabi went straight to work on calculating the magnetic susceptibility of molecular hydrogen. After Bohr returned in October, he arranged for Rabi and Yoshio Nishina to continue their work with Wolfgang Pauli at the University of Hamburg.Although he came to Hamburg to work with Pauli, Rabi found Otto Stern working there with two English-speaking postdoctoral fellows, Ronald Fraser and John Bradshaw Taylor. Rabi soon made friends with them, and became interested in their molecular beam experiments, for which Stern would receive the Nobel Prize in Physics in 1943. Their research involved non-uniform magnetic fields, which were difficult to manipulate and hard to measure accurately. Rabi devised a method of using a uniform field instead, with the molecular beam at a glancing angle, so the atoms would be deflected like light through a prism. This would be easier to use, and produce more accurate results. Encouraged by Stern, and greatly assisted by Taylor, Rabi managed to get his idea to work. On Stern's advice, Rabi wrote a letter about his results to Nature, which published it in February 1929, followed by a paper entitled Zur Methode der Ablenkung von Molekularstrahlen ("On the method of deflection of molecular beams") to Zeitschrift für Physik, where it was published in April.By this time the Barnard Fellowship had expired, and Rabi and Helen were living on a $182 per month stipend from the Rockefeller Foundation. They left Hamburg for Leipzig, where he hoped to work with Heisenberg. In Leipzig, he found Robert Oppenheimer, a fellow New Yorker. It would be the start of a long friendship. Heisenberg departed for a tour of the United States in March 1929, so Rabi and Oppenheimer decided to go to the ETH Zurich, where Pauli was now the professor of physics. Rabi's education in physics was enriched by the leaders in the field he met there, which included Paul Dirac, Walter Heitler, Fritz London, Francis Wheeler Loomis, John von Neumann, John Slater, Leó Szilárd and Eugene Wigner.
+
+Molecular Beam Laboratory
+On March 26, 1929, Rabi received an offer of a lectureship from Columbia, with an annual salary of $3,000. The dean of Columbia's physics department, George B. Pegram, was looking for a theoretical physicist to teach statistical mechanics and an advanced course in the new subject of quantum mechanics, and Heisenberg had recommended Rabi. Helen was now pregnant, so Rabi needed a regular job, and this job was in New York. He accepted, and returned to the United States in August on the SS President Roosevelt. Rabi became the only Jewish faculty member at Columbia at the time.
+
+As a teacher, Rabi was underwhelming. Leon Lederman recalled that after a lecture, students would head to the library to try to work out what Rabi had been talking about. Irving Kaplan rated Rabi and Harold Urey as "the worst teachers I ever had". Norman Ramsey considered Rabi's lectures "pretty dreadful", while William Nierenberg felt that he was "simply an awful lecturer". Despite his shortcomings as a lecturer, his influence was great. He inspired many of his students to pursue careers in physics, and some became famous.Rabi's first daughter, Helen Elizabeth, was born in September 1929. A second girl, Margaret Joella, followed in 1934. Between his teaching duties and his family, he had little time for research, and published no papers in his first year at Columbia, but was nonetheless promoted to assistant professor at its conclusion. He became a professor in 1937.In 1931 Rabi returned to particle beam experiments. In collaboration with Gregory Breit, he developed the Breit-Rabi equation, and predicted that the Stern–Gerlach experiment could be modified to confirm the properties of the atomic nucleus. The next step was to do so. With the help of Victor W. Cohen, Rabi built a molecular beam apparatus at Columbia. Their idea was to employ a weak magnetic field instead of a strong one, with which they hoped to detect the nuclear spin of sodium. When the experiment was conducted, four beamlets were found, from which they deduced a nuclear spin of 3⁄2.Rabi's Molecular Beam Laboratory began to attract others, including Sidney Millman, a graduate student who studied lithium for his doctorate. Another was Jerrold Zacharias who, believing that the sodium nucleus would be too difficult to understand, proposed studying the simplest of the elements, hydrogen. Its deuterium isotope had only recently been discovered at Columbia in 1931 by Urey, who received the 1934 Nobel Prize in Chemistry for this work. Urey was able to supply them with both heavy water and gaseous deuterium for their experiments. Despite its simplicity, Stern's group in Hamburg had observed that hydrogen did not behave as predicted. Urey also helped in another way; he gave Rabi half his prize money to fund the Molecular Beam Laboratory. Other scientists whose careers began at the Molecular Beam Laboratory included Norman Ramsey, Julian Schwinger, Jerome Kellogg and Polykarp Kusch. All were men; Rabi did not believe that women could be physicists. He never had a woman as a doctoral or postdoctoral student, and generally opposed women as candidates for faculty positions.At the suggestion of C. J. Gorter, the team attempted to use an oscillating field. This became the basis for the nuclear magnetic resonance method. In 1937, Rabi, Kusch, Millman and Zacharias used it to measure the magnetic moment of several lithium compounds with molecular beams, including lithium chloride, lithium fluoride and dilithium. Applying the method to hydrogen, they found that the moment of a proton was 2.785±0.02 nuclear magnetons, and not 1 as predicted by the then-current theory, while that of a deuteron was 0.855±0.006 nuclear magnetons. This provided more accurate measurements of what Stern's team had found, and Rabi's team had confirmed, in 1934. Since a deuteron is composed of a proton and a neutron with aligned spins, the neutron's magnetic moment could be inferred by subtracting the proton's magnetic moment from the deuteron's. The resulting value was not zero, and had a sign opposite to that of the proton. Based on curious artifacts of these more accurate measurements, Rabi suggested that the deuteron had an electric quadrupole moment. This discovery meant that the physical shape of the deuteron was not symmetric, which provided valuable insight into the nature of the nuclear force binding nucleons. For the creation of the molecular-beam magnetic-resonance detection method, Rabi was awarded the Nobel Prize in Physics in 1944.
+
+World War II
+In September 1940, Rabi became a member of the Scientific Advisory Committee of the U.S. Army's Ballistic Research Laboratory. That month, the British Tizard Mission brought a number of new technologies to the United States, including a cavity magnetron, a high-powered device that generates microwaves using the interaction of a stream of electrons with a magnetic field. This device, which promised to revolutionize radar, demolished any thoughts the Americans had entertained about their technological leadership. Alfred Lee Loomis of the National Defense Research Committee decided to establish a new laboratory at the Massachusetts Institute of Technology (MIT) to develop this radar technology. The name Radiation Laboratory was chosen as both unremarkable and a tribute to the Berkeley Radiation Laboratory. Loomis recruited Lee DuBridge to run it.Loomis and DuBridge recruited physicists for the new laboratory at an Applied Nuclear Physics conference at MIT in October 1940. Among those who volunteered was Rabi. His assignment was to study the magnetron, which was so secret that it had to be kept in a safe. The Radiation Laboratory scientists set their sights on producing a microwave radar set by January 6, 1941, and having a prototype installed in a Douglas A-20 Havoc by March. This was done; the technological obstacles were gradually overcome, and a working US microwave radar set was produced. The magnetron was further developed on both sides of the Atlantic to permit a reduction in wavelength from 150 cm to 10 cm, and then to 3 cm. The laboratory went on to develop air-to-surface radar to detect submarines, the SCR-584 radar for fire control, and LORAN, a long-range radio navigation system. At Rabi's instigation, a branch of the Radiation Laboratory was located at Columbia, with Rabi in charge.In 1942 Oppenheimer attempted to recruit Rabi and Robert Bacher to work at the Los Alamos Laboratory on a new secret project. They convinced Oppenheimer that his plan for a military laboratory would not work, since a scientific effort would need to be a civilian affair. The plan was modified, and the new laboratory would be a civilian one, run by the University of California under contract from the War Department. In the end, Rabi still did not go west, but did agree to serve as a consultant to the Manhattan Project. Rabi attended the Trinity test in July 1945. The scientists working on Trinity set up a betting pool on the yield of the test, with predictions ranging from total dud to 45 kilotons of TNT equivalent (kt). Rabi arrived late and found the only entry left was for 18 kilotons, which he purchased. Wearing welding goggles, he waited for the result with Ramsey and Enrico Fermi. The blast was rated at 18.6 kilotons, and Rabi won the pool.
+
+Later life
+In 1945, Rabi delivered the Richtmyer Memorial Lecture, held by the American Association of Physics Teachers in honor of Floyd K. Richtmyer, wherein he proposed that the magnetic resonance of atoms might be used as the basis of a clock. William L. Laurence wrote it up for The New York Times, under the headline "'Cosmic pendulum' for clock planned". Before long Zacharias and Ramsey had built such atomic clocks. Rabi actively pursued his research into magnetic resonance until about 1960, but he continued to make appearances at conferences and seminars until his death.
+
+Rabi chaired Columbia's physics department from 1945 to 1949, during which time it was home to two Nobel laureates (Rabi and Enrico Fermi) and eleven future laureates, including seven faculty (Polykarp Kusch, Willis Lamb, Maria Goeppert-Mayer, James Rainwater, Norman Ramsey, Charles Townes and Hideki Yukawa), a research scientist (Aage Bohr), a visiting professor (Hans Bethe), a doctoral student (Leon Lederman) and an undergraduate (Leon Cooper). Martin L. Perl, a doctoral student of Rabi's, won the Nobel Prize in 1995. Rabi was the Eugene Higgins professor of physics at Columbia but when Columbia created the rank of University Professor in 1964, Rabi was the first to receive such a chair. This meant that he was free to research or teach whatever he chose. He retired from teaching in 1967 but remained active in the department and held the title of University Professor Emeritus until his death. A special chair was named after him in 1985.A legacy of the Manhattan Project was the network of national laboratories, but none was located on the East Coast. Rabi and Ramsey assembled a group of universities in the New York area to lobby for their own national laboratory. When Zacharias, who was now at MIT, heard about it, he set up a rival group at MIT and Harvard. Rabi had discussions with Major General Leslie R. Groves, Jr., the director of the Manhattan Project, who was willing to go along with a new national laboratory, but only one. Moreover, while the Manhattan Project still had funds, the wartime organization was expected to be phased out when a new authority came into existence. After some bargaining and lobbying by Rabi and others, the two groups came together in January 1946. Eventually nine universities (Columbia, Cornell, Harvard, Johns Hopkins, MIT, Princeton, Pennsylvania, Rochester and Yale) came together, and on January 31, 1947, a contract was signed with the Atomic Energy Commission (AEC), which had replaced the Manhattan Project, that established the Brookhaven National Laboratory.
+
+Rabi suggested to Edoardo Amaldi that Brookhaven might be a model that Europeans could emulate. Rabi saw science as a way of inspiring and uniting a Europe that was still recovering from the war. An opportunity came in 1950 when he was named the United States Delegate to the United Nations Educational, Scientific and Cultural Organization (UNESCO). At a UNESCO meeting at the Palazzo Vecchio in Florence in June 1950, he called for the establishment of regional laboratories. These efforts bore fruit; in 1952, representatives of eleven countries came together to create the Conseil Européen pour la Recherche Nucléaire (CERN). Rabi received a letter from Bohr, Heisenberg, Amaldi and others congratulating him on the success of his efforts. He had the letter framed and hung it on the wall of his home office.
+
+Military matters
+The Atomic Energy Act of 1946 that created the Atomic Energy Commission provided for a nine-man General Advisory Committee (GAC) to advise the Commission on scientific and technical matters. Rabi was one of those appointed in December 1946. The GAC was enormously influential throughout the late 1940s, but in 1950 the GAC unanimously opposed the development of the hydrogen bomb. Rabi went further than most of the other members, and joined Fermi in opposing the hydrogen bomb on moral as well as technical grounds. However, President Harry S. Truman overrode the GAC's advice, and ordered development to proceed. Rabi later said:
+
+I never forgave Truman for buckling under the pressure. He simply did not understand what it was about. As a matter of fact, after he stopped being President he still didn't believe that the Russians had a bomb in 1949. He said so. So for him to have alerted the world that we were going to make a hydrogen bomb at a time when we didn't even know how to make one was one of the worst things he could have done. It shows the dangers of this sort of thing.
+Oppenheimer was not reappointed to the GAC when his term expired in 1952, and Rabi succeeded him as chairman, serving until 1956. Rabi later testified on Oppenheimer's behalf at the Atomic Energy Commission's controversial security hearing in 1954 that led to Oppenheimer being stripped of his security clearance. Many witnesses supported Oppenheimer, but none more forcefully than Rabi:
+
+So it didn't seem to me the sort of thing that called for this kind of proceeding... against a man who has accomplished what Dr. Oppenheimer has accomplished. There is a real positive record... We have an A-bomb and a whole series of it, and we have a whole series of super bombs, and what more do you want, mermaids?
+Rabi was appointed a member of the Science Advisory Committee (SAC) of the Office of Defense Mobilization in 1952, serving as its chairman from 1956 to 1957. This coincided with the Sputnik crisis. President Dwight Eisenhower met with the SAC on October 15, 1957, to seek advice on possible US responses to the Soviet satellite success. Rabi, who knew Eisenhower from the latter's time as president of Columbia, was the first to speak, and put forward a series of proposals, one of which was to strengthen the committee so it could provide the President with timely advice. This was done, and the SAC became the President's Science Advisory Committee a few weeks later. He also became Eisenhower's Science Advisor. In 1956 Rabi attended the Project Nobska anti-submarine warfare conference, where discussion ranged from oceanography to nuclear weapons. He served as the US Representative to the NATO Science Committee at the time that the term "software engineering" was coined. While serving in that capacity, he bemoaned the fact that many large software projects were delayed. This prompted discussions that led to the formation of a study group that organized the first conference on software engineering.
+
+Honors
+In the course of his life, Rabi received many honors in addition to the Nobel Prize. These included the Elliott Cresson Medal from the Franklin Institute in 1942, the Medal for Merit and the King's Medal for Service in the Cause of Freedom from Great Britain in 1948, the officer in the French Legion of Honour in 1956, Columbia University's Barnard Medal for Meritorious Service to Science in 1960, the Niels Bohr International Gold Medal and the Atoms for Peace Award in 1967, the Oersted Medal from the American Association of Physics Teachers in 1982, the Four Freedoms Award from the Franklin and Eleanor Roosevelt Institute and the Public Welfare Medal from the National Academy of Sciences in 1985, the Golden Plate Award of the American Academy of Achievement and the Vannevar Bush Award from the National Science Foundation in 1986. He was a Fellow (elected 1931) of the American Physical Society, serving as its president in 1950, and a member of the National Academy of Sciences, the American Philosophical Society, and the American Academy of Arts and Sciences. He was internationally recognized with membership in the Japan Academy and the Brazilian Academy of Sciences, and in 1959 was appointed a member of the Board of Governors of the Weizmann Institute of Science in Israel. The most valuable of Columbia University's undergraduate research scholarships, designed to motivate and support promising young scientists, is named after him, so is the street, Route Rabi at CERN, on the Prévessin site in France.
+
+Death
+Rabi died at his home on Riverside Drive in Manhattan from cancer on January 11, 1988. His wife, Helen, survived him and died at the age of 102 on June 18, 2005. In his last days, he was reminded of his greatest achievement when his physicians examined him using magnetic resonance imaging, a technology that had been developed from his ground-breaking research on magnetic resonance. The machine happened to have a reflective inner surface, and he remarked: "I saw myself in that machine... I never thought my work would come to this."
+
+Books
+Rabi, Isidor Isaac (1960). My Life and Times as a Physicist. Claremont, California: Claremont College. OCLC 1071412.
+Rabi, Isidor Isaac (1970). Science: The Center of Culture. New York: World Publishing Co. OCLC 74630.
+Rabi, Isidor Isaac; Serber, Robert; Weisskopf, Victor F.; Pais, Abraham; Seaborg, Glenn T. (1969). Oppenheimer: The Story of One of the Most Remarkable Personalities of the 20th Century. Scribner's. OCLC 223176672.
+
+Notes
+See also
+List of Jewish Nobel laureates

@@ -1,0 +1,5 @@
+chunking_data/*
+generations/*
+models/*
+test_logs/*
+update_my_env.sh

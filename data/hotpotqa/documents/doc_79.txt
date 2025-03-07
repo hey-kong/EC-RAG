@@ -1,0 +1,169 @@
+Passage 1:
+SHV connector
+The SHV (safe high voltage) connector is a type of RF connector used for terminating a coaxial cable. 
+The connector uses a bayonet mount similar to those of the BNC and MHV connectors, but is easily distinguished due to its very thick and protruding insulator. This insulation geometry makes SHV connectors safer for handling high voltage than MHV connectors, by preventing accidental contact with the live conductor in an unmated connector or plug. The connector is also designed such that when it is being disconnected from a plug, the high voltage contact is broken before the ground contact, to prevent accidental shocks. The connector is also designed to prevent users from forcing a high voltage connector into a low voltage plug or vice versa (as can happen with MHV and BNC connectors), by reversing the gender compared to BNC.
+Details of the connector comprising dimensions of the mating parts, voltage rating, minimum insulation requirements and more are specified by the IEC document 60498.SHV connectors are used in laboratory settings for voltages and currents beyond the capacity of BNC and MHV connectors. Standard SHV connectors are rated for 5000 volts DC and 5 amperes, although higher-voltage versions (to 20 kV) are also available.
+Passage 2:
+U-229
+The U-229 is a cable connector currently used by the U.S. military for audio connections to field radios, typically for connecting a handset. There are five-pin and six-pin versions, the sixth pin version using the extra pin to power accessories. This type of connector is also used by the National Security Agency to load cryptographic keys into encryption equipment from a fill device.
+It is specified by the detail specification MIL-DTL-55116D .
+
+External links
+U-229 pin-outs and information
+MIL-DTL-55116 military specification
+Compilation of military radio related standards
+Passage 3:
+Multicable
+In stage lighting, a multicable (otherwise known as multi-core cable or mult) is a type of heavy-duty electrical cable used in theaters to power lights. The basic construction involves a bundle of individual conductors surrounded by a single outer jacket. Whereas single cables only have three conductors, multicable has ten or more. They are configured to run in six or eight-circuit varieties. Typically, both ends of multicable have a specific connector known as a Socapex Connector. Technicians then combine the cables with break-outs and break-ins, which essentially are an octopus-like adapter with one Socapex end and six to eight Edison, twist-lok, or stage pin style connectors.
+
+Use
+Multicable is used when technicians need to mount lights where no permanent circuiting options exist. Typically, mounting pipes designed for lighting use have enclosed raceways with permanent power outlets, running to a remote dimmer unit somewhere in the theater. When such options are not available, technicians have to run cable to these positions instead. Originally, it had to be done with cable bundles, running single extension cords long distances and tying or taping them into groups, or just running cable in a disorganized mess.
+Instead, several circuits can be run in a single cable, using multicables. These are used most often in theaters without on-stage raceways or in systems with portable dimming racks, which are not wired into the building. Multicable is a quick, organized way of getting a large amount of circuits away from the dimmers to the lights.
+
+Advantages
+Viewed in comparison to six individual extension cords, multicable is a neater and more organized alternative. There are fewer connectors, and the multis are labeled one to six on their adapters so technicians always know which circuit they're working on.
+
+Disadvantages
+Running multicable from source to light is particularly strenuous. Compared to running six cables one by one, multicable is much heavier. Also, because of the large amount of copper in the cable, they have very bad memory- an effect where cables will try to curl and twist in attempt to return to its original coiled state. This makes packing multicable back into coils also tricky.
+Passage 4:
+Camlock (electrical)
+A camlock or cam-lock is an interchangeable electrical connector, often used in temporary electrical power production and distribution, predominantly in North America. Originally a trade name as Cam-Lok, it is now a generic term.  Each camlock connector carries a single phase, pole, or conductor; multiple camlock connectors will be used to make a complete electrical supply or circuit.
+The most common form is the 16 series, rated at 400 amperes with 105 °C terminations. Also in common use is the 15 series (mini-cam), rated at 150 amperes. A larger version is made denoted as the 17 series with ratings up to 760 A. A ball nose version and a longer nose standard version exist—the latter is the most common. The early version original connector was hot-vulcanized to the cable body; later versions use dimensional pressure to exclude foreign material from the connector pin area.  The tail of the connector insulator body is trimmable to fit the cable outer diameter.
+Another version is the Posi-Lok, which features keyed, shrouded connectors, and panels with sequencing interlocks.Camlock is generally used where temporary connections of 3-phase and/or more than 50 A are needed.  Applications include connecting large temporary generators or load banks to distribution panels or building disconnects.  Common scenarios include testing, emergencies, temporary special events, and traveling stage shows with large lighting and sound equipment.  They are usually found only in professional environments, where connections are performed by qualified personnel.
+
+Color codes
+Standards and industry conventions for phase and voltage exist, but may vary in practice, particularly when international companies and traveling productions are involved.
+
+North America
+The National Electric Code (NEC) only specifies colors for ground and neutral: Green for the equipment grounding (safety) conductor (NEC Article 250.119), and white or grey for the neutral (grounded) conductor (NEC Article 200.6).  These colors may not be used for any other purpose, nor may their purpose use a different color.  No other colors are specified by the NEC for general power distribution.
+Nonetheless, the following conventions exist:
+
+United Kingdom
+The UK system has two established camlock colour codes.  The old and new colour codes are not compatible:  Black was originally used to indicate neutral, and is now a phase colour; blue was used to denote a phase, and is now used to denote neutral.  As the use of camlocks in the UK has been declining, it is very unlikely to find any matching the new colour codes.
+
+Gallery
+Camlock power distribution
+Passage 5:
+Cable gland
+A cable gland (more often known in the U.S. as a cord grip, cable strain relief, cable connector or cable fitting) is a device designed to attach and secure the end of an electrical cable to the equipment. A cable gland provides strain-relief and connects by a means suitable for the type and description of cable for which it is designed—including provision for making electrical connection to the armour or braid and lead or aluminium sheath of the cable, if any. Cable glands may also be used for sealing cables passing through bulkheads or gland plates. Cable glands are mostly used for cables with diameters between 1 mm and 75 mm.Cable glands are commonly defined as mechanical cable entry devices.  They are used throughout a number of industries in conjunction with cable and wiring used in electrical instrumentation and automation systems. Cable glands may be used on all types of electrical power, control, instrumentation, data and telecommunications cables.  They are used as a sealing and termination device to ensure that the characteristics of the enclosure which the cable enters can be maintained adequately. Cable glands are made of various plastics, and steel, brass or aluminum for industrial usage. Glands intended to resist dripping water or water pressure will include synthetic rubber or other types of elastomer seals.  Certain types of cable glands may also serve to prevent entry of flammable gas into equipment enclosures, for electrical equipment in hazardous areas. 
+Although cable glands are often called "connectors", a technical distinction can be made in the terminology, which differentiates them from quick-disconnect, conducting electrical connectors. 
+For routing pre-terminated cables (cables with connectors), split cable glands can be used. These cable glands consist of three parts (two gland halves and a split sealing grommet) which are screwed with a hexagonal locknut (like normal cable glands). Thus, pre-assembled cables can be routed without removing the plugs. Split cable glands can reach an ingress protection of up to IP66/IP68 and NEMA 4X.
+Alternatively, split cable entry systems can be used (normally consisting of a hard frame and several sealing grommets) to route a large number of pre-terminated cables through one wall cut-out.
+There are at least three types of thread standards used:
+
+Panzergewinde (PG standard)
+Metric thread
+National Pipe Thread (inch system)
+
+See also
+Electrical connector
+Pipe thread
+Steel conduit thread
+Feedthrough
+Passage 6:
+SR connector
+An SR connector, or CP connector (from Russian: Соединитель Радиочастотный, radio frequency connector) is a type of Russian made RF connector for coaxial cables. Based on the American BNC connector, the SR connector differs slightly in dimensions due to discrepancies in imperial to metric conversion, though with some force they can still be mated. There are however types of SR connectors that do not resemble their American counterpart.
+Most SR connectors are variants of SR-50 (50 Ω) or SR-75 (75 Ω) versions, with the SR-75 typically having a thinner center pin. They often resemble C connectors in shape, and have threaded inserts similar to N connectors. Further numerical suffixes denote specific kinds of connectors, for instance the CP 75-164 is a much larger high power connector, designed for upwards of 3000W, with a similar appearance to an N or UHF type. The various letters after the number refer to the dielectric material used.
+Below is a breakdown of the various suffixes used in the order they would appear:
+
+See also
+BNC connector
+RF connector
+Passage 7:
+Very-high-density cable interconnect
+A very-high-density cable interconnect (VHDCI) is a 68-pin connector that was introduced in the SPI-2 document of SCSI-3. The VHDCI connector is a very small connector that allows placement of four wide SCSI connectors on the back of a single PCI card slot. Physically, it looks like a miniature Centronics type connector. It uses the regular 68-contact pin assignment. The male connector (plug) is used on the cable and the female connector ("receptacle") on the device.
+
+Other uses
+Apart from the standardized use with the SCSI interface, several vendors have also used VHDCI connectors for other types of interfaces:
+
+Nvidia: for an external PCI Express 8-lane interconnect, and used in Quadro Plex VCS and in Quadro NVS 420 as a display port connector
+ATI Technologies: on the FireMV 2400 to convey two DVI and two VGA signals on a single connector, and ganging two of these connectors side by side in order to allow the FireMV 2400 to be a low-profile quad display card. The Radeon X1950 XTX Crossfire Edition also used a pair of the connectors to grant more inter-card bandwidth than the PCI Express bus allowed at the time for Crossfire.
+AMD: Some Visiontek variants of the Radeon HD 7750 use a VHDCI connector alongside a Mini DisplayPort to allow a 5 (breakout to 4 HDMI+1 mDP) display Eyefinity array on a low profile card. VisionTek also released a similar Radeon HD 5570, though it lacked a Mini DisplayPort.
+Juniper Networks: for their 12- and 48-port 100BASE-TX PICs (physical interface cards). The cable connects to the VHDCI connector on the PIC on one end, via an RJ-21 connector on the other end, to an RJ-45 patch panel.
+Cisco: 3750 StackWise stacking cables
+National Instruments: on their high-speed digital I/O cards.[1]
+AudioScience uses VHDCI to carry multiple analog balanced audio and digital AES/EBU audio streams, and clock and GPIO signals.
+
+See also
+SCSI connector
+Passage 8:
+C connector
+The C connector is a type of RF connector used for terminating coaxial cable. The interface specifications for the C and many other connectors are referenced in MIL-STD-348. The connector uses  two-stud bayonet-type locks. The C connector was invented by Amphenol engineer Carl Concelman. It is weatherproof without being overly bulky. The mating arrangement is similar to that of the BNC connector. It can be used up to 11 GHz, and is rated for up to 1500 volts.
+
+See also
+USB-C (also called Type C connector)
+Passage 9:
+GR connector
+The GR connector, officially the General Radio Type 874, was a type of RF connector used for connecting coaxial cable. Designed by Eduard Karplus, Harold M. Wilson and William R. Thurston at General Radio Corporation. It was widely used on General Radio's electronic test equipment and some Tektronix instruments from the 1950s to the 1970s.The connector had several desirable properties:
+
+Good control of the electrical impedance across a wide range of frequencies, therefore low reflection
+Reliable mating
+Hermaphrodism, so there were no "male" or "female" connectors; any GR connector could mate with any other GR connector.This last characteristic was achieved by having both the inner and outer conductors made from four leaves, two of which were displaced slightly outwards and two of which were displaced slightly inwards. By rotating one connector by 90 degrees, its inner leaves would mate with the other connector's outer leaves and vice versa.
+When frequently mated, the inner leaves were susceptible to breakage due to stubbing, flexing and fatigue cracking as the connector was pressed together and alignment was perfected.
+In 1961, an optional locking mechanism consisting of an outer hex nut encasing a captured threaded barrel was added to the 874 line.  It can be seen in the photograph of a GR-900 to GR-874 adapter,. The locking assembly is not captive and can be backed off the RF connector. The threaded barrel is supplied on each connector. The threaded barrel was withdrawn into the nut on one connector and extended on the other to allow the barrel to engage the nut of both mating connectors. This style of locking mechanism was continued in GR-874's thematic successors; the GR-900 precision 14 mm connector that retains a crenelated hermaphroditic mechanical anti-spin feature to protect the sexless RF interface from rotating and galling when the locking mechanism is tightened, and the fully sexless APC-7 7 mm connector.
+Adapters to other connector series were available.
+Eventually, the limited frequency range of a 14 mm connector and its high manufacturing cost overcame its ease of assembly and the GR-874 was supplanted generally by the 7 mm type N connector and its variants, the BNC connector and the TNC connector, and the later higher frequency 3.5 mm SMA connectors. General Radio, then still a major source of RF test equipment, designed the incompatible GR-900 as a 14 mm successor to the GR-874, filling the industry's need for a higher performance sexless connector for fully reversible lab standards and related test equipment. The GR-900 was in turn succeeded in this essential niche role by the completely sexless APC-7 connector.
+Passage 10:
+BNC connector
+The BNC connector (initialism of "Bayonet Neill–Concelman") is a miniature quick connect/disconnect radio frequency connector used for coaxial cable. It is designed to maintain the same characteristic impedance of the cable, with 50 ohm and 75 ohm types being made. It is usually applied for video and radio frequency connections up to about 2 GHz and up to 500 volts. The connector has a twist to lock design with two lugs in the female portion of the connector engaging a slot in the  shell of the male portion. The type was introduced on military radio equipment in the 1940s and has since become widely applied in radio systems, and is a common type of video connector. Similar radio-frequency connectors differ in dimensions and attachment features, and may allow for higher voltages, higher frequencies, or three-wire connections.
+
+Description
+The BNC connector features two bayonet lugs on the female connector; mating is fully achieved with a quarter turn of the coupling nut. It uses an outer conductor with slots and some plastic dielectric on each gender connector. This dielectric causes increasing losses at higher frequencies. Above 4 GHz, the slots may radiate signals, so the connector is usable, but not necessarily stable, up to about 11 GHz. BNC connectors are made to match the characteristic impedance of cable at either 50 ohms or 75 ohms (with other impedances such as 93 ohms for ARCNET available though less common). They are usually applied for frequencies below 4 GHz and voltages below 500 volts. The interface specifications for the BNC and many other connectors are referenced in MIL-STD-348.
+
+Use
+The BNC was originally designed for military use and has gained wide acceptance in video and RF applications to 2 GHz. BNC connectors are used with miniature-to-subminiature coaxial cable in radio, television, and other radio-frequency electronic equipment. They were commonly used for early computer networks, including ARCnet, the IBM PC Network, and the 10BASE2 variant of Ethernet. 
+The BNC connector is used for signal connections such as:
+
+analog and serial digital interface video signals
+radio antennas
+aerospace electronics (avionics)
+nuclear instrumentation
+test equipment.
+The BNC connector is used for analog composite video and digital video interconnects on commercial video devices. Consumer electronics devices with RCA connector jacks can be used with BNC-only commercial video equipment by inserting an adapter. BNC connectors were commonly used on 10base2 thin Ethernet network cables and network cards. BNC connections can also be found in recording studios. Digital recording equipment uses the connection for synchronization of various components via the transmission of word clock timing signals.
+Typically the male connector is fitted to a cable, and the female to a panel on equipment. Cable connectors are often designed to be fitted by crimping using a special power or manual tool. Wire strippers which strip outer jacket, shield braid, and inner dielectric to the correct lengths in one operation are used.
+
+Origin
+The connector was named the BNC (for Bayonet Neill–Concelman) after its bayonet mount locking mechanism and its inventors, Paul Neill and Carl Concelman. Neill worked at Bell Labs and also invented the N connector; Concelman worked at Amphenol and also invented the C connector.
+
+Types and compatibility
+Types
+BNC connectors are most commonly made in 50 and 75 ohm versions, matched for use with cables of the same characteristic impedance. The 75 ohm types can sometimes be recognized by the reduced or absent dielectric in the mating ends but this is by no means reliable. There was a proposal in the early 1970s for the dielectric material to be coloured red in 75 ohm connectors, and while this is occasionally implemented, it did not become standard. The 75 ohm connector is dimensionally slightly different from the 50 ohm variant, but the two nevertheless can be made to mate. The 50 ohm connectors are typically specified for use at frequencies up to 4 GHz and the 75 ohm version up to 2 GHz.
+Video (particularly HD video signals) and DS3 Telco central office applications primarily use 75 ohm BNC connectors, whereas 50 ohm connectors are used for data and RF. Many VHF receivers used 75 ohm antenna inputs, so they often used 75 ohm BNC connectors.
+Reverse-polarity BNC (RP-BNC) is a variation of the BNC specification which reverses the polarity of the interface. In a connector of this type, the female contact normally found in a jack is usually in the plug, while the male contact normally found in a plug is in the jack. This ensures that reverse polarity interface connectors do not mate with standard interface connectors. The SHV connector is a high-voltage BNC variant that uses this reverse polarity configuration.
+Smaller versions of the BNC connector, called Mini BNC and High Density BNC (HD BNC), are manufactured by Amphenol. While retaining the electrical characteristics of the original specification, they have smaller footprints giving a higher packing density on circuit boards and equipment backplanes. These connectors have true 75 ohm impedance making them suitable for HD video applications.
+
+Compatibility
+The different versions are designed to mate with each other,
+and a 75 ohm and a 50 ohm BNC connector which both comply with the 2007 IEC standard, IEC 61169-8, will mate non-destructively. At least one manufacturer claims very high reliability for the connectors' compatibility.At frequencies below 10 MHz the impedance mismatch between a 50 ohm connector or cable and a 75 ohm one has negligible effects. BNC connectors were thus originally made only in 50 ohm versions, for use with any impedance of cable. Above this frequency, however, the mismatch becomes progressively more significant and can lead to signal reflections.
+
+BNC inserter/remover tool
+A BNC inserter/remover tool also called a BNC tool, BNC extraction tool, BNC wrench, or BNC apple corer, is used to insert or remove BNC connectors in high density or hard-to-reach locations, such as densely wired patch panels in broadcast facilities like central apparatus rooms.
+BNC tools are usually light weight, made of stainless steel, and have screw driver type plastic handle grips for applying torque. Their shafts are usually double the length of a standard connector.
+They help to safely, efficiently and quickly connect and disconnect BNC connectors in jack fields. BNC tools facilitate access and minimize the risk of accidentally disconnecting nearby connectors.
+
+Similar connectors
+Similar connectors using the bayonet connection principle exist, and a threaded connector is also available. United States military standard MIL-PRF-39012 entitled Connectors, Coaxial, Radio Frequency, General Specification for (formerly MIL-C-39012) covers the general requirements and tests for radio frequency connectors used with flexible cables and certain other types of coaxial transmission lines in military, aerospace, and spaceflight applications.
+
+SR connectors
+In the USSR, BNC connectors were copied as SR connectors. As a result of recalculating from imperial to metric measurements their dimensions differ slightly from those of BNC. They are however generally interchangeable with them, sometimes with force applied.
+
+TNC (Threaded Neill–Concelman)
+A threaded version of the BNC connector, known as the TNC connector (for Threaded Neill-Concelman) is also available. It has superior performance to the BNC connector at microwave frequencies.
+
+Twin BNC or twinax
+Twin BNC (also known as twinax) connectors use the same bayonet latching shell as an ordinary BNC connector but contain two independent contact points (one male and one female), allowing the connection of a 78 ohm or 95 ohm shielded differential pair such as RG-108A. They can operate up to 100 MHz and 100 volts. They cannot mate with ordinary BNC connectors. An abbreviation for twinax connectors has been BNO (Sühner).
+
+Triaxial
+Triaxial (also known as triax) connectors are a variant on BNC that carry a signal and guard as well as ground conductor. These are used in sensitive electronic measurement systems. Early triaxial connectors were designed with just an extra inner conductor, but later triaxial connectors also include a three-lug arrangement to rule out an accidental forced mating with a BNC connector. Adaptors exist to allow some interconnection possibilities between triaxial and BNC connectors. The triaxial may also be known as a Trompeter connection.
+
+High-voltage connectors
+For higher voltages (above 500 V), MHV and SHV connectors are typically used. MHV connectors are easily mistaken for BNC type, and can be made to mate with them by brute force. The SHV connector was developed as a safer alternative, it will not mate with ordinary BNC connectors and the inner conductor is much harder to accidentally contact.
+
+Miniature connectors
+BNC connectors are commonly used in electronics, but in some applications they are being replaced by LEMO 00 miniature connectors which allow for significantly higher densities. In video broadcast industry, the DIN 1.0/2.3 and the HD-BNC connector are used for higher density products
+
+See also
+SMA connector
+SMB connector
+SMC connector
+UHF connector
