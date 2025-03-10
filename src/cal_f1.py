@@ -31,11 +31,9 @@ def load_answers(file_path: str, is_reference: bool) -> Dict[int, List[Set[str]]
                 answers[data["id"]] = tokenize(data["answer"])
     return answers
 
-
-def main():
-    ref_answers = load_answers('../data/hotpotqa/answers/answers.jsonl', is_reference=True)
-    pred_answers = load_answers('../generations/basic.jsonl', is_reference=False)
-
+def calc_f1_score(ref_file: str, pred_file: str):
+    ref_answers = load_answers(ref_file, is_reference=True)
+    pred_answers = load_answers(pred_file, is_reference=False)
     total_f1 = 0.0
     count = 0
 
@@ -57,5 +55,31 @@ def main():
     else:
         print("No matching answers")
 
-if __name__ == "__main__":
-    main()
+
+# def main():
+#     ref_answers = load_answers('../data/hotpotqa/answers/answers.jsonl', is_reference=True)
+#     pred_answers = load_answers('../generations/basic.jsonl', is_reference=False)
+
+#     total_f1 = 0.0
+#     count = 0
+
+#     for id in ref_answers:
+#         if id not in pred_answers:
+#             continue
+
+#         max_f1 = 0.0
+#         for ref_tokens in ref_answers[id]:
+#             current_f1 = compute_f1(pred_answers[id], ref_tokens)
+#             max_f1 = max(max_f1, current_f1)
+
+#         print(f"ID {id}: {max_f1:.4f}")
+#         total_f1 += max_f1
+#         count += 1
+
+#     if count > 0:
+#         print(f"\nAverage F1: {total_f1 / count:.4f}")
+#     else:
+#         print("No matching answers")
+
+# if __name__ == "__main__":
+#     main()

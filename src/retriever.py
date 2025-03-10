@@ -12,9 +12,12 @@ import Stemmer
 import time
 
 # custom module
-from rerank import rerank_chunks
+from reranker import rerank_chunks, rerank_nodes_with_scores
 from customed_statistic import global_statistic
-from pruning.core import judge_relevance
+from local_llm_inference.core import judge_relevance
+from utils import (
+    rrf_fusion,
+)
 
 class CustomedRetriever:
     def __init__(self, args):
@@ -36,13 +39,22 @@ class CustomedRetriever:
             )
         
         # pruning strategy
-        self.pruning_strategies = ['Naive']
+        self.pruning_strategies = ['Naive', 'rrf_dynamic']
+        if args.pruning_strategy == 'rrf_dynamic':
+            if args.enable_bm25_retriever == False:
+                exit("rrf retriever requires bm25 retriever")
 
     def retrieve(self, query_text):
         if self.args.pruning_strategy != 'None':
-            return self._retrieve_pruning(query_text)
+            return self._retrieve_pruning(query_text)       # 带有剪枝的retrieve
         else:
-            return self._basic_retrieve(query_text)
+            # 默认策略：retrieve + rerank
+            nodes = self._basic_retrieve(query_text)
+            chunk_list = [node.text for node in nodes]
+            start = time.perf_counter()
+            chunk_list = rerank_chunks(query_text, chunk_list, self.args.rerank_top_k)
+            global_statistic.add_to_list("rerank_time", time.perf_counter() - start)
+            return chunk_list
 
     def _retrieve_pruning(self, query_text):
         if self.args.pruning_strategy not in self.pruning_strategies:
@@ -50,7 +62,14 @@ class CustomedRetriever:
         
         # naive pruning: 遍历所有chunk判定相关性
         if self.args.pruning_strategy == 'Naive':
-            chunk_list = self._basic_retrieve(query_text)
+            # basic retrieve + rerank
+            nodes = self._basic_retrieve(query_text)
+            chunk_list = [node.text for node in nodes]
+            start = time.perf_counter()
+            chunk_list = rerank_chunks(query_text, chunk_list, self.args.rerank_top_k)
+            global_statistic.add_to_list("rerank_time", time.perf_counter() - start)
+
+            # Naive pruning
             pruned_chunk_list = []
             for chunk in chunk_list:
                 relevance, score = judge_relevance(chunk, query_text)
@@ -58,13 +77,19 @@ class CustomedRetriever:
                     pruned_chunk_list.append(chunk)
                 global_statistic.add_to_list("relevance_score", score)
             return pruned_chunk_list
+
+        elif self.args.pruning_strategy == 'rrf_dynamic':
+            return self._rrf_dynamic_pruning_retrieve(query_text)
         else:
             exit("Invalid pruning strategy")
 
     def _basic_retrieve(self, query_text):
+        """
+        返回nodes列表
+        """
         query_bundle = QueryBundle(query_str=query_text)
         
-        chunk_list = []
+        nodes = []
         bm25_node_ids = set()   # 用于去重
 
         start = time.perf_counter()
@@ -72,7 +97,7 @@ class CustomedRetriever:
         if self.args.enable_bm25_retriever:
             bm25_retrieved_nodes = self.bm25_retriever.retrieve(query_bundle)
             for node in bm25_retrieved_nodes:
-                chunk_list.append(node.text)
+                nodes.append(node)
                 bm25_node_ids.add(node.node_id)
             global_statistic.add_to_list("bm25_retrieved_nodes", len(bm25_retrieved_nodes))
         end = time.perf_counter()
@@ -82,17 +107,104 @@ class CustomedRetriever:
         vec_retrieved_nodes = self.vec_retriever.retrieve(query_bundle)
         for node in vec_retrieved_nodes:
             if node.node_id not in bm25_node_ids:   # 去重
-                chunk_list.append(node.text)
+                nodes.append(node)
         global_statistic.add_to_list("vec_retriever_time", time.perf_counter() - end)
         global_statistic.add_to_list("vec_retrieved_nodes", len(vec_retrieved_nodes))
         
         # check logic
-        if len(chunk_list) == 0:
+        if len(nodes) == 0:
+            exit("No chunk retrieved")
+        return nodes
+    
+    def _rrf_dynamic_pruning_retrieve(self, query_text):
+        """
+        融合 rrf + rerank + 动态剪枝
+        """
+        # check args
+        if self.args.enable_bm25_retriever == False:
+            exit("rrf retriever requires bm25 retriever")
+
+        # basic retrieve 
+        query_bundle = QueryBundle(query_str=query_text)
+        
+        nodes = []
+        bm25_ranking = []
+
+        start = time.perf_counter()
+        # bm25 retriever
+        bm25_retrieved_nodes = self.bm25_retriever.retrieve(query_bundle)
+        for node in bm25_retrieved_nodes:
+            bm25_ranking.append(node.node_id)
+        nodes.extend(bm25_retrieved_nodes)
+        global_statistic.add_to_list("bm25_retrieved_nodes", len(bm25_retrieved_nodes))
+        end = time.perf_counter()
+        global_statistic.add_to_list("bm25_retriever_time", end - start)
+
+        # vector retriever
+        vec_ranking = []
+        vec_retrieved_nodes = self.vec_retriever.retrieve(query_bundle)
+        for node in vec_retrieved_nodes:
+            if node.node_id not in bm25_ranking:   # 去重
+                nodes.append(node)
+                vec_ranking.append(node.node_id)
+        global_statistic.add_to_list("vec_retriever_time", time.perf_counter() - end)
+        global_statistic.add_to_list("vec_retrieved_nodes", len(vec_retrieved_nodes))
+
+        # check logic
+        if len(nodes) == 0 or len(vec_ranking) == 0 or len(bm25_ranking) == 0:
             exit("No chunk retrieved")
         
-        # rerank
+        # rrf fusion
+        rankings = [bm25_ranking, vec_ranking]
         start = time.perf_counter()
-        chunk_list = rerank_chunks(query_text, chunk_list, self.args.rerank_top_k)
-        global_statistic.add_to_list("rerank_time", time.perf_counter() - start)
+        rrf_ranking = rrf_fusion(rankings)
+        end = time.perf_counter()
+        global_statistic.add_to_list("rrf_fusion_time", end - start)
 
-        return chunk_list
+        # rerank: list(node, score)
+        reranked_nodes = rerank_nodes_with_scores(query_text, nodes)
+        global_statistic.add_to_list("rerank_time", time.perf_counter() - end)
+
+
+        # dynamic pruning
+        # pruning range in reranked_nodes
+        min_k = 4
+        max_k = 10
+        # check if pruning is needed
+        if len(reranked_nodes) <= max_k:
+            return [node.text for node, _ in reranked_nodes]
+
+        # step 1: 遍历reranked_nodes中的得分，计算出每个node与前一个node得分的差值并降序排序（包含node_id）
+        diff_scores = []
+        for i in range(min_k, min(max_k + 1, len(reranked_nodes))):
+            diff_scores.append((reranked_nodes[i][1] - reranked_nodes[i-1][1], reranked_nodes[i][0].node_id, i))
+        sorted_diff_scores = sorted(diff_scores, key=lambda x: x[0], reverse=True)
+
+        # step 2: 找到最佳裁剪点
+        # 依次检查 sorted_diff_scores，如果满足: 
+        #   （1）在rrf中的排名是否在更后面（不包括相等）
+        #   （2）rerank_rank排名之前的chunks与在rrf中的排名之后的chunks没有交集
+        # 则裁剪掉该 node 并结束循环
+        pruned_pos = min(max_k+1, len(reranked_nodes))
+        intersection_check_cnt = 0
+        for _, node_id, rank in sorted_diff_scores:
+            if node_id not in rrf_ranking:
+                continue
+            # get rank in rrf_ranking:
+            rrf_rank = rrf_ranking.index(node_id)
+            if rrf_rank <= rank:
+                continue
+            # check intersection
+            rrf_intersection = set(rrf_ranking[rrf_rank:])
+            rerank_intersection = set([node.node_id for node, _ in reranked_nodes[:rank]])
+
+            intersection_check_cnt += 1
+            global_statistic.add_to_list("rrf_dynamic_pruning_intersection_check_cnt", intersection_check_cnt)
+            if len(rerank_intersection.intersection(rrf_intersection)) == 0:
+                pruned_pos = rank
+                break
+
+        # step 3: 裁剪
+        pruned_chunk_list = [node.text for node, _ in reranked_nodes[:pruned_pos]]
+        global_statistic.add_to_list("rrf_dynamic_pruning_pos", len(pruned_chunk_list))
+        return pruned_chunk_list

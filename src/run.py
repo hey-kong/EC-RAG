@@ -2,6 +2,7 @@ import json
 import time
 import argparse
 import os
+import sys
 from tqdm import tqdm
 
 # Llama Index Related
@@ -12,10 +13,8 @@ from llama_index.embeddings.huggingface import HuggingFaceEmbedding
 from generate import generate_answer
 from retriever import CustomedRetriever
 from customed_statistic import global_statistic
+from cal_f1 import calc_f1_score
 
-# logging.basicConfig(stream=sys.stdout, level=logging.INFO)
-# logging.getLogger().addHandler(logging.StreamHandler(stream=sys.stdout))
-# logging.INFO("RAG Benchmarking Script")
 def check_args(args) -> bool:
     """检查参数有效性"""
     if not os.path.exists(args.embedding_model):
@@ -24,19 +23,46 @@ def check_args(args) -> bool:
     if not os.path.exists(args.query_file):
         print(f"Query file {args.query_file} not found.")
         return False
+    if not os.path.exists(args.answer_file):
+        print(f"Answer file {args.answer_file} not found.")
+        return False
     if not os.path.exists(args.docstore+"_docstore.pkl"):
         print(f"Docstore file {args.docstore} not found.")
         return False
     if not os.path.exists(args.docstore+"_vec"):
         print(f"Vector store dir {args.docstore} not found.")
         return False
-    # mkdir for answer_file if necessary
-    answer_dir = os.path.dirname(args.answer_file)
+    # mkdir for generation_file if necessary
+    answer_dir = os.path.dirname(args.generation_file)
     if not os.path.exists(answer_dir):
         os.makedirs(answer_dir)
     return True
 
+def print_cmd(parser, args):
+    # 输出用户输入的命令（方便复制重新运行）
+    # 生成可复用的完整命令
+    command_lines = ["python3 run.py"]  # 假设脚本固定名称，可按需替换为 sys.argv[0]
+    
+    # 遍历所有参数定义
+    for action in parser._actions:
+        if not action.option_strings:  # 跳过位置参数
+            continue
+        # 跳过默认生成的help参数
+        if action.dest == "help":
+            continue
 
+        # 获取参数名称和值
+        option = max(action.option_strings, key=lambda x: len(x))  # 取最长参数名
+        value = getattr(args, action.dest)
+        
+        # 特殊处理布尔值
+        if isinstance(value, bool):
+            value = str(value)
+            
+        command_lines.append(f"    {option} {value}")
+    # 格式化为带换行的命令
+    formatted_command = " \\\n".join(command_lines)
+    print(f"Command:\n{formatted_command}")
 
 def main():
     # Parse command-line arguments at global scope
@@ -45,8 +71,9 @@ def main():
     parser.add_argument('--query_file', type=str, default='../data/hotpotqa/questions/questions.jsonl',
                         help='Path to the file containing queries')
     parser.add_argument('--num_questions', type=int, default=0, help='Number of questions to process, 0 means all')
-    parser.add_argument('--answer_file', type=str, default='../generations/generations.jsonl', help='Path to the output JSONL file to save answers.')
+    parser.add_argument('--generation_file', type=str, help='Path to the output JSONL file to save generations.')
     parser.add_argument('--no_generate', type=bool, default=False, help='Close generate stage for test')
+    parser.add_argument('--answer_file', type=str, default='../data/hotpotqa/answers/answers.jsonl', help='Path to the file containing answers')
     # retriver related (Basic: vectorIndex)
     parser.add_argument('--docstore', type=str, default='../chunking_data/hotpotqa_512', help='Path of nodes')
     parser.add_argument('--similarity_top_k', type=int, default=20, help='Top N of vector retriver')
@@ -55,10 +82,13 @@ def main():
     # reranker related
     parser.add_argument('--rerank_top_k', type=int, default=8, help='Top k')
     # pruning related
-    parser.add_argument('--pruning_strategy', type=str, default='None', help='Pruning strategy: None, Naive')
+    parser.add_argument('--pruning_strategy', type=str, default='None', help='Pruning strategy: None, Naive, rrf_dynamic')
+    # log related
+    parser.add_argument('--detailed_logging', type=bool, default=False, help='Whether to enable detailed logging')
     args = parser.parse_args()
     if not check_args(args):     # 检查参数有效性
         return
+    print_cmd(parser, args)
 
     # prepare stage
     global_statistic.init(args)     # 初始化统计模块
@@ -81,7 +111,7 @@ def main():
         questions = questions[:args.num_questions]
     global_statistic.add("num_questions", len(questions))
 
-    with open(args.answer_file, 'a', encoding='utf-8') as file:
+    with open(args.generation_file, 'a', encoding='utf-8') as file:
         start = time.perf_counter()
         for item in tqdm(questions):
             query = item["query"]
@@ -99,7 +129,7 @@ def main():
         global_statistic.add("rag_avg_time", avg_time)
 
     global_statistic.dump()
-
+    calc_f1_score(args.answer_file, args.generation_file)
 
 if __name__ == "__main__":
     main()

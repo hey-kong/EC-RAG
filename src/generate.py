@@ -37,7 +37,7 @@ model = "gpt-4o-mini"
 # api_key = os.getenv("OPENAI_API_KEY")
 # if not api_key:
 #     api_key = input("Please input OpenAI API Key: ").strip()
-api_key = "xxx"
+api_key = "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"
 client = OpenAI(api_key=api_key, base_url="https://openrouter.ai/api/v1")
 
 def generate_answer(chunk_list, query_text):

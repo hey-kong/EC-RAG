@@ -30,7 +30,7 @@ def get_nodes_from_documents(
         for chunk_id, chunk_text in enumerate(chunk_texts):
             node = TextNode(
                 text=chunk_text,
-                id_=f"{document.doc_id}_{chunk_id}",
+                id_=f"{document.doc_id}_{chunk_id}",        # node id 作为唯一标识
             )
             nodes.append(node)
     return nodes
