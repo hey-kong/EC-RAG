@@ -77,7 +77,7 @@ def main():
     parser.add_argument('--local_llm_model_path', type=str, default='LLM-Research/Meta-Llama-3.1-8B-Instruct', help='Path of local llm model')
     parser.add_argument('--use_local_llm_for_query', type=bool, default=False, help='Whether to use local llm for query')
     # retriver related (Basic: vectorIndex)
-    parser.add_argument('--docstore', type=str, default='../chunking_data/hotpotqa_512', help='Path of nodes')
+    parser.add_argument('--docstore', type=str, default='../docs_store/hotpotqa_512', help='Path of nodes')
     parser.add_argument('--similarity_top_k', type=int, default=20, help='Top N of vector retriver')
     parser.add_argument('--enable_bm25_retriever', type=bool, default=False, help='Whether to enable BM25 retriever')
     parser.add_argument('--bm25_similarity_top_k', type=int, default=4, help='Top N of BM25 retriever')
