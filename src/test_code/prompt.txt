@@ -1,10 +1,13 @@
 <|begin_of_text|><|start_header_id|>system<|end_header_id|>
 
+Cutting Knowledge Date: December 2023
+Today Date: 26 Jul 2024
+
 <|eot_id|><|start_header_id|>user<|end_header_id|>
 
-Froma scale of 0 to 4.judge the relevance
+From a scale of 0 to 4.judge the relevance
 between the query and the document.
-Query:{query}
+Query:[query}
 Document:{document}
 Output:<|eot_id|><|start_header_id|>assistant<|end_header_id|>
 

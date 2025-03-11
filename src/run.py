@@ -14,6 +14,7 @@ from generate import generate_answer
 from retriever import CustomedRetriever
 from customed_statistic import global_statistic
 from cal_f1 import calc_f1_score
+from local_llm_inference.core import local_generate_answer
 
 def check_args(args) -> bool:
     """检查参数有效性"""
@@ -67,13 +68,15 @@ def print_cmd(parser, args):
 def main():
     # Parse command-line arguments at global scope
     parser = argparse.ArgumentParser(description='RAG Benchmarking Script')
-    parser.add_argument('--embedding_model', type=str, default='../models/bge-small-en-v1.5', help='Embedding model name or path')
+    parser.add_argument('--embedding_model', type=str, default='/data/wk/models/bge-small-en-v1.5', help='Embedding model name or path')
     parser.add_argument('--query_file', type=str, default='../data/hotpotqa/questions/questions.jsonl',
                         help='Path to the file containing queries')
     parser.add_argument('--num_questions', type=int, default=0, help='Number of questions to process, 0 means all')
     parser.add_argument('--generation_file', type=str, help='Path to the output JSONL file to save generations.')
     parser.add_argument('--no_generate', type=bool, default=False, help='Close generate stage for test')
     parser.add_argument('--answer_file', type=str, default='../data/hotpotqa/answers/answers.jsonl', help='Path to the file containing answers')
+    # use local llm
+    parser.add_argument('--use_local_llm_for_query', type=bool, default=False, help='Whether to use local llm for query')
     # retriver related (Basic: vectorIndex)
     parser.add_argument('--docstore', type=str, default='../chunking_data/hotpotqa_512', help='Path of nodes')
     parser.add_argument('--similarity_top_k', type=int, default=20, help='Top N of vector retriver')
@@ -119,9 +122,15 @@ def main():
             # retrieve(include rerank and pruning) and generate
             chunk_list = customed_retriever.retrieve(query)
             if not args.no_generate:
-                answer, n = generate_answer(chunk_list, query)
-                result = {"id": item["id"], "answer": answer, "num_chunks": n}
-                file.write(json.dumps(result, ensure_ascii=False) + '\n')
+                if args.use_local_llm_for_query:
+                    n = len(chunk_list)
+                    answer = local_generate_answer(chunk_list, query)
+                    result = {"id": item["id"], "answer": answer, "num_chunks": n}
+                    file.write(json.dumps(result, ensure_ascii=False) + '\n')
+                else:
+                    answer, n = generate_answer(chunk_list, query)
+                    result = {"id": item["id"], "answer": answer, "num_chunks": n}
+                    file.write(json.dumps(result, ensure_ascii=False) + '\n')
 
         end = time.perf_counter()
         use_time = end - start
