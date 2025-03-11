@@ -168,7 +168,7 @@ class CustomedRetriever:
 
         # dynamic pruning
         # pruning range in reranked_nodes
-        min_k = 4
+        min_k = 2
         max_k = 10
         # check if pruning is needed
         if len(reranked_nodes) <= max_k:
@@ -180,19 +180,19 @@ class CustomedRetriever:
             diff_scores.append((reranked_nodes[i][1] - reranked_nodes[i-1][1], reranked_nodes[i][0].node_id, i))
         sorted_diff_scores = sorted(diff_scores, key=lambda x: x[0], reverse=True)
 
-        # step 2: 找到最佳裁剪点
+        # step 2: 找到裁剪点
         # 依次检查 sorted_diff_scores，如果满足: 
         #   （1）在rrf中的排名是否在更后面（不包括相等）
         #   （2）rerank_rank排名之前的chunks与在rrf中的排名之后的chunks没有交集
-        # 则裁剪掉该 node 并结束循环
-        pruned_pos = min(max_k+1, len(reranked_nodes))
+        # 则裁剪掉该 node 以及之后的 nodes
+        pruned_pos = min(max_k, len(reranked_nodes))
         intersection_check_cnt = 0
         for _, node_id, rank in sorted_diff_scores:
             if node_id not in rrf_ranking:
                 continue
             # get rank in rrf_ranking:
             rrf_rank = rrf_ranking.index(node_id)
-            if rrf_rank <= rank:
+            if rrf_rank <= rank or pruned_pos < rank:
                 continue
             # check intersection
             rrf_intersection = set(rrf_ranking[rrf_rank:])
@@ -201,8 +201,7 @@ class CustomedRetriever:
             intersection_check_cnt += 1
             global_statistic.add_to_list("rrf_dynamic_pruning_intersection_check_cnt", intersection_check_cnt)
             if len(rerank_intersection.intersection(rrf_intersection)) == 0:
-                pruned_pos = rank
-                break
+                pruned_pos = min(pruned_pos, rank)
 
         # step 3: 裁剪
         pruned_chunk_list = [node.text for node, _ in reranked_nodes[:pruned_pos]]
