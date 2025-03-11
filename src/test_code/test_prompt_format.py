@@ -8,7 +8,7 @@ pruning_model = AutoModelForCausalLM.from_pretrained(
 ).to(device)
 pruning_tokenizer = AutoTokenizer.from_pretrained("LLM-Research/Meta-Llama-3.1-8B-Instruct")
 
-message = "From a scale of 0 to 4.judge the relevance\nbetween the query and the document.\nQuery:[query)\nDocument:{document)\nOutput:"
+message = "From a scale of 0 to 4, judge the relevance\nbetween the query and the document.\nQuery:[query)\nDocument:{document)\nOutput:"
 answer = "4"
 messages = []
 # messages.append({"role": "system", "content": "You are an accurate and reliable AI assistant that can determine the degree of relevance between a chunk and a query."})

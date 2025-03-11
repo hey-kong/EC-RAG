@@ -4,6 +4,6 @@ models/*
 test_logs/*
 update_my_env.sh
 
-*__pycache__*
+**/__pycache__
 .env
 .idea
