@@ -54,5 +54,4 @@ python3 run.py \
     --enable_bm25_retriever True \
     --bm25_similarity_top_k 16 \
     --rerank_top_k 8 \
-    --num_questions 2 \
     --use_local_llm_for_query True &> ../test_logs/use_local_llm_hybrid_16_16_8.log

@@ -1,6 +1,6 @@
 from FlagEmbedding import LayerWiseFlagLLMReranker
 
-reranker = LayerWiseFlagLLMReranker('/data/wk/models/bge-reranker-v2-minicpm-layerwise', use_fp16=True, cutoff_layers=[28])
+reranker = LayerWiseFlagLLMReranker('BAAI/bge-reranker-v2-minicpm-layerwise', use_fp16=True, cutoff_layers=[28])
 
 
 def rerank_chunks(query_text, chunk_list, top_k=8):

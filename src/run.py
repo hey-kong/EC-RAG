@@ -18,9 +18,6 @@ from local_llm_inference.core import local_generate_answer
 
 def check_args(args) -> bool:
     """检查参数有效性"""
-    if not os.path.exists(args.embedding_model):
-        print(f"Embedding model {args.embedding_model} not found.")
-        return False
     if not os.path.exists(args.query_file):
         print(f"Query file {args.query_file} not found.")
         return False
@@ -68,7 +65,7 @@ def print_cmd(parser, args):
 def main():
     # Parse command-line arguments at global scope
     parser = argparse.ArgumentParser(description='RAG Benchmarking Script')
-    parser.add_argument('--embedding_model', type=str, default='/data/wk/models/bge-small-en-v1.5', help='Embedding model name or path')
+    parser.add_argument('--embedding_model', type=str, default='BAAI/bge-small-en-v1.5', help='Embedding model name or path')
     parser.add_argument('--query_file', type=str, default='../data/hotpotqa/questions/questions.jsonl',
                         help='Path to the file containing queries')
     parser.add_argument('--num_questions', type=int, default=0, help='Number of questions to process, 0 means all')
@@ -78,7 +75,7 @@ def main():
     # use local llm
     parser.add_argument('--use_local_llm_for_query', type=bool, default=False, help='Whether to use local llm for query')
     # retriver related (Basic: vectorIndex)
-    parser.add_argument('--docstore', type=str, default='../chunking_data/hotpotqa_512', help='Path of nodes')
+    parser.add_argument('--docstore', type=str, default='../docs_store/hotpotqa_512', help='Path of nodes')
     parser.add_argument('--similarity_top_k', type=int, default=20, help='Top N of vector retriver')
     parser.add_argument('--enable_bm25_retriever', type=bool, default=False, help='Whether to enable BM25 retriever')
     parser.add_argument('--bm25_similarity_top_k', type=int, default=4, help='Top N of BM25 retriever')

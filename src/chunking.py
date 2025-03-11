@@ -39,7 +39,7 @@ def get_nodes_from_documents(
 
 def main():
     parser = argparse.ArgumentParser(description='Run indexing for RAG')
-    parser.add_argument('--embedding_model', type=str, default='../models/bge-small-en-v1.5', help='Embedding model name or path')
+    parser.add_argument('--embedding_model', type=str, default='BAAI/bge-small-en-v1.5', help='Embedding model name or path')
     parser.add_argument('--chunk_size', type=int, default=4096, help='chunk size for splitter')
     parser.add_argument('--chunk_overlap', type=int, default=10, help='chunk overlap for splitter')
     parser.add_argument('--docs_dir', type=str, default='../data/hotpotqa/documents', help='directory of documents')

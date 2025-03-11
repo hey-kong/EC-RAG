@@ -4,5 +4,6 @@ models/*
 test_logs/*
 update_my_env.sh
 
-src/__pycache__/*
-src/local_llm_inference/__pycache__/*
+*__pycache__*
+.env
+.idea

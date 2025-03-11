@@ -1,7 +1,6 @@
-from openai import OpenAI
+import os
 import time
-
-# Custom module
+from openai import OpenAI
 from customed_statistic import global_statistic
 
 # def query_prompt(chunks, query):
@@ -34,10 +33,7 @@ Answer:"""
 
 # Load model
 model = "gpt-4o-mini"
-# api_key = os.getenv("OPENAI_API_KEY")
-# if not api_key:
-#     api_key = input("Please input OpenAI API Key: ").strip()
-api_key = "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"
+api_key = os.getenv("OPENAI_API_KEY")
 client = OpenAI(api_key=api_key, base_url="https://openrouter.ai/api/v1")
 
 def generate_answer(chunk_list, query_text):
