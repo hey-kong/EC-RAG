@@ -82,7 +82,7 @@ def main():
     parser.add_argument('--enable_bm25_retriever', type=bool, default=False, help='Whether to enable BM25 retriever')
     parser.add_argument('--bm25_similarity_top_k', type=int, default=4, help='Top N of BM25 retriever')
     # reranker related
-    parser.add_argument('--reranker_layerwise', type=bool, default=False, help='Whether to use layerwise reranker')
+    parser.add_argument('--reranker_layerwise', type=bool, default=True, help='Whether to use layerwise reranker')
     parser.add_argument('--rerank_top_k', type=int, default=8, help='Top k')
     # pruning related
     parser.add_argument('--pruning_strategy', type=str, default='None', help='Pruning strategy: None, Naive, rrf_dynamic')
