@@ -14,7 +14,8 @@ from generate import generate_answer
 from retriever import CustomedRetriever
 from customed_statistic import global_statistic
 from cal_f1 import calc_f1_score
-from local_llm_inference.core import local_generate_answer
+from local_llm_inference.core import local_llm
+from reranker import local_reranker
 
 def check_args(args) -> bool:
     """检查参数有效性"""
@@ -73,13 +74,15 @@ def main():
     parser.add_argument('--no_generate', type=bool, default=False, help='Close generate stage for test')
     parser.add_argument('--answer_file', type=str, default='../data/hotpotqa/answers/answers.jsonl', help='Path to the file containing answers')
     # use local llm
+    parser.add_argument('--local_llm_model_path', type=str, default='LLM-Research/Meta-Llama-3.1-8B-Instruct', help='Path of local llm model')
     parser.add_argument('--use_local_llm_for_query', type=bool, default=False, help='Whether to use local llm for query')
     # retriver related (Basic: vectorIndex)
-    parser.add_argument('--docstore', type=str, default='../docs_store/hotpotqa_512', help='Path of nodes')
+    parser.add_argument('--docstore', type=str, default='../chunking_data/hotpotqa_512', help='Path of nodes')
     parser.add_argument('--similarity_top_k', type=int, default=20, help='Top N of vector retriver')
     parser.add_argument('--enable_bm25_retriever', type=bool, default=False, help='Whether to enable BM25 retriever')
     parser.add_argument('--bm25_similarity_top_k', type=int, default=4, help='Top N of BM25 retriever')
     # reranker related
+    parser.add_argument('--reranker_layerwise', type=bool, default=False, help='Whether to use layerwise reranker')
     parser.add_argument('--rerank_top_k', type=int, default=8, help='Top k')
     # pruning related
     parser.add_argument('--pruning_strategy', type=str, default='None', help='Pruning strategy: None, Naive, rrf_dynamic')
@@ -92,6 +95,8 @@ def main():
 
     # prepare stage
     global_statistic.init(args)     # 初始化统计模块
+    local_llm.init(args.local_llm_model_path)     # 初始化本地语言模型
+    local_reranker.init(args.reranker_layerwise)     # 初始化reranker
     print("Loading index...")
     # Set up embedding model and load index
     Settings.embed_model = HuggingFaceEmbedding(model_name=args.embedding_model)
@@ -121,7 +126,7 @@ def main():
             if not args.no_generate:
                 if args.use_local_llm_for_query:
                     n = len(chunk_list)
-                    answer = local_generate_answer(chunk_list, query)
+                    answer = local_llm.generate_answer(chunk_list, query)
                     result = {"id": item["id"], "answer": answer, "num_chunks": n}
                     file.write(json.dumps(result, ensure_ascii=False) + '\n')
                 else:

@@ -42,8 +42,9 @@ def main():
     parser.add_argument('--embedding_model', type=str, default='BAAI/bge-small-en-v1.5', help='Embedding model name or path')
     parser.add_argument('--chunk_size', type=int, default=4096, help='chunk size for splitter')
     parser.add_argument('--chunk_overlap', type=int, default=10, help='chunk overlap for splitter')
+    parser.add_argument('--dataset_name', type=str, default='hotpotqa', help='dataset name')
     parser.add_argument('--docs_dir', type=str, default='../data/hotpotqa/documents', help='directory of documents')
-    parser.add_argument('--persist_dir', type=str, default='../chunking_data', help='persist dir for docstore')
+    parser.add_argument('--persist_dir', type=str, default='../docs_store', help='persist dir for docstore')
     args = parser.parse_args()
 
 
@@ -76,10 +77,10 @@ def main():
     print(f"Persisting docstore and vector index to {args.persist_dir}")
     if not os.path.exists(args.persist_dir):
         os.makedirs(args.persist_dir)
-    persist_path = os.path.join(args.persist_dir, f"hotpotqa_{args.chunk_size}_docstore.pkl")
+    persist_path = os.path.join(args.persist_dir, f"{args.dataset_name}_{args.chunk_size}_docstore.pkl")
     doc_store.persist(persist_path)
 
-    index.storage_context.persist(persist_dir=args.persist_dir+f"/hotpotqa_{args.chunk_size}_vec/")
+    index.storage_context.persist(persist_dir=args.persist_dir+f"/{args.dataset_name}_{args.chunk_size}_vec/")
     print("Done!")
 
 if __name__ == '__main__':

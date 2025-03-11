@@ -55,3 +55,13 @@ python3 run.py \
     --bm25_similarity_top_k 16 \
     --rerank_top_k 8 \
     --use_local_llm_for_query True &> ../test_logs/use_local_llm_hybrid_16_16_8.log
+
+# test choose local llm and reranker
+python3 run.py \
+    --generation_file ../generations/test_choose_local_llm_reranker.jsonl \
+    --similarity_top_k 16 \
+    --enable_bm25_retriever True \
+    --bm25_similarity_top_k 16 \
+    --rerank_top_k 8 \
+    --use_local_llm_for_query True \
+    --num_questions 10 &> ../test_logs/test_choose_local_llm_reranker.log

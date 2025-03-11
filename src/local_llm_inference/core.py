@@ -1,14 +1,6 @@
 import torch
 from modelscope import AutoTokenizer, AutoModelForCausalLM
 
-device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
-pruning_model = AutoModelForCausalLM.from_pretrained(
-    "LLM-Research/Meta-Llama-3.1-8B-Instruct",
-    torch_dtype=torch.float16
-).to(device)
-pruning_tokenizer = AutoTokenizer.from_pretrained("LLM-Research/Meta-Llama-3.1-8B-Instruct")
-eos_token_ids = [128001, 128009]
-
 def judge_relevance_qa_prompt(chunk, query):
     prompt = f"""<|begin_of_text|><|start_header_id|>system<|end_header_id|>
 
@@ -37,36 +29,6 @@ Output the score (0-4):
 """
     return prompt
 
-
-def judge_relevance(chunk, query):
-    prompt = judge_relevance_qa_prompt(chunk, query)
-    input_ids = pruning_tokenizer.encode(prompt, return_tensors='pt').to(device)
-    with torch.no_grad():
-        outputs = pruning_model.generate(
-            input_ids,
-            max_new_tokens=1,
-            do_sample=False,
-            pad_token_id=pruning_tokenizer.eos_token_id,
-            eos_token_id=eos_token_ids,
-        )
-    generated_ids = outputs[0]
-    # generated_text = pruning_tokenizer.decode(generated_ids, skip_special_tokens=True).strip()
-    # print(f"-------\nGenerated text:\n {generated_text}")
-
-    new_token_ids = generated_ids[input_ids.shape[-1]:]
-    new_text = pruning_tokenizer.decode(new_token_ids, skip_special_tokens=True).strip()
-    # print(f"Score: {new_text}")
-
-    # 0-2认为不相关，34认为相关
-    if new_text in ["0", "1", "2"]:
-        return False, int(new_text)
-    elif new_text in ["3", "4"]:
-        return True, int(new_text)
-    else:
-        # exit(f"Invalid score: {new_text}")
-        return False, 0
-
-
 # query
 def query_prompt(chunk_list, query):
     chunk_str = "\n\n".join(chunk_list)
@@ -86,19 +48,59 @@ Question: {query}<|eot_id|>
 
     return prompt_template
 
-def local_generate_answer(chunk_list, query):
-    prompt = query_prompt(chunk_list, query)
-    input_ids = pruning_tokenizer.encode(prompt, return_tensors='pt').to(device)
-    with torch.no_grad():
-        outputs = pruning_model.generate(
-            input_ids,
-            max_new_tokens=20,
-            do_sample=False,
-            pad_token_id=pruning_tokenizer.eos_token_id,
-            eos_token_id=eos_token_ids,
-        )
-    generated_ids = outputs[0]  # 获取生成的完整序列
-    input_length = input_ids.shape[1]  # 计算原始输入的长度
-    # 截取生成部分（排除输入提示）并解码
-    answer = pruning_tokenizer.decode(generated_ids[input_length:], skip_special_tokens=True)
-    return answer
+
+class CustomModelWrapper:
+    def init(self, model_path):
+        self.device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
+        self.model = AutoModelForCausalLM.from_pretrained(
+            model_path,
+            torch_dtype=torch.float16
+        ).to(self.device)
+        self.tokenizer = AutoTokenizer.from_pretrained(model_path)
+        self.eos_token_ids = [128001, 128009]
+
+    def judge_relevance(self, chunk, query):
+        prompt = judge_relevance_qa_prompt(chunk, query)
+        input_ids = self.tokenizer.encode(prompt, return_tensors='pt').to(self.device)
+        with torch.no_grad():
+            outputs = self.model.generate(
+                input_ids,
+                max_new_tokens=1,
+                do_sample=False,
+                pad_token_id=self.tokenizer.eos_token_id,
+                eos_token_id=self.eos_token_ids,
+            )
+        generated_ids = outputs[0]
+        # generated_text = self.tokenizer.decode(generated_ids, skip_special_tokens=True).strip()
+        # print(f"-------\nGenerated text:\n {generated_text}")
+
+        new_token_ids = generated_ids[input_ids.shape[-1]:]
+        new_text = self.tokenizer.decode(new_token_ids, skip_special_tokens=True).strip()
+        # print(f"Score: {new_text}")
+
+        # 0-2认为不相关，34认为相关
+        if new_text in ["0", "1", "2"]:
+            return False, int(new_text)
+        elif new_text in ["3", "4"]:
+            return True, int(new_text)
+        else:
+            # exit(f"Invalid score: {new_text}")
+            return False, 0
+    def generate_answer(self, chunk_list, query):
+        prompt = query_prompt(chunk_list, query)
+        input_ids = self.tokenizer.encode(prompt, return_tensors='pt').to(self.device)
+        with torch.no_grad():
+            outputs = self.model.generate(
+                input_ids,
+                max_new_tokens=20,
+                do_sample=False,
+                pad_token_id=self.tokenizer.eos_token_id,
+                eos_token_id=self.eos_token_ids,
+            )
+        generated_ids = outputs[0]  # 获取生成的完整序列
+        input_length = input_ids.shape[1]  # 计算原始输入的长度
+        # 截取生成部分（排除输入提示）并解码
+        answer = self.tokenizer.decode(generated_ids[input_length:], skip_special_tokens=True)
+        return answer
+
+local_llm = CustomModelWrapper()

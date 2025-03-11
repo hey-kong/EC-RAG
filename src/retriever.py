@@ -12,9 +12,9 @@ import Stemmer
 import time
 
 # custom module
-from reranker import rerank_chunks, rerank_nodes_with_scores
+from reranker import local_reranker
 from customed_statistic import global_statistic
-from local_llm_inference.core import judge_relevance
+from local_llm_inference.core import local_llm
 from utils import (
     rrf_fusion,
 )
@@ -52,7 +52,7 @@ class CustomedRetriever:
             nodes = self._basic_retrieve(query_text)
             chunk_list = [node.text for node in nodes]
             start = time.perf_counter()
-            chunk_list = rerank_chunks(query_text, chunk_list, self.args.rerank_top_k)
+            chunk_list = local_reranker.rerank_chunks(query_text, chunk_list, self.args.rerank_top_k)
             global_statistic.add_to_list("rerank_time", time.perf_counter() - start)
             return chunk_list
 
@@ -66,13 +66,13 @@ class CustomedRetriever:
             nodes = self._basic_retrieve(query_text)
             chunk_list = [node.text for node in nodes]
             start = time.perf_counter()
-            chunk_list = rerank_chunks(query_text, chunk_list, self.args.rerank_top_k)
+            chunk_list = local_reranker.rerank_chunks(query_text, chunk_list, self.args.rerank_top_k)
             global_statistic.add_to_list("rerank_time", time.perf_counter() - start)
 
             # Naive pruning
             pruned_chunk_list = []
             for chunk in chunk_list:
-                relevance, score = judge_relevance(chunk, query_text)
+                relevance, score = local_llm.judge_relevance(chunk, query_text)
                 if relevance:
                     pruned_chunk_list.append(chunk)
                 global_statistic.add_to_list("relevance_score", score)
@@ -162,7 +162,7 @@ class CustomedRetriever:
         global_statistic.add_to_list("rrf_fusion_time", end - start)
 
         # rerank: list(node, score)
-        reranked_nodes = rerank_nodes_with_scores(query_text, nodes)
+        reranked_nodes = local_reranker.rerank_nodes_with_scores(query_text, nodes)
         global_statistic.add_to_list("rerank_time", time.perf_counter() - end)
 
 

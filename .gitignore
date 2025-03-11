@@ -1,4 +1,4 @@
-chunking_data/*
+docs_store/*
 generations/*
 models/*
 test_logs/*
