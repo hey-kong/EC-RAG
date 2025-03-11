@@ -2,7 +2,10 @@ import torch
 from modelscope import AutoTokenizer, AutoModelForCausalLM
 
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
-pruning_model = AutoModelForCausalLM.from_pretrained("LLM-Research/Meta-Llama-3.1-8B-Instruct").to(device)
+pruning_model = AutoModelForCausalLM.from_pretrained(
+    "LLM-Research/Meta-Llama-3.1-8B-Instruct",
+    torch_dtype=torch.float16
+).to(device)
 pruning_tokenizer = AutoTokenizer.from_pretrained("LLM-Research/Meta-Llama-3.1-8B-Instruct")
 eos_token_ids = [128001, 128009]
 
