@@ -4,21 +4,21 @@ from modelscope import AutoTokenizer, AutoModelForCausalLM
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 pruning_model = AutoModelForCausalLM.from_pretrained("LLM-Research/Meta-Llama-3.1-8B-Instruct").to(device)
 pruning_tokenizer = AutoTokenizer.from_pretrained("LLM-Research/Meta-Llama-3.1-8B-Instruct")
+eos_token_ids = [128001, 128009]
 
 def judge_relevance_qa_prompt(chunk, query):
     prompt = f"""<|begin_of_text|><|start_header_id|>system<|end_header_id|>
 
 <|eot_id|><|start_header_id|>user<|end_header_id|>
 
-Froma scale of 0 to 4.judge the relevance
-between the query and the document.
+From a scale of 0 to 4, judge the relevance between the query and the document.
+
 Query:{query}
 
 Document:{chunk}
 
 Please output the score directly (0-4), without any additional text.
-Output:<|eot_id|><|start_header_id|>assistant<|end_header_id|>
-
+<|eot_id|><|start_header_id|>assistant<|end_header_id|>
 """
     return prompt
 
@@ -44,6 +44,7 @@ def judge_relevance(chunk, query):
             max_new_tokens=1,
             do_sample=False,
             pad_token_id=pruning_tokenizer.eos_token_id,
+            eos_token_id=eos_token_ids,
         )
     generated_ids = outputs[0]
     # generated_text = pruning_tokenizer.decode(generated_ids, skip_special_tokens=True).strip()
@@ -67,18 +68,17 @@ def judge_relevance(chunk, query):
 def query_prompt(chunk_list, query):
     chunk_str = "\n\n".join(chunk_list)
 
-    prompt_template = f"""<|begin_of_text|><|start_header_id|>system<|end_header_id|>
-
-<|eot_id|><|start_header_id|>user<|end_header_id|>
+    prompt_template = f"""<|begin_of_text|>
+<|start_header_id|>system<|end_header_id|>
+You are an assistant for giving short answers based on given context.<|eot_id|>
+<|start_header_id|>user<|end_header_id|>
 
 {chunk_str}
 
 Based on the above information, only give me the answer and do not output any other words.
 
-Question: {query}
-
-Answer:<|eot_id|><|start_header_id|>assistant<|end_header_id|>
-
+Question: {query}<|eot_id|>
+<|start_header_id|>assistant<|end_header_id|>
 """
 
     return prompt_template
@@ -89,8 +89,10 @@ def local_generate_answer(chunk_list, query):
     with torch.no_grad():
         outputs = pruning_model.generate(
             input_ids,
-            max_new_tokens=40,
+            max_new_tokens=20,
+            do_sample=False,
             pad_token_id=pruning_tokenizer.eos_token_id,
+            eos_token_id=eos_token_ids,
         )
     generated_ids = outputs[0]  # 获取生成的完整序列
     input_length = input_ids.shape[1]  # 计算原始输入的长度
