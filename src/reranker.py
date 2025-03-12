@@ -24,7 +24,7 @@ class RerankerWrapper:
             )
         else:
             # 初始化普通重排序模型
-            model_path = 'BAAI/models/bge-reranker-v2-m3'
+            model_path = 'BAAI/bge-reranker-v2-m3'
             self.reranker = FlagReranker(
                 model_path,
                 use_fp16=True,
