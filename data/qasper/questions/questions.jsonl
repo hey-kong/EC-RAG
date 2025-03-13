@@ -1,0 +1,200 @@
+{"id": 0, "query": "How is the ground truth for fake news established?"}
+{"id": 1, "query": "What is the GhostVLAD approach?"}
+{"id": 2, "query": "By how much does their model outperform the state of the art results?"}
+{"id": 3, "query": "What additional features and context are proposed?"}
+{"id": 4, "query": "Which Facebook pages did they look at?"}
+{"id": 5, "query": "Do the hashtag and SemEval datasets contain only English data?"}
+{"id": 6, "query": "What type of evaluation is proposed for this task?"}
+{"id": 7, "query": "What are the datasets used for evaluation?"}
+{"id": 8, "query": "How does this approach compare to other WSD approaches employing word embeddings?"}
+{"id": 9, "query": "How does their ensemble method work?"}
+{"id": 10, "query": "What are the sources of the datasets?"}
+{"id": 11, "query": "what language does this paper focus on?"}
+{"id": 12, "query": "What sentiment analysis dataset is used?"}
+{"id": 13, "query": "What accuracy does the proposed system achieve?"}
+{"id": 14, "query": "Did they experiment with this new dataset?"}
+{"id": 15, "query": "What datasets are used?"}
+{"id": 16, "query": "Which stock market sector achieved the best performance?"}
+{"id": 17, "query": "what NMT models did they compare with?"}
+{"id": 18, "query": "What are the three regularization terms?"}
+{"id": 19, "query": "What are the baselines?"}
+{"id": 20, "query": "By how much did they improve?"}
+{"id": 21, "query": "How does their model improve interpretability compared to softmax transformers?"}
+{"id": 22, "query": "what was the baseline?"}
+{"id": 23, "query": "What metrics are used for evaluation?"}
+{"id": 24, "query": "What is the attention module pretrained on?"}
+{"id": 25, "query": "What kind of stylistic features are obtained?"}
+{"id": 26, "query": "What architecture does the encoder have?"}
+{"id": 27, "query": "Is WordNet useful for taxonomic reasoning for this task?"}
+{"id": 28, "query": "what were the baselines?"}
+{"id": 29, "query": "How many users do they look at?"}
+{"id": 30, "query": "What metrics are used for evaluation?"}
+{"id": 31, "query": "What labels do they create on their dataset?"}
+{"id": 32, "query": "How much data is needed to train the task-specific encoder?"}
+{"id": 33, "query": "What tasks are used for evaluation?"}
+{"id": 34, "query": "What is the improvement in performance for Estonian in the NER task?"}
+{"id": 35, "query": "What background do they have?"}
+{"id": 36, "query": "LDA is an unsupervised method; is this paper introducing an unsupervised approach to spam detection?"}
+{"id": 37, "query": "Which languages are similar to each other?"}
+{"id": 38, "query": "which lstm models did they compare with?"}
+{"id": 39, "query": "How large is their data set?"}
+{"id": 40, "query": "How were the human judgements assembled?"}
+{"id": 41, "query": "Do they test their framework performance on commonly used language pairs, such as English-to-German?"}
+{"id": 42, "query": "How are models evaluated in this human-machine communication game?"}
+{"id": 43, "query": "What evaluation metrics are looked at for classification tasks?"}
+{"id": 44, "query": "What are the source and target domains?"}
+{"id": 45, "query": "what previous RNN models do they compare with?"}
+{"id": 46, "query": "What neural network modules are included in NeuronBlocks?"}
+{"id": 47, "query": "what datasets did they use?"}
+{"id": 48, "query": "What were the baselines?"}
+{"id": 49, "query": "What are the languages they use in their experiment?"}
+{"id": 50, "query": "What other tasks do they test their method on?"}
+{"id": 51, "query": "Do they use pretrained embeddings?"}
+{"id": 52, "query": "Was PolyReponse evaluated against some baseline?"}
+{"id": 53, "query": "How do they obtain psychological dimensions of people?"}
+{"id": 54, "query": "What argument components do the ML methods aim to identify?"}
+{"id": 55, "query": "Ngrams of which length are aligned using PARENT?"}
+{"id": 56, "query": "How large is the Twitter dataset?"}
+{"id": 57, "query": "What are the 12 languages covered?"}
+{"id": 58, "query": "What are two datasets model is applied to?"}
+{"id": 59, "query": "Were any of the pipeline components based on deep learning models?"}
+{"id": 60, "query": "How is the quality of the data empirically evaluated? "}
+{"id": 61, "query": "How do they combine audio and text sequences in their RNN?"}
+{"id": 62, "query": "by how much did their model improve?"}
+{"id": 63, "query": "how many humans evaluated the results?"}
+{"id": 64, "query": "What is their definition of tweets going viral?"}
+{"id": 65, "query": "Which basic neural architecture perform best by itself?"}
+{"id": 66, "query": "what is the source of the data?"}
+{"id": 67, "query": "What machine learning and deep learning methods are used for RQE?"}
+{"id": 68, "query": "What is the benchmark dataset and is its quality high?"}
+{"id": 69, "query": "What architecture does the decoder have?"}
+{"id": 70, "query": "Do they report results only on English data?"}
+{"id": 71, "query": "What is best performing model among author's submissions, what performance it had?"}
+{"id": 72, "query": "what was the baseline?"}
+{"id": 73, "query": "What was their highest recall score?"}
+{"id": 74, "query": "What embedding techniques are explored in the paper?"}
+{"id": 75, "query": "How do they match words before reordering them?"}
+{"id": 76, "query": "Does the paper explore extraction from electronic health records?"}
+{"id": 77, "query": "Who were the experts used for annotation?"}
+{"id": 78, "query": "What models are used for painting embedding and what for language style transfer?"}
+{"id": 79, "query": "On top of BERT does the RNN layer work better or the transformer layer?"}
+{"id": 80, "query": "Do the authors hypothesize that humans' robustness to noise is due to their general knowledge?"}
+{"id": 81, "query": "What cyberbulling topics did they address?"}
+{"id": 82, "query": "How do they obtain the new context represetation?"}
+{"id": 83, "query": "How many different types of entities exist in the dataset?"}
+{"id": 84, "query": "How much higher quality is the resulting annotated data?"}
+{"id": 85, "query": "How big is imbalance in analyzed corpora?"}
+{"id": 86, "query": "What dataset does this approach achieve state of the art results on?"}
+{"id": 87, "query": "What are strong baselines model is compared to?"}
+{"id": 88, "query": "What type of classifiers are used?"}
+{"id": 89, "query": "Which toolkits do they use?"}
+{"id": 90, "query": "On what datasets are experiments performed?"}
+{"id": 91, "query": "what are the existing approaches?"}
+{"id": 92, "query": "Do they use attention?"}
+{"id": 93, "query": "What datasets did they use for evaluation?"}
+{"id": 94, "query": "What sentiment classification dataset is used?"}
+{"id": 95, "query": "Were any of these tasks evaluated in any previous work?"}
+{"id": 96, "query": "Is datasets for sentiment analysis balanced?"}
+{"id": 97, "query": "What is the invertibility condition?"}
+{"id": 98, "query": "How does proposed qualitative annotation schema looks like?"}
+{"id": 99, "query": "what are the sizes of both datasets?"}
+{"id": 100, "query": "What are the baselines?"}
+{"id": 101, "query": "Which natural language(s) are studied in this paper?"}
+{"id": 102, "query": "What models are used in the experiment?"}
+{"id": 103, "query": "Do the answered questions measure for the usefulness of the answer?"}
+{"id": 104, "query": "what pretrained word embeddings were used?"}
+{"id": 105, "query": "What were their results on the new dataset?"}
+{"id": 106, "query": "What is the combination of rewards for reinforcement learning?"}
+{"id": 107, "query": "What limitations do the authors demnostrate of their model?"}
+{"id": 108, "query": "Which existing benchmarks did they compare to?"}
+{"id": 109, "query": "What were their distribution results?"}
+{"id": 110, "query": "How is the dataset of hashtags sourced?"}
+{"id": 111, "query": "what accents are present in the corpus?"}
+{"id": 112, "query": "What can word subspace represent?"}
+{"id": 113, "query": "What baseline model is used?"}
+{"id": 114, "query": "Is SemCor3.0 reflective of English language data in general?"}
+{"id": 115, "query": "How big is Augmented LibriSpeech dataset?"}
+{"id": 116, "query": "What dataset did they use?"}
+{"id": 117, "query": "Do they use large or small BERT?"}
+{"id": 118, "query": "Are the automatically constructed datasets subject to quality control?"}
+{"id": 119, "query": "Are the images from a specific domain?"}
+{"id": 120, "query": "What was their performance on emotion detection?"}
+{"id": 121, "query": "What is the tagging scheme employed?"}
+{"id": 122, "query": "Is Arabic one of the 11 languages in CoVost?"}
+{"id": 123, "query": "How do they define robustness of a model?"}
+{"id": 124, "query": "What other sentence embeddings methods are evaluated?"}
+{"id": 125, "query": "What are method's improvements of F1 for NER task for English and Chinese datasets?"}
+{"id": 126, "query": "On which tasks do they test their conflict method?"}
+{"id": 127, "query": "Which baselines did they compare against?"}
+{"id": 128, "query": "What is te core component for KBQA?"}
+{"id": 129, "query": "What are the baseline models?"}
+{"id": 130, "query": "Which methods are considered to find examples of biases and unwarranted inferences??"}
+{"id": 131, "query": "What language do they explore?"}
+{"id": 132, "query": "Which models did they experiment with?"}
+{"id": 133, "query": "Do they report results only on English data?"}
+{"id": 134, "query": "What summarization algorithms did the authors experiment with?"}
+{"id": 135, "query": "What was the previous state of the art for this task?"}
+{"id": 136, "query": "Which component is the least impactful?"}
+{"id": 137, "query": "What is the corpus used for the task?"}
+{"id": 138, "query": "Which 7 Indian languages do they experiment with?"}
+{"id": 139, "query": "What is the model performance on target language reading comprehension?"}
+{"id": 140, "query": "How big is the difference in performance between proposed model and baselines?"}
+{"id": 141, "query": "How much improvement is gained from Adversarial Reward Augmented Maximum Likelihood (ARAML)?"}
+{"id": 142, "query": "What evidence do the authors present that the model can capture some biases in data annotation and collection?"}
+{"id": 143, "query": "Were other baselines tested to compare with the neural baseline?"}
+{"id": 144, "query": "What is the size of the dataset?"}
+{"id": 145, "query": "What are method improvements of F1 for paraphrase identification?"}
+{"id": 146, "query": "What datasets are used?"}
+{"id": 147, "query": "What data was presented to the subjects to elicit event-related responses?"}
+{"id": 148, "query": "Which baselines are used for evaluation?"}
+{"id": 149, "query": "What learning models are used on the dataset?"}
+{"id": 150, "query": "What language model architectures are used?"}
+{"id": 151, "query": "How are weights dynamically adjusted?"}
+{"id": 152, "query": "What are the results from these proposed strategies?"}
+{"id": 153, "query": "What does an individual model consist of?"}
+{"id": 154, "query": "How is non-standard pronunciation identified?"}
+{"id": 155, "query": "What is a semicharacter architecture?"}
+{"id": 156, "query": "which languages are explored?"}
+{"id": 157, "query": "How effective is their NCEL approach overall?"}
+{"id": 158, "query": "Is the data de-identified?"}
+{"id": 159, "query": "What was the baseline used?"}
+{"id": 160, "query": "where did they obtain the annotated clinical notes from?"}
+{"id": 161, "query": "Why masking words in the decoder is helpful?"}
+{"id": 162, "query": "Which dataset do they use?"}
+{"id": 163, "query": "What features are used?"}
+{"id": 164, "query": "How is the dataset annotated?"}
+{"id": 165, "query": "Which eight NER tasks did they evaluate on?"}
+{"id": 166, "query": "How was the training data translated?"}
+{"id": 167, "query": "What model did they use for their system?"}
+{"id": 168, "query": "What was the baseline for this task?"}
+{"id": 169, "query": "What baselines do they compare with?"}
+{"id": 170, "query": "How is the political bias of different sources included in the model?"}
+{"id": 171, "query": "Where does the ancient Chinese dataset come from?"}
+{"id": 172, "query": "In what language are the tweets?"}
+{"id": 173, "query": "which chinese datasets were used?"}
+{"id": 174, "query": "How many layers does the UTCNN model have?"}
+{"id": 175, "query": "what dataset is used in this paper?"}
+{"id": 176, "query": "What are the clinical datasets used in the paper?"}
+{"id": 177, "query": "What traditional linguistics features did they use?"}
+{"id": 178, "query": "What metrics are used to establish that this makes chatbots more knowledgeable and better at learning and conversation? "}
+{"id": 179, "query": "Do they employ their indexing-based method to create a sample of a QA Wikipedia dataset?"}
+{"id": 180, "query": "Which sports clubs are the targets?"}
+{"id": 181, "query": "What experiments are conducted?"}
+{"id": 182, "query": "How does Gaussian-masked directional multi-head attention works?"}
+{"id": 183, "query": "What types of social media did they consider?"}
+{"id": 184, "query": "What are the network's baseline features?"}
+{"id": 185, "query": "Which hyperparameters were varied in the experiments on the four tasks?"}
+{"id": 186, "query": "What were the scores of their system?"}
+{"id": 187, "query": "How large is the corpus?"}
+{"id": 188, "query": "Is it possible to convert a cloze-style questions to a naturally-looking questions?"}
+{"id": 189, "query": "What NLP tasks do they consider?"}
+{"id": 190, "query": "What previous methods is their model compared to?"}
+{"id": 191, "query": "How larger are the training sets of these versions of ELMo compared to the previous ones?"}
+{"id": 192, "query": "How many sentences does the dataset contain?"}
+{"id": 193, "query": "Which models/frameworks do they compare to?"}
+{"id": 194, "query": "Does their NER model learn NER from both text and images?"}
+{"id": 195, "query": "Do they evaluate only on English datasets?"}
+{"id": 196, "query": "What was their highest MRR score?"}
+{"id": 197, "query": "What datasets do they evaluate on?"}
+{"id": 198, "query": "How do the authors evidence the claim that many engineers find it a big overhead to choose from multiple frameworks, models and optimization techniques?"}
+{"id": 199, "query": "On which benchmarks they achieve the state of the art?"}

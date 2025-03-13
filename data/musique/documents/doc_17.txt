@@ -1,0 +1,710 @@
+Passage 1:
+CDC SCOPE
+SCOPE (Supervisory Control of Program Execution) is a series of Control Data Corporation batch operating systems developed in the 1960s.
+
+Variants
+SCOPE for the CDC 3000 series
+SCOPE for the CDC 6000 series
+SCOPE and SCOPE-2 for the CDC 7600/Cyber-76
+
+SCOPE for the CDC 3000 series
+SCOPE for the CDC 6000 series
+This operating system was based on the original Chippewa Operating System. In the early 1970s, it was renamed NOS/BE for the CDC Cyber machines. The SCOPE operating system is a file-oriented system using mass storage, random access devices. It was designed to make use of all capabilities of CDC 6000 computer systems and exploits fully the multiple-operating modes of all segments of the computer. Main tasks of SCOPE are controlling job execution, storage assignment, performing segment and overlay loading. Its features include comprehensive input/output functions and library maintenance routines. The operating system chronologically records all jobs run and any problems encountered. To aid debugging, dumps and memory maps are available.
+
+Description
+SCOPE is a multiprogramming operating system capable of running up to eight jobs, called control points, at one time. One control point is used for system functions.: p.1-2  Later versions increased this limit to 15.
+SCOPE runs on the 6x00's peripheral processors (PPs). "A central processor (CP)… is completely within the power of every PP at all times." One PP, identified as PP0 runs the Monitor Program (MTR) "that oversees or controls all other activities." PP9 is assigned to control the system console typewriter and displays. The other PPs perform input/output functions as directed by MTR.: p.1-1 A portion of the central processor's memory (called central memory, or CM) the Central Memory Resident (CMR) "is reserved for various system tables accessible by the PPs.”: p.1-2  Part of this CMR is a communications area for each PP. Each communications area contains an "input register" and an "output register", followed by a message buffer.: p.1-1 When the computer is deadstarted, all PP's are loaded with system code from magnetic tape. PP0 will begin running the monitor code. The remaining PPs will loop reading their input registers waiting for requests from the monitor.: p.1-1
+
+Software
+As of SCOPE 3.3 a number of programming language compilers and utilities were supported. Major languages were ALGOL, BASIC, FORTRAN, COBOL, and COMPASS (assembler). Other languages were APT, CSSL 3 (Continuous System Simulation Language), JOVIAL, SIMSCRIPT, and SIMULA. Other software included IGS (Interactive Graphics System), PERT, and SORT/MERGE.CDC systems were considered supercomputers, and customers were often large government agencies and research facilities. Most of these had specialized requirements, and often wrote their own software.
+
+Competition
+SCOPE was written by a programming team in Sunnyvale, California, about 2,000 miles from the CDC hardware division.  It was considered by them a buggy and inefficient piece of software, though not much different than many operating systems of the era.  At the CDC Arden Hills, Minnesota laboratories (where they referred to SCOPE as Sunnyvale's Collection Of Programming Errors) they had a competing operating system, MACE.  This was the Mansfield And Cahlander Executive (from Greg Mansfield and Dave Cahlander, the authors of the system).  It had started as an engineering test executive, but eventually developed into a complete operating system — a modularized rewrite and enhancement of the original Chippewa Operating System (COS).  While never an official CDC product, a copy was freely given to any customer who asked for one.  Many customers did, especially the more advanced ones (like University and research sites).
+When Control Data decided to write its next operating system Kronos, it considered both the current SCOPE system and the unofficial MACE alternative.  They chose to abandon the SCOPE system and base Kronos on the MACE software.  Eventually, Kronos was replaced by the new Network Operating System (NOS).  Though many smaller CDC customers continued to use the SCOPE system rather than Kronos.  When NOS became the primary Control Data operating system, some customers running mainly batch operations were reluctant to switch to the NOS system, as they saw no benefit for their shop.  So the SCOPE system was maintained, and renamed as NOS/BE (Batch Environment), primarily so that CDC Marketing could say that all mainframe customers were using the NOS operating system.
+
+Current status
+The computer emulation community has made repeated attempts to recover and preserve CDC software. It is now running under a CDC CYBER and 6000 series emulator.
+
+See also
+CDC Kronos
+NOS
+Passage 2:
+Standing Rules of the United States Senate
+The Standing Rules of the Senate are the parliamentary procedures adopted by the United States Senate that govern its procedure. The Senate's power to establish rules derives from Article One, Section 5 of the United States Constitution: "Each House may determine the rules of its proceedings ..."
+There are currently forty-five rules, with the latest revision adopted on January 24, 2013. The most recent addition of a new rule occurred in 2006, when The Legislative Transparency and Accountability Act of 2006 introduced a 44th rule on earmarks. The stricter rules are often waived by unanimous consent.
+
+Outline of rules
+Quorum
+The Constitution provides that a majority of the Senate constitutes a quorum to do business. Under the rules and customs of the Senate, a quorum is always assumed to be present unless a quorum call explicitly demonstrates otherwise. Any senator may request a quorum call by "suggesting the absence of a quorum"; a clerk then calls the roll of the Senate and notes which members are present. In practice, senators almost always request quorum calls not to establish the presence of a quorum, but to temporarily delay proceedings without having to adjourn the session. Such a delay may serve one of many purposes; often, it allows Senate leaders to negotiate compromises off the floor or to allow senators time to come to the Senate floor to make speeches without having to constantly be present in the chamber while waiting for the opportunity. Once the need for a delay has ended, any senator may request unanimous consent to rescind the quorum call.
+
+Debate
+The Senate is presided over by the Presiding Officer, either the President of the Senate (the Vice President) or more often the President pro tempore (in special cases the Chief Justice presides). During debates, senators may speak only if called upon by the Presiding Officer. The Presiding Officer is, however, required to recognize the first senator who rises to speak. Thus, the Presiding Officer has little control over the course of debate. Customarily, the majority leader and minority leader are accorded priority during debates, even if another senator rises first. All speeches must be addressed to the Presiding Officer, using the words "Mr. President" or "Madam President". Only the Presiding Officer may be directly addressed in speeches; other members must be referred to in the third person. In most cases, senators refer to each other not by name, but by state, using forms such as "the senior senator from Virginia" or "the junior senator from California".
+There are very few restrictions on the content of speeches, and there is no requirement that speeches be germane to the matter before the Senate.
+The Senate Rules provide that no senator may make more than two speeches on a motion or bill on the same legislative day (a legislative day begins when the Senate convenes and ends when it adjourns; hence, it does not necessarily coincide with the calendar day). The length of these speeches is not limited by the rules; thus, in most cases, senators may speak for as long as they please. Often, the Senate adopts unanimous consent agreements imposing time limits. In other cases (for example, for the budget process), limits are imposed by statute. In general, however, the right to unlimited debate is preserved.
+
+Filibuster
+The filibuster is an obstructionary tactic used to defeat bills and motions by prolonging debate indefinitely. A filibuster may entail, but does not actually require, long speeches, dilatory motions, and an extensive series of proposed amendments. The longest filibuster speech in the history of the Senate was delivered by Strom Thurmond, who spoke for over twenty-four hours in an unsuccessful attempt to block the passage of the Civil Rights Act of 1957. The Senate may end a filibuster by invoking cloture. In most cases, cloture requires the support of three-fifths of the Senate. Cloture is invoked very rarely, particularly because bipartisan support is usually necessary to obtain the required supermajority. If the Senate does invoke cloture, debate does not end immediately; instead, further debate is limited to thirty additional hours unless increased by another three-fifths vote.
+
+Closed session
+On occasion, the Senate may go into what is called a secret or closed session. During a closed session, the chamber doors are closed and the galleries are completely cleared of anyone not sworn to secrecy, not instructed in the rules of the closed session, or not essential to the session. Closed sessions are rare and are usually held only under certain circumstances in which the Senate is discussing sensitive subject matter, such as information critical to national security, private communications from the president, or discussions of Senate deliberations during impeachment trials. Any Senator has the right to call a closed session as long as the motion is seconded.
+
+Voting
+When debate concludes, the motion in question is put to a vote. In many cases, the Senate votes by voice vote; the presiding officer puts the question, and Members respond either "Aye!" (in favor of the motion) or "No!" (against the motion). The presiding officer then announces the result of the voice vote. Any senator, however, may challenge the presiding officer's assessment and request a recorded vote. The request may be granted only if it is seconded by one-fifth of the senators present. In practice, however, senators second requests for recorded votes as a matter of courtesy. When a recorded vote is held, the clerk calls the roll of the Senate in alphabetical order; each senator responds when their name is called. Senators who miss the roll call may still cast a vote as long as the recorded vote remains open. The vote is closed at the discretion of the presiding officer but must remain open for a minimum of fifteen minutes. If the vote is tied, the Vice President, if present, is entitled to a casting vote. If the Vice President is not present, however, the motion is resolved in the negative.
+
+Committees
+Tasks in the Senate are divided among sixteen standing committees, four select committees, four joint committees, and occasionally temporary committees. Senate rules establish the policy jurisdictions of each committee; for example, the Committee on Foreign Relations deals with all matters relating to foreign policy. Committees act, in effect, as "little legislatures", monitoring ongoing governmental operations, identifying issues suitable for legislative review, gathering and evaluating information, and recommending courses of action to their parent body in matters relating to their jurisdiction. Senate rules give committees significant gatekeeping authority over legislation that falls under their jurisdiction, with proposed bills submitted to the relevant committee, which can hold hearings, "mark up" bills, consolidate bills into a "clean bill", or ignore the bill altogether (there exist some workarounds for Senators to circumvent committees, but in general Senators work through the committee system).The size of each standing committee is established by Senate rules. The makeup of committees are established through inter-party negotiations before each new Congress, with the percentage of a party's representation within the Senate determining the percentage of seats it will have on each committee.
+
+Reconciliation
+Legislation affecting spending, revenues, and the federal debt limit is governed under a special rules process called "Reconciliation" that prohibits filibusters by limiting debate to twenty hours. Congress can pass up to three reconciliation bills per year, with each bill addressing one of the topics of reconciliation (revenue, spending, or the debt limit). However, if Congress passes a reconciliation bill affecting more than one of those topics, it cannot pass another reconciliation bill later in the year affecting one of the topics addressed by the previous reconciliation bill. In practice, reconciliation bills have usually been passed once per year at most. Reconciliation cannot be used to enact or rescind discretionary spending (which is controlled through the annual appropriations process) or adjust Social Security spending, and is limited by the Byrd Rule, which allows senators to block provisions that are "extraneous" to spending, revenues, or the debt limit.Reconciliation was created by the Congressional Budget Act of 1974, and significantly altered with the introduction of the Byrd Rule in 1985 (amended in 1990). Originally infrequently used (it did not see first use until 1980).
+
+Nominations
+Selected public positions in the United States are appointed by the president but require Senate approval. Senate rule XXXI governs the Senate process for considering the president's nominations.
+For most positions the nomination is passed first to a Senate committee for review. Generally it is the Senate committee with jurisdiction over the topic or department related to the position to be filled.A public hearing by the committee is possible. Historically about half of civilian appointees were approved without a hearing. After consideration, the committee can report a favorable recommendation, or an unfavorable recommendation, or it can report no recommendation. It can also fail to act. To simplify the process, and with the support of the committee, the Senate by unanimous consent might discharge a nomination from the committee without the committee having acted.It is up to the leadership of the Senate to then place the nomination on the Senate calendar for a vote in executive session. Some nominations are passed by unanimous consent. The leadership may delay putting a nomination on the calendar, in which case it may not be acted upon.
+
+Nomination Time Limit
+Paragraph 6 of rule XXXI specifies that if final action has not been taken before Congress adjourns the nomination is returned to the President. By the same rule nominations are returned when the Senate goes into recess for more than 30 days. However, in modern practice some nominations may stay active over long recesses if the Senate holds pro forma sessions during recess or agrees to suspend the rule by unanimous consent. When a nomination is returned without action, the president may nominate a different person or re-nominate the same person.
+
+Rules by number
+There are currently forty-four Standing Rules of the Senate:
+SR Rule I: Appointment of a Senator to the Chair
+SR Rule II: Presentation of Credentials and Questions of Privilege
+SR Rule III: Oaths
+SR Rule IV: Commencement of Daily Sessions
+SR Rule V: Suspension and Amendment of the Rules
+SR Rule VI: Quorum – Absent Senators May Be Sent For
+SR Rule VII: Morning Business
+SR Rule VIII: Order of Business
+SR Rule IX: Messages
+SR Rule X: Special Orders
+SR Rule XI: Papers – Withdrawal, Printing, Reading of, and Reference
+SR Rule XII: Voting Procedure
+SR Rule XIII: Reconsideration
+SR Rule XIV: Joint Resolutions, and Preambles Thereto
+SR Rule XV: Amendments and Resolutions
+SR Rule XVI: Appropriations and Amendments to General Appropriation Bills
+SR Rule XVII: Reference to Committees; Motions to Discharge; Reports of Committees; and Hearings Available
+SR Rule XVIII: Business Continued from Session to Session
+SR Rule XIX: Debate
+SR Rule XX: Questions for Order
+SR Rule XXI: Session with Closed Doors
+SR Rule XXII: Precedence of Motions
+SR Rule XXIII: Privilege of the Floor
+SR Rule XXIV: Appointments of Committee
+SR Rule XXV: Standing Committees
+SR Rule XXVI: Committee Procedure
+SR Rule XXVII: Committee Staff
+SR Rule XXVIII: Conference Committees; Reports; Open Meetings
+SR Rule XXIX: Executive Sessions
+SR Rule XXX: Executive Session – Proceedings on Treaties
+SR Rule XXXI: Executive Session – Proceedings on Nominations
+SR Rule XXXII: The President Furnished with Copies of Record Executive Sessions
+SR Rule XXXIII: Senate Chamber – Senate Wing of the Capitol
+SR Rule XXXIV: Public Financial Disclosure
+SR Rule XXXV: Gifts
+SR Rule XXXVI: Outside Earned Income
+SR Rule XXXVII: Conflict of Interest
+SR Rule XXXVIII: Prohibition of Unofficial Office Accounts
+SR Rule XXXIX: Foreign Travel
+SR Rule XL: Franking Privilege and Radio and Television Studios
+SR Rule XLI: Political Fund Activity; Definitions
+SR Rule XLII: Employment Practices
+SR Rule XLIII: Representation by Members
+SR Rule XLIV: Congressionally Directed Spending and Related ItemsThe latest change was the introduction in 2006 of a 44th rule on earmarks, by the Legislative Transparency and Accountability Act.
+Passage 3:
+Festus Olabode Ola
+Festus Olabode Ola (born 12 November 1956) was elected Senator for Ekiti Central constituency of Ekiti State, Nigeria, taking office on 30 June 2009. He is a member of the Action Congress (AC) party.Ola obtained a Higher National Diploma in Accountancy in 1982.
+He was employed in the Foreign Service (1983–2004).
+In the 2007 elections Adefemi Kila of the People's Democratic Party (PDP) was declared the winner for Ekiti Central. However, on 30 June 2009, the Court of Appeal quashed Kila's election and declared Bode Ola the lawful winner of the April 2007 poll. A deciding factor was that 19,000 of the ballots cast for Chief Kila had the same serial number.
+Passage 4:
+2018 Wisconsin gubernatorial election
+The 2018 Wisconsin gubernatorial election took place on November 6, 2018.  It occurred concurrently with a Senate election in the state, elections to the state's U.S. House seats, and various other elections. Incumbent Republican Governor Scott Walker sought re-election to a third term, and was challenged by Democratic candidate and then-Superintendent of Public Instruction Tony Evers, as well as Libertarian Phil Anderson and independent Maggie Turnbull. Evers, along with his running mate Mandela Barnes, managed to defeat Walker and Lieutenant Governor Rebecca Kleefisch in a closely fought and widely watched race, ending unified Republican control of the state.
+The result was considered "too close to call" on election night, with Walker and Evers being separated by a mere few hundred votes for much of the night as counties reported their results. Shortly after midnight on November 7, Milwaukee County reported around 46,000 late absentee ballots. From those late ballots, Evers received 38,674 votes, or 84% of the total, and Walker 7,181, giving Evers a narrow lead. The race was called for him shortly after.Wisconsin was the only state in the 2018 gubernatorial election cycle to elect a Democratic governor while voting more Republican than the national average. With a margin of 1.1%, this election was also the second-closest race of the 2018 gubernatorial election cycle, behind only the election in Florida. Walker was one of two Republican incumbent governors to be defeated for re-election in 2018, the other being Bruce Rauner in neighboring Illinois, who had lost decisively to J.B. Pritzker.
+
+Republican primary
+Governor
+Candidates
+Nominated
+Scott Walker, incumbent governor
+
+Eliminated in primary
+Robert Meyer, businessman and candidate for mayor of Sun Prairie in 2007
+
+Endorsements
+Results
+Lieutenant governor
+Candidates
+Nominated
+Rebecca Kleefisch, incumbent lieutenant governor
+
+Results
+Democratic primary
+Governor
+The primary election for the Democratic nomination featured a crowded field of candidates. The race was ultimately won by Tony Evers with around 40% of the vote.
+
+Candidates
+Nominated
+Tony Evers, Wisconsin state superintendent of public instruction
+
+Eliminated in primary
+Matt Flynn, former chair of the Democratic Party of Wisconsin, retired partner at Quarles & Brady and candidate for U.S. Senate in 1986
+Mike McCabe, former executive director of Wisconsin Democracy Campaign and candidate for the State Assembly in 1998
+Mahlon Mitchell, president of the Professional Fire Fighters of Wisconsin and nominee for lieutenant governor in 2012
+Josh Pade, lawyer
+Kelda Roys, former state representative and candidate for WI-02 in 2012
+Paul Soglin, Mayor of Madison and nominee for WI-02 in 1996
+Kathleen Vinehout, state senator and candidate for governor in 2012
+
+Withdrew
+Mike Crute, liberal talk radio broadcaster (endorsed Mike McCabe)
+Michele Doolan, businesswoman (endorsed Matt Flynn)
+Andy Gronik, businessman (still on ballot; endorsed Kelda Roys)
+Bob Harlow, candidate for CA-18 in 2016 (endorsed Matt Flynn)
+Kurt Kober, businessman (running for lieutenant governor)
+Jeff Rumbaugh, disability rights activist. (endorsed Mike McCabe)
+Dana Wachs, state representative (still on ballot; endorsed Tony Evers)
+
+Declined
+Chris Abele, Milwaukee County Executive
+Mark Bakken, businessman
+Peter Barca, state representative and former U.S. Representative
+Tom Barrett, Mayor of Milwaukee, former U.S. Representative and nominee for governor in 2010 and 2012.
+John T. Chisholm, Milwaukee County District Attorney (endorsed Matt Flynn)
+Kevin Conroy, president and CEO of Exact Sciences
+Timothy Cullen, former state senator
+Katherine Gehl, former president and CEO of Gehl Foods
+Gordon Hintz, minority leader of the State Assembly
+Brett Hulsey, former state representative and candidate for governor in 2014
+Ron Kind, U.S. Representative
+James Kreuser, Kenosha County executive
+Joe Parisi, Dane County executive
+Mark Pocan, U.S. representative
+Jennifer Shilling, Democratic leader of the State Senate
+
+Endorsements
+Polling
+An asterisk (*) denotes that a candidate withdrew before the primary but remains on the ballot.
+
+Results
+Lieutenant governor
+Mandela Barnes, a former state representative from Milwaukee, defeated opponent Kurt Kober by a 2 to 1 margin for the nomination, becoming the first African American to be nominated by a major party for a Wisconsin gubernatorial ticket.
+
+Candidates
+Nominated
+Mandela Barnes, former state representative, and candidate for state senate in 2016
+
+Eliminated in primary
+Kurt Kober, businessman
+
+Results
+Libertarian convention
+Governor
+Nominee
+Phil Anderson, chairman of the Wisconsin Libertarian Party and Libertarian nominee for the U.S. Senate in 2016
+
+Endorsements
+Lieutenant governor
+Nominee
+Patrick Baird, U.S. Navy veteran
+
+Green Party primary
+Governor
+Candidates
+Nominated
+Michael White
+
+Withdrew
+Nick De Leon, pastor (endorsed Matt Flynn)
+
+Results
+Lieutenant governor
+Candidates
+Nominated
+Tiffany Anderson
+
+Results
+Independent candidates
+Governor
+Maggie Turnbull, astrobiologist
+
+Lieutenant governor
+Wil Losch, Turnbull's running mate
+
+General election
+Despite the fact that Scott Walker had won three prior races for governor in 2010, 2012, and 2014 by fairly comfortable margins, his bid for a third term was complicated by rising unpopularity due to his policies concerning public education and infrastructure. Walker also faced backlash for a deal his administration made with Taiwanese company Foxconn in 2017 to create jobs in the state in exchange for around $4.5 billion in taxpayer subsidies. In 2018, the deal resulted in around $90 million of funding for roads being diverted to a stretch of I-94 that was set to be near a future Foxconn plant from the rest of state. The poor condition of many roads around the state as well as the lack of work being done to redo them prompted a campaign where potholes were being labeled as “Scott”-holes.Walker's approval ratings were hobbled further by the unpopularity of Republican U.S. President Donald Trump in Wisconsin. Walker himself sounded the alarm on this several times in early 2018 after Democrats won two special elections to the Wisconsin State Senate in typically Republican districts and an election to the Wisconsin Supreme Court. In April 2018, Walker warned that Wisconsin was “at risk of a blue wave“ in November. The Walker campaign generally focused on promoting the popular parts of his record, such as a freeze on tuition at public universities and record low unemployment.The result was expected to be close, with a record $93 million spent on the race by the two major campaigns and special interest groups from in and out of the state. In the end, Walker was ultimately defeated by Democrat Tony Evers, who garnered a slightly more than 1% margin of victory, as Democrats swept every statewide race up for election.
+
+Predictions
+Polling
+Results
+Evers won the election by a 1.09% margin.
+
+Results by county
+By congressional districts
+Despite losing the state, Walker won 5 of the 8 congressional districts.
+
+Aftermath
+Despite the close result, Scott Walker was unable to request a recount due to a law he had signed himself two years prior, which requires the margin of difference to be within 1%.
+
+Lame duck legislative session
+Early in December 2018, a special legislative session was called by Walker to pass a series of bills to limit the powers of Governor-elect Evers, as well as incoming Democratic State attorney general Josh Kaul who had defeated incumbent Brad Schimel.Other bills being considered included restrictions on early voting and the passage of Medicaid work requirements, which Walker had previously held off on due to the election. A similar law restricting early voting that was passed several years prior had been ruled as unconstitutional.The bills were widely denounced by Democrats and others as a “power grab.” Congresswoman Gwen Moore described the move as a “coup” that “hijacked the voters’ will.”  Walker and other Republicans meanwhile argued that the bills were necessary ”checks on power” and that they did not actually strip any real powers from the executive. Lawsuits were filed by Evers and various labor unions almost immediately after Walker signed the bills into law.
+
+See also
+2018 Wisconsin elections
+2018 United States gubernatorial elections
+2018 United States elections
+
+Notes
+Passage 5:
+1946 United States House of Representatives elections
+The 1946 United States House of Representatives elections were elections for the United States House of Representatives to elect members to serve in the 80th United States Congress. They were held for the most part on November 5, 1946, while Maine held theirs on September 9. November 1946 was 19 months after President Harry S. Truman assumed office upon the death of Franklin D. Roosevelt.
+While Democrats had controlled the House for 16 years since 1931 and Roosevelt had been elected to a record four terms in office, Truman did not garner the same support as the deceased president. The 1946 election resulted in Republicans picking up 55 seats to win majority control. Joseph Martin, Republican of Massachusetts, became Speaker of the House, exchanging places with Sam Rayburn, Democrat of Texas, who became the new Minority Leader. The Democratic defeat was the largest since they were trounced in the 1928 pro-Republican wave that brought Herbert Hoover to power. They also lost the Senate in the concurrent Senate elections.
+The vote was largely seen as a referendum on Truman, whose approval rating had sunk to 32 percent over the president's controversial handling of a wave of post-war labor strikes, including a United Auto Workers strike against Ford and General Motors in 1945, a United Mine Workers strike starting in April 1946, and a national railroad worker strike that began in May. Further damage resulted from the back-and-forth over whether to end wartime price controls, unpopular with the American business constituency, to handle shortages, particularly in meat and other foodstuffs. While Truman's early months in the White House had been plagued with questions of "What would Roosevelt do if he were alive?" Republicans now began to joke "What would Truman do if he were alive?" and "To err is Truman." However, the Republican majority was short-lived, as Democrats regained control of the House two years later.
+
+Overall results
+Source: Election Statistics - Office of the Clerk
+
+Special elections
+In these special elections, the winner was seated during 1946 or before January 3, 1947; ordered by election date, then by district.
+
+Alabama
+Arizona
+Arkansas
+California
+Colorado
+Connecticut
+Delaware
+Florida
+Georgia
+Idaho
+Illinois
+Indiana
+Iowa
+Kansas
+Kentucky
+Louisiana
+Maine
+Maryland
+Massachusetts
+Michigan
+Minnesota
+Mississippi
+Missouri
+Montana
+Nebraska
+Nevada
+New Hampshire
+New Jersey
+New Mexico
+New York
+North Carolina
+North Dakota
+Ohio
+Oklahoma
+Oregon
+Pennsylvania
+Rhode Island
+South Carolina
+South Dakota
+Tennessee
+Texas
+Utah
+Vermont
+Virginia
+Washington
+West Virginia
+Wisconsin
+Wyoming
+Non-voting delegates
+Alaska Territory
+See also
+1946 United States elections
+1946 United States Senate elections
+1946 California's 12th congressional district election (the Richard Nixon-Jerry Voorhis race)
+79th United States Congress
+80th United States Congress
+
+Notes
+Passage 6:
+Sulaiman Mohammed Nazif
+Sulaiman Mohammed Nazif (born 14 April 1970) is a Nigerian politician, who represented the Bauchi North constituency of Bauchi State, Nigeria, in the Senate of Nigeria. He took office on 29 May 2007. He was elected on the Action Congress (AC) platform.Nazif attended the Federal Polytechnic Staff School, Bauchi (1981–1983), the Nigerian Military School (1983–1988) and Ahmadu Bello University, Zaria, graduating in 1990 as an Engineer.
+After taking his seat in the Senate, he was appointed to committees on Women and Youth, Water Resources, Solid Minerals, Local & Foreign Debts, Land Transport (Vice Chairman), Drugs and Narcotics, Anti Corruption and Communications.
+He was also appointed the Publicity Secretary of the Northern Senators Forum.He was nominated to go to the U.S. to witness the inauguration of President Barack Obama. However, when he arrived at Washington Dulles International Airport he was told his visa was not in order and was not allowed to enter the country.
+In a mid-term evaluation of Senators in May 2009, ThisDay said that he had not sponsored any bill but co-sponsored some bills, including the Nigerian Railway Corporation (Repeal and Reenactment) Bill 2008. He co-sponsored fifteen motions and made brilliant contributions to debates in plenary.Nazif was a contender to become governor of Bauchi State in the 28 April 2011 elections, running on the All Nigeria People's Party (ANPP) platform. He came fourth with 102,093 votes, losing to the incumbent Governor Isa Yuguda, who won 771,503 votes.
+
+Incomplete project controversy
+In January 2022, WikkiTimes reported on several incomplete constituency projects from Nazif's term in office, specifically two nonexistent skills acquisition centres that cost over ₦41 million in public funds. One "centre" was entirely on paper with no evidence of any construction while the other "centre" was simply an abandoned building that had never been utilized. The investigation also found that the contract awarding process did not follow legally required procedures and the companies given the construction contracts did not have any physical or recent presence. Nazif did not respond to requests for comment.
+Passage 7:
+2014 United States Senate elections
+The 2014 United States Senate elections were held on November 4, 2014. A total of 36 seats in the 100-member U.S. Senate were contested. Thirty-three Class 2 seats were contested for regular six-year terms to be served from January 3, 2015, to January 3, 2021, and three Class 3 seats were contested in special elections due to Senate vacancies. The elections marked 100 years of direct elections of U.S. senators. Going into the elections, 21 of the contested seats were held by the Democratic Party, while 15 were held by the Republican Party.
+The Republicans regained the majority of the Senate in the 114th Congress, which started in January 2015; the Republicans had not controlled the Senate since January 2007. They needed a net gain of at least six seats to obtain a majority and were projected by polls to do so. On election night, they held all of their seats and gained nine Democratic-held seats. Republicans defeated five Democratic incumbents: Mark Begich of Alaska lost to Dan Sullivan, Mark Pryor of Arkansas lost to Tom Cotton, Mark Udall of Colorado lost to Cory Gardner, Mary Landrieu of Louisiana lost to Bill Cassidy, and Kay Hagan of North Carolina lost to Thom Tillis. Republicans also picked up another four open seats in Iowa, Montana, South Dakota, and West Virginia. Democrats did not pick up any Republican-held seats, but they did hold an open seat in Michigan.
+This was the second consecutive election held in a president's sixth year where control of the Senate changed hands, the first being in 2006. This was also the first time that the Democrats lost control of the Senate in a sixth-year midterm since 1918. With a total net gain of nine seats, the Republicans made the largest Senate gain by any party since 1980. This is also the first election since 1980 in which more than two incumbent Democratic Senators were defeated by their Republican challengers. Days after the election, the United States Election Project estimated that 36.4% of eligible voters voted, 4% lower than the 2010 elections, and possibly the lowest turnout rate since the 1942 election.As of 2022, this remains the last time that a Republican has won a U.S. Senate election in Colorado. This is the most recent Senate elections where any Republican flipped an open Democratic-held seat. This is also the most recent election where the party winning control of the Senate won the popular vote. It also remains the last time that the president's party has suffered a net loss of Senate seats in a midterm.
+
+Partisan composition
+For a majority, Republicans needed at least 51 seats. Democrats could have retained a majority with 48 seats (assuming the two Independents continued to caucus with them) because the Democratic Vice President Joe Biden would become the tie-breaker. From 1915 to 2013, control of the U.S. Senate flipped in 10 of 50 cycles, or 20% of the time. Republicans had lost ground in the 2012 elections, leading to an internal fight among the Republican leadership over the best strategies and tactics for the 2014 Senate races. By December 2013, eight of the twelve incumbent Republicans running for re-election saw Tea Party challenges. However, Republican incumbents won every primary challenge. Although Democrats saw some opportunities for pickups, the combination of Democratic retirements and numerous Democratic seats up for election in swing states and red states gave Republicans hopes of taking control of the Senate. 7 of the 21 states with Democratic seats up for election in 2014 had voted for Republican Mitt Romney in the 2012 presidential election compared to just 1 state with a Republican senator that voted for Barack Obama. Democrats also faced the lower voter turnout that accompanies mid-term elections.Poll aggregation website FiveThirtyEight gave the Republican Party a 60% chance of taking control of the Senate as of September 28. Another poll aggregation website, RealClearPolitics, gave the Republican Party a net gain of 7 seats. Due to the closeness of several races, it was initially believed that Senate control might not be decided on election night. Both Louisiana and Georgia were seen as competitive, and both states require a run-off election if no candidate takes a majority of the vote.
+Two independent candidates (in Kansas and South Dakota) refused to commit to caucusing with either party. In the final months of the race, polls showed them with viable chances of winning, leading some analysts to speculate on the possibility of an "Independent caucus" that could also include Maine Senator Angus King and possibly Vermont Senator Bernie Sanders. However, no Independent won a Senate race in 2014, and King and Sanders continue to caucus with the Democratic Party following the 2014 election.
+By midnight ET, most major networks projected that the Republicans would take control of the Senate. The party held all three competitive Republican-held seats (Kentucky, Kansas, and Georgia), and defeated incumbent Democrats in North Carolina, Colorado, and Arkansas. Combined with the pick-ups of open seats in Iowa, Montana, South Dakota, and West Virginia, the Republicans made a net gain of 7 seats before the end of the night. Republicans defeated three incumbent Democrats, a task the party had not accomplished since the 1980 election. Five of the seven confirmed pickups were in states that voted for Mitt Romney in 2012, but two of the seats that Republicans won represent states that voted for Barack Obama in 2012 (Colorado and Iowa). Of the three races that were not called by the end of election night, Alaska and Virginia were still too close to call, while Louisiana held a December 6 run-off election. Virginia declared Democrat Mark Warner the winner of his race by a narrow margin over Republican Ed Gillespie on November 7, and Alaska declared Dan Sullivan the winner against Democratic incumbent Mark Begich a week later, on November 12. Republican Bill Cassidy defeated Democratic incumbent Mary Landrieu in the Louisiana runoff on December 6.
+
+Election spending
+Altogether, at least $3.67 billion was spent by candidates, parties, committees and outside groups in the 2014 election. Spending on the 2014 Senate elections by outside groups (i.e., organizations other than a candidate's campaign, such as super PACs and "dark money" nonprofit groups) more than doubled from 2010. In the 10 competitive races for which data was available, outside groups accounted for 47% of spending, candidates accounted for 41% of spending, and parties accounted for 12% of spending. The Senate race with the most outside spending was in North Carolina, at $80 million, a new record.The top outside spenders in the 11 most competitive Senate races were the following:
+
+On the Republican side, the National Republican Senatorial Committee, Crossroads GPS, U.S. Chamber of Commerce, Ending Spending Action Fund, Freedom Partners Action Fund, American Crossroads, and the NRA Political Victory Fund.
+On the Democratic side, the Democratic Senatorial Campaign Committee, Senate Majority PAC, and NextGen Climate Action Committee.
+
+Results summary
+The Republican Party made a net gain of nine U.S. Senate seats in the 2014 elections.Going into the elections, there were 53 Democratic, 45 Republican and 2 independent senators (both of whom caucus with the Democrats). In all, there were 36 elections: 33 senators were up for election this year as class 2 senators, and 3 faced special elections (all from Class 3). Of all these seats, 21 were held by Democrats and 15 were held by Republicans.
+
+Colored shading indicates party with largest share of that row.
+
+Source: Clerk of the U.S. House of Representatives
+
+Change in composition
+Before the elections
+After the elections
+Gains and losses
+Retirements
+Four Democrats and two Republicans retired instead of seeking re-election.
+
+Resignations
+One Republican resigned four years into his six-year term.
+
+Nomination withdrawn
+One Democrat was originally to seek election for a full 6-year term in office but withdrew.
+
+Defeats
+Five Democrats sought re-election but lost in the general election.
+
+Race summaries
+Special elections during the preceding Congress
+In these special elections, the winners were elected during 2014 and seated before January 3, 2015 — except that one was seated on January 3, 2015, the effective date of the predecessor's resignation.
+
+Elections leading to the next Congress
+In these general elections, the winners were elected for the term beginning January 3, 2015; ordered by state.
+All of the elections involved the Class 2 seats.
+
+Closest races
+In seven races the margin of victory was under 10%.
+
+Final pre-election predictions
+Predicted probability of Republican takeover
+Several websites used poll aggregation and psephology to estimate the probability that the Republican Party would gain enough seats to take control of the Senate.
+
+Predictions
+Republicans needed to win at least six in order to gain a majority of 51 seats and Democrats needed to win at least seven in order to hold a majority of 50 seats (including the two independents who currently caucus with the Democrats) and the tie-breaking vote of Vice President Joe Biden.
+
+Alabama
+Three-term incumbent Republican Jeff Sessions had been re-elected with 63% of the vote in 2008. Sessions sought re-election. Democrat Victor Sanchez Williams ran against Sessions as a write-in candidate. Sessions won with 97.3 percent of the vote against assorted write-in candidates.
+
+Alaska
+One-term incumbent Democrat Mark Begich had been first elected with 48% of the vote in 2008, defeating six-term Senator Ted Stevens by 3,953 votes (a margin of 1.25%). Begich was 52 years old in 2014 and was seeking re-election to a second term. Stevens, who would have been almost 91 years old at the time of the election, had already filed for a rematch back in 2009, but was killed in a plane crash the following year.
+Republican Lieutenant Governor Mead Treadwell, 2010 nominee Joe Miller, State Natural Resources Commissioner Daniel S. Sullivan, and Air Force veteran John Jaramillo ran for the GOP nomination. In the August 19 primary, Sullivan won the Republican nomination with 40% and defeated Begich in the general election.
+
+Arkansas
+Two-term incumbent Democrat Mark Pryor had been re-elected with 80% of the vote without Republican opposition in 2008. Pryor was running for a third term.Freshman Representative Tom Cotton of Arkansas's 4th congressional district was the Republican nominee. In the general election, Cotton defeated Pryor.
+
+Colorado
+One-term incumbent Democrat Mark Udall had been elected with 53% of the vote in 2008. Udall was running for re-election.Congressman Cory Gardner of Colorado's 4th congressional district was the Republican nominee; his late entry into the race caused numerous Republicans to withdraw their candidacies. Gaylon Kent was the Libertarian Party nominee. Unity Party of America founder and National Chairman Bill Hammons was the Unity Party nominee.
+
+Delaware
+Democrat Chris Coons won in the 2010 United States Senate special election in Delaware caused by Joe Biden's election as Vice President, winning by a 57% to 41% margin. Coons sought re-election. His Republican opponent was engineer Kevin Wade, whom Coons went on to defeat in the general election.
+
+Georgia
+Two-term incumbent Republican Saxby Chambliss had been re-elected with 57% of the vote in 2008 in a runoff election with former state Representative Jim Martin; Georgia requires run-off elections when no Senate candidate wins over 50% of the vote. Chambliss did not seek a third term.Political activist Derrick Grayson, Representatives Jack Kingston of Georgia's 1st congressional district, Paul Broun of Georgia's 10th congressional district, and Phil Gingrey of Georgia's 11th congressional district all declared their candidacy for the Republican nomination, as did former Secretary of State Karen Handel. In the May 20 primary, no candidate received a majority of votes, so the top two candidates faced each other in a runoff; Perdue narrowly won against Kingston in the runoff primary election on July 22 with 50.9% of the vote.Michelle Nunn, CEO of Points of Light and the daughter of former U.S. Senator Sam Nunn, won the Democratic nomination. Other declared Democratic candidates included former State Senator Steen Miles, psychiatrist Branko Radulovacki, and former US Army Ranger Todd Robinson. Amanda Swafford, a former Flowery Branch, Georgia, city councilwoman, received the Libertarian Party of Georgia nomination.
+
+Hawaii (special)
+Daniel Inouye, the second longest serving United States Senator in U.S. history, died on December 17, 2012, after respiratory complications. Hawaii law allows the Governor of Hawaii, to appoint an interim Senator "who serves until the next regularly-scheduled general election, chosen from a list of three prospective appointees that the prior incumbent's political party submits". Governor Neil Abercrombie did so, selecting Lieutenant Governor Brian Schatz to fill the Senate seat. Inouye had been re-elected in 2010 with 72% of the vote. Schatz was challenged in the Democratic primary by Congresswoman Colleen Hanabusa of Hawaii's 1st congressional district, who Inouye had hoped would be his successor. Schatz defeated Hanabusa in the primary with 48.5% to 47.8%.Campbell Cavasso, former State Representative and nominee for the U.S. Senate in 2004 and 2010, was the Republican nominee.
+
+Idaho
+One-term incumbent Republican Jim Risch had been elected with 58% of the vote in 2008. Risch sought a second term.Boise attorney Nels Mitchell was the Democratic nominee.
+
+Illinois
+Three-term incumbent and Senate Majority Whip Democrat Dick Durbin had been re-elected with 68% of the vote in 2008. Durbin ran for a fourth term.State Senator Jim Oberweis was the Republican nominee. He defeated primary challenger Doug Truax with 56% of the vote.
+
+Iowa
+Five-term incumbent Democrat Tom Harkin had been re-elected with 63% of the vote in 2008. Harkin announced on January 26, 2013, that he would not seek a sixth term. Congressman Bruce Braley was the Democratic nominee.State Senator Joni Ernst was the Republican nominee.Doug Butzier, who was the Libertarian Party's nominee, died in a plane crash on October 13, 2014, but still appeared on the ballot.
+
+Kansas
+Three-term incumbent Republican Pat Roberts had been re-elected with 60% of the vote in 2008. Roberts sought a fourth term. He faced a primary challenge from radiologist Milton Wolf, a conservative Tea Party supporter. Roberts defeated Wolf in the Republican primary by 48% to 41%. Shawnee County District Attorney Chad Taylor won the Democratic nomination. Randall Batson from Wichita was on the general election ballot as a Libertarian. Also, Greg Orman qualified for the ballot as an independent.On September 3, Taylor announced he was dropping out of the election, leading to speculation that Democrats would support Orman's candidacy. On September 18, the Kansas Supreme Court ruled that Taylor's name had to be removed from the ballot.
+
+Kentucky
+Five-term Republican incumbent and Senate Minority Leader Mitch McConnell had been re-elected with 53% of the vote in 2008. McConnell sought re-election to a sixth term. McConnell defeated businessman Matt Bevin in the Republican primary on May 20.Kentucky Secretary of State Alison Lundergan Grimes, with support from much of Kentucky's Democratic leadership, won the Democratic primary. Actress Ashley Judd publicly claimed to be considering a run for the Democratic nomination, but ultimately decided against it.Ed Marksberry pursued an independent bid after dropping out of the Democratic field in September 2013.
+
+Louisiana
+Three-term incumbent Democrat Mary Landrieu had been re-elected with 52% of the vote in 2008. Landrieu ran for a fourth term.Louisiana uses a unique jungle primary system that eschews primaries in favor of run-off elections between the top two candidates; this run-off can be avoided if the winning candidate receives over 50% of the vote. Democrats Wayne Ables, Vallian Senegal, and William Waymire ran against Landrieu in the election, as did Republicans Bill Cassidy (representative of Louisiana's 6th congressional district), Thomas Clements (small business owner), and retired Air Force Colonel Rob Maness. Electrical Engineer Brannon McMorris ran as a Libertarian.Because Republican candidate Maness took almost 14% of the votes in the primary, there was a runoff election on December 6, 2014, between Landrieu (42%) and Cassidy (41%). Cassidy won the runoff with 56% of the vote.
+
+Maine
+Three-term incumbent Republican Susan Collins was seeking a fourth term. Shenna Bellows, former executive director of the American Civil Liberties Union of Maine, was the Democratic nominee.
+
+Massachusetts
+Five-term incumbent and 2004 Democratic presidential nominee John Kerry had been re-elected with 66% of the vote in 2008. Kerry resigned in early 2013 to become U.S. Secretary of State. Governor Deval Patrick appointed Democrat Mo Cowan to the seat. Democratic Congressman Ed Markey beat Republican Gabriel E. Gomez in the June 25, 2013 special election by a 55% to 45% margin. Markey had served the remainder of Kerry's term before running for re-election to a first full term in 2014. Hopkinton Town Selectman Brian Herr was the Republican nominee.
+
+Michigan
+Six-term incumbent Senator and Chairman of the Armed Services Committee Democrat Carl Levin, the longest-serving senator in Michigan's history, had been re-elected with 63% of the vote in 2008. Levin announced on March 7, 2013, that he would not seek re-election.
+Three term Democratic Representative Gary Peters of MI-14 was the Democratic nominee. He defeated Republican former Secretary of State Terri Lynn Land who was unopposed for the Republican nomination.
+
+Minnesota
+One-term incumbent Democrat Al Franken unseated one-term Republican Norm Coleman by 312 votes in a contested three-way race with 42% of the vote in 2008; the third candidate in the race, former Senator Dean Barkley of the Independence Party of Minnesota, won 15% of the vote. Franken sought re-election. State Representative Jim Abeler, St. Louis County Commissioner Chris Dahlberg, co-CEO of Lazard Middle Market Mike McFadden, bison farmer and former hair salon owner Monti Moreno, state Senator Julianne Ortman, and U.S. Navy reservist Phillip Parrish ran for the Republican nomination. McFadden won the Republican primary and was the Republican nominee in the general election.Hannah Nicollet of the Independence Party of Minnesota also ran.
+
+Mississippi
+Six-term incumbent Republican Thad Cochran, re-elected with 62% of the vote in 2008, ran for re-election. Cochran was the last incumbent Senator to declare his plans, leading to widespread speculation that he might announce his retirement.Tea Party candidate Chris McDaniel, a conservative Mississippi state senator, ran against Cochran in the Republican primary. Neither McDaniel nor Cochran was able to get 50% of the vote in the first round of the primary, so a runoff election was held June 24. Cochran won the runoff election by 51% to 49%, with the help of Democratic voters eligible to vote in the state's open primaries who chose Cochran as their preferred Republican. McDaniel filed a lawsuit to challenge the results of the run-off, but the challenge was rejected on appeal by the Supreme Court of Mississippi.Former Congressman Travis Childers was the Democratic nominee.
+
+Montana
+Six-term incumbent Democrat Max Baucus, the longest-serving senator in Montana's history, had been re-elected with 73% of the vote in 2008. Baucus announced on April 23, 2013, that he would retire in 2014, rather than seek re-election to a seventh term. Baucus was appointed as the United States Ambassador to China, leading him to resign from the Senate in February 2014.Following Baucus's confirmation as ambassador, Governor Steve Bullock appointed the Lieutenant Governor John Walsh to fill the vacant senate seat. Former Lieutenant Governor John Bohlinger was defeated by Walsh in the Democratic primary. Amid controversy over alleged plagiarism in a 2007 research paper, Walsh pulled out of the race. The Montana Democratic Party held a special nominating convention on August 16 to choose a replacement for Walsh. First-term State Representative Amanda Curtis won the nomination, thereby becoming the new Democratic nominee.Congressman Steve Daines won the Republican nomination over state Representative Champ Edmunds of Missoula and David Leaser of Kalispell.
+
+Nebraska
+One-term incumbent Republican Mike Johanns had been elected with 58% of the vote in 2008. He did not seek a second term. Term limited Republican Governor Dave Heineman considered running for the Republican nomination, but ultimately decided not to do so. Former state Treasurer Shane Osborn, attorney Bart McLeay, banker Sid Dinsdale, and Midland University President Ben Sasse ran for the Republican nomination. In the May 13 primary, Sasse won the Republican nomination.
+Trial lawyer David Domina was the Democratic nominee.
+
+New Hampshire
+One-term incumbent Democrat Jeanne Shaheen had been elected with 52% of the vote in 2008. Shaheen ran for re-election. Shaheen defeated Republican nominee Scott Brown, who had represented neighboring Massachusetts in the Senate from 2010 to 2013.
+
+New Jersey
+Incumbent Democrat Frank Lautenberg had been re-elected with 56% of the vote in 2008. After announcing he would not seek re-election, Lautenberg died in June 2013, aged 89, after a long period of ill health.Newark Mayor Cory Booker, a Democrat, defeated Republican nominee Steve Lonegan by 55%-to-45% in a 2013 special election to replace interim Republican appointee Jeffrey Chiesa. Booker ran for re-election to a full term in 2014. 1978 and 1982 Republican candidate and political operative Jeff Bell was the Republican nominee.
+
+New Mexico
+One-term incumbent Democrat Tom Udall had been elected with 61% of the vote in 2008. Former Doña Ana County Republican Party Chairman David Clements and former New Mexico Republican Party Chairman Allen Weh sought the Republican nomination. Weh won the June 3 primary but lost to Udall in the general election.
+
+North Carolina
+One-term incumbent Democrat Kay Hagan had been elected with 53% of the vote against incumbent Republican Elizabeth Dole in 2008. Hagan was seeking re-election.State House Speaker Thom Tillis was the Republican nominee. Sean Haugh won the Libertarian nomination.
+
+Oklahoma
+There were 2 elections in Oklahoma, due to the resignation of Tom Coburn.
+
+Oklahoma (regular)
+Three-term incumbent Republican Jim Inhofe had been re-elected with 57% of the vote in 2008. Inhofe sought re-election. Matt Silverstein, an insurance agency owner, ran for the Democratic nomination.
+
+Oklahoma (special)
+Two-term incumbent Republican Tom Coburn had been re-elected with 71% of the vote in 2010, and was not scheduled to be up for election again until 2016. However, Coburn announced his intention to resign at the end of the 113th Congress. A special election to fill his seat took place in November 2014, concurrent with the other Senate elections. Congressman James Lankford was the Republican nominee. State Senator Connie Johnson was the Democratic nominee.
+
+Oregon
+One-term incumbent Democrat Jeff Merkley was narrowly elected with 49% of the vote in 2008. Merkley was running for a second term. State representative Jason Conger, attorney Tim Crawley, IT consultant Mark Callahan, neurosurgeon Dr. Monica Wehby, and former Linn County Republican Chair Jo Rae Perkins all ran for the Republican nomination, with Wehby ultimately winning the nomination in the May 20 primary.
+
+Rhode Island
+Three-term incumbent Democrat Jack Reed had been re-elected with 73% of the vote in 2008. Reed defeated Republican nominee Mark Zaccaria in the 2014 election.
+
+South Carolina
+There were 2 elections in South Carolina, due to the resignation of Jim DeMint.
+
+South Carolina (regular)
+Two-term Republican Lindsey Graham had been re-elected with 58% of the vote in 2008. Graham won the Republican nomination over a field that included state senator Lee Bright. State Senator Brad Hutto won the Democratic nomination.
+
+South Carolina (special)
+Jim DeMint had been elected to a second term in 2010, but resigned from the Senate in January 2013 to become president of The Heritage Foundation, a conservative think-tank. Governor Nikki Haley appointed Congressman Tim Scott as DeMint's replacement. Scott, an African-American, was the Republican nominee to serve out the remainder of DeMint's term. Scott is the first African-American Republican since shortly after Reconstruction to represent a Southern state. Richland County Councilwoman Joyce Dickerson won the Democratic nomination.
+
+South Dakota
+Three-term incumbent Democrat Tim Johnson had been re-elected with 63% of the vote in 2008. Johnson announced on March 26, 2013, that he would not run for re-election. Former Congressional aide Rick Weiland was the Democratic nominee.Among Republicans, former two-term Governor Mike Rounds announced his candidacy for the GOP nomination on November 29, 2012. Rounds won the Republican nomination over state senator Larry Rhoden, state representative Stace Nelson, and physician Annette Bosworth.Former Republican U.S. Senator Larry Pressler and Republican State Senator Gordon Howie ran as independents. Pressler did not commit to caucusing with either party, while Howie said he would caucus with the Senate Republicans.
+
+Tennessee
+Two-term incumbent Republican Lamar Alexander had been re-elected with 65% of the vote in 2008. Alexander sought re-election to a third term. On August 7, 2014, Alexander won the Republican nomination over six challengers, including State Representative Joe Carr.On November 4, 2014, Alexander faced Democratic nominee Gordon Ball, Libertarian Party nominee Joshua James, Constitution Party nominee Joe Wilmothm, and independent Danny Page also ran in the general election.
+
+Texas
+Two-term incumbent Republican John Cornyn, the Senate Minority Whip, had been re-elected with 55% of the vote in 2008. Cornyn sought re-election, and won the 2014 Republican primary with 59% of the vote. David Alameel, a dentist, and Kesha Rogers, a volunteer for The Lyndon LaRouche Policy Institute, faced each other in a run-off election for the Democratic nomination. Alameel won the run-off and was the Democratic nominee.
+
+Virginia
+One-term incumbent Democrat Mark Warner had been elected with 65% of the vote in 2008; he sought re-election. Ed Gillespie, former RNC Chairman and presidential adviser, ran for the Republican nomination. Robert Sarvis, the Libertarian nominee for Governor in 2013, also ran.
+
+West Virginia
+Five-term incumbent Democrat Jay Rockefeller had been re-elected with 64% of the vote in 2008. He announced on January 11, 2013, that he would not seek re-election to a sixth term. Secretary of State Natalie Tennant won the Democratic nomination.On November 26, 2012, Republican Congresswoman Shelley Moore Capito announced her plans to run for the seat, in hopes of becoming the first Republican Senator elected from West Virginia since 1956. Moore Capito won the Republican nomination and the general election, the first woman to serve as United States Senator from West Virginia.
+
+Wyoming
+Three-term incumbent Republican Mike Enzi had been re-elected with 76% of the vote in 2008. Enzi sought re-election. Liz Cheney, daughter of former Vice President Dick Cheney, briefly entered the race for the Republican nomination, but dropped her bid in January 2014. On August 19, Enzi won the Republican primary election with 82% of the vote, and Democrat Charlie Hardy, a former Catholic priest, won his party's primary election with 48% of the vote.
+
+See also
+2014 United States elections
+2014 United States gubernatorial elections
+2014 United States House of Representatives elections
+113th United States Congress
+114th United States Congress
+
+Notes
+Passage 8:
+115th United States Congress
+The 115th United States Congress was a meeting of the legislative branch of the United States of America federal government, composed of the Senate and the House of Representatives. It met in Washington, D.C., from January 3, 2017, to January 3, 2019, during the final weeks of Barack Obama's presidency and the first two years of Donald Trump's presidency. The seats in the House were apportioned based on the 2010 United States census.The Republican Party retained their majority in both the House and the Senate, and, with inauguration of Donald Trump on January 20, 2017, attained an overall federal government trifecta for the first time since the 109th Congress in 2005.
+Several political scientists described the legislative accomplishments of this Congress as modest, considering that both Congress and the presidency were under unified Republican Party control. According to a contemporary study, "House and Senate GOP majorities struggled to legislate: GOP fissures and the president frequently undermined the Republican agenda. Most notably, clashes within and between the two parties (for example, on healthcare issues) strained old ways of doing business."
+
+Major events
+January 5, 2017: House of Representatives condemned United Nations Security Council Resolution 2334.
+January 6, 2017: Joint session counted and certified the electoral votes of the 2016 presidential election.
+January 11–12, 2017: Senate, in an all-night session, took first steps to repeal the Affordable Care Act, (ACA). The final vote was 51 to 48 to approve a budget resolution to allow "broad swaths of the Affordable Care Act to be repealed through a process known as budget reconciliation."
+January 20, 2017: Donald Trump became 45th President of the United States
+February 7, 2017: Vice President Mike Pence cast the tie-breaking vote to confirm Betsy DeVos as Secretary of Education. This was the first time in United States history that a cabinet confirmation was tied in the Senate and required a tie-breaking vote.
+February 28, 2017: President Trump addressed a joint session of Congress.
+April 6, 2017: Senate invoked the "nuclear option" to weaken Supreme Court filibusters. Nominee Neil Gorsuch was then confirmed the next day.
+June 14, 2017: Majority Whip Steve Scalise and several staffers were shot during the Congressional baseball shooting. They were practicing for the annual Congressional Baseball Game.
+September 1, 2017: The Parliamentarian of the United States Senate decreed that the Senate had until the end of the month to pass ACA repeal via the reconciliation process, or the option would no longer be viable.
+October 24 – December 14, 2017: 2017 United States political sexual scandals from the "Me too" movement:
+Allegations that Democratic Congressman Ruben Kihuen sexually harassed a campaign staffer led some in congressional leadership to call for his resignation. Kihuen later announced he would not seek another term in office.
+Democratic senator Al Franken announced he would resign "in the coming weeks" after photographs were made public suggesting that he sexually assaulted (groped) a Los Angeles-based radio personality during a USO tour in Iraq in 2006. He was also accused by multiple female constituents of groping at various Minnesota fair appearances that he attended.
+Three members of Congress either resigned or announced their impending resignations. (See "Changes in membership")
+Allegations that President Donald Trump previously raped and sexually harassed at least nineteen women, one girl, and Miss Teen USA contestants resulted in calls by members of Congress for him to resign.
+Allegations that Republican Alabama Senate candidate Roy Moore previously raped and sexually harassed at least eight women and one girl contributed to his defeat by Democrat Doug Jones in a special Senate election to replace Attorney General Jeff Sessions.
+Allegations that House member Blake Farenthold sexually harassed a former staffer resulted in the commencement of an investigation by the House Ethics Committee and his announcement he would not seek re-election in 2018. He subsequently resigned on April 6, 2018.
+January 20–22, 2018: United States federal government shutdown of January 2018
+January 30, 2018: 2018 State of the Union Address
+February 9, 2018: United States federal government funding gap
+October 6, 2018: Senate confirms Brett Kavanaugh's nomination to the U.S. Supreme Court.
+November 28, 2018: Senate discharges from committee and calendars S.J.Res. 54, bill that ends US intervention in the Yemeni Civil War.
+December 22, 2018 – January 25, 2019: 2018–19 United States federal government shutdown
+
+Major legislation
+Enacted
+January 31, 2017: GAO Access and Oversight Act of 2017, Pub.L. 115-3
+February 28, 2017: Promoting Women in Entrepreneurship Act, Pub.L. 115-6
+February 28, 2017: INSPIRE Women Act, Pub.L. 115-7
+March 28, 2017: Vietnam War Veterans Recognition Act of 2017, Pub.L. 115-15
+April 18, 2017: Weather Research and Forecasting Innovation Act of 2017, Pub.L. 115-25
+May 5, 2017: Consolidated Appropriations Act, 2017, H.R. 244, Pub. L. 115–31 (text) (PDF)
+August 2, 2017: Countering America's Adversaries Through Sanctions Act, H.R. 3364, Pub. L. 115–44 (text) (PDF)
+November 2, 2017: Strengthening State and Local Cyber Crime Fighting Act of 2017, Pub.L. 115-76
+December 12, 2017: National Defense Authorization Act for Fiscal Year 2018, H.R. 2810, Pub. L. 115–91 (text) (PDF)
+December 22, 2017: Tax Cuts and Jobs Act of 2017, H.R. 1, Pub. L. 115–97 (text) (PDF)
+February 9, 2018: Bipartisan Budget Act of 2018, H.R. 1892, Pub. L. 115–123 (text) (PDF)
+February 14, 2018: Protecting Young Victims from Sexual Abuse and Safe Sport Authorization Act of 2017, Pub.L. 115-126
+March 16, 2018: Taiwan Travel Act, H.R. 535, Pub. L. 115–135 (text) (PDF)
+March 23, 2018: Consolidated Appropriations Act, 2018 (including the CLOUD Act), H.R. 1625, Pub. L. 115–141 (text) (PDF)
+April 11, 2018: Stop Enabling Sex Traffickers Act, H.R. 1865, Pub. L. 115–164 (text) (PDF)
+May 9, 2018: Justice for Uncompensated Survivors Today (JUST) Act, Pub.L. 115-171
+May 24, 2018: Economic Growth, Regulatory Relief and Consumer Protection Act, S. 2155, Pub. L. 115–174 (text) (PDF)
+May 30, 2018: Trickett Wendler, Frank Mongiello, Jordan McLinn, and Matthew Bellina Right to Try Act of 2017, S. 204, Pub. L. 115–176 (text) (PDF)
+August 13, 2018: National Defense Authorization Act for Fiscal Year 2019, H.R. 5515, Pub. L. 115–232 (text) (PDF)
+October 5, 2018: FAA Reauthorization Act of 2018, H.R. 302, Pub. L. 115–254 (text) (PDF)
+October 9, 2018: Marrakesh Treaty Implementation Act, Pub.L. 115-261
+October 11, 2018: Music Modernization Act, H.R. 1551, Pub. L. 115–264 (text) (PDF)
+October 23, 2018: America's Water Infrastructure Act of 2018, S. 3021, Pub. L. 115–270 (text) (PDF)
+October 24, 2018: SUPPORT for Patients and Communities Act, H.R. 6, Pub. L. 115–271 (text) (PDF)
+November 16, 2018: Cybersecurity and Infrastructure Security Agency Act, H.R. 3359, Pub. L. 115–278 (text) (PDF)
+December 7, 2018: Amy, Vicky, and Andy Child Pornography Victim Assistance Act of 2018, Pub.L. 115-299
+December 11, 2018: Iraq and Syria Genocide Relief and Accountability Act of 2018, Pub.L. 115-300
+December 20, 2018: Agriculture Improvement Act of 2018, H.R. 2, Pub. L. 115–334 (text) (PDF)
+December 21, 2018: National Quantum Initiative Act, Pub.L. 115-368
+December 21, 2018: FIRST STEP Act, S. 756, Pub. L. 115–391 (text) (PDF)
+January 14, 2019: Foundations for Evidence-Based Policymaking Act of 2018, Pub.L. 115-435
+January 14, 2019: Elie Wiesel Genocide and Atrocities Prevention Act of 2018, Pub.L. 115-441
+
+Proposed
+May 4, 2017: American Health Care Act (H.R. 1628), passed House May 4, 2017
+June 8, 2017: Financial CHOICE Act (H.R. 10), passed House June 8, 2017
+
+Party summary
+Resignations and new members are discussed in the "Changes in membership" section, below.
+
+Senate
+House of Representatives
+Leadership
+Section contents: Senate: Majority (R), Minority (D) • House: Majority (R),  Minority (D)
+
+Senate
+President: Joe Biden (D), until January 20, 2017
+Mike Pence (R), from January 20, 2017
+President pro tempore: Orrin Hatch (R)
+
+Majority (Republican) leadership
+Majority Leader: Mitch McConnell
+Majority Whip: John Cornyn
+Republican Conference Chairman: John Thune
+Republican Conference Vice Chairman: Roy Blunt
+Republican Campaign Committee Chairman: Cory Gardner
+Policy Committee Chairman: John Barrasso
+
+Minority (Democratic) leadership
+Minority Leader: Chuck Schumer
+Minority Whip: Dick Durbin
+Assistant Minority Leader: Patty Murray
+Chief Deputy Whip: Jeff Merkley
+Democratic Caucus Chairman: Chuck Schumer
+Policy Committee Chairwoman: Debbie Stabenow
+Democratic Caucus Vice Chairs: Mark Warner and Elizabeth Warren
+Democratic Caucus Secretary: Tammy Baldwin
+Democratic Campaign Committee Chairman: Chris Van Hollen
+Policy Committee Vice Chairman: Joe Manchin
+Steering Committee Chairwoman: Amy Klobuchar
+Outreach Chair: Bernie Sanders
+
+House of Representatives
+Speaker: Paul Ryan (R)
+
+Majority (Republican) leadership
+Majority Leader: Kevin McCarthy
+Majority Whip: Steve Scalise
+Republican Conference Chairman: Cathy McMorris Rodgers
+Republican Conference Vice-Chairman: Doug Collins
+Republican Conference Secretary: Jason T. Smith
+Republican Campaign Committee Chairman: Steve Stivers
+Policy Committee Chairman: Luke Messer
+
+Minority (Democratic) leadership
+Minority Leader: Nancy Pelosi
+Minority Whip: Steny Hoyer
+Assistant Minority Leader: Jim Clyburn
+Democratic Caucus Chairman: Joseph Crowley
+Democratic Caucus Vice-Chairwoman: Linda Sánchez
+Democratic Campaign Committee Chairman: Ben Ray Luján
+Steering and Policy Committee Co-Chairs: Rosa DeLauro and Eric Swalwell
+Policy and Communications Chairmen: Cheri Bustos, David Cicilline, and Hakeem Jeffries
+
+Demographics
+Note: Demographics are accurate as of the commencement of the 115th Congress on January 3, 2017.
+The average age of members of the House of Representatives during the 115th Congress was 57.8 years, while the average age of U.S. senators was 61.8 years.
+The most common occupation of senators prior to being elected to their posts was law, followed by public service/politics and business. In the House of Representatives, business was the dominant prior occupation, followed by public service/politics and law. In the 115th Congress, 94.1% of House members and 100% of senators had attained a bachelor's degree or a higher degree; this was a historically high level of education for a United States Congress. In addition, 167 members of the House and 55 members of the Senate had law degrees. Only 18 members of Congress had no college education.Ethnic minorities in the 115th Congress consisted of 52 African American members, 45 Hispanic or Latino members, 18 Asian-American or Pacific Islander members, and two members of Native American ancestry. Women comprised 20.1% of the membership in the 115th Congress, which had 109 women and 326 men. This represented an increase of 21 women from the 114th Congress.Seven openly LGBT members served in the 115th Congress. Tammy Baldwin, Jared Polis, Sean Patrick Maloney, Mark Takano, David Cicilline, and Mark Pocan are openly gay, while Kyrsten Sinema is openly bisexual.The majority of the 115th Congress was religiously affiliated, with 90.7% identifying as Christians. Approximately half of the Christians were Protestant. Other religious faiths of congressmembers in the 115th Congress included Buddhism, Hinduism, Islam, and Judaism.
+
+Members
+Senate
+The numbers refer to their Senate classes. All of the class 3 seats were contested in the November 2016 elections. Class 1 terms end with this Congress, requiring re-election in 2018; Class 2 began in the last Congress, requiring re-election in 2020; and Class 3 began in this Congress, requiring re-election in 2022.
+
+House of Representatives
+All 435 seats were filled by the regular elections on November 8, 2016, or subsequent special elections thereafter.
+
+Caucuses
+Changes in membership
+Senate
+House of Representatives
+Committees
+Section contents: Senate, House, Joint
+
+Senate
+House of Representatives
+Joint
+Employees and legislative agency directors
+Senate
+Chaplain: Barry C. Black (Seventh-day Adventist)
+Curator: Melinda Smith
+Historian: Betty Koed
+Librarian: Leona I. Faust
+Parliamentarian: Elizabeth MacDonough
+Secretary: Julie E. Adams
+Sergeant at Arms: Frank J. Larkin, until April 16, 2018
+Michael C. Stenger, starting April 16, 2018
+Secretary for the Majority: Laura Dove
+Secretary for the Minority: Gary B. Myrick
+
+House of Representatives
+Chaplain: Patrick J. Conroy (Roman Catholic)
+Chief Administrative Officer: Phil Kiko
+Clerk: Karen L. Haas
+Historian: Matthew Wasniewski
+Inspector General: Theresa M. Grafenstine then Michael Ptasienski
+Parliamentarian: Thomas J. Wickham Jr.
+Reading Clerks: Susan Cole and Joseph Novotny
+Sergeant at Arms: Paul D. Irving
+
+Legislative branch agency directors
+Architect of the Capitol: Stephen T. Ayers, until November 25, 2018
+Christine A. Merdon (acting), starting November 25, 2018
+Attending Physician of the United States Congress: Brian P. Monahan
+Comptroller General of the United States: Eugene Louis Dodaro
+Director of the Congressional Budget Office: Keith Hall
+Librarian of Congress: Carla Diane Hayden
+Public Printer of the United States: Jim Bradley
+
+See also
+Elections
+2016 United States elections (elections leading to this Congress)
+2016 United States presidential election
+2016 United States Senate elections
+2016 United States House of Representatives elections
+2018 United States elections (elections during this Congress, leading to the next Congress)
+2018 United States Senate elections
+2018 United States House of Representatives elections
+
+Membership lists
+List of new members of the 115th United States Congress
+
+Notes

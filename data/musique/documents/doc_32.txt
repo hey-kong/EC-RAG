@@ -1,0 +1,383 @@
+Passage 1:
+457 visa
+In Australia, the 457 visa was the most common visa for Australian or overseas employers to sponsor skilled overseas workers to work temporarily in Australia. It was abolished on 18 March 2018 by the Turnbull government and replaced by another visa category. The full title of this subclass of visa was Temporary Business (Long Stay) and was introduced soon after John Howard became Prime Minister in 1996. The title of the visa was changed to Temporary Work (Skilled) (Subclass 457) visa on 24 November 2012.  Applications were processed by the Department of Immigration and Border Protection (DIBP). On 18 April 2017, Prime Minister Malcolm Turnbull announced that the 457 visas will be replaced with two new visa categories.
+
+Requirements
+Holders of a 457 visa may be employed for a period of up to four years and may bring any eligible family members, including same-sex partners, who have unrestricted work and study rights in Australia. "If your sponsor is a start-up business or has traded in Australia for less than 12 months, then the visa will be granted for 18 months." Holders of the subclass 457 visa have no limit on the number of times they travel in and out of Australia.Employers must be approved by the Department of Immigration and Border Protection as an approved sponsor. Primary subclass 457 visa holders are restricted to working for their sponsor and may not work (or volunteer) for any other organisation (other than associated entities as defined by the Corporations Act). In order to change employer and sponsor, the "new employer" must be or become an approved 457 sponsor and then lodge a 457 nomination. Once the nomination is approved, the employer obligations will shift to the new employer and the visa applicant is restricted to working for it. There is no need to apply for a new 457 visa within the validity of the visa.
+Employees must also meet minimum levels of skill and English language requirements, in addition to character and health requirements. Some trades occupations and passport holders from certain countries may be required to do a skills assessment (see the TRA website).
+It is common for 457 visa holders to apply for a permanent Australia residents visa with a view to permanently settle in Australia and become Australian citizens.
+
+Restrictions on the 457 visa
+A 457 visa holder can only work in a nominated occupation for the sponsor employer. Medical practitioners and general managers must work in their nominated occupation but they can work for employers other than their sponsor or an associated entity of their sponsor. The specific occupations to which this rule applies are listed in Exemption from the requirement to work directly for the sponsor. The worker must also not have ceased employment for more than 60 consecutive days.
+
+457 visa update
+The Australian Government reviewed the 457 skilled immigrant visa and made some provisions to quicken the transition to permanent residency starting on 1 July 2012.  From that date, non-resident workers on the 457 skilled immigration visa are able to transition to permanent residency if they have two years with the employer who has sponsored them and if the employer provides a full-time position in the 457 visa holder's nominated occupation.
+Furthermore, the Australian government has recognised that 457 visas deserve priority in review as they are highly responsive to the needs of the market. Overseas workers will be able to work in Australia on a six-month short term work visa before they apply for a 457 visa.
+As at 30 June 2016, the size of the subclass 457 programme was 94,890 Primary visa holders in Australia.
+
+Criticisms
+An audit by the Fair Work Ombudsman conducted between September 2013 and June 2014 found that 40% of 457 visa holders were no longer employed by a sponsor or were being paid well below the statutory minimum wage of $53,900.In October 2014, the Abbott government announced that it would make it easier for businesses to apply for 457 visa workers by relaxing rules for English language competency to broaden the pool of potential workers from overseas.With the commencement of the Japan free trade agreement in 2015, employers no longer need to offer jobs to locals or to prove that none could fill vacancies before Japanese nationals eligible for 457 visas are employed.In December 2014, the Department of Immigration and Border Protection released recommendations to relax 457 visa requirements. The recommendations include extending the six-month short term work visa to 12 months with no obligation to apply for a 457 visa. The Construction, Forestry, Mining and Energy Union (CFMEU) has criticized this change on the grounds that it avoids the 457 visa's requirement for English language and skills tests and employers would not be required to demonstrate they had first tried to fill job vacancies with Australian workers.
+
+Replacement
+On 18 April 2017, Malcolm Turnbull announced his intention to replace the 457 visas with 2 new categories (short term and medium term) of visas.One of the replacements was the Temporary Skill Shortage visa, known as a 482 Visa. It allows immigration It requires candidates to obtain an IELTS (English Language) exam band score of 5 or higher, or other method of showing the English level.
+
+See also
+Visa documentation
+Working holiday visa
+Working Holidays in Australia
+Passage 2:
+M. King Hubbert
+Marion King Hubbert (October 5, 1903 – October 11, 1989) was an American geologist and geophysicist. He worked at the Shell research lab in Houston, Texas.  He made several important contributions to geology, geophysics, and petroleum geology, most notably the Hubbert curve and Hubbert peak theory (a basic component of peak oil), with important political ramifications.  He was often referred to as "M. King Hubbert" or "King Hubbert".
+
+Biography
+Hubbert was born in San Saba, Texas. He attended the University of Chicago, where he received a Bachelor of Science in 1926, a Master of Science in 1928, and a Doctor of Philosophy in 1937, studying geology, mathematics, and physics.  He worked as an assistant geologist for the Amerada Petroleum Company for two years while pursuing the PhD, additionally teaching geophysics at Columbia University. He also served as a senior analyst at the Board of Economic Warfare. He joined the Shell Oil Company in 1943, retiring from that firm in 1964. After he retired from Shell, he became a senior research geophysicist for the United States Geological Survey until his retirement in 1976.  He also held positions as a professor of geology and geophysics at Stanford University from 1963 to 1968, and as a professor at UC Berkeley from 1973 to 1976.Hubbert was an avid technocrat. He co-founded Technocracy Incorporated with Howard Scott. Hubbert wrote a study course that was published without attribution called the Technocracy Study Course, which advocates a non-market economics form of energy accounting, in contrast to the current price system method.Hubbert was a member of the board of governors, and served as secretary of education in that organization. Hubert died on October 11, 1988 at the age of 86 while receiving treatment for pulmonary embolism.
+
+Research
+Hubbert made several contributions to geophysics, including a mathematical demonstration that rock in the earth's crust, because it is under immense pressure in large areas, should exhibit plasticity, similar to clay.  This demonstration explained the observed results that the earth's crust deforms over time.  He also studied the flow of underground fluids.
+Based on theoretical arguments, Hubbert (1940) proposed a constitutive equation 
+  
+    
+      
+        
+          K
+          
+            a
+            b
+            s
+          
+        
+        =
+        N
+        
+          D
+          
+            2
+          
+        
+      
+    
+    {\displaystyle K_{abs}=ND^{2}}
+   for absolute permeability 
+  
+    
+      
+        
+          K
+          
+            a
+            b
+            s
+          
+        
+      
+    
+    {\displaystyle K_{abs}}
+   of an underground water or oil reservoir where 
+  
+    
+      
+        D
+      
+    
+    {\displaystyle D}
+   is the average grain diameter and 
+  
+    
+      
+        N
+      
+    
+    {\displaystyle N}
+   is a dimensionless proportionality constant. However, Kozeny (1927) proposed a constitutive equation for absolute permeability which contains Hubbert's proposal as a factor. Hubbert (1940, 1956) also presented a force potential, denoted 
+  
+    
+      
+        Φ
+      
+    
+    {\displaystyle \Phi }
+   or 
+  
+    
+      
+        
+          Φ
+          
+            h
+          
+        
+      
+    
+    {\displaystyle \Phi _{h}}
+  , that bears his name:
+
+  
+    
+      
+        Φ
+        =
+        
+          ∫
+          
+            P
+            r
+            e
+            f
+          
+          
+            P
+          
+        
+        
+          
+            
+              d
+              P
+            
+            
+              ρ
+              (
+              P
+              )
+            
+          
+        
+        −
+        g
+        z
+        
+        ⟹
+        
+        ∇
+        
+          Φ
+          
+            h
+          
+        
+        =
+        
+          
+            1
+            ρ
+          
+        
+        ∇
+        P
+        −
+        g
+        ∇
+        z
+      
+    
+    {\displaystyle \Phi =\int _{Pref}^{P}{\frac {dP}{\rho (P)}}-gz\implies \nabla \Phi _{h}={\frac {1}{\rho }}\nabla P-g\nabla z}
+  Some years later Hubbert (1956) showed that Darcy's law can be derived from the Navier-Stokes equation of motion of a viscous fluid.
+Hubbert is best known for his studies on the size of oil fields and natural gas reserves, and the limits these impose on rates of oil and gas production. He predicted that for any oil-producing area, whether a province, a nation, or the planet as a whole, the rate of petroleum production of the reserve over time would resemble a bell curve. Based on his theory, he presented a paper to the 1956 meeting of the American Petroleum Institute in San Antonio, Texas, which predicted that overall petroleum production would peak in the United States between 1965, which he considered most likely, and 1970, which he considered an upper bound. At first his prediction received much criticism, for the most part because many other predictions of oil capacity had been made over the preceding half century, but these had usually been based on the reserves-to-production ratio, had not taken into account future discoveries, and had proven false.  Hubbert became famous when U.S. oil production peaked in 1970 and began to decline, as he had predicted.
+In 1974, Hubbert projected that global oil production would peak in 1995 "if current trends continue". Various subsequent predictions have been made by others as trends have fluctuated in the intervening years.
+Hubbert believed that solar power would be a practical renewable energy replacement for fossil fuels, and that nuclear energy in breeder reactors would be able to sustain humanity for centuries. He also states that "provided world population can somehow be brought under control, we may at last have found an energy supply (uranium) adequate for our needs for at least the next few centuries of the 'foreseeable future'."
+
+Contributions
+Hubbert's contributions to science have been summarized as follows:
+
+Mathematical demonstration that rock in the earth's crust is plastic, and that the earth's crust deforms over time.
+Prediction of migration paths of hydrocarbons.
+Predictions of peak rates of oil and gas production, based on a consistent mathematical model which ties reserves, discovery rates, and production rates. His model remains highly influential, and has been widely applied to other finite resources.
+
+Renewable resources
+Fisheries: At least one researcher has attempted to perform Hubbert linearization (Hubbert curve) on the whaling industry, as well as charting the transparently dependent price of caviar on sturgeon depletion. The Atlantic northwest cod fishery was a renewable resource, but the numbers of fish taken exceeded the fish's rate of recovery. The end of the cod fishery matches the exponential drop of the Hubbert bell curve. The comparison of the cases of fisheries and of mineral extraction tells us that the human pressure on the environment is causing a wide range of resources to go through a depletion cycle which mirrors the Hubbert curve.
+
+Accolades
+Hubbert was a member of the National Academy of Sciences and the American Academy of Arts and Sciences.  He was long affiliated with the Geological Society of America, receiving their Arthur L. Day Medal in 1954, being elected President of the Society in 1962, and receiving the Society's Penrose Medal in 1973.  He received the Vetlesen Prize from the G. Unger Vetlesen Foundation and Columbia University in 1981.  He also received the Elliott Cresson Medal in 1981.
+
+Hubbert on peak oil
+Hubbert explaining some aspects of worldwide peak oil. 1976 video clip of M King Hubbert speaking about fossil fuel depletion on YouTube.
+
+See also
+Bioeconomics (biology)
+Fred Meissner
+
+Notes
+External links
+ Media related to Marion King Hubbert at Wikimedia Commons
+ Quotations related to M. King Hubbert at Wikiquote
+M. King Hubbert Bibliography Archived 2019-08-01 at the Wayback Machine
+M. King Hubbert papers at the University of Wyoming - American Heritage Center
+Passage 3:
+Royal Dutch Shell
+Shell plc is a British multinational oil and gas company headquartered in London, England. Shell is a public limited company with a primary listing on the London Stock Exchange (LSE) and secondary listings on Euronext Amsterdam and the New York Stock Exchange. A core component of Big Oil, Shell is the second largest investor-owned oil and gas company in the world by revenue (after ExxonMobil), and among the world's largest companies out of any industry. Measured by both its own emissions, and the emissions of all the fossil fuels it sells, Shell was the ninth-largest corporate producer of greenhouse gas emissions in the period 1988–2015.Shell was formed in 1907 through the merger of Royal Dutch Petroleum Company of the Netherlands and The "Shell" Transport and Trading Company of the United Kingdom. The combined company rapidly became the leading competitor of the American Standard Oil and by 1920 Shell was the largest producer of oil in the world. Shell first entered the chemicals industry in 1929. Shell was one of the "Seven Sisters" which dominated the global petroleum industry from the mid-1940s to the mid-1970s. In 1964, Shell was a partner in the world's first commercial sea transportation of liquefied natural gas (LNG). In 1970, Shell acquired the mining company Billiton, which it subsequently sold in 1994 and now forms part of BHP. In recent decades gas has become an increasingly important part of Shell's business and Shell acquired BG Group in 2016.Shell is vertically integrated and is active in every area of the oil and gas industry, including exploration, production, refining, transport, distribution and marketing, petrochemicals, power generation, and trading. Shell has operations in over 99 countries, produces around 3.7 million barrels of oil equivalent per day and has around 44,000 service stations worldwide. As of 31 December 2019, Shell had total proved reserves of 11.1 billion barrels (1.76×109 m3) of oil equivalent. Shell USA, its principal subsidiary in the United States, is one of its largest businesses. Shell holds 44% of Raízen, a publicly-listed joint venture with Cosan, which is the third-largest Brazil-based energy company. In addition to the main Shell brand, the company also owns the Jiffy Lube, Pennzoil and Quaker State brands.
+Shell is a constituent of the FTSE 100 Index and had a market capitalisation of US$199 billion on 15 September 2022, the largest of any company listed on the LSE and the 44th-largest of any company in the world. By 2021 revenues, Shell is the second-largest investor-owned oil company in the world (after ExxonMobil), the largest company headquartered in the United Kingdom, the second-largest company headquartered in Europe (after Volkswagen), and the 15th largest company in the world. Until its unification in 2005 as Royal Dutch Shell plc, the firm operated as a dual-listed company, whereby the British and Dutch companies maintained their legal existence and separate listings but operated as a single-unit partnership. From 2005 to 2022, the company had its headquarters in The Hague, its registered office in London and had two types of shares (A and B). In January 2022, the firm merged the A and B shares, moved its headquarters to London, and changed its legal name to Shell plc.
+
+History
+Origins
+The Royal Dutch Shell Group was created in April 1907 through the amalgamation of two rival companies: the Royal Dutch Petroleum Company (Dutch: Koninklijke Nederlandse Petroleum Maatschappij) of the Netherlands and the Shell Transport and Trading Company Limited of the United Kingdom. It was a move largely driven by the need to compete globally with Standard Oil. The Royal Dutch Petroleum Company was a Dutch company founded in 1890 to develop an oilfield in Pangkalan Brandan, North Sumatra, and initially led by August Kessler, Hugo Loudon, and Henri Deterding. The "Shell" Transport and Trading Company (the quotation marks were part of the legal name) was a British company, founded in 1897 by Marcus Samuel, 1st Viscount Bearsted, and his brother Samuel Samuel. Their father had owned an antique company in Houndsditch, London, which expanded in 1833 to import and sell seashells, after which the company "Shell" took its name.For various reasons, the new firm operated as a dual-listed company, whereby the merging companies maintained their legal existence but operated as a single-unit partnership for business purposes. The terms of the merger gave 60 percent stock ownership of the new group to Royal Dutch, and 40 percent to Shell. Both became holding companies for Bataafsche Petroleum Maatschappij, containing the production and refining assets, and Anglo-Saxon Petroleum Company, containing the transport and storage assets. National patriotic sensibilities would not permit a full-scale merger or takeover of either of the two companies. The Dutch company, Koninklijke Nederlandsche Petroleum Maatschappij at The Hague, was in charge of production and manufacture. The British Anglo-Saxon Petroleum Company was based in London, to direct the transport and storage of the products.In 1912, Royal Dutch Shell purchased the Rothschilds' Russian oil assets in a stock deal. The Group's production portfolio then consisted of 53 percent from the East Indies, 29 percent from the Russian Empire, and 17 percent from Romania.
+
+20th century
+During the First World War, Shell was the main supplier of fuel to the British Expeditionary Force. It was also the sole supplier of aviation fuel and supplied 80 percent of the British Army's TNT. It also volunteered all of its shipping to the British Admiralty.The German invasion of Romania in 1916 saw 17% of the group's worldwide production destroyed.In 1919, Shell took control of the Mexican Eagle Petroleum Company and in 1921 formed Shell-Mex Limited, which marketed products under the "Shell" and "Eagle" brands in the United Kingdom. During the Genoa Conference of 1922 Royal Dutch Shell was in negotiations for a monopoly over Soviet oilfields in Baku and Grosny, although the leak of a draft treaty led to breakdown of the talks. In 1929, Shell Chemicals was founded. By the end of the 1920s, Shell was the world's leading oil company, producing 11 percent of the world's crude oil supply and owning 10 percent of its tanker tonnage.Shell Mex House was completed in 1931, and was the head office for Shell's marketing activity worldwide. In 1932, partly in response to the difficult economic conditions of the Great Depression, Shell-Mex merged its UK marketing operations with those of BP to create Shell-Mex & BP, a company that traded until the brands separated in 1975. Royal Dutch Company ranked 79th among United States corporations in the value of World War II military production contracts.
+The 1930s saw Shell's Mexican assets seized by the local government. After the invasion of the Netherlands by Nazi Germany in 1940, the head office of the Dutch companies was moved to Curaçao. In 1945 Shell's Danish headquarters in Copenhagen, at the time being used by the Gestapo, was bombed by Royal Air Force De Havilland Mosquitoes in Operation Carthage.In 1937, Iraq Petroleum Company (IPC), 23.75 percent owned by Royal Dutch Shell plc, signed an oil concession agreement with the Sultan of Muscat. In 1952, IPC offered financial support to raise an armed force that would assist the Sultan in occupying the interior region of Oman, an area that geologists believed to be rich in oil. This led to the 1954 outbreak of Jebel Akhdar War in Oman that lasted for more than 5 years.Around 1952, Shell was the first company to purchase and use a computer in the Netherlands. The computer, a Ferranti Mark 1*, was assembled and used at the Shell laboratory in Amsterdam. In 1970 Shell acquired the mining company Billiton, which it subsequently sold in 1994.In the 1990s, protesters criticised the company's environmental record, particularly the possible pollution caused by the proposed disposal of the Brent Spar platform into the North Sea. Despite support from the UK government, Shell reversed the decision under public pressure but maintained that sinking the platform would have been environmentally better. Shell subsequently published an unequivocal commitment to sustainable development, supported by executive speeches reinforcing this commitment. Shell was subsequently criticised by the European Commission and five European Union members after deciding to leave part of its decommissioned oil rigs standing in the North Sea. Shell argued that removing them would be too costly and risky. Germany said that the estimated 11,000 tonnes of raw oil and toxins remaining in the rigs would eventually seep into the sea, and called it a 'ticking timebomb'.On 15 January 1999, off the Argentinian town of Magdalena, Buenos Aires, the Shell tanker Estrella pampeana collided with a German cargo ship, emptying its contents into the lake, polluting the environment, drinkable water, plants and animals. Over a decade after the spill, a referendum held in Magdalena determined the acceptance of a US$9.5 million compensatory payout from Shell. Shell denied responsibility for the spill, but an Argentine court ruled in 2002 that the corporation was responsible.
+
+21st century
+In 2002, Shell acquired Pennzoil-Quaker State through its American division for $22 USD per share, or about $1.8 billion USD. Through its acquisition of Pennzoil, Shell became a descendant of Standard Oil. With its acquisition, Shell inherited multiple auto part brands including Jiffy Lube, Rain-X, and Fix-a-Flat. The company was notably late in its acquisition as seen by journalists, with Shell seen as streamlining its assets around the same time of other major mergers and acquisitions in the industry, such as BP's purchase of Amoco and the merger of Exxon and Mobil.In 2004, Shell overstated its oil reserves, resulting in loss of confidence in the group, a £17 million fine by the Financial Services Authority and the departure of the chairman Philip Watts. A lawsuit resulted in the payment of $450 million to non-American shareholders in 2007.As a result of the scandal, the corporate structure was simplified. Two classes of ordinary shares, A (code RDSA) and B (code RDSB), identical but for the tax treatment of dividends, were issued for the company.In November 2004, following a period of turmoil caused by the revelation that Shell had been overstating its oil reserves, it was announced that the Shell Group would move to a single capital structure, creating a new parent company to be named Royal Dutch Shell plc, with its primary listing on the LSE, a secondary listing on Euronext Amsterdam, its headquarters and tax residency in The Hague, Netherlands and its registered office in London. The company was already incorporated in 2002 as Forthdeal Limited, a shelf corporation incorporated by Swift Incorporations Limited and Instant Companies Limited, both based in Bristol. The unification was completed on 20 July 2005 and the original owners delisted their companies from the respective exchanges. On 20 July 2005, the Shell Transport & Trading Company plc was delisted from the LSE, whereas, Royal Dutch Petroleum Company from the New York Stock Exchange on 18 November 2005. The shares of the company were issued at a 60/40 advantage for the shareholders of Royal Dutch in line with the original ownership of the Shell Group.During the 2009 Iraqi oil services contracts tender, a consortium led by Shell (45%) and which included Petronas (30%) was awarded a production contract for the "Majnoon field" in the south of Iraq, which contains an estimated 12.6 billion barrels (2.00×109 m3) of oil. The "West Qurna 1 field" production contract was awarded to a consortium led by ExxonMobil (60%) and included Shell (15%).In February 2010, Shell and Cosan formed a 50:50 joint-venture, Raízen, comprising all of Cosan's Brazilian ethanol, energy generation, fuel distribution and sugar activities, and all of Shell's Brazilian retail fuel and aviation distribution businesses. In March 2010, Shell announced the sale of some of its assets, including its liquefied petroleum gas (LPG) business, to meet the cost of a planned $28bn capital spending programme. Shell invited buyers to submit indicative bids, due by 22 March, with a plan to raise $2–3bn from the sale. In June 2010, Shell agreed to acquire all the business of East Resources for a cash consideration of $4.7 billion. The transaction included East Resources' tight gas fields.Over the course of 2013, the corporation began the sale of its US shale gas assets and canceled a US$20 billion gas project that was to be constructed in the US state of Louisiana. A new CEO Ben van Beurden was appointed in January 2014, prior to the announcement that the corporation's overall performance in 2013 was 38 percent lower than in 2012—the value of Shell's shares fell by 3 percent as a result. Following the sale of the majority of its Australian assets in February 2014, the corporation plans to sell a further US$15 billion worth of assets in the period leading up to 2015, with deals announced in Australia, Brazil and Italy.Shell announced on 8 April 2015 it had agreed to buy BG Group for £47 billion (US$70 billion), subject to shareholder and regulatory approval. The acquisition was completed in February 2016, resulting in Shell surpassing Chevron Corporation and becoming the world's second largest non-state oil company.On 7 June 2016, Shell announced that it would build an ethane cracker plant near Pittsburgh, Pennsylvania, after spending several years doing an environmental cleanup of the proposed plant's site.In January 2017, Shell agreed to sell £2.46bn worth of North Sea assets to oil exploration firm Chrysaor. In 2017, Shell sold its oil sands assets to Canadian Natural Resources in exchange of approximately 8.8% stake in that company. In May 2017, it was reported that Shell plans to sell its shares in Canadian Natural Resources fully exiting the oil sands business.On 5 November 2017, the Paradise Papers, a set of confidential electronic documents relating to offshore investment, revealed that Argentine Energy Minister Juan José Aranguren was revealed to have managed the offshore companies 'Shell Western Supply and Trading Limited' and 'Sol Antilles y Guianas Limited', both subsidiaries of Shell. One is the main bidder for the purchase of diesel oil by the government through the state owned CAMMESA (Compañía Administradora del Mercado Mayorista Eléctrico).On 30 April 2020, Shell announced that it would cut its dividend for the first time since the Second World War, due to the oil price collapse following the reduction in oil demand during the COVID-19 pandemic. Shell stated that their net income adjusted for the cost of supply dropped to US$2.9 billion in three months to 31 March. This compared with US$5.3 billion in the same period the previous year. On 30 September 2020, the company said that it would cut up to 9,000 jobs as a result of the economic effects caused by the pandemic and announced a "broad restructuring". In December 2020, Shell forecast another write-down of $3.5-4.5 billion for the fourth quarter due to lower oil prices, following $16.8 billion of impairment in the second quarter.In February 2021, Shell announced a loss of $21.7 billion in 2020 due to the COVID-19 pandemic, despite reducing its operating expenses by 12%, or $4.5 billion, according to a Morningstar analysis cited by Barron's.In November 2021, Shell announced that it is planning to relocate their headquarters to London, abandon its dual share structure, and change its name from Royal Dutch Shell plc to Shell plc. The company's name change was registered in the Companies House on 21 January 2022.In December 2021, Shell pulled out of the Cambo oil field, off the Shetland Islands, claiming that "the economic case for investment in this project is not strong enough at this time, as well as having the potential for delays". The proposed oilfield had been the subject of intense campaigning by environmentalists in the run-up to the COP26 UN climate summit in Glasgow in November 2021.On 4 March 2022, during the Russian invasion of Ukraine and in the midst of the growing boycott of Russian economy and related divestments, Shell bought a cargo of discounted Russian crude oil. The next day, following criticism from Ukraine's Foreign Minister Dmytro Kuleba, Shell defended the purchase as a short term necessity, but also announced that it intended to reduce such purchases, and it would put profits from any Russian oil it purchases into a fund that would go towards humanitarian aid to Ukraine. On 8 March, Shell announced that it would stop buying Russian oil and gas and close its service stations in the country.In 2022, the major oil and gas companies, including Shell, reported sharp rises in interim revenues and profits. In fact, this rise in profit for Shell was so sharp, that 2022 was the company's best year, as Shell recorded double the profits from 2021, and the highest profit in its entire history.
+
+Corporate affairs
+Management
+On 4 August 2005, the board of directors announced the appointment of Jorma Ollila, chairman and CEO of Nokia at the time, to succeed Aad Jacobs as the company's non-executive chairman on 1 June 2006. Ollila is the first Shell chairman to be neither Dutch nor British. Other non-executive directors include Maarten van den Bergh, Wim Kok, Nina Henderson, Lord Kerr, Adelbert van Roxe, and Christine Morin-Postel.Since 3 January 2014, Ben van Beurden has been CEO of Shell. His predecessor was Peter Voser who became CEO of Shell on 1 July 2009.Following a career at the corporation, in locations such as Australia and Africa, Ann Pickard was appointed as the executive vice president of the Arctic at Royal Dutch Shell, a role that was publicized in an interview with McKinsey & Company in June 2014.In January 2023, Wael Sawan succeeded Ben van Beurden as CEO.
+
+Board of directors
+As of 25 January 2023, the Shell board members are:
+Andrew Mackenzie (chair), former CEO of BHP Billiton
+Euleen Goh, former CEO of Standard Chartered Singapore
+Wael Sawan, CEO of Shell plc
+Sinead Gorman, CFO of Shell plc
+Dick Boer, former president and CEO of Ahold Delhaize
+Neil Carson, former CEO of Johnson Matthey
+Ann Godbehere, former CFO of Swiss Re and Northern Rock
+Catherine J. Hughes, former executive at Nexen, Husky Oil, and Schlumberger
+Jane Holl Lute, former president and CEO of SICPA North America
+Martina Hund-Mejean, former CFO of Mastercard
+Abraham Schot, former CEO of Audi AG
+Caroline Omloo, company secretary
+
+Historical leadership
+Name and logo
+The name Shell is linked to The "Shell" Transport and Trading Company. In 1833, the founder's father, Marcus Samuel Sr., founded an import business to sell seashells to London collectors. When collecting seashell specimens in the Caspian Sea area in 1892, the younger Samuel realised there was potential in exporting lamp oil from the region and commissioned the world's first purpose-built oil tanker, the Murex (Latin for a type of snail shell), to enter this market; by 1907 the company had a fleet. Although for several decades the company had a refinery at Shell Haven on the Thames, there is no evidence of this having provided the name.The Shell logo is one of the most familiar commercial symbols in the world. This logo is known as the "pecten" after the sea shell Pecten maximus (the giant scallop), on which its design is based. The yellow and red colours used are thought to relate to the colours of the flag of Spain, as Shell built early service stations in California, previously a Spanish colony. The current revision of the logo was designed by Raymond Loewy in 1971.The slash was removed from the name "Royal Dutch/Shell" in 2005, concurrent with moves to merge the two legally separate companies (Royal Dutch and Shell) to the single legal entity which exists today.On 15 November 2021, Royal Dutch Shell plc announced plans to change its name to Shell plc.
+
+Logo evolution
+Operations
+Business groupings
+Shell is organised into four major business groupings:
+Upstream – manages the upstream business. It searches for and recovers crude oil and natural gas and operates the upstream and midstream infrastructure necessary to deliver oil and gas to the market. Its activities are organised primarily within geographic units, although there are some activities that are managed across the business or provided through support units.
+Integrated Gas and New Energies – manages to liquefy natural gas, converting gas to liquids and low-carbon opportunities.
+Downstream – manages Shell's manufacturing, distribution, and marketing activities for oil products and chemicals. Manufacturing and supply include refinery, supply, and shipping of crude oil.
+Projects and technology – manages the delivery of Shell's major projects, provides technical services and technology capability covering both upstream and downstream activities. It is also responsible for providing functional leadership across Shell in the areas of health, safety and environment, and contracting and procurement.
+
+Oil and gas activities
+Shell's primary business is the management of a vertically integrated oil company. The development of technical and commercial expertise in all stages of this vertical integration, from the initial search for oil (exploration) through its harvesting (production), transportation, refining and finally trading and marketing established the core competencies on which the company was founded. Similar competencies were required for natural gas, which has become one of the most important businesses in which Shell is involved, and which contributes a significant proportion of the company's profits. While the vertically integrated business model provided significant economies of scale and barriers to entry, each business now seeks to be a self-supporting unit without subsidies from other parts of the company.Traditionally, Shell was a heavily decentralised business worldwide (especially in the downstream) with companies in over 100 countries, each of which operated with a high degree of independence. The upstream tended to be far more centralised with much of the technical and financial direction coming from the central offices in The Hague. The upstream oil sector is also commonly known as the "exploration and production" sector.Downstream operations, which now also includes the chemicals business, generate the majority of Shell's profits worldwide and is known for its global network of more than 40,000 petrol stations and its various oil refineries. The downstream business, which in some countries also included oil refining, generally included a retail petrol station network, lubricants manufacture and marketing, industrial fuel and lubricants sales, and a host of other product/market sectors such as LPG and bitumen. The practice in Shell was that these businesses were essentially local and that they were best managed by local "operating companies" – often with middle and senior management reinforced by expatriates.
+
+Sponsorships
+Shell has a long history of motorsport sponsorship, most notably Scuderia Ferrari (1951–1964, 1966–1973 and 1996-present), BRM (1962–1966 and 1968–1972), Scuderia Toro Rosso (2007–2013 and 2016), McLaren (1967–1968 and 1984–1994), Lotus (1968–1971), Ducati Corse (since 1999), Team Penske (2011–present), Hyundai Motorsport (since 2005), AF Corse, Risi Competizione, BMW Motorsport (2015–present with also Pennzoil) and Dick Johnson Racing (1987-2004 and 2017–present).Starting in 2023, Shell will become the official fuel for IndyCar Series, supplying E100 race fuel for all teams.
+
+Operations by region
+Arctic
+Kulluk oil rig
+Following the purchase of an offshore lease in 2005, Shell initiated its US$4.5 billion Arctic drilling program in 2006, after the corporation purchased the "Kulluk" oil rig and leased the Noble Discoverer drillship. At inception, the project was led by Pete Slaiby, a Shell executive who had previously worked in the North Sea. However, after the purchase of a second offshore lease in 2008, Shell only commenced drilling work in 2012, due to the refurbishment of rigs, permit delays from the relevant authorities and lawsuits. The plans to drill in the Arctic led to protests from environmental groups, particularly Greenpeace; furthermore, analysts in the energy field, as well as related industries, also expressed skepticism due to perceptions that drilling in the region is "too dangerous because of harsh conditions and remote locations".Further problems hampered the Arctic project after the commencement of drilling in 2012, as Shell dealt with a series of issues that involved air permits, Coast Guard certification of a marine vessel, and severe damage to essential oil-spill equipment. Additionally, difficult weather conditions resulted in the delay of drilling during mid-2012 and the already dire situation was exacerbated by the "Kulluk" incident at the end of the year. Shell had invested nearly US$5 billion by this stage of the project.As the Kulluk oil rig was being towed to the American state of Washington to be serviced in preparation for the 2013 drilling season, a winter storm on 27 December 2012 caused the towing crews, as well as the rescue service, to lose control of the rig. As of 1 January 2013, the Kulluk was grounded off the coast Sitkalidak Island, near the eastern end of Kodiak Island. Following the accident, a Fortune magazine contacted Larry McKinney, the executive director at the Harte Research Institute for Gulf of Mexico Studies at Texas A&M, and he explained that "A two-month delay in the Arctic is not a two-month delay ... A two-month delay could wipe out the entire drilling season."It was unclear if Shell would recommence drilling in mid-2013, following the "Kulluk" incident, and, in February 2013, the corporation stated that it would "pause" its closely watched drilling project off the Alaskan coast in 2013, and will instead prepare for future exploration. In January 2014, the corporation announced the extension of the suspension of its drilling program in the Arctic, with chief executive van Beurden explaining that the project is "under review" due to both market and internal issues.A June 2014 interview with Pickard indicated that, following a forensic analysis of the problems encountered in 2012, Shell will continue with the project and Pickard stated that she perceives the future of the corporation activity in the Arctic region as a long-term "marathon". Pickard stated that the forensic "look back" revealed "there was an on/off switch" and further explained:
+
+In other words, don't spend the money unless you're sure you're going to have the legal environment to go forward. Don't spend the money unless you're sure you're going to have the permit. No, I can't tell you that I'm going to have that permit until June, but we need to plan like we're going to have that permit in June. And so probably the biggest lesson is to make sure we could smooth out the on/off switches wherever we could and take control of our own destiny.
+Based upon the interview with Pickard, Shell is approaching the project as an investment that will reap energy resources with a lifespan of around 30 years.According to the Bureau of Ocean Energy Management report in 2015 the chances of a major spill in a deep-sea Arctic drilling is 75% before century's end.
+
+Kodiak Island
+In 2010, Greenpeace activists painted "No Arctic Drilling" using spilled BP oil on the side of a ship in the Gulf of Mexico that was en route to explore for Arctic oil for Shell. At the protest, Phil Radford of Greenpeace called for "President Obama [to] ban all offshore oil drilling and call for an end to the use of oil in our cars by 2030."On 16 March 2012, 52 Greenpeace activists from five different countries boarded Fennica and Nordica, multipurpose icebreakers chartered to support Shell's drilling rigs near Alaska. Around the same time period, a reporter for Fortune magazine spoke with Edward Itta, an Inupiat leader and the former mayor of the North Slope Borough, who expressed that he was conflicted about Shell's plans in the Arctic, as he was concerned that an oil spill could destroy the Inupiat peoples hunting-and-fishing culture, but his borough also received major tax revenue from oil and gas production; additionally, further revenue from energy activity was considered crucial to the future of the living standard in Itta's community.In July 2012, Greenpeace activists shut down 53 Shell petrol stations in Edinburgh and London in a protest against the company's plans to drill for oil in the Arctic. Greenpeace's "Save the Arctic" campaign aims to prevent oil drilling and industrial fishing in the Arctic by declaring the uninhabited area around the North Pole a global sanctuary.A review was announced after the Kulluk oil rig ran aground near Kodiak Island in December 2012.In response, Shell filed lawsuits to seek injunctions from possible protests, and Benjamin Jealous of the NAACP and Radford argued that the legal action was "trampling Americans' rights." According to Greenpeace, Shell lodged a request with Google to take down video footage of a Greenpeace protest action that occurred at the Shell-sponsored Formula One (F1) Belgian Grand Prix on 25 August 2013, in which "SaveTheArctic.org" banners appear at the winners' podium ceremony. In the video, the banners rise up automatically—activists controlled their appearance with the use of four radio car antennas—revealing the website URL, alongside an image that consists of half of a polar bear's head and half of the Shell logo.Shell then announced a "pause" in the timeline of the project in early 2013 and, in September 2015, the corporation announced the extension of the suspension of its drilling program in the Arctic.
+
+Polar Pioneer rig
+A June 2014 interview with the corporation's new executive vice president of the Arctic indicated that Shell will continue with its activity in the region.In Seattle protests began in May 2015 in response to the news that the Port of Seattle made an agreement with Shell to berth rigs at the Port's Terminal 5 during the off-season of oil exploration in Alaskan waters. The arrival of Shell's new Arctic drilling vessel, Polar Pioneer (IMO number: 8754140), a semi-submersible offshore drilling rig, was greeted by large numbers of environmental protesters paddling kayaks in Elliott Bay.On 6 May 2015, it was reported that during a coast guard inspection of Polar Pioneer, a piece of anti-pollution gear failed, resulting in fines and delay of the operation. Oil executives from Total and Eni interviewed by the New York Times, expressed scepticism about Shell's new ambitions for offshore drilling in the Arctic, and cited economic and environmental hurdles. ConocoPhillips and Equinor (formerly Statoil) suspended Arctic drilling earlier, after Shell's failed attempt in 2012.
+
+Australia
+On 20 May 2011, Shell's final investment decision for the world's first floating liquefied natural gas (FLNG) facility was finalized following the discovery of the remote offshore Prelude field—located off Australia's northwestern coast and estimated to contain about 3 trillion cubic feet of natural gas equivalent reserves—in 2007. FLNG technology is based on liquefied natural gas (LNG) developments that were pioneered in the mid-20th century and facilitates the exploitation of untapped natural gas reserves located in remote areas, often too small to extract any other way.The floating vessel to be used for the Prelude field, known as Prelude FLNG, is promoted as the longest floating structure in the world and will take in the equivalent of 110,000 barrels of oil per day in natural gas—at a location 200 km (125 miles) off the coast of Western Australia—and cool it into liquefied natural gas for transport and sale in Asia. The Prelude is expected to start producing LNG in 2017—analysts estimated the total cost of construction at more than US$12 billion.Following the decision by the Shell fuel corporation to close its Geelong Oil Refinery in Australia in April 2013, a third consecutive annual loss was recorded for Shell's Australian refining and fuel marketing assets. Revealed in June 2013, the writedown is worth A$203 million and was preceded by a A$638m writedown in 2012 and a A$407m writedown in 2011, after the closure of the Clyde Refinery in Sydney, Australia.In February 2014, Shell sold its Australian refinery and petrol stations for US$2.6 billion (A$2.9 billion) to Swiss company Vitol.At the time of the downstream sale to Vitol, Shell was expected to continue investment into Australian upstream projects, with projects that involve Chevron Corp., Woodside Petroleum and Prelude. In June 2014, Shell sold 9.5% of its 23.1% stake in Woodside Petroleum and advised that it had reached an agreement for Woodside to buy back 9.5% of its shares at a later stage. Shell became a major shareholder in Woodside after a 2001 takeover attempt was blocked by then federal Treasurer Peter Costello and the corporation has been open about its intention to sell its stake in Woodside as part of its target to shed assets. At a general body meeting, held on 1 August 2014, 72 percent of shareholders voted to approve the buy-back, short of the 75 percent vote that was required for approval. A statement from Shell read: "Royal Dutch Shell acknowledges the outcome of Woodside Petroleum Limited's shareholders' negative vote on the selective buy-back proposal. Shell is reviewing its options in relation to its remaining 13.6 percent holding."
+
+Brunei
+Brunei Shell Petroleum (BSP) is a joint venture between the Government of Brunei and Shell. The British Malayan Petroleum Company (BMPC), owned by Royal Dutch Shell, first found commercial amounts of oil in 1929. It currently produces 350,000 barrels of oil and gas equivalent per day. BSP is the largest oil and gas company in Brunei, a sector which contributes 90% of government revenue. In 1954, the BMPC in Seria had a total of 1,277 European and Asian staff.
+
+China
+The company has upstream operations in unconventional oil and gas in China. Shell has a joint venture with PetroChina at the Changbei tight gas field in Shaanxi, which has produced natural gas since 2008. The company has also invested in exploring for shale oil in Sichuan. The other unconventional resource which Shell invested in in China was shale. The company was an early entrant in shale oil exploration in China but scaled down operations in 2014 due to difficulties with geology and population density. It has a joint venture to explore for oil shale in Jilin through a joint venture with Jilin Guangzheng Mineral Development Company Limited.
+
+Hong Kong
+Shell has been active in Hong Kong for a century, providing Retail, LPG, Commercial Fuel, Lubricants, Bitumen, Aviation, Marine and Chemicals services, and products. Shell also sponsored the first Hong Kong-built aircraft, Inspiration, for its around-the-world trip.
+
+India
+Shell India has inaugurated its new lubricants laboratory at its Technology Centre in Bangalore.
+
+Ireland
+Shell first started trading in Ireland in 1902. Shell E&P Ireland (SEPIL) (previously Enterprise Energy Ireland) is an Irish exploration and production subsidiary of Royal Dutch Shell. Its headquarters are on Leeson Street in Dublin. It was acquired in May 2002. Its main project is the Corrib gas project, a large gas field off the northwest coast, for which Shell has encountered controversy and protests in relation to the onshore pipeline and licence terms.In 2005, Shell disposed of its entire retail and commercial fuels business in Ireland to Topaz Energy Group. This included depots, company-owned petrol stations and supply agreements stations throughout the island of Ireland. The retail outlets were re-branded as Topaz in 2008/9.The Topaz fuel network was subsequently acquired in 2015 by Couchetard and these stations began re-branding to Circle K in 2018.
+
+Malaysia
+Shell discovered the first oil well in Malaysia in 1910, in Miri, Sarawak. Today the oil well is a state monument known as the Grand Old Lady. In 1914, following this discovery, Shell built Malaysia's first oil refinery and laid a submarine pipeline in Miri.
+
+Nigeria
+Shell began production in Nigeria in 1958. In Nigeria, Shell told US diplomats that it had placed staff in all the main ministries of the government. Shell continues however upstream activities/extracting crude oil in the oil-rich Niger Delta as well as downstream/commercial activities in South Africa. In June 2013, the company announced a strategic review of its operations in Nigeria, hinting that assets could be divested. In August 2014, the company disclosed it was in the process of finalizing the sale of its interests in four Nigerian oil fields. On 29 January 2021 a Dutch court ruled that Shell was responsible for multiple oil leaks in Nigeria.The actions of companies like Shell has led to extreme environmental issues in the Niger Delta. Many pipelines in the Niger Delta owned by Shell are old and corroded. Shell has acknowledged its responsibility for keeping the pipelines new but has also denied responsibility for environmental causes. The heavy contamination of the air, ground and water with toxic pollutants by the oil industry in the Niger Delta is often used as an example of ecocide. This has led to mass protests from the Niger Delta inhabitants, Amnesty International, and Friends of the Earth the Netherlands against Shell. It has also led to action plans to boycott Shell by environmental and human rights groups. In January 2013, a Dutch court rejected four out of five allegations brought against the firm over oil pollution in the Niger Delta but found a subsidiary guilty of one case of pollution, ordering compensation to be paid to a Nigerian farmer.
+
+Nordic countries
+On 27 August 2007, Shell and Reitan Group, the owner of the 7-Eleven brand in Scandinavia, announced an agreement to re-brand some 269 service stations across Norway, Sweden, Finland and Denmark, subject to obtaining regulatory approvals under the different competition laws in each country. In April 2010 Shell announced that the corporation is in process of trying to find a potential buyer for all of its operations in Finland and is doing similar market research concerning Swedish operations. In October 2010 Shell's gas stations and the heavy vehicle fuel supply networks in Finland and Sweden, along with a refinery located in Gothenburg, Sweden were sold to St1, a Finnish energy company, more precisely to its major shareholding parent company Keele Oy.
+
+North America
+Through most of Shell's early history, Shell USA business in the United States was substantially independent. Its stock was traded on the NYSE, and the group's central office had little direct involvement in running the operation. However, in 1984, Shell made a bid to purchase those shares of Shell Oil Company it did not own (around 30%) and, despite opposition from some minority shareholders which led to a court case, Shell completed the buyout for a sum of $5.7 billion.
+
+Philippines
+Royal Dutch Shell operates in the Philippines under its subsidiary, Pilipinas Shell Petroleum Corporation. Its headquarters is in Makati and it has facilities in the Pandacan oil depot and other key locations.In January 2010, the Bureau of Customs claimed 7.34 billion pesos worth of unpaid excise taxes against Pilipinas Shell for importing Catalytic cracked gasoline (CCG) and light catalytic cracked gasoline (LCCG) stating that those imports are bound for tariff charges.In August 2016, Pilipinas Shell filed an application to sell US$629 million worth of primary and secondary shares to the investing public (registration statement) with the SEC. This was a prelude to filing its IPO listing application with the Philippine Stock Exchange. On 3 November 2016 the Pilipinas Shell Petroleum Corporation was officially listed on the Philippine Stock Exchange under the ticker symbol SHLPH after they held its initial public offering on 19 to 25 October of the same year.Due to the economic slowdown caused by the COVID-19 pandemic on the global, regional and local economies, continually low refining margins, and competition with imported refined products, the management of Pilipinas Shell announced in August 2020 that the 110,000 bbl/d refinery in Tabangao, Batangas, which started operations in 1962, will be shutting down permanently and turned into an import terminal instead.
+
+Russia
+In February 2022, Shell exited all its joint ventures with Gazprom because of the 2022 Russian invasion of Ukraine and, in March 2022, Shell announced that it would stop buying oil from Russia and close all its service stations there. In April 2022, it emerged that Shell was to book up to $5 billion in impairment charges from exiting its interests in Russia.
+
+Singapore
+Singapore is the main centre for Shell's petrochemical operations in the Asia Pacific region. Shell Eastern Petroleum limited (SEPL) have their refinery located in Singapore's Pulau Bukom island. They also operate as Shell Chemicals Seraya in Jurong Island. In November 2020, Shell announced that, as part of efforts to curtail pollution emissions, it will cut its oil-processing capacity in Singapore.
+
+United Kingdom
+In the UK sector of the North Sea Shell employs around 4,500 staff in Scotland as well as an additional 1,000 service contractors: however in August 2014 it announced it was laying off 250 of them, mainly in Aberdeen. Shell paid no UK taxes on its North Sea operations over the period 2018 to 2021.
+
+Alternative energy
+In the early 2000s Shell moved into alternative energy and there is now an embryonic "Renewables" business that has made investments in solar power, wind power, hydrogen, and forestry. The forestry business went the way of nuclear, coal, metals and electricity generation, and was disposed of in 2003. In 2006 Shell paid SolarWorld to take over its entire solar business and in 2008, the company withdrew from the London Array which when built was the world's largest offshore wind farm.Shell also is involved in large-scale hydrogen projects. HydrogenForecast.com describes Shell's approach thus far as consisting of "baby steps", but with an underlying message of "extreme optimism". In 2015, the company announced plans to install hydrogen fuel pumps across Germany, planning on having 400 locations in operation by 2023.Shell holds 44% of Raízen, a joint venture with Brazilian sugarcane producer Cosan which is the third-largest Brazil-based energy company by revenues and a major producer of ethanol. In 2015, the company partnered with Brazilian start-up company Insolar to install solar panels in Rio de Janeiro to deliver electricity to the Santa Marta neighbourhood.Shell is the operator and major shareholder of The Shell Canada Quest Energy project, based within the Athabasca Oil Sands Project, located near Fort McMurray, Alberta. It holds a 60% share, alongside Chevron Canada Limited, which holds 20%, and Marathon Canadian Oil Sands Holding Limited, which holds the final 20%. Commercial operations launched in November 2015. It was the world's first commercial-scale oil and sand carbon capture storage (CCS) project. It is expected to reduce CO2 emissions in Canada by 1.08 million tonnes per year.In December 2016, Shell won the auction for the 700 MW Borssele III & IV offshore wind farms at a price of 5.45 c/kWh, beating 6 other consortia. In June 2018, it was announced that the company and its co-investor Partners Group had secured $1.5bn for the project, which also involves Eneco, Van Oord, and Mitsubishi/DGE.In October 2017, it bought Europe's biggest vehicle charging network, "NewMotion."In November 2017, Shell's CEO Ben van Beurden announced Shell's plan to cut half of its carbon emissions by 2050, and 20 percent by 2035. In this regard, Shell promised to spend $2 billion annually on renewable energy sources. Shell began to develop its wind energy segment in 2001, the company now operates six wind farms in the United States and is part of a plan to build two offshore wind farms in the Netherlands.In December 2017, the company announced plans to buy UK household energy and broadband provider First Utility. In March 2019 it rebranded to Shell Energy and announced that all electricity would be supplied from renewable sources.In December 2018, the company announced that it had partnered with SkyNRG to begin supplying sustainable aviation fuel to airlines operating out of San Francisco Airport (SFO), including KLM, SAS, and Finnair. In the same month, the company announced plans to double its renewable energy budget to investment in low-carbon energy to $4 billion US each year, with an aim to spend up to $2 billion US on renewable energy by 2021.In January 2018, the company acquired a 44% interest in Silicon Ranch, a solar energy company run by Matt Kisber, as part of its global New Energies project. The company took over from Partners Group, paying up to an estimated $217 million for the minority interest.In February 2019, the company acquired German solar battery company Sonnen. It first invested in the company in May 2018 as part of its New Energies project. As of late 2021, the company had 800 employees and has installed 70.000 home battery systems.On 27 February 2019, the company acquired British VPP operator Limejump for an undisclosed amount.In July 2019, Shell installed their first 150 kW electric car chargers at its London petrol stations with payments handled via SMOOV. They also plan to provide 350 kW chargers in Europe by entering into an agreement with IONITY.On 26 January 2021, Shell said it would buy 100 per cent of Ubitricity, owner of the largest public charging network for electric vehicles in the United Kingdom, as the company expands its presence along the power supply chain.On 25 February 2021, Shell announced the acquisition of German Virtual Power Plant (VPP) company Next Kraftwerke for an undisclosed amount. Next Kraftwerke connects renewable electricity generation- and storage projects to optimize the usage of those assets. The company mostly operates in Europe.In November 2022, it was announced Shell's wholly-owned subsidiary, Shell Petroleum NV, had acquired the Odense-headquartered renewable natural gas producer, Nature Energy Biogas A/S for nearly $2 billion USD.
+
+Controversies
+General issues
+Shell's public rhetoric and pledges emphasize that the company is shifting towards climate-friendly, low-carbon and transition strategies. However, a 2022 study found that the company's spending on clean energy was insignificant and opaque, with little to suggest that the company's discourse matched its actions.In 1989, Shell redesigned a $3-billion natural gas platform in the North Sea, raising its height one to two meters, to accommodate an anticipated sea level rise due to global warming. In 2013, Royal Dutch Shell PLC reported CO2 emissions of 81 million metric tonnes.In 2017, Shell sold non-compliant foreign fuel to consumers.In 2020, the Northern Lights CCS project was announced, which is a joint project between Equinor, Shell and Total, operating in the European Union (Norway) and aiming to store liquid CO2 beneath the seabed.Environmentalists have expressed concern that Shell is processing oil from the Amazon region of South America. In the United States, the Martinez refinery (CA) and the Puget Sound Refinery (WA) carry Amazonian oil. In 2015, 14% of the Martinez refinery's gross, at 19,570 barrels per day, came from the Amazon.In 2021, Shell was ranked as the 10th most environmentally responsible company out of 120 oil, gas, and mining companies involved in resource extraction north of the Arctic Circle in the Arctic Environmental Responsibility Index (AERI).In December 2021, Royal Dutch Shell decided to move ahead with seismic tests to explore for oil in humpback whale breeding grounds along South Africa's eastern coastline. On 3 December 2021, a South African high court struck down an urgent application brought by environmentalists to stop the project, which will involve a vessel regularly firing an air gun that produces a very powerful shock wave underwater to help map subsea geology. According to Greenpeace Africa and the South African Deep Sea Angling Association, this could cause "irreparable harm" to the marine environment, especially to migrating humpback whales in the area.
+
+Climate change
+In 2017, a public information film ("Climate of Concern") unseen for years resurfaced and showed Shell had clear grasp of global warming 26 years earlier but has not acted accordingly since, said critics.The burning of the fossil fuels produced by Shell are responsible for 1.67% of global industrial greenhouse gas emissions from 1988 to 2015. In April 2020, Shell announced plans to achieve net zero greenhouse gas emissions by 2050 or sooner. However, internal documents from the company released by the Democratic-led House committee reveal a private 2020 communication saying Shell does not have any plans to bring emissions to zero for next 10–20 years.
+
+Climate case
+On 5 April 2019, Milieudefensie (Dutch for "environmental defense"), together with six NGOs and more than 17,000 citizens, sued Shell, accusing the company of harming the climate despite knowing about global warming since 1986. In May 2021, the district court of The Hague ruled that Shell must reduce carbon dioxide emissions by 45% by 2030 (compared to 2019 levels).
+
+Oil spills
+Shell was responsible for around 21,000 gallons of oil spilled near Tracy, California, in May 2016 due to a pipeline crack.
+Shell was responsible for an 88,200-gallon oil spill in the Gulf of Mexico in May 2016.
+Two ruptures in a Shell Oil Co. pipeline in Altamont, California – one in September 2015 and another in May 2016 – led to questions on whether the Office of the State Fire Marshal, charged with overseeing the pipeline, was doing an adequate job.
+On 29 January 2021, a Dutch court ordered Royal Dutch Shell plc's Nigerian unit to compensate for oil spills in two villages over 13 years ago. Shell Nigeria is liable for damages from pipeline leaks in the villages of Oruma and Goi, the Hague Court of Appeals said in a ruling. Shell said that it should not be liable, as the spills were the result of sabotage.
+
+Accusations of greenwashing
+On 2 September 2002, Shell Chairman Philip Watts accepted the "Greenwash Lifetime Achievement Award" from the Greenwash Academy's Oscar Green, near the World Summit on Sustainable Development.In 2007, British ASA ruled against a Shell ad involving chimneys spewing flowers, which depicted Shell's waste management policies, claiming it was misleading the public about Shell's environmental impact.In 2008, the British ASA ruled that Shell had misled the public in an advertisement when it claimed that a $10 billion oil sands project in Alberta, Canada, was a "sustainable energy source".In 2021, Netherlands officials told Shell to stop running a campaign which claimed customers could turn their fuel "carbon neutral" by buying offsets, as it was concluded that this claim was devoid of evidence.In December 2022, U.S. House Oversight and Reform Committee Chair Carolyn Maloney and U.S. House Oversight Environment Subcommittee Chair Ro Khanna sent a memorandum to all House Oversight and Reform Committee members summarizing additional findings from the Committee's investigation into the fossil fuel industry disinformation campaign to obscure the role of fossil fuels in causing global warming, and that upon reviewing internal company documents, accused Shell  along with BP, Chevron Corporation, and ExxonMobil of greenwashing their Paris Agreement carbon neutrality pledges while continuing long-term investment in fossil fuel production and sales, for engaging in a campaign to promote the use of natural gas as a clean energy source and bridge fuel to renewable energy, and of intimidating journalists reporting about the companies' climate actions and of obstructing the Committee's investigation, which ExxonMobil, Shell, and the American Petroleum Institute denied.
+
+Health and safety
+A number of incidents over the years led to criticism of Shell's health and safety record, including repeated warnings by the UK Health and Safety Executive about the poor state of the company's North Sea platforms.
+
+Reaction to the War in Ukraine
+Shell already had previous experience exiting markets that were subject to sanctions pressure from NATO or EU member states. In particular, in 2013, Shell announced that it was suspending its operations in Syria. On 8 March 2022, Shell announced its intention to phase out all Russian hydrocarbon production and acquisition projects, including crude oil, petroleum products, natural gas and liquefied natural gas (LNG).  In early 2022 the company criticized by the Minister of Foreign Affairs of Ukraine for its slow response to the war in Ukraine. As of April 2023, Shell still had shares in Russian companies, such as 27.5% in Sakhalin Energy Investment Company (SEIC), a joint venture with Gazprom (50%), Mitsui (12.5%) and Mitsubishi (10%).
+
+royaldutchshellplc.com
+This domain name was first registered by a former marketing manager for Royal Dutch Shell plc, Alfred Donovan, and has been used as a "gripe site". It avoids being an illegal cybersquatter as long as it is non-commercial, active, and no attempt is made to sell the domain name, as determined by WIPO proceedings. In 2005, Donovan said he would relinquish the site to Shell after it "gets rid of all the management he deems responsible for its various recent woes." The site has been recognized by several media outlets for its role as an Internet leak. In 2008 the Financial Times published an article based on a letter published by royaldutchshellplc.com, which Reuters and The Times also covered shortly thereafter. On 18 October 2006, the site published an article stating that Shell had for some time been supplying information to the Russian government relating to Sakhalin II. The Russian energy company Gazprom subsequently obtained a 50% stake in the Sakhalin-II project. Other instances where the site has acted as an Internet leak include a 2007 IT outsourcing plan, as well as a 2008 internal memo where CEO Jeroen van der Veer expressed disappointment in the company's share-price performance.The gripe site has also been recognized as a source of information regarding Shell by several news sources. In the 2006 Fortune Global 500 rankings, in which Royal Dutch Shell placed third, royaldutchshellplc.com was listed alongside shell.com as a source of information. In 2007 the site was described as "a hub for activists and disgruntled former employees." A 2009 article called royaldutchshellplc.com "the world's most effective adversarial Web site." The site has been described as "an open wound for Shell."
+
+See also
+Notes
+Passage 4:
+Jack Hubbert
+Jack Hubbert (19 March 1916 – 5 August 1990) was an Australian rules footballer who played with Essendon in the Victorian Football League (VFL).
+
+Notes
+External links
+Jack Hubbert's playing statistics from AFL Tables
+Jack Hubbert at AustralianFootball.com
+Passage 5:
+San Ardo, California
+San Ardo, formerly known as San Bernardo (Spanish for "St. Bernard"), is an unincorporated community and census-designated place (CDP) in Monterey County, California, United States. San Ardo is located 18 miles (29 km) southeast of King City at an elevation of 449 feet (137 m). The population was 392 at the 2020 census, down from 517 in 2010.
+
+History
+The owner of the San Bernardo land grant, M.J. Brandenstein, laid out the town when the railroad reached his land in 1887. The San Bernardo post office opened in 1886, and changed its name to San Ardo in 1887. The former name of San Bernardo was changed to avoid confusion with San Bernardino, California.
+
+Geography
+San Ardo is near the point where the broad Salinas Valley has its southeastern terminus and pinches out within the converging portions of the California Coast Ranges, including the Santa Lucia Mountains on the west and the Cholame Hills and the Diablo Range on the east. U.S. Route 101 passes west of the town, leading northwest to 18 miles (29 km) to King City and 66 miles (106 km) to Salinas, the Monterey county seat, while to the southeast it leads 33 miles (53 km) to Paso Robles.
+According to the United States Census Bureau, the CDP has a total area of 0.4 square miles (1.0 km2), all of it land. The Salinas River flows northward along the west side of the community.
+
+Climate
+This region experiences warm (but not hot) and dry summers, with no average monthly temperatures above 71.6 °F.  According to the Köppen Climate Classification system, San Ardo has a warm-summer Mediterranean climate, abbreviated "Csb" on climate maps.
+
+Economy
+The huge San Ardo Oil Field is about 5 miles (8 km) south of town.  Much of the local economy is based on agriculture (including farming and ranching), and servicing the oil field.
+
+Demographics
+2010
+At the 2010 census San Ardo had a population of 517. The population density was 1,150.7 inhabitants per square mile (444.3/km2). The racial makeup of San Ardo was 252 (48.7%) White, 1 (0.2%) African American, 3 (0.6%) Native American, 5 (1.0%) Asian, 0 (0.0%) Pacific Islander, 245 (47.4%) from other races, and 11 (2.1%) from two or more races.  Hispanic or Latino of any race were 363 people (70.2%).The whole population lived in households, no one lived in non-institutionalized group quarters and no one was institutionalized.
+There were 140 households, 76 (54.3%) had children under the age of 18 living in them, 82 (58.6%) were opposite-sex married couples living together, 16 (11.4%) had a female householder with no husband present, 13 (9.3%) had a male householder with no wife present.  There were 6 (4.3%) unmarried opposite-sex partnerships, and 1 (0.7%) same-sex married couples or partnerships. 22 households (15.7%) were one person and 9 (6.4%) had someone living alone who was 65 or older. The average household size was 3.69.  There were 111 families (79.3% of households); the average family size was 4.13.
+The age distribution was 185 people (35.8%) under the age of 18, 66 people (12.8%) aged 18 to 24, 139 people (26.9%) aged 25 to 44, 83 people (16.1%) aged 45 to 64, and 44 people (8.5%) who were 65 or older.  The median age was 26.6 years. For every 100 females, there were 112.8 males.  For every 100 females age 18 and over, there were 129.0 males.
+There were 158 housing units at an average density of 351.7 per square mile, of the occupied units 47 (33.6%) were owner-occupied and 93 (66.4%) were rented. The homeowner vacancy rate was 4.1%; the rental vacancy rate was 9.6%.  145 people (28.0% of the population) lived in owner-occupied housing units and 372 people (72.0%) lived in rental housing units.
+
+2000
+At the 2000 census there were 501 people, 157 households, and 110 families in the CDP.  The population density was 1,114.6 inhabitants per square mile (430.3/km2).  There were 167 housing units at an average density of 371.5 per square mile (143.4/km2).  The racial makeup of the CDP was 47.90% White, 0.40% African American, 2.40% Native American, 0.40% Asian, 46.91% from other races, and 2.00% from two or more races. Hispanic or Latino of any race were 65.67%.Of the 157 households 41.4% had children under the age of 18 living with them, 47.1% were married couples living together, 10.2% had a female householder with no husband present, and 29.3% were non-families. 24.2% of households were one person and 7.6% were one person aged 65 or older.  The average household size was 3.19 and the average family size was 3.82.
+The age distribution was 35.3% under the age of 18, 11.8% from 18 to 24, 27.7% from 25 to 44, 15.8% from 45 to 64, and 9.4% 65 or older.  The median age was 27 years. For every 100 females, there were 106.2 males.  For every 100 females age 18 and over, there were 114.6 males.
+The median household income was $25,208 and the median family income  was $31,500. Males had a median income of $30,417 versus $14,375 for females. The per capita income for the CDP was $11,379.  About 15.4% of families and 24.0% of the population were below the poverty line, including 32.5% of those under age 18 and 13.5% of those age 65 or over.

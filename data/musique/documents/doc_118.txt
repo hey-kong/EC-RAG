@@ -1,0 +1,601 @@
+Passage 1:
+ISO 3166-2:JP
+ISO 3166-2:JP is the entry for Japan in ISO 3166-2, part of the ISO 3166 standard published by the International Organization for Standardization (ISO), which defines codes for the names of the principal subdivisions (e.g. provinces or states) of all countries coded in ISO 3166-1.
+Currently for Japan, ISO 3166-2 codes are defined for 47 prefectures.
+Each code consists of two parts, separated by a hyphen. The first part is JP, the ISO 3166-1 alpha-2 code of Japan. The second part is two digits (01–47), which is the Japanese Industrial Standard JIS X 0401 code of the prefecture. The codes are assigned roughly from north to south.
+
+Current codes
+Subdivision names are listed as in the ISO 3166-2 standard published by the ISO 3166 Maintenance Agency (ISO 3166/MA).
+
+See also
+Administrative divisions of Japan
+FIPS region codes of Japan
+
+External links
+ISO Online Browsing Platform: JP
+Districts of Japan, Statoids.com
+Passage 2:
+ISO 3166-2:IN
+ISO 3166-2:IN is the entry for India in ISO 3166-2, part of the ISO 3166 standard published by the International Organization for Standardization (ISO), which defines codes for the names of the principal subdivisions (e.g., provinces or states) of all countries coded in ISO 3166-1.
+Currently for India, ISO 3166-2 codes are defined for 28 states and 8 union territories.
+Each code consists of two parts, separated by a hyphen. The first part is IN, the ISO 3166-1 alpha-2 code for India. The second part is two letters, currently used in vehicle registration plates with some exceptions.
+
+Current codes
+Subdivision names are listed as in the ISO 3166-2 standard published by the ISO 3166 Maintenance Agency (ISO 3166/MA).
+
+Notes
+
+Changes
+The following changes to the entry have been announced in newsletters by the ISO 3166/MA since the first publication of ISO 3166-2 in 1998. ISO stopped issuing newsletters in 2013.
+
+The following changes to the entry are listed on ISO's online catalogue, the Online Browsing Platform:
+
+See also
+Subdivisions of India
+FIPS region codes of India
+Passage 3:
+ISO 3166-2:DM
+ISO 3166-2:DM is the entry for Dominica in ISO 3166-2, part of the ISO 3166 standard published by the International Organization for Standardization (ISO), which defines codes for the names of the principal subdivisions (e.g., provinces or states) of all countries coded in ISO 3166-1.
+Currently for Dominica, ISO 3166-2 codes are defined for 10 parishes.
+Each code consists of two parts, separated by a hyphen. The first part is DM, the ISO 3166-1 alpha-2 code of Dominica. The second part is two digits (02–11).
+
+Current codes
+Subdivision names are listed as in the ISO 3166-2 standard published by the ISO 3166 Maintenance Agency (ISO 3166/MA).
+Click on the button in the header to sort each column.
+
+Changes
+The following changes to the entry have been announced in newsletters by the ISO 3166/MA since the first publication of ISO 3166-2 in 1998:
+
+See also
+Subdivisions of Dominica
+FIPS region codes of Dominica
+
+External links
+ISO Online Browsing Platform: DM
+Parishes of Dominica, Statoids.com
+Passage 4:
+ISO 3166-2:BY
+ISO 3166-2:BY is the entry for Belarus in ISO 3166-2, part of the ISO 3166 standard published by the International Organization for Standardization (ISO), which defines codes for the names of the principal subdivisions (e.g., provinces or states) of all countries coded in ISO 3166-1.
+Currently for Belarus, ISO 3166-2 codes are defined for 6 oblasts and 1 city. The city Minsk is the capital of the country and has special status equal to the oblasts.
+Each code consists of two parts, separated by a hyphen. The first part is BY, the ISO 3166-1 alpha-2 code of Belarus. The second part is two letters.
+
+Current codes
+Subdivision names are listed as in the ISO 3166-2 standard published by the ISO 3166 Maintenance Agency (ISO 3166/MA).
+ISO 639-1 codes are used to represent subdivision names in the following administrative languages:
+
+(be): Belarusian — Romanization system: BGN/PCGN 1979, UN X/6 2012
+(ru): Russian — Romanization system: BGN/PCGN 1947, GOST 1983 = UN V/18 1987Click on the button in the header to sort each column.
+
+Notes
+
+Changes
+The following changes to the entry have been announced by the ISO 3166/MA since the first publication of ISO 3166-2 in 1998. ISO stopped issuing newsletters in 2013.
+
+See also
+Subdivisions of Belarus
+FIPS region codes of Belarus
+
+External links
+ISO Online Browsing Platform: BY
+Regions of Belarus, Statoids.com
+Passage 5:
+ISO 3166-2:JM
+ISO 3166-2:JM is the entry for Jamaica in ISO 3166-2, part of the ISO 3166 standard published by the International Organization for Standardization (ISO), which defines codes for the names of the principal subdivisions (e.g., provinces or states) of all countries coded in ISO 3166-1.
+Currently for Jamaica, ISO 3166-2 codes are defined for 14 parishes.
+Each code consists of two parts, separated by a hyphen. The first part is JM, the ISO 3166-1 alpha-2 code of Jamaica. The second part is two digits (01–14). The codes are assigned in the 
+counter-clockwise direction starting from Kingston Parish.
+
+Current codes
+Subdivision names are listed as in the ISO 3166-2 standard published by the ISO 3166 Maintenance Agency (ISO 3166/MA).
+Click on the button in the header to sort each column.
+
+See also
+Subdivisions of Jamaica
+FIPS region codes of Jamaica
+
+External links
+ISO Online Browsing Platform: JM
+Parishes of Jamaica, Statoids.com
+Passage 6:
+ISO 3166-2:AD
+ISO 3166-2:AD is the entry for Andorra in ISO 3166-2, part of the ISO 3166 standard published by the International Organization for Standardization (ISO), which defines codes for the names of the principal subdivisions (e.g., provinces or states) of all countries coded in ISO 3166-1.
+Currently for Andorra, ISO 3166-2 codes are defined for 7 parishes.
+Each code consists of two parts, separated by a hyphen. The first part is AD, the ISO 3166-1 alpha-2 code of Andorra. The second part is two digits:
+
+02–06: parishes created before 1978 except Andorra la Vella
+07–08: Andorra la Vella and Escaldes-Engordany (Escaldes-Engordany split from Andorra la Vella in 1978)
+
+Current codes
+Subdivision names are listed as in the ISO 3166-2 standard published by the ISO 3166 Maintenance Agency (ISO 3166/MA).
+Click on the button in the header to sort each column.
+
+Changes
+The following changes to the entry have been announced by the ISO 3166/MA since the first publication of ISO 3166-2 in 1998. ISO stopped issuing newsletters in 2013.
+
+See also
+Subdivisions of Andorra
+FIPS region codes of Andorra
+Neighbouring countries: ES, FR.
+
+External links
+ISO Online Browsing Platform: AD
+Parishes of Andorra, Statoids.com
+Passage 7:
+ISO 3166-2:BN
+ISO 3166-2:BN is the entry for Brunei in ISO 3166-2, part of the ISO 3166 standard published by the International Organization for Standardization (ISO), which defines codes for the names of the principal subdivisions (e.g., provinces or states) of all countries coded in ISO 3166-1.
+Currently for Brunei, ISO 3166-2 codes are defined for 4 districts.
+Each code consists of two parts, separated by a hyphen. The first part is BN, the ISO 3166-1 alpha-2 code of Brunei. The second part is two letters.
+
+Current codes
+Subdivision names are listed as in the ISO 3166-2 standard published by the ISO 3166 Maintenance Agency (ISO 3166/MA).
+Click on the button in the header to sort each column.
+
+Changes
+The following changes to the entry are listed on ISO's online catalogue, the Online Browsing Platform:
+
+See also
+Subdivisions of Brunei
+FIPS region codes of Brunei
+
+External links
+ISO Online Browsing Platform: BN
+Districts of Brunei Darussalam, Statoids.com
+Passage 8:
+ISO 3166-2:GR
+ISO 3166-2:GR is the entry for Greece in ISO 3166-2, part of the ISO 3166 standard published by the International Organization for Standardization (ISO) which defines codes for the names of the principal subdivisions (e.g., provinces or states) of all countries coded in ISO 3166-1.
+Currently for Greece, ISO 3166-2 codes are defined for two categories of subdivisions:
+
+13 administrative regions
+1 self-governed partThe departments (also called prefectures) were abolished in 2011, and were replaced approximately by regional units. The regional units were deleted from the entry in 2016.
+Each code consists of two parts, separated by a hyphen. The first part is GR, the ISO 3166-1 alpha-2 code of Greece. The second part is either of the following:
+
+one letter (A–M): administrative regions
+two digits: self-governed part
+
+Current codes
+Subdivision names are listed as in the ISO 3166-2 standard published by the ISO 3166 Maintenance Agency (ISO 3166/MA).
+Click on the button in the header to sort each column.
+
+Administrative regions
+Notes
+
+Self-governed part
+Changes
+The following changes to the entry have been announced in newsletters by the ISO 3166/MA since the first publication of ISO 3166-2 in 1998:
+
+The following changes to the entry are listed on ISO's online catalogue, the Online Browsing Platform:
+
+Codes changed in Newsletter II-1
+Codes removed on 15 November 2016
+See also
+Subdivisions of Greece
+FIPS region codes of Greece
+NUTS codes of Greece
+
+External links
+ISO Online Browsing Platform: GR
+Departments of Greece, Statoids.com
+Passage 9:
+ISO 3166-2:BE
+ISO 3166-2:BE is the entry for Belgium in ISO 3166-2, part of the ISO 3166 standard published by the International Organization for Standardization (ISO), which defines codes for the names of the principal subdivisions (e.g. provinces or states) of all countries coded in ISO 3166-1.
+Currently for Belgium, ISO 3166-2 codes are defined for two levels of subdivisions:
+
+3 regions
+10 provincesEach code consists of two parts, separated by a hyphen. The first part is BE, the ISO 3166-1 alpha-2 code of Belgium. The second part is three letters. For the provinces, the first letter indicates the region where the province is in:
+
+V: Flemish Region (Dutch: Vlaams Gewest)
+W: Walloon Region (French: Région wallonne)
+
+Current codes
+Subdivision names are listed as in the ISO 3166-2 standard published by the ISO 3166 Maintenance Agency (ISO 3166/MA).
+ISO 639-1 codes are used to represent subdivision names in the following administrative languages:
+
+(fr): French
+(nl): DutchClick on the button in the header to sort each column.
+
+Regions
+Notes
+
+Provinces
+Changes
+The following changes to the entry have been announced in newsletters by the ISO 3166/MA since the first publication of ISO 3166-2 in 1998. ISO stopped issuing newsletters in 2013.
+
+The following changes to the entry are listed on ISO's online catalogue, the Online Browsing Platform:
+
+See also
+Subdivisions of Belgium
+FIPS region codes of Belgium
+NUTS codes of Belgium
+
+External links
+ISO Online Browsing Platform: BE
+Provinces of Belgium, Statoids.com
+Passage 10:
+ISO 3166-2:BT
+ISO 3166-2:BT is the entry for Bhutan in ISO 3166-2, part of the ISO 3166 standard published by the International Organization for Standardization (ISO), which defines codes for the names of the principal subdivisions (e.g., provinces or states) of all countries coded in ISO 3166-1.
+Currently for Bhutan, ISO 3166-2 codes are defined for 20 districts.
+Each code consists of two parts, separated by a hyphen. The first part is BT, the ISO 3166-1 alpha-2 code of Bhutan. The second part is two digits, except Gasa and Trashi Yangtse, which use two letters instead. The first digit indicates the zone where the district is in:
+
+1: Western
+2: Central (Gasa is also in this zone)
+3: Southern
+4: Eastern (Trashi Yangtse is also in this zone)
+
+Current codes
+Subdivision names are listed as in the ISO 3166-2 standard published by the ISO 3166 Maintenance Agency (ISO 3166/MA).
+Click on the button in the header to sort each column.
+
+Notes
+
+Changes
+The following changes to the entry are listed on ISO's online catalogue, the Online Browsing Platform:
+
+See also
+Subdivisions of Bhutan
+FIPS region codes of Bhutan
+
+External links
+ISO Online Browsing Platform: BT
+Districts of Bhutan, Statoids.com
+Passage 11:
+ISO 3166-2:CH
+ISO 3166-2:CH is the entry for Switzerland in ISO 3166-2, part of the ISO 3166 standard published by the International Organization for Standardization (ISO), which defines codes for the names of the principal subdivisions (e.g., provinces or states) of all countries coded in ISO 3166-1.
+The abbreviation is derived from Latin name for Switzerland, Confoederatio Helvetica ("Helvetic Confederation").
+Currently for Switzerland, ISO 3166-2 codes are defined for 26 cantons.
+Each code consists of two parts, separated by a hyphen. The first part is CH, the ISO 3166-1 alpha-2 code of Switzerland. The second part is two letters, currently used in vehicle registration plates.
+
+Current codes
+Subdivision names are listed as in the ISO 3166-2 standard published by the ISO 3166 Maintenance Agency (ISO 3166/MA).
+ISO 639-1 codes are used to represent subdivision names in the following administrative languages:
+
+(de): German
+(fr): French
+(it): Italian
+(rm): RomanshClick on the button in the header to sort each column.
+
+Changes
+The following changes to the entry have been announced in newsletters by the ISO 3166/MA since the first publication of ISO 3166-2 in 1998:
+
+See also
+Subdivisions of Switzerland
+FIPS region codes of Switzerland
+NUTS codes of Switzerland
+Comparison of ISO, FIPS, and NUTS codes of the cantons of Switzerland
+
+External links
+ISO Online Browsing Platform: CH
+Cantons of Switzerland, Statoids.com
+Passage 12:
+ISO 3166-2:HU
+ISO 3166-2:HU is the entry for Hungary in ISO 3166-2, part of the ISO 3166 standard published by the International Organization for Standardization (ISO), which defines codes for the names of the principal subdivisions (e.g., provinces or states) of all countries coded in ISO 3166-1.
+Currently for Hungary, ISO 3166-2 codes are defined for 1 capital city, 19 counties, and 23 cities with county rights. The capital of the country Budapest has special status equal to the counties, while the cities with county rights, often called urban counties, have extended powers but are technically not independent of the counties.
+Each code consists of two parts, separated by a hyphen. The first part is HU, the ISO 3166-1 alpha-2 code of Hungary. The second part is two letters.
+
+Current codes
+Subdivision names are listed as in the ISO 3166-2 standard published by the ISO 3166 Maintenance Agency (ISO 3166/MA).
+Click on the button in the header to sort each column.
+
+Changes
+The following changes to the entry have been announced by the ISO 3166/MA since the first publication of ISO 3166-2 in 1998:
+
+See also
+Subdivisions of Hungary
+FIPS region codes of Hungary
+NUTS codes of Hungary
+
+External links
+ISO Online Browsing Platform: HU
+Counties of Hungary, Statoids.com
+Passage 13:
+ISO 3166-2:AI
+ISO 3166-2:AI is the entry for Anguilla in ISO 3166-2, part of the ISO 3166 standard published by the International Organization for Standardization (ISO), which defines codes for the names of the principal subdivisions (e.g., provinces or states) of all countries coded in ISO 3166-1.
+Currently no ISO 3166-2 codes are defined in the entry for Anguilla.
+Anguilla is officially assigned the ISO 3166-1 alpha-2 code AI.
+
+See also
+Subdivisions of Anguilla
+
+External links
+ISO Online Browsing Platform: AI
+Districts of Anguilla, Statoids.com
+Passage 14:
+ISO 3166-2:GN
+ISO 3166-2:GN is the entry for Guinea in ISO 3166-2, part of the ISO 3166 standard published by the International Organization for Standardization (ISO), which defines codes for the names of the principal subdivisions (e.g., provinces or states) of all countries coded in ISO 3166-1.
+Currently for Guinea, ISO 3166-2 codes are defined for two levels of subdivisions:
+
+7 administrative regions and 1 governorate
+33 prefecturesThe governorate Conakry is the capital of the country and has special status equal to the administrative regions.
+Each code consists of two parts, separated by a hyphen. The first part is GN, the ISO 3166-1 alpha-2 code of Guinea. The second part is either of the following:
+
+one letter: administrative regions and governorate
+two letters: prefectures
+
+Current codes
+Subdivision names are listed as in the ISO 3166-2 standard published by the ISO 3166 Maintenance Agency (ISO 3166/MA).
+Click on the button in the header to sort each column.
+
+Administrative regions and governorate
+Prefectures
+Changes
+The following changes to the entry have been announced in newsletters by the ISO 3166/MA since the first publication of ISO 3166-2 in 1998:
+
+See also
+Subdivisions of Guinea
+FIPS region codes of Guinea
+Passage 15:
+ISO 3166-2:GA
+ISO 3166-2:GA is the entry for Gabon in ISO 3166-2, part of the ISO 3166 standard published by the International Organization for Standardization (ISO), which defines codes for the names of the principal subdivisions (e.g., provinces or states) of all countries coded in ISO 3166-1.
+Currently for Gabon, ISO 3166-2 codes are defined for 9 provinces.
+Each code consists of two parts, separated by a hyphen. The first part is GA, the ISO 3166-1 alpha-2 code of Gabon. The second part is a digit (1–9).
+
+Current codes
+Subdivision names are listed as in the ISO 3166-2 standard published by the ISO 3166 Maintenance Agency (ISO 3166/MA).
+Click on the button in the header to sort each column.
+
+See also
+Subdivisions of Gabon
+FIPS region codes of Gabon
+
+External links
+ISO Online Browsing Platform: GA
+Provinces of Gabon, Statoids.com
+Passage 16:
+ISO 3166-2:KM
+ISO 3166-2:KM is the entry for the Comoros in ISO 3166-2, part of the ISO 3166 standard published by the International Organization for Standardization (ISO), which defines codes for the names of the principal subdivisions (e.g., provinces or states) of all countries coded in ISO 3166-1.
+Currently for the Comoros, ISO 3166-2 codes are defined for 3 islands.
+Each code consists of two parts, separated by a hyphen. The first part is KM, the ISO 3166-1 alpha-2 code of the Comoros. The second part is a letter.
+
+Current codes
+Subdivision names are listed as in the ISO 3166-2 standard published by the ISO 3166 Maintenance Agency (ISO 3166/MA).
+ISO 639-1 codes are used to represent subdivision names in the following administrative languages. The Shikomor language does not have a single ISO 639 code.
+
+(ar): Arabic using two romanization systems
+(fr): French
+(—): ShikomorClick on the button in the header to sort each column.
+
+Changes
+The following changes to the entry have been announced in newsletters by the ISO 3166/MA since the first publication of ISO 3166-2 in 1998. ISO stopped issuing newsletters in 2013.
+
+The following changes to the entry are listed on ISO's online catalogue, the Online Browsing Platform:
+
+See also
+Subdivisions of the Comoros
+FIPS region codes of the Comoros
+
+External links
+ISO Online Browsing Platform: KM
+Autonomous Islands of Comoros, Statoids.com
+Passage 17:
+Cape Verde
+Cape Verde ( (listen)) or Cabo Verde ( (listen), ; Portuguese: [ˈkaβu ˈveɾðɨ]), officially the Republic of Cabo Verde, is an archipelago and island country in the central Atlantic Ocean, consisting of ten volcanic islands with a combined land area of about 4,033 square kilometres (1,557 sq mi). These islands lie between 600 and 850 kilometres (320 and 460 nautical miles) west of Cap-Vert, the westernmost point of continental Africa. The Cape Verde islands form part of the Macaronesia ecoregion, along with the Azores, the Canary Islands, Madeira, and the Savage Isles.
+The Cape Verde archipelago was uninhabited until the 15th century, when Portuguese explorers discovered and colonized the islands, thus establishing the first European settlement in the tropics. Because the Cape Verde islands were located in a convenient location to play a role in the Atlantic slave trade, Cape Verde became economically prosperous during the 16th and 17th centuries, attracting merchants, privateers, and pirates. It declined economically in the 19th century after the suppression of the Atlantic slave trade, and many of its inhabitants emigrated during that period. However, Cape Verde gradually recovered economically by becoming an important commercial center and useful stopover point along major shipping routes. Cape Verde became independent in 1975.
+Since the early 1990s, Cape Verde has been a stable representative democracy and has remained one of the most developed and democratic countries in Africa. Lacking natural resources, its developing economy is mostly service-oriented, with a growing focus on tourism and foreign investment. Its population of around 483,628 (as of the 2021 Census) is mostly of mixed African and a minor European heritage, and predominantly Roman Catholic, reflecting the legacy of Portuguese rule. A sizeable Cape Verdean diaspora community exists across the world, especially in the United States and Portugal, considerably outnumbering the inhabitants on the islands. Cape Verde is a member state of the African Union.
+Cape Verde's official language is Portuguese.  It is the language of instruction and government. It is also used in newspapers, television, and radio. The recognized national language is Cape Verdean Creole, which is spoken by the vast majority of the population.
+As of the 2021 census the most populated islands were Santiago, where the capital Praia is located (269,370), São Vincente (74,016), Santo Antão (36,632), Fogo (33,519) and Sal (33,347). The largest cities are Praia (137,868), Mindelo (69,013), Espargos (24,500) and Assomada (21,297).
+
+Etymology
+The country is named after the Cap-Vert peninsula, on the Senegalese coast. The name Cap-Vert, in turn, comes from the Portuguese language Cabo Verde ('green cape'), the name that Portuguese explorers gave the cape in 1444, a few years before they came across the islands.
+On 24 October 2013, the country's delegation to the United Nations informed it that other countries should no longer use Cape Verde or any other translations of Cabo Verde as part of its official name: all countries should use Republic of Cabo Verde as the country's official name. Speakers of English have used the name Cape Verde for the archipelago and, since independence in 1975, for the country. In 2013, the Cape Verdean government determined that it would thenceforth use the Portuguese name Cabo Verde for official purposes, including at the United Nations, even when speaking or writing in English.
+
+History
+The archipelago of modern-day Cape Verde was formed approximately 40–50 million years ago during the Eocene era.
+Before the arrival of Europeans, the Cape Verde Islands were uninhabited. They were discovered by Genoese and Portuguese navigators around 1456. According to Portuguese official records, the first discoveries were made by Genoa-born António de Noli, who was afterwards appointed governor of Cape Verde by the Portuguese king Afonso V. Other navigators mentioned as contributing to discoveries on the Cape Verde archipelago are Diogo Dias, Diogo Afonso, Venetian Alvise Cadamosto, and Diogo Gomes (who had accompanied António de Noli on his voyage of discovery, and who claimed to have been the first to land on the Cape Verdean island of Santiago, and the first to name that island).
+In 1462, Portuguese settlers arrived at Santiago and founded a settlement they called Ribeira Grande. Today it is called Cidade Velha ("Old City"), to distinguish it from a town of the same name on a different Cape Verdean island (Ribeira Grande on the island of Santo Antão). The original Ribeira Grande was the first permanent European settlement in the tropics.
+In the 16th century, the archipelago prospered from the Atlantic slave trade. Pirates occasionally attacked the Portuguese settlements. Francis Drake, an English privateer, twice sacked the (then) capital Ribeira Grande in 1585 when it was a part of the Iberian Union. After a French attack in 1712, the town declined in importance relative to nearby Praia, which became the capital in 1770.The decline in the slave trade in the 19th century resulted in an economic crisis. Cape Verde's early prosperity slowly vanished. However, the islands' position astride mid-Atlantic shipping lanes made Cape Verde an ideal location for re-supplying ships. Because of its excellent harbour, the city of Mindelo, located on the island of São Vicente, became an important commercial centre during the 19th century. Diplomat Edmund Roberts visited Cape Verde in 1832. Cape Verde was the first stop of Charles Darwin's voyage with HMS Beagle in 1832.
+With few natural resources and inadequate sustainable investment from the Portuguese, the citizens grew increasingly discontented with the colonial masters, who refused to provide the local authorities with more autonomy. In 1951, Portugal changed Cape Verde's status from a colony to an overseas province in an attempt to blunt growing nationalism.In 1956, Amílcar Cabral and a group of fellow Cape Verdeans and Guineans organized (in Portuguese Guinea) the clandestine African Party for the Independence of Guinea and Cape Verde (PAIGC). It demanded improvement in economic, social and political conditions in Cape Verde and Portuguese Guinea and formed the basis of the two nations' independence movement. Moving its headquarters to Conakry, Guinea in 1960, the PAIGC began an armed rebellion against Portugal in 1961. Acts of sabotage eventually grew into a war in Portuguese Guinea that pitted 10,000 Soviet Bloc-supported PAIGC soldiers against 35,000 Portuguese and African troops.By 1972, the PAIGC controlled much of Portuguese Guinea despite the presence of the Portuguese troops, but the organization did not attempt to disrupt Portuguese control in Cape Verde. Portuguese Guinea declared independence in 1973 and was granted de jure independence in 1974. A budding independence movement – originally led by Amílcar Cabral, assassinated in 1973 – passed on to his half-brother Luís Cabral and culminated in independence for the archipelago in 1975.
+
+Independence (1975)
+Following the April 1974 revolution in Portugal, the PAIGC became an active political movement in Cape Verde. In December 1974, the PAIGC and Portugal signed an agreement providing for a transitional government composed of Portuguese and Cape Verdeans. On 30 June 1975, Cape Verdeans elected a National Assembly which received the instruments of independence from Portugal on 5 July 1975. In the late 1970s and 1980s, most African countries prohibited South African Airways from overflights but Cape Verde allowed them and became a centre of activity for the airline's flights to Europe and the United States.
+Immediately following the November 1980 coup in Guinea-Bissau, relations between Cape Verde and Guinea-Bissau became strained. Cape Verde abandoned its hope for unity with Guinea-Bissau and formed the African Party for the Independence of Cape Verde (PAICV). Problems have since been resolved and relations between the countries are good. The PAICV and its predecessor established a one-party system and ruled Cape Verde from independence until 1990.Responding to growing pressure for pluralistic democracy, the PAICV called an emergency congress in February 1990 to discuss proposed constitutional changes to end one-party rule. Opposition groups came together to form the Movement for Democracy (MpD) in Praia in April 1990. Together, they campaigned for the right to contest the presidential election scheduled for December 1990.
+The one-party state was abolished on 28 September 1990, and the first multi-party elections were held in January 1991. The MpD won a majority of the seats in the National Assembly, and MpD presidential candidate António Mascarenhas Monteiro defeated the PAICV's candidate with 73.5% of the votes. Legislative elections in December 1995 increased the MpD majority in the National Assembly. The party won 50 of the National Assembly's 72 seats.
+A February 1996 presidential election returned President Monteiro to office. Legislative elections in January 2001 returned power to the PAICV, with the PAICV holding 40 of the National Assembly seats, MpD 30, and Party for Democratic Convergence (PCD) and Labour and Solidarity Party (PTS) 1 each. In February 2001, the PAICV-supported presidential candidate Pedro Pires defeated former MpD leader Carlos Veiga by only 13 votes. 
+President Pedro Pires was narrowly re-elected in 2006 elections.President Jorge Carlos Fonseca led the country since 2011 Cape Verde presidential election and he was re-elected in the 2016 election. He was supported by the Movement for Democracy Party. MpD also won in the 2016 parliamentary elections, taking back parliamentary majority after 15 year-rule of African Party for the Independence of Cape Verde (PAICV). In April 2021, the ruling center-right Movement for Democracy (MpD) of Prime Minister Ulisses Correia e Silva won the parliamentary election.On 26 August 2021, Cape Verde became the 150th country to ratify the 2005 Convention and Promotion of the Diversity of Cultural Expressions.In October 2021, opposition candidate and former prime minister, Jose Maria Neves of PAICV, won Cape Verde's presidential election. On 9 November 2021, Jose Maria Neves was sworn in as the new President of Cape Verde.
+
+Government and politics
+Cape Verde is a stable semi-presidential representative democratic republic. It was 2020 the most democratic nation in Africa, ranking 2023 as 45th in the world, according to the electoral democracy score of the V-Dem Democracy indices.The constitution – adopted in 1980 and revised in 1992, 1995 and 1999 – defines the basic principles of its government. The president is the head of state and is elected by popular vote for a five-year term.The prime minister is the head of government and proposes other ministers and secretaries of state. The prime minister is nominated by the National Assembly and appointed by the president. Members of the National Assembly are elected by popular vote for five-year terms. In 2016, three parties held seats in the National Assembly – MpD (36), PAICV (25), and the Cape Verdean Independent Democratic Union (UCID) (3).The two main political parties are PAICV and MpD.Movement for Democracy (MpD) ousted the ruling African Party for the Independence of Cape Verde (PAICV) for the first time in 15 years in the 2016 parliamentary election, at which time its leader, Ulisses Correia e Silva, became prime minister. Jorge Carlos Almeida Fonseca was elected president in August 2011 and re-elected in October 2016. He is also supported by the MpD.In November 2021, Cape Verde opened its first embassy in Nigeria.
+
+International recognition
+Cape Verde is often praised as an example among African nations for its stability and developmental growth despite its lack of natural resources. In 2013 then United States President Barack Obama said Cape Verde is "a real success story". Among other achievements, it has been recognized with the following assessments:
+
+Foreign relations
+Cape Verde follows a policy of nonalignment and seeks cooperative relations with all friendly states. Angola, Brazil, China, Libya, Cuba, France, Guinea-Bissau, Germany, Italy, Portugal, Spain, São Tomé and Príncipe, Senegal, Russia, Luxembourg, and the United States maintain embassies in Praia. Cape Verde maintains a vigorously active foreign policy, especially in Africa.Cape Verde is a founding member state of the Community of Portuguese Language Countries (CPLP), also known as the Lusophone Commonwealth, an international organization and political association of Lusophone nations across four continents, where Portuguese is an official language.
+Cape Verde has bilateral relations with some Lusophone nations and holds membership in a number of international organizations. It also participates in most international conferences on economic and political issues. Since 2007, Cape Verde has a special partnership status with the EU, under the Cotonou Agreement, and might apply for special membership, in particular because the Cape Verdean escudo, the country's currency, is indexed to the euro. In 2011 Cape Verde ratified the Rome Statute of the International Criminal Court. In 2017 Cape Verde signed the UN treaty on the Prohibition of Nuclear Weapons.
+
+Judiciary
+The judicial system consists of a Supreme Court of Justice – whose members are appointed by the president, the National Assembly, and the Board of the Judiciary – and regional courts. Separate courts hear civil, constitutional, and criminal cases. Appeals are to the Supreme Court.
+
+Military
+The military of Cape Verde consists of the National Guard and the Coast Guard; 0.7% of the country's GDP was spent on the military in 2005.
+Having fought their only battles in the war for independence against Portugal between 1974 and 1975, the efforts of the Cape Verdean armed forces have turned to combating international drug trafficking. In 2007, together with the Cape Verdean Police, they carried out Operation Flying Launch (Operacão Lancha Voadora), a successful operation to put an end to a drug trafficking group which smuggled cocaine from Colombia to the Netherlands and Germany using the country as a reorder point. The operation took more than three years, being a secret operation during the first two years, and ended in 2010. In 2016, Cape Verdean Armed Forces were involved in the Monte Tchota massacre, a green-on-green incident that resulted in 11 deaths.Although located in Africa and being black Africans, Cape Verde has always had close relations with Europe. Because of this, some scholars argue that Cape Verde may be eligible to join the Organization for Security and Co-operation in Europe (OSCE) and NATO.
+
+Geography
+The Cape Verde archipelago is in the Atlantic Ocean, approximately 570 kilometres (350 mi) off the western coast of the African continent, near Senegal, The Gambia, and Mauritania as well as part of the Macaronesia ecoregion. It lies between latitudes 14° and 18°N, and longitudes 22° and 26°W.
+The country is a horseshoe-shaped cluster of ten islands (nine inhabited) and eight islets, that constitute an area of 4033 km2 (1557 sq mi).The islands are spatially divided into two groups:
+
+The Barlavento Islands (windward islands): Santo Antão, São Vicente, Santa Luzia, São Nicolau, Sal, Boa Vista; and
+The Sotavento Islands (leeward): Maio, Santiago, Fogo, Brava.The largest island, both in size and population, is Santiago, which hosts the nation's capital, Praia, the principal urban agglomeration in the archipelago.Three of the Cape Verde islands, Sal, Boa Vista, and Maio, are fairly flat, sandy, and dry; the others are generally rockier with more vegetation.
+
+Physical geography and geology
+Geologically, the islands, covering a combined area of slightly over 4,033 square kilometres (1,557 square miles), are principally composed of igneous rocks, with volcanic structures and pyroclastic debris comprising the majority of the archipelago's total volume. The volcanic and plutonic rocks are distinctly basic; the archipelago is a soda-alkaline petrographic province, with a petrologic succession similar to that found in other Macaronesian islands.
+Magnetic anomalies identified in the vicinity of the archipelago indicate that the structures forming the islands date back 125–150 million years: the islands themselves date from 8 million (in the west) to 20 million years (in the east). The oldest exposed rocks occurred on Maio and the northern peninsula of Santiago and are 128–131 million-year-old pillow lavas. The first stage of volcanism in the islands began in the early Miocene, and reached its peak at the end of this period when the islands reached their maximum sizes. Historical volcanism (within human settlement) has been restricted to the island of Fogo.The islands lie on a bathymetric swell known as the Cape Verde Rise. The Rise is one of the largest protuberances in the world's oceans, rising 2.2 kilometres (1.4 miles) in a semi-circular region of 1200 km2 (460 sq mi), associated with a rise of the geoid.Pico do Fogo, the largest active volcano in the region, erupted in 2014. It has an eight-kilometre-diameter (five-mile) caldera, the rim of which is at an elevation of 1,600 metres (5,249 feet) and an interior cone that rises to 2,829 metres (9,281 feet) above sea level. The caldera resulted from subsidence, following the partial evacuation (eruption) of the magma chamber, along a cylindrical column from within the magma chamber (at a depth of 8 kilometres (5 miles)).
+Extensive salt flats are found on Sal and Maio. On Santiago, Santo Antão, and São Nicolau, arid slopes give way in places to sugarcane fields or banana plantations spread along the base of towering mountains. Ocean cliffs have been formed by catastrophic debris landslides.
+
+Climate
+Cape Verde's climate is milder than that of the African mainland because the surrounding sea moderates temperatures on the islands and cold Atlantic currents produce an arid atmosphere around the archipelago. Conversely, the islands do not receive the upwelling (cold streams) that affect the West African coast, so the air temperature is cooler than in Senegal, but the sea is warmer. Due to the relief of some islands, such as Santiago with its steep mountains, the islands can have orographically induced precipitation, allowing rich woods and luxuriant vegetation to grow where the humid air condenses soaking the plants, rocks, soil, logs, moss, etc. On the higher islands and somewhat wetter islands, exclusively in mountainous areas, like Santo Antão island, the climate is suitable for the development of dry monsoon forests, and laurel forests. Average temperatures range from 22 °C (72 °F) in February to 27 °C (80.6 °F) in September. Cape Verde is part of the Sahelian arid belt, with nothing like the rainfall levels of nearby West Africa. It rains irregularly between August and October, with frequent brief heavy downpours. A desert is usually defined as terrain that receives less than 250 mm (9.8 in) of annual rainfall. Sal's total of 145 mm (5.7 in) confirms this classification. Most of the year's rain falls in September.Sal, Boa Vista, and Maio have a flat landscape and arid climate, whilst the other islands are generally rockier and have more vegetation. Because of the infrequent occurrence of rainfall, where not mountainous, the landscape is so arid that less than two percent of it is arable. The archipelago can be divided into four broad ecological zones – arid, semiarid, subhumid and humid, according to altitude and average annual rainfall ranging from less than 100 millimetres (3.9 inches) in the arid areas of the coast as in the Deserto de Viana (67 millimetres (2.6 inches) in Sal Rei) to more than 1,000 millimetres (39 inches) in the humid mountain. Most rainfall precipitation is due to condensation of the ocean mist.
+
+In some islands, like Santiago, the wetter climate of the interior and the eastern coast contrasts with the drier one on the south/southwest coast. Praia, on the southeast coast, is the largest city on the island and the largest city and capital of the country.
+While most of Cape Verde receives little precipitation throughout the year, the northeastern slopes of high mountains see significant rainfall due to orographic lift, especially in areas far from the sea. In some such areas this precipitation is sufficient to support a rainforest habitat, albeit one significantly affected by the islands' human presence. These umbria areas are identified as cool and moist. Cape Verde lies in the Cape Verde Islands dry forests ecoregion.Western Hemisphere-bound hurricanes often have their early beginnings near the Cape Verde Islands. These are referred to as Cape Verde-type hurricanes. These hurricanes can become very intense as they cross warm Atlantic waters away from Cape Verde. The average hurricane season has about two Cape Verde-type hurricanes, which are usually the largest and most intense storms of the season because they often have plenty of warm open ocean over which to develop before encountering land. The five largest Atlantic tropical cyclones on record have been Cape Verde-type hurricanes. Most of the longest-lived tropical cyclones in the Atlantic basin are Cape Verde hurricanes.As of 2015, the islands themselves have only been struck by hurricanes twice in recorded history (since 1851): once in 1892, and again in 2015 by Hurricane Fred, the easternmost hurricane ever to form in the Atlantic.
+
+Climate Change
+According to the president of Nauru, in 2011 Cape Verde was ranked the eighth most endangered nation due to flooding from climate change. In 2023 UN Secretary-General António Guterres arrived in Cabo Verde to raise concerns about climate change. He said that the country is on the frontlines of the existential crisis generated by climate disruptions and that world leaders need to take action to address the climate crisis. Cabo Verde is a leader in renewable energy in sub-Saharan Africa. Currently, 20% of its energy comes from renewable sources, and the goal is to increase that to 50% by 2030. In 2023, Portugal signed an agreement to forgive €140 million of Cape Verde's debt in exchange for the country investing in environmental projects. This agreement is one of the first debt-for-nature swap in Africa.
+
+Biodiversity
+Cape Verde's isolation has resulted in the islands having several endemic species, particularly birds and reptiles, many of which are endangered by human development. Endemic birds include Alexander's swift (Apus alexandri), Bourne's heron (Ardea purpurea bournei), the Raso lark (Alauda razae), the Cape Verde warbler (Acrocephalus brevipennis), and the Iago sparrow (Passer iagoensis). The islands are also an important breeding area for seabirds including the Cape Verde shearwater. Reptiles include the Cape Verde giant gecko (Tarentola gigas).
+
+Administrative divisions
+Cape Verde is divided into 22 municipalities (concelhos) and subdivided into 32 parishes (freguesias), based on the religious parishes that existed during the colonial period:
+
+Economy
+Cape Verde's notable economic growth and improvement in living conditions despite a lack of natural resources have garnered international recognition, with other countries and international organizations often providing development aid. Since 2007, the UN has classified it as a developing nation rather than a least developed country.
+Cape Verde has few natural resources. Only five of the ten main islands (Santiago, Santo Antão, São Nicolau, Fogo, and Brava) normally support significant agricultural production, and over 90% of all food consumed in Cape Verde is imported. Mineral resources include salt, pozzolana (a volcanic rock used in cement production), and limestone. Its small number of wineries making Portuguese-style wines have traditionally focused on the domestic market, but have recently met with some international acclaim. Several wine tours of Cape Verde's various microclimates began to be offered in spring 2010.
+The economy of Cape Verde is service-oriented, with commerce, transport, and public services accounting for more than 70% of GDP. Although nearly 35% of the population lives in rural areas, agriculture and fishing contribute only about 9% of GDP. Light manufacturing accounts for most of the remainder. Fish and shellfish are plentiful, and small quantities are exported. Cape Verde has cold storage and freezing facilities and fish processing plants in Mindelo, Praia, and on Sal. Expatriate Cape Verdeans contribute an amount estimated at 20% of GDP to the domestic economy through remittances.
+Despite having few natural resources and being semi-desert, the country boasts the highest living standards in the region and has attracted thousands of immigrants of different nationalities.
+Since 1991, the government has pursued market-oriented economic policies, including an open welcome to foreign investors and a far-reaching privatization programme. It established as top development priorities the promotion of a market economy and the private sector; the development of tourism, light manufacturing industries, and fisheries; and the development of transport, communications, and energy facilities. From 1994 to 2000 about $407 million in foreign investments were made or planned, of which 58% were in tourism, 17% in industry, 4% in infrastructure, and 21% in fisheries and services.In 2011, on four islands a wind farm was built that supplies about 30% of the electricity of the country.
+As host to the ECOWAS Regional Centre for Renewable Energy and Energy Efficiency, inaugurated in 2010, Cape Verde plans to lead by example by becoming entirely reliant on renewable energy sources by 2025. This policy is consistent with the plethora of documents adopted in 2015 paving the way to more sustainable development, including Cape Verde's Transformational Agenda to 2030, its National Renewable Energy Plan and its Low Carbon and Climate-resilient Development Strategy. Two years later, these were followed by a Strategic Plan for Sustainable Development, 2017–2021.Between 2000 and 2009, real GDP increased on average by over seven percent a year, well above the average for Sub-Saharan countries and faster than most small island economies in the region. Strong economic performance was bolstered by one of the fastest growing tourism industries in the world, as well as by substantial capital inflows that allowed Cape Verde to build up national currency reserves to the current 3.5 months of imports. Unemployment has been falling rapidly, and the country is on track to achieve most of the UN Millennium Development Goals – including halving its 1990 poverty level.
+In 2007, Cape Verde joined the World Trade Organization (WTO) and in 2008 the country graduated from Least Developed Country (LDC) to Middle Income Country (MIC) status.
+Cape Verde has significant cooperation with Portugal at every level of the economy, which has led it to link its currency first to the Portuguese escudo and, in 1999, to the euro. On 23 June 2008 Cape Verde became the 153rd member of the WTO.In early January 2018, the government announced that the minimum wage would be raised to 13,000 CVE (US$140 or EUR 130) per month, from 11,000 CVE, which was effective in mid-January 2018.
+
+Development
+The European Commission's total allocation for the period of 2008–2013 foreseen for Cape Verde to address "poverty reduction, in particular in rural and peri-urban areas where women are heading the households, as well as good governance" amounts to €54.1 million.
+
+Tourism
+Cape Verde's strategic location at the crossroads of mid-Atlantic air and sea lanes has been enhanced by significant improvements at Mindelo's harbour (Porto Grande) and at Sal's and Praia's international airports. A new international airport was opened in Boa Vista in December 2007 and on the island of São Vicente, the newest international airport (Cesária Évora Airport) in Cape Verde was opened in late 2009. Ship repair facilities at Mindelo were opened in 1983.The major ports are Mindelo and Praia, but all other islands have smaller port facilities. In addition to the international airport on Sal, airports have been built on all of the inhabited islands. All but the airports on Brava and Santo Antão enjoy scheduled air service. The archipelago has 3,050 km (1,895 mi) of roads, of which 1,010 km (628 mi) are paved, most using cobblestone.The country's future economic prospects depend heavily on the maintenance of aid flows, the encouragement of tourism, remittances, outsourcing labour to neighbouring African countries, and the momentum of the government's development programme.
+
+Demographics
+The official Census recorded that Cape Verde had a population of 512,096 in 2013. A large proportion (236,000) of Cape Verdeans live on the main island, Santiago.Cape Verdeans are descendants of Africans (free or slaves) and Europeans of various origins. There are also Cape Verdeans who have Jewish ancestors from North Africa, mainly on the islands of Boa Vista, Santiago and Santo Antão. A large part of Cape Verdeans emigrated abroad, mainly to the United States, Portugal and France, so that there are more Cape Verdeans residing abroad than at home.
+Unlike countries on the African continent, there are no tribes in Cape Verde. On the other hand, the country's historical trajectory included, from the beginning, a process of social class formation. At this moment, the absence of a "bourgeoisie" can be seen, but the existence of several types of "petty bourgeoisie", numerically significant. The majority of the population is, however, made up of the peasantry and some working class.
+
+Languages
+Cape Verde's official language is Portuguese. It is the language of instruction and government. It is also used in newspapers, television, and radio.
+Cape Verdean Creole (Kriolu) is used colloquially throughout Cape Verde and is the mother tongue of virtually all Cape Verdeans. The national constitution calls for measures to give it parity with Portuguese. There is a substantial body of literature in Creole, especially in the Santiago Creole and the São Vicente Creole. Kriolu has been gaining prestige since the nation's independence from Portugal.
+The differences between the forms of the language within the islands have been a major obstacle in the way of standardization of the language. Some people have advocated the development of two standards: a North (Barlavento) standard, centred on the São Vicente Creole, and a South (Sotavento) standard, centred on the Santiago Creole. Manuel Veiga, Ph.D., a linguist and Minister of Culture of Cape Verde, is the premier proponent of Kriolu's officialization and standardization.
+
+Religion
+The vast majority of Cape Verdeans are Christian; reflecting centuries of Portuguese rule, Roman Catholics make up the single largest religious community, at just under 80 percent, as of 2010 (slightly down from 85 percent of the population in 2007). Most other religious groups are Protestant, with the evangelical Church of the Nazarene forming the second largest community; other sizeable denominations are the Seventh-day Adventist Church, the Assemblies of God, the Universal Church of the Kingdom of God and the Church of Jesus Christ of Latter-day Saints. Islam is the largest minority religion. Judaism had a historical presence during the colonial era. Atheists constitute less than 1 percent of the population. Many Cape Verdeans syncretize Christianity with indigenous African beliefs and customs.
+
+Emigration and immigration
+Almost twice as many Cape Verdeans live abroad (nearly one million) than in the country itself. The islands have a long history of emigration and Cape Verdeans are highly dispersed worldwide, from Macau to Haiti and Argentina to Sweden. The diaspora may be much larger than official statistics indicate, as, until independence in 1975, Cape Verdean immigrants had Portuguese passports.
+The majority of Cape Verdeans live in the United States and Western Europe, with the former hosting the largest overseas population at 500,000. Most Cape Verdeans in the U.S. are concentrated in New England, particularly the cities of Providence, New Bedford, and Boston; Brockton, has the largest community of any American city (18,832).Cape Verdeans have been migrating to Massachusetts since the 1840s, but most of the current population arrived in the 1970s. They are now one of the top ten immigrant groups in Boston, and the largest hailing from Africa. The first wave of Cape Verdean immigrants came to Massachusetts to work in the whaling industry. When whaling declined, they moved into maritime jobs, seasonal agricultural work (like picking cranberries) , and factory work. The second wave of Cape Verdean immigrants arrived after Cape Verde gained independence in 1975. They also found work in factories, but as manufacturing plants closed down, they moved into the service industry in the 1990's. Cape Verdean immigrants have also developed a vibrant small business sector, including restaurants, groceries, real estate and insurance offices, and other enterprises. Cape Verdean immigrants in the U.S. have a long history of enlistment in the U.S. military, with a presence in every major conflict from the Revolutionary War to the Vietnam War.Due to centuries of colonial ties, the second largest number of Cape Verdeans live in Portugal (150,000), with sizable communities in the former Portuguese colonies of Angola (45,000) and São Tomé and Príncipe (25,000). Major populations exist in countries with cultural and linguistic similarities, such as Spain (65,500), France (25,000), Senegal (25,000), and Italy (20,000). Other large communities live in the United Kingdom (35,500), the Netherlands (20,000, of which 15,000 are concentrated in Rotterdam), and Luxembourg and Scandinavia (7,000). Outside the U.S. and Europe, the biggest Cape Verdean populations are in Mexico (5,000) and Argentina (8,000).
+Over the years, Cape Verde has increasingly become a net recipient of migrants, due to its relatively high per capita income, political and social stability, and civil freedom. Chinese make up a sizeable and important segment of the foreign population, while nearby West African countries account for most immigration. In the 21st century, a few thousand Europeans and Latin Americans have settled in the country, mostly professionals, entrepreneurs, and retirees. Over 22,000 foreign-born residents are naturalized, hailing from over 90 countries.
+The Cape Verdean diaspora experience is reflected in many artistic and cultural expressions, most famously the song Sodade by Cesária Évora.
+
+Health
+The infant mortality rate among Cape Verdean children between 0 and 5 years old is 15 per 1,000 live births according to the latest (2017) data from the National Statistics Bureau, while the maternal mortality rate is 42 deaths per 100,000 live births. The HIV-AIDS prevalence rate among Cape Verdeans between 15 and 49 years old is 0.8%.According to the latest data (2017) from the National Statistics Bureau, life expectancy at birth in Cape Verde is 76.2 years; that is, 72.2 years for males and 80.2 years for females. There are six hospitals in the Cape Verde archipelago: two central hospitals (one in the capital city of Praia and one in Mindelo, São Vicente) and four regional hospitals (one in Santa Catarina (northern Santiago region), one on São Antão, one on Fogo, and one on Sal). In addition, there are 28 health centers, 35 sanitation centers, and a variety of private clinics located throughout the archipelago.
+Cape Verde's population is among the healthiest in Africa. Since its independence, it has greatly improved its health indicators. Besides having been promoted to the group of "medium development" countries in 2007, leaving the least developed countries category (becoming the second country to do so), as of 2020 it was the 11th best ranked country in Africa in its Human Development Index.
+The total expenditure on health was 7.1% of GDP (2015).
+
+Education
+Although the Cape Verdean educational system is similar to the Portuguese system, over the years the local universities have been increasingly adopting the American educational system; for instance, all ten existing universities in the country offer four-year bachelor's degree programs as opposed to five-year bachelor's degree programs that existed before 2010. Cape Verde has the second best educational system in Africa, after South Africa.
+Primary school education in Cape Verde is mandatory and free for children between the ages of six and fourteen years.In 2011, the net enrolment ratio for primary school was 85%. Approximately 90% of the total population over 15 years of age is literate, and roughly 25% of the population holds a college degree; a significant number of these college graduates hold doctorate degrees in different academic fields. Textbooks have been made available to 90 percent of school children, and 98 percent of the teachers have attended in-service teacher training. Although most children have access to education, some problems remain. For example, there is insufficient spending on school materials, lunches, and books.As of October 2016, there were 69 secondary schools throughout the archipelago (including 19 private secondary schools) and at least 10 universities in the country, which are based on the two islands of Santiago and São Vicente.
+
+In 2015, 23% of the Cape Verdean population had either attended or graduated from secondary schools.
+When it came to higher education, 9% of Cape Verdean men and 8% of Cape Verdean women held a bachelor's degree or had attended universities. The overall college education rate (i.e., college graduates and undergraduate students) in Cape Verde is about 24%, of the local college-age population.
+The total expenditure on education was 5.6% of GDP (2010).
+The mean years of schooling of adults over 25 years is 12.
+These trends were held in 2017. Cape Verde stands out in West Africa for the quality and inclusiveness of its higher education system. As of 2017, one in four young people attended university and one-third of students opted for fields of science, technology, engineering, and mathematics. Women made up one-third of students but two-thirds of graduates in 2018.
+
+Science and technology
+In 2011, Cape Verde devoted just 0.07% of its GDP to research and development, among the lowest rates in West Africa. The Ministry of Higher Education, Science and Culture plan to strengthen the research and academic sectors by emphasizing greater mobility, through exchange programmes and international cooperation agreements. As part of this strategy, Cape Verde is participating in the Ibero-American academic mobility programme that expects to mobilize 200,000 academics between 2015 and 2020. Cape Verde was ranked 89th in the Global Innovation Index in 2021.Cape Verde counted 25 researchers in 2011, a researcher density of 51 per million inhabitants. The world average was 1,083 per million in 2013. All 25 researchers were working in the government sector in 2011 and one in three were women (36%). There was no research being conducted in either medical or agricultural sciences. Of the eight engineers involved in research and development, one was a woman. Three of the five researchers working in natural sciences were women, as were three of the six social scientists and two of the five researchers from the humanities.In 2015, the government announced a project to build a technology park for business, research, and development. As of late 2020, the project, now named TechPark Cabo Verde, is slated for completion in June 2022. The project is funded by both the African Development Bank and the government of Cape Verde. The goal of the endeavour, according to Cape Verde Minister of Finance Olavo Correia, is "to attract large international companies to set up shop [in order] to help local companies and start-ups become more competitive".Cape Verde has a high rate of internet penetration and a growing mobile phone market. The government has invested in improving ICT infrastructure and has created a number of initiatives to promote the development of the digital economy. The digital economy has the potential to create jobs, boost economic growth, and improve the quality of life for people in Cape Verde.
+
+Crime
+Theft and burglary are common in Cape Verde, especially in crowded environments such as marketplaces, festivals, and celebrations. Often the perpetrators of these crimes are gangs of street children. Murders are concentrated in the major population centres of Praia and Mindelo.
+
+Culture
+The culture of Cape Verde is characterized by a mixture of African and European elements. This is not a sum of two cultures living side by side, but a new culture resulting from an exchange that began in the 15th century.
+Cape Verdean social and cultural patterns are unique. Football games and church activities are typical sources of social interaction and entertainment. The traditional walk around the praça (town square) to meet friends is practised regularly in Cape Verde towns.
+
+Media
+In towns with electricity, television is available on three channels; one state-owned (RTC – TCV) and three foreign-owned: RTI Cabo Verde launched by the Portuguese-based RTI in 2005; Record Cabo Verde, launched by the Brazilian-based Rede Record on 31 March 2007; and as of 2016, TV CPLP. Premium channels available include the Cape Verdean versions of Boom TV and Zap Cabo Verde, two channels owned by Brazil's Record. Other premium channels are available in Cape Verde, especially satellite network channels which are common in hotels and villas, though availability is otherwise limited. One such channel is RDP África, the African version of the Portuguese radio station RDP.
+As of early 2023, about 99% of the Cape Verdean population own an active cellular phone, 70% have access to the Internet, 11% own a landline telephone, and 2% subscribe to local cable TV. In 2003, Cape Verde had 71,700 main line telephones with an additional 53,300 cellular phones in use throughout the country.
+In 2004, there were seven radio stations, six independent and one state-owned. The media is operated by the Cape-Verdean News Agency (secondarily as Inforpress). Nationwide radio stations include RCV, RCV+, Radio Kriola, and the religious station Radio Nova. Local radio stations include Rádio Praia, the first radio station in Cape Verde; Praia FM, the first FM station in the nation; Rádio Barlavento, Rádio Clube do Mindelo and Radio Morabeza in Mindelo.
+
+Music
+The Cape Verdean people are known for their musicality, well expressed by popular manifestations such as the Carnival of Mindelo. Cape Verde music incorporates "African, Portuguese and Brazilian influences." Cape Verde's quintessential national music is the morna, a melancholy and lyrical song form typically sung in Cape Verdean Creole. The most popular music genre after morna is the coladeira, followed by funaná and batuque music. Cesária Évora was the best-known Cape Verdean singer in the world, known as the "barefoot diva," because she liked to perform barefooted on stage. She was also referred to as "The Queen of Morna" as opposed to her uncle Bana, who was referred to as "King of Morna". The international success of Cesária Évora has made other Cape Verdean artists, or descendants of Cape Verdeans born in Portugal, gain more space in the music market. Examples of this are singers Sara Tavares, Lura and Mayra Andrade.
+Another great exponent of traditional music from Cape Verde was Antonio Vicente Lopes, better known as Travadinha, and Ildo Lobo, who died in 2004. The House of Culture in the center of the city of Praia is called Ildo Lobo House of Culture, in his honour.
+There are also well-known artists born to Cape Verdean parents who excelled themselves in the international music scene. Amongst these artists are jazz pianist Horace Silver, Duke Ellington's saxophonist Paul Gonsalves, Teófilo Chantre, Paul Pena, the Tavares brothers and singer Lura.
+
+Dance
+Cape Verdean traditional dance is a mix of West and Central African influences. The most popular dance style in Cape Verde is called “Funana” which originated on the island of Santiago and is danced in pairs with fast hip movements and a lively rhythm. Another popular dance style is “Coladeira” which is a slower dance style that originated on the island of Sao Vicente. “Batuque” is another traditional Cape Verdean dance style that originated on the island of Santiago and involves a lot of hip movement and percussion. “Morna” is another popular Cape Verdean dance style that originated on the island of Boa Vista and has a slow tempo with a melancholic melody. Zouk and Kizomba are newer popular dance style in Cape Verde that originated in other countries.
+
+Literature
+Cape Verdean literature is one of the richest of Lusophone Africa. Famous poets include Paulino Vieira, Manuel de Novas, Sergio Frusoni, Eugénio Tavares, and B. Léza, and famous authors include Baltasar Lopes da Silva, António Aurélio Gonçalves, Manuel Lopes, Orlanda Amarílis, Henrique Teixeira de Sousa, Arménio Vieira, Kaoberdiano Dambará, Dr. Azágua, and Germano Almeida. The first novel written by a woman from Cabo Verde was A Louca de Serrano by Dina Salústio; its translation, as The Madwoman of Serrano, was the first translation of any Cabo Verdean novel to English.
+
+Cinema
+The Carnival and the island of São Vicente are portrayed in the 2015 feature documentary Tchindas, nominated at the 12th Africa Movie Academy Awards.
+
+Cuisine
+The Cape Verde diet is mostly based on fish and staple foods like corn and rice. Vegetables available during most of the year are potatoes, onions, tomatoes, manioc, cabbage, kale, and dried beans. Fruits such as bananas and papayas are available year-round, while others like mangoes and avocados are seasonal.A popular dish served in Cape Verde is cachupa, a slow-cooked stew of corn (hominy), beans, and fish or meat. A common appetizer is the pastel, a pastry shell filled with fish or meat which is then fried.
+
+Sports
+The country's most successful sports team is the Cape Verde national basketball team, which won the bronze medal at the FIBA Africa Championship 2007, after beating Egypt in its last game. The country's most well-known player is Walter Tavares, who plays for Real Madrid of Spain.
+Cape Verde is famous for wave sailing (a type of windsurfing) and kiteboarding. Josh Angulo, a Hawaiian and 2009 PWA Wave World Champion, has done much to promote the archipelago as a windsurfing destination. Mitu Monteiro, a local kitesurfer, was the 2008 Kite Surfing World Champion in the wave discipline.
+The Cape Verde national football team, nicknamed the Tubarões Azuis (Blue Sharks), is the national team of Cape Verde and is controlled by the Cape Verdean Football Federation. The team has played at three Africa Cup of Nations, in 2013, 2015, and 2021.The country has competed at every Summer Olympics since 1996. In 2016, Gracelino Barbosa became the first Cape Verdean to win a medal at the Paralympic Games.
+
+Transport
+Ports
+There are four international ports: Mindelo, Praia, Palmeira and Sal Rei. Mindelo on São Vicente is the main port for cruise ships and the terminus for the ferry service to Santo Antão. Praia on Santiago is the main hub for local ferry services to other islands. Palmeira on Sal supplies fuel for the main airport on the island, Amílcar Cabral International Airport, and is important for the hotel construction taking place on the island. Porto Novo on Santo Antão is the only source for imports and exports of produce from the island as well as passenger traffic since the closure of the airstrip at Ponta do Sol.
+There are smaller harbours, essentially single jetties at Tarrafal on São Nicolau, Sal Rei on Boa Vista, Vila do Maio (Porto Inglês) on Maio, São Filipe on Fogo and Furna on Brava. These act as terminals for the inter-island ferry services, which carry both freight and passengers. The pier at Santa Maria on Sal used by both fishing and dive boats has been rehabilitated.
+
+Airports
+There were seven operational airports as of 2014 – four international and three domestic. Two others were non-operational, one on Brava and the other on Santo Antão closed for safety reasons.
+Due to its geographical location, Cape Verde is often flown over by transatlantic airliners. It is part of the conventional air traffic route from Europe to South America, which goes from southern Portugal via the Canary Islands and Cape Verde to northern Brazil.
+
+International airports
+Amílcar Cabral International Airport, Sal Island
+Nelson Mandela International Airport, Santiago Island
+Aristides Pereira International Airport, Boa Vista Island
+Cesária Évora Airport, São Vicente Island
+
+Aerial drones
+Small unmanned flying drones able to carry up to 5kg were being used experimentally for tasks such as delivering medicines between the islands in 2021.
+
+See also
+Outline of Cape Verde
+Index of Cape Verde–related articles
+Islands of Macaronesia
+Azores
+Madeira
+Passage 18:
+ISO 3166-2:CV
+ISO 3166-2:CV is the entry for Cabo Verde in ISO 3166-2, part of the ISO 3166 standard published by the International Organization for Standardization (ISO), which defines codes for the names of the principal subdivisions (e.g., provinces or states) of all countries coded in ISO 3166-1.
+Currently for Cabo Verde, ISO 3166-2 codes are defined for two levels of subdivisions:
+
+2 geographical regions (i.e., the Barlavento Islands and the Sotavento Islands)
+22 municipalitiesEach code consists of two parts, separated by a hyphen. The first part is CV, the ISO 3166-1 alpha-2 code of Cabo Verde. The second part is either of the following:
+
+one letter: geographical regions
+two letters: municipalities
+
+Current codes
+Subdivision names are listed as in the ISO 3166-2 standard published by the ISO 3166 Maintenance Agency (ISO 3166/MA).
+Click on the button in the header to sort each column.
+
+Geographical regions
+Municipalities
+Changes
+The following changes to the entry have been announced in newsletters by the ISO 3166/MA since the first publication of ISO 3166-2 in 1998:
+
+See also
+Subdivisions of Cape Verde
+FIPS region codes of Cape Verde
+
+External links
+ISO Online Browsing Platform: CV
+Counties of Cape Verde, Statoids.com
+Passage 19:
+ISO 3166-2:AL
+ISO 3166-2:AL is the entry for Albania in ISO 3166-2, part of the ISO 3166 standard published by the International Organization for Standardization (ISO), which defines codes for the names of the principal subdivisions (e.g., provinces or states) of all countries coded in ISO 3166-1.
+Currently for Albania, ISO 3166-2 codes are defined for 12 counties.
+Each code consists of two parts, separated by a hyphen. The first part is AL, the ISO 3166-1 alpha-2 code of Albania. The second part is two digits.
+The codes for the counties are assigned in Albanian alphabetical order, except Dibër, whose code is assigned based on its capital, Peshkopi.
+
+Current codes
+Subdivision names are listed as in the ISO 3166-2 standard published by the ISO 3166 Maintenance Agency .
+Subdivision names are sorted in Albanian alphabetical order: a-c, ç, d, dh, e, ë, f-g, gj, h-l, ll, m-n, nj, o-r, rr, s, sh, t, th, u-x, xh, y-z, zh.
+Click on the button in the header to sort each column.
+
+Changes
+The following changes to the entry have been announced in newsletters by the ISO 3166/MA since the first publication of ISO 3166-2 in 1998. ISO stopped issuing newsletters in 2013.
+
+The following changes to the entry are listed on ISO's online catalogue, the Online Browsing Platform:
+
+District codes
+Before 27 November 2015, codes for the 36 districts of Albania were included.  The code for Kolonjë (AL-ER) was assigned based on its capital, Ersekë.
+
+See also
+Subdivisions of Albania
+FIPS region codes of Albania
+
+External links
+ISO Online Browsing Platform: AL
+Counties of Albania, Statoids.com

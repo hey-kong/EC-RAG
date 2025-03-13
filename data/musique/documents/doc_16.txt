@@ -1,0 +1,385 @@
+Passage 1:
+Roman numerals
+Roman numerals are a numeral system that originated in ancient Rome and remained the usual way of writing numbers throughout Europe well into the Late Middle Ages. Numbers are written with combinations of letters from the Latin alphabet, each letter with a fixed integer value. Modern style uses only these seven:
+
+The use of Roman numerals continued long after the decline of the Roman Empire. From the 14th century on, Roman numerals began to be replaced by Arabic numerals; however, this process was gradual, and the use of Roman numerals persists in some applications to this day.
+One place they are often seen is on clock faces. For instance, on the clock of Big Ben (designed in 1852), the hours from 1 to 12 are written as:
+
+The notations IV and IX can be read as "one less than five" (4) and "one less than ten" (9), although there is a tradition favouring representation of "4" as "IIII" on Roman numeral clocks.Other common uses include year numbers on monuments and buildings and copyright dates on the title screens of movies and television programs. MCM, signifying "a thousand, and a hundred less than another thousand", means 1900, so 1912 is written MCMXII. For the years of the current (21st) century, MM indicates 2000. The current year is MMXXIII (2023).
+
+Description
+Roman numerals use different symbols for each power of ten and no zero symbol, in contrast with the place value notation of Arabic numerals (in which place-keeping zeros enable the same digit to represent different powers of ten).
+This allows some flexibility in notation, and there has never been an official or universally accepted standard for Roman numerals. Usage varied greatly in ancient Rome and became thoroughly chaotic in medieval times. Even the post-renaissance restoration of a largely "classical" notation has failed to produce total consistency: variant forms are even defended by some modern writers as offering improved "flexibility". On the other hand, especially where a Roman numeral is considered a legally binding expression of a number, as in U.S. Copyright law (where an "incorrect" or ambiguous numeral may invalidate a copyright claim, or affect the termination date of the copyright period) it is desirable to strictly follow the usual style described below.
+
+Standard form
+The following table displays how Roman numerals are usually written:
+ The numerals for 4 (IV) and 9 (IX) are written using subtractive notation, where the smaller symbol (I) is subtracted from the larger one (V, or X), thus avoiding the clumsier IIII and VIIII. Subtractive notation is also used for 40 (XL), 90 (XC), 400 (CD) and 900 (CM). These are the only subtractive forms in standard use.
+A number containing two or more decimal digits is built by appending the Roman numeral equivalent for each, from highest to lowest, as in the following examples:
+
+   39 = XXX + IX = XXXIX.
+  246 = CC + XL + VI = CCXLVI.
+  789 = DCC + LXXX + IX = DCCLXXXIX.
+2,421 = MM + CD + XX + I = MMCDXXI.Any missing place (represented by a zero in the place-value equivalent) is omitted, as in Latin (and English) speech:
+
+  160 = C + LX = CLX
+  207 = CC + VII = CCVII
+1,009 = M + IX = MIX
+1,066 = M + LX + VI = MLXVIThe largest number that can be represented in this manner is 3,999 (MMMCMXCIX), but this is sufficient for the values for which Roman numerals are commonly used today, such as year numbers:
+
+1776 = M + DCC + LXX + VI = MDCCLXXVI (the date written on the book held by the Statue of Liberty).
+1918 = M + CM + X + VIII = MCMXVIII (the first year of the Spanish flu pandemic)
+1944 = M + CM + XL + IV = MCMXLIV (erroneous copyright notice of the 1954 movie The Last Time I Saw Paris)
+2023 = MMXXIII (this year)Prior to the introduction of Arabic numerals in the West, ancient and medieval users of Roman numerals used various means to write larger numbers; see large numbers below.
+
+Other forms
+Forms exist that vary in one way or another from the general standard represented above.
+
+Other additive forms
+While subtractive notation for 4, 40 and 400 (IV, XL and CD) has been the usual form since Roman times, additive notation to represent these numbers (IIII, XXXX and CCCC) continued to be used, including in compound numbers like XXIIII, LXXIIII, and CCCCLXXXX. The additive forms for 9, 90, and 900 (VIIII, LXXXX, and DCCCC) have also been used, although less often.
+The two conventions could be mixed in the same document or inscription, even in the same numeral. For example, on the numbered gates to the Colosseum, IIII is systematically used instead of IV, but subtractive notation is used for XL; consequently, gate 44 is labelled XLIIII.Modern clock faces that use Roman numerals still very often use IIII for four o'clock but IX for nine o'clock, a practice that goes back to very early clocks such as the Wells Cathedral clock of the late 14th century. However, this is far from universal: for example, the clock on the Palace of Westminster tower (commonly known as Big Ben) uses a subtractive IV for 4 o'clock.
+
+Several monumental inscriptions created in the early 20th century use variant forms for "1900" (usually written MCM). These vary from MDCCCCX for 1910 as seen on Admiralty Arch, London, to the more unusual, if not unique MDCDIII for 1903, on the north entrance to the Saint Louis Art Museum.Especially on tombstones and other funerary inscriptions 5 and 50 have been occasionally written IIIII and XXXXX instead of V and L, and there are instances such as IIIIII and XXXXXX rather than VI or LX.
+
+Other subtractive forms
+There is a common belief that any smaller digit placed to the left of a larger digit is subtracted from the total, and that by clever choices a long Roman numeral can be "compressed". The best known example of this is the ROMAN() function in Microsoft Excel, which can render "499" (usually CDXCIX) into LDVLIV, XDIX, VDIV or ID depending on the "Form" setting.  There is no indication this is anything other than an invention by the programmer, and the universal-subtraction belief may be a result of modern users trying to rationalize the syntax of Roman numerals.
+
+There is, however, some historic use of subtractive notation other than that described in the above "standard": in particular IIIXX for 17, IIXX for 18, IIIC for 97, IIC for 98, and IC for 99. A possible explanation is that the word for 18 in Latin is duodeviginti, literally "two from twenty", 98 is duodecentum (two from hundred), and 99 is undecentum (one from hundred). However, the explanation does not seem to apply to IIIXX and IIIC, since the Latin words for 17 and 97 were septendecim (seven ten) and nonaginta septem (ninety seven), respectively.
+There are multiple examples of IIX being used for 8. There does not seem to be a linguistic explanation for this use, but it is one stroke shorter than VIII. XIIX was used by officers of the XVIII Roman Legion to write their number. The notation appears prominently on the cenotaph of their senior centurion Marcus Caelius (c. 45 BC – 9 AD). On the publicly displayed official Roman calendars known as Fasti, XIIX is used for the 18 days to the next Kalends, and XXIIX for the 28 days in February. The latter can be seen on the sole extant pre-Julian calendar, the Fasti Antiates Maiores.
+
+Rare variants
+While irregular subtractive and additive notation has been used at least occasionally throughout history, some Roman numerals have been observed in documents and inscriptions that do not fit either system. Some of these variants do not seem to have been used outside specific contexts, and may have been regarded as errors even by contemporaries.
+
+IIXX was how people associated with the XXII Roman Legion used to write their number. The practice may have been due to a common way to say "twenty-second" in Latin, namely duo et vice(n)sima (literally "two and twentieth") rather than the "regular" vice(n)sima secunda (twenty second). Apparently, at least one ancient stonecutter mistakenly thought that the IIXX of "22nd Legion" stood for 18, and "corrected" it to XVIII.
+There are some examples of year numbers after 1000 written as two Roman numerals 1–99, e.g. 1613 as XVIXIII, corresponding to the common reading "sixteen thirteen" of such year numbers in English, or 1519 as XCVXIX as in French quinze-cent-dix-neuf (fifteen-hundred and nineteen), and similar readings in other languages.In some French texts from the 15th century and later, one finds constructions like IIIIXXXIX for 99, reflecting the French reading of that number as quatre-vingt-dix-neuf (four-score and nineteen). Similarly, in some English documents one finds, for example, 77 written as "iiixxxvii" (which could be read "three-score and seventeen").A medieval accounting text from 1301 renders numbers like 13,573 as "XIII. M. V. C. III. XX. XIII", that is, "13×1000 + 5×100 + 3×20 + 13".Other numerals that do not fit the usual patterns – such as VXL for 45, instead of the usual XLV — may be due to scribal errors, or the writer's lack of familiarity with the system, rather than being genuine variant usage.
+
+Non-numeric combinations
+As Roman numerals are composed of ordinary alphabetic characters, there may sometimes be confusion with other uses of the same letters. For example, "XXX" and "XL" have other connotations in addition to their values as Roman numerals, while "IXL" more often than not is a gramogram of "I excel", and is in any case not an unambiguous Roman numeral.
+
+Zero
+As a non-positional numeral system, Roman numerals have no "place-keeping" zeros. Furthermore, the system as used by the Romans lacked a numeral for the number zero itself (that is, what remains after 1 is subtracted from 1). The word nulla (the Latin word meaning "none") was used to represent 0, although the earliest attested instances are medieval. For instance Dionysius Exiguus used nulla alongside Roman numerals in a manuscript from 525 AD. About 725, Bede or one of his colleagues used the letter N, the initial of nulla or of nihil (the Latin word for "nothing") for 0, in a table of epacts, all written in Roman numerals.The use of N to indicate "none" long survived in the historic apothecaries' system of measurement: used well into the 20th century to designate quantities in pharmaceutical prescriptions.
+
+Fractions
+The base "Roman fraction" is S, indicating 1⁄2. The use of S (as in VIIS to indicate 71⁄2) is attested in some ancient inscriptions and also in the now rare apothecaries' system (usually in the form SS): but while Roman numerals for whole numbers are essentially decimal, S does not correspond to 5⁄10, as one might expect, but 6⁄12.
+The Romans used a duodecimal rather than a decimal system for fractions, as the divisibility of twelve (12 = 22 × 3) makes it easier to handle the common fractions of 1⁄3 and 1⁄4 than does a system based on ten (10 = 2 × 5). Notation for fractions other than 1⁄2 is mainly found on surviving Roman coins, many of which had values that were duodecimal fractions of the unit as. Fractions less than 1⁄2 are indicated by a dot (·) for each uncia "twelfth", the source of the English words inch and ounce; dots are repeated for fractions up to five twelfths. Six twelfths (one half), is S for semis "half". Uncia dots were added to S for fractions from seven to eleven twelfths, just as tallies were added to V for whole numbers from six to nine. The arrangement of the dots was variable and not necessarily linear. Five dots arranged like (⁙) (as on the face of a die) are known as a quincunx, from the name of the Roman fraction/coin. The Latin words sextans and quadrans are the source of the English words sextant and quadrant.
+Each fraction from 1⁄12 to 12⁄12 had a name in Roman times; these corresponded to the names of the related coins:
+
+Other Roman fractional notations included the following:
+
+Large numbers
+The Romans developed two main ways of writing large numbers, the apostrophus and the vinculum, further extended in various ways in later times.
+
+Apostrophus
+Using the apostrophus method, 500 is written as IↃ, while 1,000 is written as CIↃ. This system of encasing numbers to denote thousands (imagine the Cs and Ↄs as parentheses) had its origins in Etruscan numeral usage.
+Each additional set of C and Ↄ surrounding CIↃ raises the value by a factor of ten: CCIↃↃ represents 10,000 and CCCIↃↃↃ represents 100,000. Similarly, each additional Ↄ to the right of IↃ raises the value by a factor of ten: IↃↃ represents 5,000 and IↃↃↃ represents 50,000. Numerals larger than CCCIↃↃↃ do not occur.
+
+Sometimes CIↃ is reduced to ↀ for 1,000. Similarly, IↃↃ for 5,000 is sometimes reduced to ↁ; CCIↃↃ for 10,000 to ↂ; IↃↃↃ for 50,000 to ↇ (ↇ); and CCCIↃↃↃ (ↈ) for 100,000 to ↈ.
+IↃ and CIↃ most likely preceded, and subsequently influenced, the adoption of "D" and "M" in Roman numerals.
+John Wallis is often credited for introducing the symbol for infinity ⟨∞⟩, and one conjecture is that he based it on ↀ, since 1,000 was hyperbolically used to represent very large numbers.
+
+Vinculum
+Using the vinculum, conventional Roman numerals are multiplied by 1,000 by adding a "bar" or "overline", thus:
+IV = 4,000
+XXV = 25,000It was a common alternative to the apostrophic ↀ during the Imperial era around the Roman world (M for '1000' was not in use until the Medieval period). It continued in use in the Middle Ages, though it became known more commonly as titulus, and it appears in modern editions of classical and medieval Latin texts.In an extension of the vinculum, a three-sided box (now sometimes printed as two vertical lines and a vinculum) is used to multiply by 100,000, thus:
+
+XIII XXXII p. = 1,332,000 paces (1,332 Roman miles).Vinculum notation is distinct from the custom of adding an overline to a numeral simply to indicate that it is a number. Both usages can be seen on Roman inscriptions of the same period and general location, such as on the Antonine Wall.
+
+Origin
+The system is closely associated with the ancient city-state of Rome and the Empire that it created. However, due to the scarcity of surviving examples, the origins of the system are obscure and there are several competing theories, all largely conjectural.
+
+Etruscan numerals
+Rome was founded sometime between 850 and 750 BC. At the time, the region was inhabited by diverse populations of which the Etruscans were the most advanced. The ancient Romans themselves admitted that the basis of much of their civilization was Etruscan. Rome itself was located next to the southern edge of the Etruscan domain, which covered a large part of north-central Italy.
+The Roman numerals, in particular, are directly derived from the Etruscan number symbols: ⟨𐌠⟩, ⟨𐌡⟩, ⟨𐌢⟩, ⟨𐌣⟩, and ⟨𐌟⟩ for 1, 5, 10, 50, and 100 (they had more symbols for larger numbers, but it is unknown which symbol represents which number). As in the basic Roman system, the Etruscans wrote the symbols that added to the desired number, from higher to lower value. Thus, the number 87, for example, would be written 50 + 10 + 10 + 10 + 5 + 1 + 1 = 𐌣𐌢𐌢𐌢𐌡𐌠𐌠 (this would appear as 𐌠𐌠𐌡𐌢𐌢𐌢𐌣 since Etruscan was written from right to left.)The symbols ⟨𐌠⟩ and ⟨𐌡⟩ resembled letters of the Etruscan alphabet, but ⟨𐌢⟩, ⟨𐌣⟩, and ⟨𐌟⟩ did not. The Etruscans used the subtractive notation, too, but not like the Romans. They wrote 17, 18, and 19 as 𐌠𐌠𐌠𐌢𐌢, 𐌠𐌠𐌢𐌢, and 𐌠𐌢𐌢, mirroring the way they spoke those numbers ("three from twenty", etc.); and similarly for 27, 28, 29, 37, 38, etc. However, they did not write 𐌠𐌡 for 4 (nor 𐌢𐌣 for 40), and wrote 𐌡𐌠𐌠, 𐌡𐌠𐌠𐌠 and 𐌡𐌠𐌠𐌠𐌠 for 7, 8, and 9, respectively.
+
+Early Roman numerals
+The early Roman numerals for 1, 10, and 100 were the Etruscan ones: ⟨𐌠⟩, ⟨𐌢⟩, and ⟨𐌟⟩. The symbols for 5 and 50 changed from ⟨𐌡⟩ and ⟨𐌣⟩ to ⟨V⟩ and ⟨ↆ⟩ at some point. The latter had flattened to ⟨⊥⟩ (an inverted T) by the time of Augustus, and soon afterwards became identified with the graphically similar letter ⟨L⟩.The symbol for 100 was written variously as ⟨𐌟⟩ or ⟨ↃIC⟩, and was then abbreviated to ⟨Ↄ⟩ or ⟨C⟩, with ⟨C⟩ (which matched the Latin letter C) finally winning out. It might have helped that C was the initial letter of CENTUM, Latin for "hundred".
+The numbers 500 and 1000 were denoted by V or X overlaid with a box or circle. Thus, 500 was like a Ɔ superimposed on a ⋌ or ⊢, making it look like Þ. It became D or Ð by the time of Augustus, under the graphic influence of the letter D. It was later identified as the letter D; an alternative symbol for "thousand" was a CIↃ, and half of a thousand or "five hundred" is the right half of the symbol, IↃ, and this may have been converted into D.The notation for 1000 was a circled or boxed X: Ⓧ, ⊗, ⊕, and by Augustinian times was partially identified with the Greek letter Φ phi. Over time, the symbol changed to Ψ and ↀ. The latter symbol further evolved into ∞, then ⋈, and eventually changed to M under the influence of the Latin word mille "thousand".According to Paul Kayser, the basic numerical symbols were I, X, C and Φ (or ⊕) and the intermediate ones were derived by taking half of those (half an X is V, half a C is L and half a Φ/⊕ is D).
+
+Classical Roman numerals
+The Colosseum was constructed in Rome in CE 72–80, and while the original perimeter wall has largely disappeared, the numbered entrances from XXIII (23) to LIIII (54) survive, to demonstrate that in Imperial times Roman numerals had already assumed their classical form: as largely standardised in current use. The most obvious anomaly (a common one that persisted for centuries) is the inconsistent use of subtractive notation - while XL is used for 40, IV is avoided in favour of IIII: in fact, gate 44 is labelled XLIIII.
+
+Use in the Middle Ages and Renaissance
+Lower case, or minuscule, letters were developed in the Middle Ages, well after the demise of the Western Roman Empire, and since that time lower-case versions of Roman numbers have also been commonly used: i, ii, iii, iv, and so on.
+
+Since the Middle Ages, a "j" has sometimes been substituted for the final "i" of a "lower-case" Roman numeral, such as "iij" for 3 or "vij" for 7. This "j" can be considered a swash variant of "i". Into the early 20th century, the use of a final "j" was still sometimes used in medical prescriptions to prevent tampering with or misinterpretation of a number after it was written.Numerals in documents and inscriptions from the Middle Ages sometimes include additional symbols, which today are called "medieval Roman numerals". Some simply substitute another letter for the standard one (such as "A" for "V", or "Q" for "D"), while others serve as abbreviations for compound numerals ("O" for "XI", or "F" for "XL"). Although they are still listed today in some dictionaries, they are long out of use.
+Chronograms, messages with dates encoded into them, were popular during the Renaissance era. The chronogram would be a phrase containing the letters I, V, X, L, C, D, and M. By putting these letters together, the reader would obtain a number, usually indicating a particular year.
+
+Modern use
+By the 11th century, Arabic numerals had been introduced into Europe from al-Andalus, by way of Arab traders and arithmetic treatises. Roman numerals, however, proved very persistent, remaining in common use in the West well into the 14th and 15th centuries, even in accounting and other business records (where the actual calculations would have been made using an abacus). Replacement by their more convenient "Arabic" equivalents was quite gradual, and Roman numerals are still used today in certain contexts. A few examples of their current use are:
+
+Names of monarchs and popes, e.g. Elizabeth II of the United Kingdom, Pope Benedict XVI. These are referred to as regnal numbers and are usually read as ordinals; e.g. II is pronounced "the second". This tradition began in Europe sporadically in the Middle Ages, gaining widespread use in England during the reign of Henry VIII. Previously, the monarch was not known by numeral but by an epithet such as Edward the Confessor. Some monarchs (e.g. Charles IV of Spain and Louis XIV of France) seem to have preferred the use of IIII instead of IV on their coinage (see illustration).
+Generational suffixes, particularly in the U.S., for people sharing the same name across generations, for example William Howard Taft IV. These are also usually read as ordinals.
+In the French Republican Calendar, initiated during the French Revolution, years were numbered by Roman numerals – from the year I (1792) when this calendar was introduced to the year XIV (1805) when it was abandoned.
+The year of production of films, television shows and other works of art within the work itself. Outside reference to the work will use regular Arabic numerals.
+Hour marks on timepieces. In this context, 4 is often written IIII.
+The year of construction on building façades and cornerstones.
+Page numbering of prefaces and introductions of books, and sometimes of appendices and annexes, too.
+Book volume and chapter numbers, as well as the several acts within a play (e.g. Act iii, Scene 2).
+Sequels to some films, video games, and other works (as in Rocky II, Grand Theft Auto V, Myst III: Exile).
+Outlines that use numbers to show hierarchical relationships.
+Occurrences of a recurring grand event, for instance:
+The Summer and Winter Olympic Games (e.g. the XXI Olympic Winter Games; the Games of the XXX Olympiad).
+The Super Bowl, the annual championship game of the National Football League (e.g. Super Bowl XLII; Super Bowl 50 was a one-time exception).
+WrestleMania, the annual professional wrestling event for the WWE (e.g. WrestleMania XXX). This usage has also been inconsistent.
+
+Specific disciplines
+In astronautics, United States rocket model variants are sometimes designated by Roman numerals, e.g. Titan I, Titan II, Titan III, Saturn I, Saturn V.
+In astronomy, the natural satellites or "moons" of the planets are designated by capital Roman numerals appended to the planet's name. For example, Titan's designation is Saturn VI.In chemistry, Roman numerals are sometimes used to denote the groups of the periodic table, but this has officially been deprecated in favour of Arabic numerals. They are also used in the IUPAC nomenclature of inorganic chemistry, for the oxidation number of cations which can take on several different positive charges. They are also used for naming phases of polymorphic crystals, such as ice.
+In education, school grades (in the sense of year-groups rather than test scores) are sometimes referred to by a Roman numeral; for example, "grade IX" is sometimes seen for "grade 9".
+In entomology, the broods of the thirteen- and seventeen-year periodical cicadas are identified by Roman numerals.
+In graphic design stylised Roman numerals may represent numeric values.
+In law, Roman numerals are commonly used to help organize legal codes as part of an alphanumeric outline.
+
+In mathematics (including trigonometry, statistics, and calculus), when a graph includes negative numbers, its quadrants are named using I, II, III, and IV. These quadrant names signify positive numbers on both axes, negative numbers on the X axis, negative numbers on both axes, and negative numbers on the Y axis, respectively. The use of Roman numerals to designate quadrants avoids confusion, since Arabic numerals are used for the actual data represented in the graph.
+In military unit designation, Roman numerals are often used to distinguish between units at different levels. This reduces possible confusion, especially when viewing operational or strategic level maps. In particular, army corps are often numbered using Roman numerals (for example the American XVIII Airborne Corps or the WW2-era German III Panzerkorps) with Arabic numerals being used for divisions and armies.
+In music, Roman numerals are used in several contexts:
+
+Movements are often numbered using Roman numerals.
+In Roman numeral analysis, harmonic function is identified using Roman numerals.
+Individual strings of stringed instruments, such as the violin, are often denoted by Roman numerals, with higher numbers denoting lower strings.In pharmacy, Roman numerals were used with the now largely obsolete apothecaries' system of measurement: including SS to denote "one half" and N to denote "zero".In photography, Roman numerals (with zero) are used to denote varying levels of brightness when using the Zone System.
+In seismology, Roman numerals are used to designate degrees of the Mercalli intensity scale of earthquakes.
+In sport the team containing the "top" players and representing a nation or province, a club or a school at the highest level in (say) rugby union is often called the "1st XV", while a lower-ranking cricket or American football team might be the "3rd XI".
+In tarot, Roman numerals (with zero) are often used to denote the cards of the Major Arcana.
+In theology and biblical scholarship, the Septuagint is often referred to as LXX, as this translation of the Old Testament into Greek is named for the legendary number of its translators (septuaginta being Latin for "seventy").
+
+Modern use in European languages other than English
+Some uses that are rare or never seen in English speaking countries may be relatively common in parts of continental Europe and in other regions (e.g. Latin America) that use a European language other than English. For instance:
+Capital or small capital Roman numerals are widely used in Romance languages to denote centuries, e.g. the French XVIIIe siècle and the Spanish siglo XVIII (not XVIII siglo) for "18th century". Slavic languages in and adjacent to Russia similarly favor Roman numerals (xviii век). On the other hand, in Slavic languages in Central Europe, like most Germanic languages, one writes "18." (with a period) before the local word for "century".
+
+Mixed Roman and Arabic numerals are sometimes used in numeric representations of dates (especially in formal letters and official documents, but also on tombstones). The month is written in Roman numerals, while the day is in Arabic numerals: "4.VI.1789" and "VI.4.1789" both refer unambiguously to 4 June 1789.
+
+Roman numerals are sometimes used to represent the days of the week in hours-of-operation signs displayed in windows or on doors of businesses, and also sometimes in railway and bus timetables. Monday, taken as the first day of the week, is represented by I. Sunday is represented by VII. The hours of operation signs are tables composed of two columns where the left column is the day of the week in Roman numerals and the right column is a range of hours of operation from starting time to closing time. In the example case (left), the business opens from 10 AM to 7 PM on weekdays, 10 AM to 5 PM on Saturdays and is closed on Sundays. Note that the listing uses 24-hour time.
+
+Roman numerals may also be used for floor numbering. For instance, apartments in central Amsterdam are indicated as 138-III, with both an Arabic numeral (number of the block or house) and a Roman numeral (floor number). The apartment on the ground floor is indicated as 138-huis.
+In Italy, where roads outside built-up areas have kilometre signs, major roads and motorways also mark 100-metre subdivisionals, using Roman numerals from I to IX for the smaller intervals. The sign IX/17 thus marks 17.9 km.
+Certain romance-speaking countries use Roman numerals to designate assemblies of their national legislatures. For instance, the composition of the Italian Parliament from 2018 to 2022 (elected in the 2018 Italian general election) is called the XVIII Legislature of the Italian Republic (or more commonly the "XVIII Legislature").
+A notable exception to the use of Roman numerals in Europe is in Greece, where Greek numerals (based on the Greek alphabet) are generally used in contexts where Roman numerals would be used elsewhere.
+
+Unicode
+The "Number Forms" block of the Unicode computer character set standard has a number of Roman numeral symbols in the range of code points from U+2160 to U+2188. This range includes both upper- and lowercase numerals, as well as pre-combined characters for numbers up to 12 (Ⅻ or XII).
+One justification for the existence of pre-combined numbers is to facilitate the setting of multiple-letter numbers (such as VIII) on a single horizontal line in Asian vertical text. The Unicode standard, however, includes special Roman numeral code points for compatibility only, stating that "[f]or most purposes, it is preferable to compose the Roman numerals from sequences of the appropriate Latin letters".
+The block also includes some apostrophus symbols for large numbers, an old variant of "L" (50) similar to the Etruscan character, the Claudian letter "reversed C", etc.
+
+See also
+Passage 2:
+Warren Covered Bridge
+The Warren Covered Bridge is a wooden covered bridge that crosses the Mad River in Warren, Vermont on Covered Bridge Road.  It was listed on the National Register of Historic Places in 1974.The bridge is of queen post truss design.  A sign on the bridge also identifies it as the Lincoln Gap covered bridge, despite no official reference to that name.  A unique oddity with this bridge is the fact that the eastern portal extends further over the approaching roadway than the western, according to a sign posted in the bridge by the Vermont Festival of the Arts.  This trusses on this bridge are covered not only on the outside, but on the inside as well... one of only two bridges left in the state with similar construction (the other being the School House Covered Bridge).
+
+Recent history
+The bridge deck was strengthened and roof replaced in 1995.  In 1999 it was closed to all traffic after inspections found problems that were being hidden by the covering on the inside of the trusses.  The bridge was extensively rehabilitated and re-dedicated on October 6, 2000.On August 28, 2011, one of the abutments of the bridge received damage due to flooding caused by Hurricane Irene.  It appears the bridge itself was not damaged and as of 2020 the bridge is open to traffic.
+
+See also
+National Register of Historic Places listings in Washington County, Vermont
+List of Vermont covered bridges
+List of bridges on the National Register of Historic Places in Vermont
+Passage 3:
+Flatford
+Flatford is a small hamlet close to East Bergholt  in Suffolk. It is most famous for Flatford Mill, Willy Lott's Cottage and Bridge Cottage, immortalised in the paintings of John Constable.
+
+Access by road
+Flatford is accessible by Road from East Bergholt, with a limited access route looping down to the main Flatford Car park. The route is a two way road at the top section, allowing access to the properties there. From the car park onwards though the route is one way, back into East Bergholt, emerging near the village War memorial and the church.
+
+Access by foot and public transport
+As well as being able to walk from East Bergholt along the road route, Flatford can also be accessed on foot from Manningtree and Dedham, Essex. The hamlet is approximately 1.5 miles (2.4 km) from Manningtree railway station, to which it is linked by an off-road footpath.
+
+External links
+ Media related to Flatford at Wikimedia Commons
+Passage 4:
+Goodpasture Bridge
+The Goodpasture Bridge spans the McKenzie River near the community of Vida in Lane County, Oregon, United States. It is the second longest covered bridge and one of the most photographed covered bridges in the state. The Goodpasture Bridge is listed on the National Register of Historic Places.
+
+History
+Lane County was the first Oregon county to build covered bridges on a large scale. Today, the county has more surviving covered bridges than any other county west of the Mississippi River, with a total of 17 bridges, including 14 that are still open to traffic. The county's engineering division maintains the covered bridges that are open to traffic, including the Goodpasture Bridge.The Goodpasture Bridge was built in 1938, and cost $13,154 to construct. It was named for Benjamin Franklin Goodpasture, a pioneer farmer who had settled near the bridge site. The bridge crosses the McKenzie River two miles west of the community of Vida. At 165 feet (50 m) long, it the second longest covered bridge in Oregon. Because of its unique scenic beauty and its importance to Oregon's transportation history, the Goodpasture Bridge was listed on the National Register of Historic Places in 1979.Over time, bridge traffic significantly weakened the structure. In 1987, Lane County officials decided to restore the original covered bridge instead of bypassing it with a modern concrete span. The county spent $750,000 to renovate the bridge structure, road surface, and approaches. The project also added a right-turn lane for traffic exiting Oregon Route 126 onto the bridge, and built a concrete retaining wall along the north bank of the McKenzie River to stabilize the area. Today, the Goodpasture Bridge handles a normal load of traffic including logging trucks.In 2005, the Lane County Public Works Department began issuing a series of 17 commemorative coins to honor the county's covered bridges. Income from coin sales is used to help maintain the historic bridges. The first coin, struck in the fall of 2005, honored the Goodpasture Bridge.  The remaining sixteen coins are being released at a rate of two per year through 2013.In 2010, Lane County reported receiving $2 million in a federal transportation grant to repair the bridge and raise its derated load limit from 15 short tons (14 t) back to 40 short tons (36 t) beginning in 2012.It was rumored that the bridge was destroyed in the Holiday Farm wildfire on September 8, 2020, but these was later confirmed to be false.
+
+Structure
+The Goodpasture Bridge was designed by the Oregon State Highway Department (now the Oregon Department of Transportation) and was built by Lane County. A.C. Striker was the county bridge superintendent at the time of its construction. It was built to allow local families and commercial logging trucks to cross the McKenzie River.The Goodpasture Bridge is a classic covered bridge in design. The deck is 17.7 feet (5.4 m) wide with a vertical clearance of 15.3 feet (4.7 m). The bridge's two foundation tiers were concrete. Its wooden floor planks and shingled roof were intact, as is the weatherboard housing that protects the Howe truss infrastructure from the weather.Most of Oregon's covered bridges, including the Goodpasture Bridge, were built using the Howe truss system, developed in 1840 by the Massachusetts architect William Howe. The system uses heavy timbers reinforced with iron or steel rods. The trusses have central beams and crossed timbers with adjustable, vertical iron rods to support the structural load.The Goodpasture Bridge is one of the most photographed bridges in the state of Oregon. The bridge's architectural detailing includes false end beams, semi-elliptical portals, and ten Gothic style louvered windows on each side. The windows were built to allow light into the long covered structure so drivers could see oncoming traffic. During the Christmas season, the bridge is hung with decorations, attracting many winter visitors.
+
+See also
+List of bridges documented by the Historic American Engineering Record in Oregon
+List of bridges on the National Register of Historic Places in Oregon
+List of Oregon covered bridges
+Passage 5:
+Carleton Bridge
+The Carleton Bridge (or Carlton Bridge) is a historic wooden covered bridge that carries Carlton Road over the South Branch Ashuelot River in East Swanzey, New Hampshire.  The bridge was built in 1869, and is the region's only surviving example of a 19th-century Queenspost truss bridge.  The bridge was listed on the National Register of Historic Places in 1975.
+
+Description and history
+The Carleton Bridge is located in central eastern Swanzey, in a rural setting on Carlton Road east of New Hampshire Route 32.  Carlton Road is one of the main routes connecting Swanzey village with East Swanzey.  The bridge is a single span 67 feet 3 inches (20.50 m) in length and 16 feet 6 inches (5.03 m) wide, resting on granite abutments.  Its roadway is 12 feet 4 inches (3.76 m) wide, sufficient for one lane of traffic.  Its exterior is sheathed in vertical board siding and is topped by a gabled roof.  Its trusses have been reinforced with iron tie rods and other metal elements.The bridge was built in 1869 on a site that is believed to have had a bridge since 1789.  It is believed to be the only example of a Queenspost truss bridge in southern New Hampshire.  This truss method is quite old, and is based on techniques used for building large structures such as churches and barns.
+
+See also
+List of New Hampshire covered bridges
+List of bridges on the National Register of Historic Places in New Hampshire
+National Register of Historic Places listings in Cheshire County, New Hampshire
+
+Notes
+Passage 6:
+Orlando furioso (Vivaldi, 1714)
+Orlando furioso RV 819 (Italian pronunciation: [orˈlando fuˈrjoːzo, -so], Teatro San Angelo, Venice 1714) is a three-act opera surviving in manuscript in Antonio Vivaldi's personal library, only partly related to his better known Orlando furioso (RV 728) of 1727. It is a recomposition of an Orlando furioso written by Giovanni Alberto Ristori which had been very successfully staged by Vivaldi and his father's impresa in 1713, and whose music survives in a few fragments retained in the score of RV 819. Therefore, Vivaldi's first cataloguer Peter Ryom did not assign the opera a RV number, but catalogued it as RV Anh. 84. The libretto was by Grazio Braccioli.
+
+Authorship
+Federico Maria Sardelli, according to the studies of Reinhard Strohm, argues that Orlando RV 819 was entirely recomposed by Vivaldi, starting from the original Ristori's opera that Vivaldi himself had already changed during the numerous representations of the season 1713. He assigned to it the catalogue number RV 819. One suggestion is that Vivaldi avoided putting his own name on the opera having himself only recently taken direction of the Teatro San Angelo. Against this others consider that the bulk of the opera is a copy of Ristori's lost work.
+
+Opera
+Unlike the Orlando furioso (RV 728) of 1727, in which the role of Orlando is sung by a contralto, the 1714 opera assigns the title role to a bass. The third act is missing and the rest of the score (evidently used in performances by the composer) is incomplete. Two arias are lost, seven arias are incomplete (only the bass part is extant) and three arias are identical with extant arias in RV 727 and RV 729.
+
+Recording
+The French label Naïve, which had already recorded the more famous Orlando furioso and Orlando finto pazzo for its Vivaldi Edition, released a recording of the July 20, 2012 première at the Festival de Beaune, with Sardelli conducting Modo Antiquo and singers including Riccardo Novaro as Orlando, Gaëlle Arquez as Angelica, Romina Basso as Alcina and Teodora Gheorghiu as Bradamante. Given the heavily defective nature of the surviving manuscript, Sardelli had to reconstruct or compose ex novo the seven incomplete arias, in a Vivaldian style.
+
+See also
+List of operas by Antonio Vivaldi
+Passage 7:
+Royal Albert Bridge
+The Royal Albert Bridge is a railway bridge which spans the River Tamar in England between Plymouth, Devon and Saltash, Cornwall. Its unique design consists of two 455-foot (138.7 m) lenticular iron trusses 100 feet (30.5 m) above the water, with conventional plate-girder approach spans. This gives it a total length of 2,187.5 feet (666.8 m). It carries the Cornish Main Line railway in and out of Cornwall. It is adjacent to the Tamar Bridge which opened in 1961 to carry the A38 road.
+The Royal Albert Bridge was designed by Isambard Kingdom Brunel. Surveying started in 1848 and construction commenced in 1854. The first main span was positioned in 1857 and the completed bridge was opened by Prince Albert on 2 May 1859. Brunel died later that year and his name was then placed above the portals at either end of the bridge as a memorial. During the 20th century the approach spans were replaced, and the main spans strengthened. It has attracted sightseers since its construction and has appeared in many paintings, photographs, guidebooks, postage stamps and on the UK £2 coin. Anniversary celebrations took place in 1959 and 2009.
+
+Cornwall Railway
+Two rival schemes for a railway to Falmouth, Cornwall, were proposed in the 1830s. The 'central' scheme was a route from Exeter around the north of Dartmoor, an easy route to construct but with little intermediate traffic. The other, the 'coastal' scheme, was a line with many engineering difficulties but which could serve the important naval town of Devonport and the industrial area around St Austell. The central scheme was backed by the London and South Western Railway while the coastal scheme was promoted by the Cornwall Railway and backed by the Great Western Railway which wanted it to join up with the South Devon Railway at Devonport. The Cornwall Railway applied for an Act of Parliament in 1845 but it was rejected, in part because of William Moorsom's plan to carry trains across the water of the Hamoaze on the Devonport-to-Torpoint Ferry. Following this Isambard Kingdom Brunel took over as engineer and proposed to cross the water higher upstream using a bridge at Saltash instead. The Act enabling this scheme was passed on 3 August 1846.
+
+Design
+The structure was the third in a series of three large wrought iron bridges built in the middle of the 19th century. It was influenced by the preceding two, both of which had been designed by Robert Stephenson. The two central sections of Brunel's bridge are novel adaptations of the design Stephenson employed for the High Level Bridge across the River Tyne in Newcastle Upon Tyne in 1849. Brunel was present when Stephenson raised the girders of his Britannia Bridge across the Menai Strait in the same year. From 1849 to 1853 Brunel was erecting an iron bridge of his own; the Chepstow Railway Bridge carried the South Wales Railway across the River Wye and featured a main truss of 300 feet (91 m) with a curving tubular main member and three conventional plate-girder approach spans of 100 feet (30 m), a similar solution to that adopted for crossing the River Tamar at Saltash.The river is about 1,100 feet (340 m) wide at Saltash. Brunel's first thoughts had been to cross this on a double track timber viaduct with a central span of 255 feet (78 m) and six approach spans of 105 feet (32 m) with 80 feet (24 m) clearance above the water. This was rejected by the Admiralty, who had statutory responsibility for navigable waters, so Brunel produced a revised design to give 100 feet (30 m) clearance, with two spans of 300 feet (91 m) and two of 200 feet (61 m). The Admiralty again rejected this plan, stipulating that there should not be more than one pier in the navigable part of the river.
+Brunel now abandoned plans for a double track timber structure and instead proposed a single track wrought iron design consisting of a single 850-foot (259.1 m) span. As the cost of this structure would have been around £500,000 at 1846 prices (equivalent to £51,510,000 in 2021), he amended the design to one of two main spans of 455 feet (138.7 m) with 100 feet (30.5 m) clearance above mean high spring tide; this was approved by the Admiralty and the directors of the Cornwall Railway.The two spans are lenticular trusses with the top chord of each truss comprising a heavy tubular arch in compression, which tend to expand in length under load, while the bottom chord comprises a pair of chains, which tend to contract in length under load. By design, these two effects cancel so that there is no net change in length under load. This in turn enables each of the trusses to be supported with no horizontal thrust exerted on the piers, which is crucial in view of the curved track on either side. Between these two chords are supporting cross-bracing members and suspension standards which hang beneath the bottom chord to carry the railway deck which is a continuous plate beam. There are also 17 shorter and more conventional plate-girder approach spans on the shore. On the Cornish side there are ten which measure (from Saltash station towards the river): 67.5 feet (20.6 m), 69.5 feet (21.2 m), 69.5 feet (21.2 m), 69.5 feet (21.2 m), 69.5 feet (21.2 m), 69.5 feet (21.2 m), 72.5 feet (22.1 m), 78.0 feet (23.8 m), 83.5 feet (25.5 m), 93.0 feet (28.3 m), and seven on the Devon side of (from the river towards St Budeaux): 93.0 feet (28.3 m), 83.5 feet (25.5 m), 78.0 feet (23.8 m), 72.5 feet (22.1 m), 69.5 feet (21.2 m), 69.5 feet (21.2 m), 69.5 feet (21.2 m). This gives a total length for the nineteen spans of 2,187.5 feet (666.8 m).
+
+History
+Construction
+The first work was to properly survey the river bed. On 26 April 1848 a 6-foot (1.8 m) iron cylinder 85 feet (25.9 m) tall was launched into the Tamar. From the bottom of this the bed of the river could be examined to identify its nature and the location of solid foundations. The Cornwall Railway at this time was finding it difficult to raise funds and so most operations were suspended that summer, but a small fund was allowed for Brunel to continue the survey. The cylinder was positioned at 35 different places and a total of 175 borings made.In 1853 the tenders for the bridge were considered by the Cornwall Railway Board, and it was decided to let the work to Charles John Mare, a shipbuilder from Blackwall who had built the ironwork for the Britannia Bridge. The fee he sought for building the Saltash Bridge was £162,000, but on 21 September 1855 while constructing the first of the two trusses he filed for bankruptcy. Brunel proposed that the company should complete this first truss itself by its own direct labour, to which the company agreed. A contract for the remainder of the building was awarded to Messrs Hudson and Male.
+
+Mare's first task had been to establish an erecting yard on the Devon shore with a jetty and workshops. He then proceeded to construct a 37-foot (11.3 m) iron cylinder 90 feet (27.4 m) tall which was to form the work base for the construction of the central pier. This was launched in May 1854 and moored in the centre of the river between four pontoons. The bottom had been shaped to follow the rock surveyed in 1848. Once it was settled on the river bed the water was pumped out, the mud within it excavated, and a solid masonry pier built up clear of the water. This was completed in November 1856.The landward piers on the Cornish side of the river were completed in 1854 and the girders for these spans were hoisted up to their correct positions. Next to be built was the main truss for the Cornwall side of the river. The lower ties of the trusses formed of chains made from 20 feet (6.1 m) links. Many were obtained from the suspended works for Brunel's Clifton Suspension Bridge and others rolled new for Saltash. The Cornwall span was floated into position on 1 September 1857 and jacked up to full height in 3-foot (0.9 m) stages as the piers were built up beneath it, the central pier using cast iron octagonal columns; the landward one using ordinary masonry.
+
+With the yard now cleared of the first truss, work could start on the main Devon span. This was similarly floated into position on 10 July 1858 and then raised in a similar manner. It was in its final position by 28 December 1858. After this had been removed, part of the yard had to be cleared to allow the construction of the final landward pier and then the Devon approach spans could be raised up to their final position. The work was sufficiently advanced that directors were able to make an inspection by train on 11 April 1859.The Cornwall span had been tested before it was launched. The two ends were supported on substantial timber piers and the remaining scaffolding removed. Static loads of 1.25 and 2.25 long tons per foot (4.2 and 7.5 t/m) were placed on the deck, the deflections measured and any permanent change measured once the load was removed. Now that it was completed, the bridge had its statutory inspection and tests by Colonel Yolland on behalf of the Board of Trade on 20 April 1859. He ran a heavy train over the bridge and measured deflections in the main trusses of 1.14 inches (29 mm) in the Devon truss, and 1.20 inches (30 mm) in the Cornwall one. Overall he described it as 'highly satisfactory'.
+
+Opening day
+Prince Albert had agreed to the bridge being named after him as early as 1853. He was invited to perform the opening ceremony, and on 2 May 1859 he travelled from Windsor on the Royal Train. Several thousand spectators attended that day, although guests from Cornwall were late for the ceremony as their train broke down at Liskeard. Illness prevented the attendance of Brunel who was instead represented by his chief assistant Robert Brereton.  Public services commenced on 4 May 1859.
+
+Changes since 1859
+After Brunel's premature death on 15 September 1859 the directors of the Cornwall Railway Company decided to make the bridge a memorial to him by adding the words I.K. BRUNEL, ENGINEER, 1859 in large metal letters on either end of the bridge. In 1921, new access platforms were added that obscured the lettering but in 2006 Network Rail relocated the platforms, allowing the name to be clearly seen again. The walkways had previously been temporarily removed in 1959 and the bridge floodlit during its centenary year.Over the weekend of 21–22 May 1892 the track gauge on the bridge was converted from 7 ft 1⁄4 in (2,140 mm) to 4 ft 8+1⁄2 in (1,435 mm) during the final conversion of the whole Great Western Railway.401 new cross-girders were fitted in 1905 to allow heavier locomotives to pass over. In 1908 the two spans nearest Saltash station were replaced with wider ones to accommodate a new track layout. The remaining approach spans were replaced on both sides of the river during 1928 and 1929. During the 1930s new cross-bracing and diagonal sway-bracing were added between the vertical standards to further strengthen the bridge and keep the suspension chains hanging in the correct shape.
+
+The bridge was Grade 1 listed in 1952.Additional links between the suspensions chains and the decking were added in 1969 to further strengthen the bridge. In 2011 Network Rail began a three-year £10 million refurbishment involving replacing 50,000 bolts and installation of 100 tonnes of new steelwork. The bridge has also been stripped back to the bare metal and repainted in the Goose Grey colour originally applied in 1952.
+
+Viewing the bridge
+The bridge can be crossed using a train on the Cornish Main Line which affords far-reaching views of the Tamar. Cruise boats operate between Phoenix Wharf, Plymouth, from Saltash, and Calstock. Main view points are:
+
+Saltash railway station (50.40719°N 4.20924°W﻿ / 50.40719; -4.20924)The Cornish approach spans start right at the platform end. These were replaced in 1908 so that the single line on the bridge could split into two lines before reaching the station.Saltash Quay (50.40779°N 4.20614°W﻿ / 50.40779; -4.20614)The foreshore at Saltash runs right up to the pier that supports the Cornish end of the main span.  An inscribed stone commemorating the bridge can be found beneath the bridge on the hillside alongside Fore Street.Tamar Bridge (50.40777°N 4.19974°W﻿ / 50.40777; -4.19974)The road bridge runs parallel to and slightly higher, on the north side.  A toll-free foot and cycle path is on the south side of the road bridge from which it is possible to examine the bridge in detail.  An area of grass beside the motor vehicle toll booths affords a view of the Devon end of the railway bridge.Saltash Passage, St Budeaux (50.40585°N 4.20069°W﻿ / 50.40585; -4.20069)The Devon piers can be reached from the waterfront at St Budeaux.  The yard where the spans were constructed was situated alongside the bridge at the foot of the road down the hill.
+
+Cultural impact
+The construction of such a large and distinctive bridge soon caught the attention of the general public. The launching of the Cornish span in 1857 attracted a crowd of around 20,000, with similar numbers said to have witnessed the launch of the Devonport span and the opening day. During its construction it was photographed many times and after its opening it was the subject for many paintings, including those by Devonport-born artist Alfred Wallis. It has also been the subject of many photographs and postcards.It was already a feature in guidebooks in the year of its opening: "It is a labour of Hercules, but Mr Brunel has accomplished the feat," proclaimed one, and went on to report in detail the design and construction of the bridge that "for novelty and ingenuity of construction stands unrivalled in the world". More than 100 years later it continues to appear in many travel guides and features. John Betjeman summed up its impact on the traveller:
+
+The general grey slate and back gardens of Plymouth, as seen from the Great Western made the surprise of Saltash Bridge all the more exciting. Up and down stream, grey battleships were moored in the Tamar and its reaches. Hundreds of feet below, the pathetic steam ferry to Saltash from the Devon bank tried to compete with Brunel's mighty bridge.
+The bridge has become a symbol of the transition from Devon to Cornwall. In the Great Western Railway's The Cornish Riviera travel guide, SPB Mais regarded it as "an almost magic means of transporting travellers from a county, which, if richer than others, is yet unmistakingly an English county, to a Duchy which is in every respect un-English. You shut your eyes going over the Saltash Bridge only to open them again on a foreign scene".The bridge is the backdrop of ITV1's The West Country Tonight during the old westcountry region.
+
+Special events
+Special occasions have been marked over the years by special events:
+
+1859 – The bridge was opened by Prince Albert two days before the railway was opened to the public. He arrived by special train from Windsor, was shown around the bridge and the works yard, and then left aboard the Royal Yacht.
+1959 – Floodlights lit up the bridge during 1959 in celebration of its centenary.
+2006 – The 200th anniversary of Isambard Kingdom Brunel's birth was celebrated by Network Rail permanently removing the access ways that covered his name above the portals.
+2009 – During the bank holiday weekend of 2–4 May there were many special events to commemorate the 150th anniversary of the opening of the bridge including a guided walk across the bridge and a re-enactment of the opening day.
+Passage 8:
+Rialto Bridge
+The Rialto Bridge (Italian: Ponte di Rialto; Venetian: Ponte de Rialto) is the oldest of the four bridges spanning the Grand Canal in Venice, Italy. Connecting the sestieri (districts) of San Marco and San Polo, it has been rebuilt several times since its first construction as a pontoon bridge in 1173, and is now a significant tourist attraction in the city.
+
+History
+The first dry crossing of the Grand Canal was a pontoon bridge built in 1181 by Nicolò Barattieri. It was called the Ponte della Moneta, presumably because of the mint that stood near its eastern entrance.The development and importance of the Rialto market on the eastern bank increased traffic on the floating bridge, so it was replaced in 1255 by a wooden bridge. This structure had two ramps meeting at a movable central section, that could be raised to allow the passage of tall ships. The connection with the market eventually led to a change of name for the bridge. During the first half of the 15th century, two rows of shops were built along the sides of the bridge. The rents brought an income to the State Treasury, which helped maintain the bridge.
+Maintenance was vital for the timber bridge. It was partly burnt in the revolt led by Bajamonte Tiepolo in 1310. In 1444, it collapsed under the weight of a crowd rushing to see the marriage of the Marquis of Ferrara and it collapsed again in 1524.
+The idea of rebuilding the bridge in stone was first proposed in 1503. Several projects were considered over the following decades. In 1551, the authorities requested proposals for the renewal of the Rialto Bridge, among other things. Plans were offered by famous architects, such as Jacopo Sansovino, Palladio and Vignola, but all involved a Classical approach with several arches, which was judged inappropriate to the situation. Michelangelo also was considered as designer of the bridge.The present stone bridge, a single span designed by Antonio da Ponte, began to be constructed in 1588 and was completed in 1591. It is similar to the wooden bridge it succeeded. Two ramps lead up to a central portico. On either side of the portico, the covered ramps carry rows of shops. The engineering of the bridge was considered so audacious that architect Vincenzo Scamozzi predicted future ruin. The bridge has defied its critics to become one of the architectural icons, and top tourist attractions, in Venice.
+
+Other names
+It was called Shylock's bridge in Robert Browning's poem "A Toccata of Galuppi's".
+
+See also
+Miracle of the Relic of the Cross at the Ponte di Rialto (depiction of wooden bridge)
+List of buildings and structures in Venice
+Passage 9:
+Dufferin Street bridges
+The Dufferin Street bridges are two inter-connected vehicular bridges in Toronto, Ontario, Canada. The bridges carry Dufferin Street over a railway corridor and the Gardiner Expressway to Exhibition Place. The bridges closed to vehicular traffic in 2013. Temporary structures were built in 2013-2014 to allow a resumption of traffic in early 2014. As of March 2019 the spans over the Gardiner Expressway remain in place and the bailey bridges replacing the older outer pedestrian bridges of the northern span with the inner vehicular steel plate box girder bridge still in place.
+
+North span
+The truss bridge is a 30 metres (98 ft) steel truss bridge, built from 1911 to 1912 to cross over railway tracks south of Springhurst Avenue. Four tracks pass under the bridge. A 2013 engineering study determined that the bridge was unsafe and not viable to be repaired. However, in 2014, Bailey bridges were added for pedestrian traffic on the east and west sides, while the inner steel plate box girder bridge for vehicular traffic remains in place.
+
+South span
+The south span is a 35 metres (115 ft) concrete overpass built in 1958 after demolition of the old Dufferin Gate to allow for clearance for the Gardiner Expressway below.
+
+Deterioration and replacement
+After a report from external inspections conducted in 2007 the city decided to replace both spans with a single span:
+1911 steel plate girder bridge over rail corridor is structurally unsafe for vehicular traffic
+lack space below to expanded rail corridor
+need to provide space for future LRT corridor to the south end of the bridge
+1958 concrete bridge over Gardiner Expressway needs maintenance to keep it structurally safe
+eliminate the existing 10 metres (33 ft) gap between the two existing bridges spans
+From June 2013 the bridges have been closed to vehicular traffic. In November 2013-early 2014, the north bridge superstructure were replaced by three temporary bridges - two for traffic, and a third for pedestrians. The temporary bridges were opened in 2014 and are still used as of September 11, 2021. 
+
+Toronto tried deciding the type of bridge that will span over the tracks, but the decision was canceled as of September 11, 2021.   The four types were:
+
+Steel plate box girder
+Hung arch
+Cable stay
+Concrete box girder
+
+Gallery
+Passage 10:
+Mundo Civilizado
+Mundo Civilizado is the second solo album by American musician Arto Lindsay.
+
+Critical reception
+Rock critic Robert Christgau named the album his favorite of 1997 in the annual Pazz & Jop poll published by The Village Voice and among his 10 best albums from the 1990s.
+
+Track listing
+"Complicity" – 4:07
+"Q Samba" – 3:27
+"Simply Beautiful" (Al Green cover) – 3:59
+"Mundo Civilizado" – 4:24
+"Titled" – 3:19
+"Horizontal" – 3:32
+"Mar da Gávea" – 2:43
+"Imbassaí" – 3:18
+"Pleasure" – 2:38
+"Erotic City" (Prince cover) – 5:02
+"Clown" – 3:50
+Passage 11:
+Nulla in mundo pax sincera
+Nulla in mundo pax sincera, RV 630, is a sacred motet composed by Antonio Vivaldi in 1735 to an anonymous Latin text, the title of which may be translated as "In this world there is no honest peace" or "There is no true peace in this world without bitterness".  Written in the key of E major and in the typical lyrical Italian Baroque style, it is scored for solo soprano, two violins, viola and basso continuo, this would normally be a cello and keyboard instrument, in Vivaldi's case often the organ. The text dwells on the imperfections of a world full of evil and sin, and praises Jesus for the salvation he offers from it.  It is considered to be one of Vivaldi's most beautiful solo motets.The motet consists of three parts (Aria; Recitative; Aria), followed by a concluding Alleluia. A full performance of the piece takes approximately 13 minutes.
+
+Text
+In popular culture
+The first aria, sung by Jane Edwards, was featured in the 1996 film Shine.
+
+Media
+The instrumental version of Nulla in mundo pax sincera is used as the song for the phonograph in the video game We Need to Go Deeper
+
+External links
+Nulla in mundo pax sincera: Scores at the International Music Score Library Project
+Performance of Nulla in mundo pax sincera by A Far Cry with Amanda Forsythe (soprano) from the Isabella Stewart Gardner Museum in M4A format
+Passage 12:
+Giovanni Cifolelli
+Giovanni Cifolelli was an Italian mandolin virtuoso and dramatic composer whose date and place of birth are unknown. In 1764 he made his appearance in Paris as a mandolin virtuoso and was highly esteemed, both as a performer and teacher. He published his Method for the mandolin while residing in Paris, which met with great success throughout France, being the most popular of its period.
+His chief works were the operas L'Italienne and Pierre et Lucette, the former being an opera bouffe in one act (with the storyline or libretto by Nicolas-Étienne Framery). These works were commissioned by the Comedie Italienne, Paris, and were produced at this theatre successfully, in 1770 and 1774. Several of the songs and duets in Pierre and Lucette were exceedingly popular in France, and they were republished in Paris in 1775 and 1780.
+
+Works
+L'Italienne  : comédie en 1 acte, mêlée d'ariettes (Paris, 1770)
+Pierre et Lucette, comédie en deux actes et en prose mêlée d'ariettes (Paris, 1774)
+Airs détachés de Perin et Lucette, comédie en deux actes, mêlées d'ariettes par M. Davesne (Paris, 1775)
+Ariette nouvelle avec accompagnement de deux violons et basse
+Non, laisse moi, laisse moi, Lucas. Duo (1775)
+Passage 13:
+Mariefred Charterhouse
+Mariefred Charterhouse, sometimes referred to as Gripsholm Charterhouse (Swedish: Mariefreds kloster, Latin: Monasterium Pacis Mariae or Pax Mariae), was a Carthusian monastery, or charterhouse, in the present town of Mariefred in Södermanland, Sweden, to which it gave its name; before the building of the monastery the place was known as Gripsholm. It was the only Carthusian monastery in Scandinavia, and one of the last monasteries established in Sweden before the Reformation.
+
+History
+The establishment of a Carthusian monastery in Sweden was brought about by the efforts of Jakob Ulvsson, Archbishop of Uppsala, and Kort Rogge, Bishop of Strängnäs, who in 1493 persuaded Sten Sture the elder, Regent of Sweden, to have the monks Fikke Dyssin and Johannes Sanderi together with two lay brothers sent from the Marienehe Charterhouse near Rostock to Sweden for a meeting with the riksrådet (Privy Council of Sweden). Later that year Sten Sture enfeoffed the Carthusians with the Gripsholm estate in Selebo härad in Södermanland and in 1502 gave them other lands round about. 
+The monastery church was dedicated on 15 February 1504, and Sten Sture was buried here. The monastery was built on the high ground close to Gripsholm Castle on the site where Mariefred Church now stands.In 1498 the lay brothers set up a printing press. The only book now known from this press is a tract for an ecstatic devotional movement based on the veneration of the rosary, the "Brotherhood of the Psalter of the Virgin Mary". This was distributed across the whole of Europe, and had a powerful effect on the devotional life of late medieval period.
+Mariefred Charterhouse was short-lived: in 1526 it was one of the first monasteries secularised by Gustav Vasa. In December 1525 he claimed its assets from the heirs of Sten Sture the Elder, who had given the estate to the monastery on the condition that it should pass to the right heirs of the monastery if it were ever wound up. This claim was legitimated by the Privy Council in January 1526.
+Virtually no trace of the monastic buildings now remains above ground: Gustav Vasa had them dismantled for the construction of Gripsholm Castle. A cellar and a few traces of walls have been discovered to the south of the church. A small collection of stones discovered during excavations in the monastery grounds, is in the church tower.
+
+Mariefred Church
+Mariefred Church (Mariefreds kyrka) was built in 1621-1624 over the ruins of the old Carthusian monastery. It was built of stone and was burned down in 1682 but  rebuilt and  completed in 1697. Today it is the parish church of Mariefred and is associated with the Diocese of Strängnäs.
+Next to the church stands the Sten Sture stone, erected in 1905, marking the site of the monastery. The inscription reads: "Sten Sture, riddare till Gripsholm, rikets föreståndare, grundade här klostret Mariefred och fick här sin lägerstad år 1504." ("Sten Sture, knight at Gripsholm, regent of the realm, founded here the monastery of Mariefred and received here his resting place in the year 1504").
+
+Literary reference
+August Strindberg describes the monks calling in an artist to paint an altarpiece for the newly built monastery  in the chapter entitled Utveckling from  his  collection of short stories entitled Svenska öden och äventyr  (Alb. Bonniers. 1913).
+
+Notes and references
+Further reading
+Berg, Per E, 1949: August Strindberg och Sörmland. Årsboken Sörmlandsbygden 1949
+Berg, Per E, 1949: Sörmländska kloster. Södermanlands Nyheter
+Berntson, Martin, 2003: Klostren och reformationen. Artos och & Normas bokförlag
+Collmar, Magnus, 1968: När klostermurarna revos. Årsboken Sörmlandsbygden 1968
+Medeltidens ABC (2nd edition). SHM 1985
+Nordisk Familjebok. Uggleupplagan, nd
+Nordisk tidskrift för bok- och biblioteksväsen, Årg. XXII, 1935

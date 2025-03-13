@@ -1,0 +1,421 @@
+Passage 1:
+Randall Munroe
+Randall Patrick Munroe (born October 17, 1984) is an American cartoonist, author, and engineer best known as the creator of the webcomic xkcd. Munroe has worked full-time on the comic since late 2006. In addition to publishing a book of the webcomic's strips, he has written four books: What If?, Thing Explainer, How To: Absurd Scientific Advice for Common Real-World Problems, and What If? 2.
+
+Early life
+Munroe was born in Easton, Pennsylvania, and his father has worked as an engineer and marketer. He has two younger siblings, including a brother named Doug, and was raised as a Quaker. He was a fan of comic strips in newspapers from an early age, starting off with Calvin and Hobbes. After graduating from the Chesterfield County Mathematics and Science High School at Clover Hill in Midlothian, Virginia, he graduated from Christopher Newport University in 2006 with a degree in physics.
+
+Career
+NASA
+Munroe worked as a contract programmer and roboticist for NASA at the Langley Research Center, before and after his graduation with a physics degree. In late 2006, he left NASA and moved to Boston to focus on webcomics full time.
+
+Webcomic
+Munroe's webcomic, entitled xkcd, is primarily a stick figure comic. Its tagline describes it as "A webcomic of romance, sarcasm, math, and language".Munroe had originally used xkcd as an instant messaging screenname because he wanted a name without a meaning so he would not eventually grow tired of it. He registered the domain name, but left it idle until he started posting his drawings, perhaps in September 2005. The webcomic quickly became very popular, garnering up to 70 million hits a month by October 2007. Munroe has said, "I think the comic that's gotten me the most feedback is actually the one about the stoplights".Munroe now supports himself by the sale of xkcd-related merchandise, primarily thousands of t-shirts a month. He licenses his xkcd creations under the Creative Commons attribution-noncommercial 2.5, stating that it is not just about the free culture movement, but that it also makes good business sense.In 2010, he published a collection of the comics. He has also toured the lecture circuit, giving speeches at places such as Google's Googleplex in Mountain View, California.The popularity of the strip among science fiction fans resulted in Munroe being nominated for a Hugo Award for Best Fan Artist in 2011 and again in 2012. In 2014, he won the Hugo Award for Best Graphic Story for the xkcd strip "Time".
+
+Other projects
+Munroe is the creator of the now defunct websites "The Funniest", "The Cutest", and "The Fairest", each of which presents users with two options and asks them to choose one over the other.In January 2008, Munroe developed an open-source chat moderation script named "Robot9000". Originally developed to moderate one of Munroe's xkcd-related Internet Relay Chat (IRC) channels, the software's algorithm attempts to prevent repetition in IRC channels by temporarily muting users who send messages that are identical to a message that has been sent to the channel before. If users continue to send unoriginal messages, Robot9000 mutes the user for a longer period, quadrupling for each unoriginal message the user sends to the channel. Shortly after Munroe's blog post about the script went live, 4chan administrator Christopher Poole adapted the script to moderate the site's experimental /r9k/ board. Twitch trialed R9K mode but it did not pass beta.In October 2008, The New Yorker magazine online published an interview and "Cartoon Off" between Munroe and Farley Katz, in which each cartoonist drew a series of four humorous cartoons.In early 2010, Munroe ran the xkcd Color Name Survey, in which participants were shown a series of RGB colors and asked to enter a suitable name for each specific color. Munroe wanted to identify colors which were given identical or highly similar names by a large number of survey participants, which would then serve as an approximate list of the most common colors rendered similarly across a range of computer monitors. Over 200,000 people eventually completed the survey, and Munroe published the resulting list of 954 named RGB web colors on the xkcd website. They have since been adopted as conventional color identifiers in various programming and markup languages, including Python and LaTeX.
+
+What If?
+Munroe has a blog entitled What If?, where he has answered questions sent in by fans of his comics. These questions are usually absurd and related to math or physics, and he explains them using both his knowledge and various academic sources. In 2014, he published a collection of some of the responses, as well as a few new ones and some rejected questions, in a book entitled What If?: Serious Scientific Answers to Absurd Hypothetical Questions. Starting in November 2019, Munroe began writing a monthly column in the New York Times titled Good Question, answering user-submitted questions in the same style as What If.
+A sequel, What If? 2: Additional Serious Scientific Answers to Absurd Hypothetical Questions, was published in September 2022.
+
+Radioactivity visualization
+In response to concerns about the radioactivity released by the Fukushima Daiichi nuclear disaster in 2011, and to remedy what he described as "confusing" reporting on radiation levels in the media, Munroe created a radiation chart of comparative radiation exposure levels. The chart was rapidly adopted by print and online journalists in several countries, including being linked to by online writers for The Guardian, and The New York Times. As a result of requests for permission to reprint the chart and to translate it into Japanese, Munroe placed it in the public domain, but requested that his non-expert status be clearly stated in any reprinting.Munroe published an xkcd-style comic on scientific publishing and open access in Science in October 2013.
+
+Thing Explainer
+Munroe's book Thing Explainer, announced in May 2015 and published later that year, explains concepts using only the 1,000 most common English words. The book's publisher, Houghton Mifflin Harcourt, saw these illustrations as potentially useful for textbooks, and announced in March 2016 that the next editions of their high-school-level chemistry, biology, and physics textbooks will include selected drawings and accompanying text from Thing Explainer.
+
+How To
+In February 2019, Munroe announced his next book, How To, which was released in September of that year. The book deals with everyday problems by using physics to find absurd, and generally extreme, solutions to them.
+
+Influence
+In September 2013, Munroe announced that a group of xkcd readers had submitted his name as a candidate for the renaming of asteroid (4942) 1987 DU6 to 4942 Munroe. The name was accepted by the International Astronomical Union.
+
+Personal life
+As of May 2008, Munroe lives in Somerville, Massachusetts.In October 2010, Munroe's fiancée was diagnosed with stage three breast cancer; there had been no prior family history. The emotional effect of her illness was referenced in the comic panel "Emotion", published 18 months later in April 2012. In September 2011, he announced that they had married. In November 2012, he published a comic entitled "Two Years', and in December 2017, Munroe followed this with a comic entitled "Seven Years". He revisited the subject in November 2020 in a comic entitled "Ten Years".His hobbies and interests include kite photography, in which cameras are attached to kites and photographs are then taken of the ground or buildings.
+
+Publications
+Publications by Munroe
+xkcd: volume 0. Breadpig. 2009. ISBN 9780615314464.
+What If?: Serious Scientific Answers to Absurd Hypothetical Questions. London: John Murray. 2014. ISBN 9781848549579.
+Thing Explainer. Boston: Houghton Mifflin Harcourt. 2015. ISBN 9780544668256.
+How To: Absurd Scientific Advice for Common Real-World Problems. John Murray. 2019. ISBN 9780525537090.
+What If? 2: Additional Serious Scientific Answers to Absurd Hypothetical Questions. Riverhead Books. 2022. ISBN 9780525537113.
+
+Publications with contributions by Munroe
+North, Ryan; Matthew, Bennardo; Malki, David (2010). Machine of Death (PDF). ISBN 9780982167120. Archived from the original on August 15, 2014.
+Passage 2:
+Aaron Spelling
+Aaron Spelling (April 22, 1923 –  June 23, 2006) was an American film and television producer and occasional actor. His productions included the TV series Family (1976–1980), Charlie's Angels (1976–1981), The Love Boat (1977–1986), Hart to Hart (1979–1984), Dynasty (1981–1989), Beverly Hills, 90210 (1990–2000), Melrose Place (1992–1999), 7th Heaven (1996–2007), and Charmed (1998–2006). He also served as producer of The Mod Squad (1968–1973), The Rookies (1972–1976), and Sunset Beach (1997–1999).
+Through his production company Spelling Television, Spelling holds the record as the most prolific television producer in US television history, with 218 producer and executive producer credits. Forbes ranked him the 11th top-earning deceased celebrity in 2009.
+
+Early life
+Spelling was born in Dallas, Texas. He was the son of Pearl (née Wald) and David Spelling, Russian Jewish immigrants. His father worked as a tailor and changed his surname from Spurling to Spelling after emigrating to the United States. Spelling was the youngest of five children. He had three older brothers: Maxwell “Max” Seltzer (circa 1909–?), Sam Spelling (1916–2001) and Daniel Spelling (1921–2009) and an older half-sister, Becky Seltzer Giller (1910–1978).At the age of eight, Spelling psychosomatically lost the use of his legs due to trauma caused by constant anti-semitic bullying from his schoolmates, and was confined to bed for a year. He made a full recovery.After attending Forest Avenue High School in Dallas, he served in the United States Army Air Corps as a pilot during World War II.
+Spelling later graduated from Southern Methodist University in 1949, where he was a cheerleader.
+
+Career
+Spelling made his first appearance as an actor in a film as Harry Williams in Vicki, directed by Harry Horner, in 1953. That same year, he appeared in the TV series I Led Three Lives and Dragnet (six episodes, 1953–55). Spelling appeared in episode 112 of I Love Lucy ("Tennessee Bound," season 4, 1955) and Alfred Hitchcock Presents ("Breakdown", 1955)., as Weed Pindle in Gunsmoke's season one, episode 35, "The Guitar" (1956); He continued to appear in films and TV (often uncredited) over 25 times by 1957, appearing briefly as an actor in 1963, 1995, and 1998 (all uncredited.)Spelling sold his first script to Jane Wyman Presents in 1954. He guest-starred that same year as a dogcatcher in the premiere episode of the CBS situation comedy, Willy, starring June Havoc as a young lawyer in New Hampshire, who later relocates to New York City to represent a vaudeville troupe.Two years later, Spelling gained experience as a producer and additional credits as a script writer working for Four Star Television on the series Zane Grey Theater, which aired between 1956 and 1961. Of the 149 episodes in that series, he wrote 20 of the teleplays and produced many others. Spelling produced Burke's Law while at Four Star.  The show was the first success for Spelling and pioneered the multiple guest star format, later seen on The Love Boat and Fantasy Island. Thomas-Spelling Productions was a television production company formed by comedian Danny Thomas and producer Aaron Spelling on April 15, 1966, as a partnership with 24 properties. Thomas continued his existing partnership, T&L Productions, with Sheldon Leonard. The company adapted its name by July 18, 1966, when it announced the financial involvement of ABC with its first show, Range (later Rango), a half-hour comedy western starring Tim Conway and its rented space on Desilu Productions' Gower lot. ABC also picked up another show for a pilot, just in an outline treatment, in The Guns of Will Sonnett.  Thomas-Spelling Productions' active operations ended with the last season of The Mod Squad in 1972.  Spelling formed a new partnership with Leonard Goldberg, Spelling-Goldberg Productions.
+Beginning in 1965, Spelling began producing successful television shows including The Mod Squad, The Rookies, Family, Charlie's Angels, Fantasy Island, The Love Boat, Dynasty, Beverly Hills, 90210 (which starred his daughter Tori), Melrose Place, 7th Heaven, Charmed, Jane's House and Sunset Beach. Spelling founded Spelling Entertainment in 1965, alongside partnerships with comedian/actor Danny Thomas (Thomas-Spelling Productions, 1966–1972), and television/film producer Leonard Goldberg (Spelling-Goldberg Productions, 1972–1986) He produced the unsuccessful situation comedy The San Pedro Beach Bums in 1977.
+In 2004, Spelling was portrayed in two television movies: Dan Castellaneta portrayed Spelling in Behind the Camera: The Unauthorized Story of Charlie's Angels, and Nicholas Hammond portrayed Spelling in television movie Dynasty: The Making of a Guilty Pleasure.
+
+Personal life
+Spelling married actress Carolyn Jones in 1953, in California when he was 30 and she was 23. They divorced in 1964. He briefly dated actress Jill Haworth when he was 42 and she was 19. Spelling married Candy Gene (née Marer) in 1968 when he was 45 and she was 23. The couple had daughter Tori in 1973 and son Randy in 1978.In 1988, Spelling bought the 6-acre (2.4 ha) property of Bing Crosby's former Los Angeles house. He demolished the property and built a 123-room home on the lot in 1991. Known as "The Manor", it has 56,500 square feet (5,250 m2) of floor space and as of 2006 was the largest single-family home in Los Angeles. Spelling's widow Candy listed the home for sale in 2008 for $150 million. Heiress Petra Ecclestone ultimately purchased the property for $85 million in 2011 through a brokered agreement that was developed by Brandon Davis, the brother of Jason Davis and grandson of wealthy industrialist, Marvin Davis.In 1992, Candy, Spelling's second wife, commissioned pinball manufacturer Data East to produce a personalized table as a gift to Spelling. The game, a modified version of Data East's Lethal Weapon 3 table, has since appeared publicly at collector's expos.
+
+Legacy and death
+On September 15, 1978, Spelling was honored with a star on the Hollywood Walk of Fame located at 6667 Hollywood Blvd. In 1996, he was inducted into the Television Hall of Fame.
+In 1983, he was accorded the NAACP Humanitarian Award for his monetary donation that permitted a 21-year-old's heart transplant operation.In 2001, Spelling was diagnosed with oral cancer.On June 23, 2006, Spelling died at The Manor, his estate in Holmby Hills, Los Angeles, from complications of a stroke he suffered five days prior. He also suffered from Alzheimer's disease. A private funeral was held several days later, and Spelling was entombed in a mausoleum in Culver City's Hillside Memorial Park Cemetery.
+On August 27, 2006, Spelling was posthumously honored at the 58th Annual Primetime Emmy Awards by former employees Joan Collins, Stephen Collins, Heather Locklear, Farrah Fawcett, Kate Jackson and Jaclyn Smith.
+7th Heaven's May 13, 2007, episode, the last before the series finale, was dedicated to Spelling. When 7th Heaven ended its run, it was touted by the network as being Spelling's longest-running series and the longest-running "family drama" in American television history.
+
+Filmography
+Spelling was a producer in all films unless otherwise noted.
+
+Film
+As writerAs an actor
+
+Television
+As writerAs an actorMiscellaneous crewSoundtrackAs directorThanks
+
+Awards and nominations
+See also
+Norman Lear
+David L. Wolper
+Alan Landsburg
+Passage 3:
+Arman Arian
+Arman Arian (Persian: آرمان آرین; born 1 September 1981) is an Iranian author, novelist and researcher, best known for his first trilogy, Persians and I (Persian:  پارسیان و من: کاخ اژدها). He is the youngest winner of the annual “The Book of The Year of Iran”. In addition to many national awards, he received the honorary diploma in the 31st IBBY World Congress in Copenhagen, Denmark (2008) by the International Board on Books for Young People the highest recognition available to creators of children's books.
+Although Arian is known as a children and young adults fantasy writer, he doesn't limit his genre to fantasy and also, his books are well received by wide range of readers from all age groups. Persians and I became the best-selling novel in the 19th Tehran International Book Fair, 2006.In his writings, Arman Arian has combined an affluent academic background in Cinema studies with an extensive knowledge of myths, religions and history.“We need to look back to our cultural heritage to survive in the intricate modern life”, says this Iranian young author in an interview with Borna News in order to explain his intention to dig into Iranian ancient literature, history, mythical and epical stories.
+
+Awards
+Winner of the annual prize by The Children's Book Council of Iran for the trilogy of "Ash vaz dang heh" as the best fiction book of the year, 2016.
+Winner of the annual book prize of "Payvar" for the trilogy of "Ashvazdangheh", 2016,
+Winner of the diploma of the first book prize of Mehdi Azar Yazdi for the trilogy of "Ash vaz dang heh", 2016
+The board of appreciation in “the Millennium Festival of Ferdowsi” For young researchers in Ferdowsi's Shaahname by the Youth Institute of Tehran's Municipality. 2010.
+Winner of the honorary diploma in the 31st IBBY World Congress in Copenhagen, Denmark by the International Board on Books for Young people 2008, for the book the Persians and I
+The annual prize of “The Book of The Year of the Islamic Republic of Iran” was featured as the youngest recipient of this prestigious prize since its establishment in 1955, 2005.
+The annual prize of -“Mehrgan e Adab” for writers and publishers, 2005
+
+List of books
+Patash Khoargar 2,(Persian:پَتَش خوآرگر 2: مردی از تبار اژدها), Ofogh publishing house, 2016
+Writing about Writing, (نوشتن درباره نوشتن), Moaj publishing house, 2016
+Shahnamag:Myths Six volumes,(Persian:شاهنامَگ: اسطوره ها), Chekke publishing house, 2015
+Patash Khoargar 1,(Persian:پَتَش خوآرگر۱: حماسه سرآغاز), Ofogh publishing house, 2015
+Ash vaz dang heh 2: Invincible Demons,(Persian: اشوزدنگهه 2), Moaj publishing house, 2014
+Ash vaz dang heh 3: Emancipatory Epic,(Persian: اشوزدنگهه 3), Moaj publishing house, 2013
+Shadowy light (Persian: تاریک روشنا), Ghatreh Publication House, 2014
+Ancient Future3: The First Night Story (Persian: آینده کهن), Safran Publication House, 2013
+Ancient Future2: The First Night Story (Persian: آینده کهن), Safran Publication House, 2013
+Ancient Future1: The Last Night Story (Persian: آینده کهن), Safran Publication House, 2013
+The book of spell(Persian: افسون نامه), Iranban publishing house, 2011
+The nightmare of the dark garden(Persian: کابوس باغ سیاه), Iranban publishing house, 2011
+The encyclopedia of the Avesta’s dramatic elements(Persian:دانشنامه تصویری و نمایشی اوستا), Moaj publishing house, 2011
+The Book of Wisdom (Persian: صد پند هزار بار شنیده), Iranban publishing house, 2012
+The quiet hubbub, a collection of thoughts and articles (Persian: غوغای خموش ), Moaj publishing house, 2011
+The dream of the white garden(Persian: رویای باغ سپید), Iranban publishing house, 2010
+The guide to storytelling for computer games(Persian:راهنمای بازی نامه نویسی ), Co-authored, The National Computer game organization, 2010.
+Sepit maan: the story of Zoroaster's life (Persian: سپیتمان), Iranban publishing house, 2009
+Ash vaz dang heh 4:God, The World, and Thoughts: Ash vaz dang heh's Six-Thousand-Year-Old Manuscripts  (Persian: اشوزدنگهه 4), Moaj publishing house, 2009
+Ash vaz dang heh 1: the myth now,(Persian: اشوزدنگهه 1), Moaj publishing house, 2008
+Bitter Earrings: a collection of short stories(Persian: گوشواره تلخ), Moaj publishing house, 2007. Bitter Earring is published in Turkish (Turkish: Acı Küpe)by Demavand Publication House, 2015
+The Trilogy of the Persians and I(Persian: سه گانه پارسیان و من), Moaj publishing house, 2006.
+Persians and I: the resurrection begins(Persian: پارسیان و من، رستاخیز فرا می رسد), Moaj publishing house, 2005
+Persians and I: the secret of the bird mountain (Persian: پارسیان و من، راز کوه پرنده)),  Moaj publishing house, 2004
+Persians and I: Azh dahak Fortress(Persian: کاخ اژدها), Moaj publishing house, 2003
+
+Computer games and script
+Ario: The little hero: An animated serial, produced by Saba & paarsima corporations, 2007. It participated in the 27th International Children Film Festival under the name of Legend of the Jewels Land, 2013.
+
+Other activities
+Conducting the "Creative Writing Workshop" in Eastern Mediterranean University, North Cyprus, 2014
+He teaches the first professional workshop of scenario writing held by Iran National Foundation of Computer Game, 2010.
+Conducting and teaching in a "Myths and Legends" workshop, 2009
+He was a juror of the 1st International Tehran Game Expo and Festival, 2011
+He was the judge in the First NoGhalam (Persian:نوقلم) amateur Story-writing Competition, 2009.
+Passage 4:
+Living Out Loud
+Living Out Loud is a 1998 American comedy-drama film written and directed by Richard LaGravenese and set in New York City, starring Holly Hunter, Danny DeVito, Queen Latifah, Martin Donovan, and Elias Koteas.
+
+Plot
+Judith Moore had what she thought was a perfect marriage, with both her and her husband studying to be doctors. But after she puts her studies on hold to find a job and support them, many years pass until suddenly he leaves Judith to be with another doctor. Depressed, she holes up in her apartment, where the middle-aged Pat Francato serves as a building superintendent and elevator operator. He is as lonely as she is, beset with gambling problems, and Judith and Pat make a connection. Yet what he wishes to pursue as a romantic relationship, Judith sees only as a friendship. Her friend Liz Bailey, who sings at a nightclub, makes attempts to improve Judith's love life as well as her own.
+
+Cast
+Holly Hunter as Judith Moore
+Danny DeVito as Pat Francato
+Queen Latifah as Liz Bailey
+Martin Donovan as Robert Nelson
+Elias Koteas as The Kisser
+Richard Schiff as Philly Francato
+Mariangela Pino as Donna
+Suzanne Shepherd as Mary
+Eddie Cibrian as The Masseur
+Tamlyn Tomita as Mrs. Nelson
+Carmit Bachar as Dancer
+
+Reception
+Living Out Loud received mixed reviews from critics. On Rotten Tomatoes the film has an approval rating of 59% rating based on 34 reviews. The site's consensus states: "Unoriginal, with one-dimensional characters." On Metacritic the film has a weighted average score of 64% based on reviews from 24 critics. Audiences surveyed by CinemaScore gave the film a grade "B−" on scale of A to F.Roger Ebert of the Chicago Sun-Times gave the film three and a half stars and wrote that he enjoyed that the movie provided "the comfort of these lives flowing briefly in the same stream. The sense that the unexpected was free to enter the story, and would not be shouldered aside by the demands of conventional plotting."  Ebert gave particular praise to writer and director Richard LaGravenese, who he wrote is "more interested in characters and dialogue than in shaping everything into a conventional story.  He aims for the kind of bittersweet open ends that life itself so often supplies; he doesn't hammer his square pegs into round holes." Mark Caro of the Chicago Tribune also gave the film a positive review, but noted that the "story also has a tendency to wander, which enhances the slice-of-life feel but at the expense of the movie feeling fully formed."  The New York Times critic Janet Maslin was less favorable, writing that LaGravenese "has borrowed from Chekhov the soul-baring introspection that can be so ineffable on the page or stage yet becomes so damply sensitive and dramatically vague on the screen" and, in describing some of the "wild flights of fancy springing from Judith's imagination," observed that "free-spirited as the film hopes to be, it can't easily reconcile such flamboyant departures with an otherwise static pace." Maslin credited Latifah as the film's "one big saving grace," and also offered praise for DeVito for "turning Pat into a three-dimensional figure and singing They Can't Take That Away from Me with brio on the nightclub's amateur night."
+Passage 5:
+A Kid for Two Farthings
+A Kid for Two Farthings may refer to:
+
+A Kid for Two Farthings (novel)
+A Kid for Two Farthings (film)
+Passage 6:
+Dan Mirvish
+Dan Mirvish is an American filmmaker and author, best known as the co-founder of the Slamdance Film Festival and co-creator of the Martin Eisenstadt hoax during the 2008 Presidential election.
+
+Early life and education
+Mirvish was born to a Jewish family in Omaha, the son of Linda  and Sidney Mirvish. His father was a prominent cancer researcher at the University of Nebraska Medical Center. In 1985, Mirvish graduated from Omaha Central High School. He graduated Phi Beta Kappa from Washington University in St. Louis. After school, he worked as a freelance journalist and as a speechwriter for Tom Harkin, U.S. Senator from Iowa before taking a sabbatical to travel around the world. He then returned to California to complete his education in film at the University of Southern California film school.
+
+Career
+In 1994, while still in school, he released his first feature film entitled Omaha as his master’s thesis for and then founded the Slamdance Film Festival in Park City, Utah after the film was not accepted at the Sundance Film Festival.In 2004, Mirvish spearheaded the effort to get the Academy of Motion Picture Arts & Sciences to reactivate their Best Original Musical Oscar category. In a controversial move, the Academy canceled the category after Mirvish and others submitted the requisite number of films, including two by Mirvish.In 2009, he co-authored the satirical novel I Am Martin Eisenstadt: One Man's (Wildly Inappropriate) Adventures with the Last Republicans published by Farrar, Straus and Giroux ISBN 978-0-86547-914-2.Mirvish directed the film Between Us, based on the play of the same name by Joe Hortua. The four-person drama stars Taye Diggs, Melissa George, David Harbour and Julia Stiles.  The original play premiered at Manhattan Theatre Club, and Hortua and Mirvish co-wrote the screenplay adaptation.  The film version won the grand jury prize at the 2012 Bahamas International Film Festival, and was the Closing Night Film at the 50th Annual Gijón International Film Festival in Spain. The film had its world premiere at the Oldenburg International Film Festival, and also screened at such festivals as Athens International Film Festival, the Hamptons, Woodstock Film Festival, Slamdance Film Festival, Napa Valley Film Festival, and Whistler Film Festival.In 2016, Mirvish wrote the nonfiction book The Cheerful Subversive's Guide to Independent Filmmaking. The phrase "cheerful subversive" comes from a New York Times article describing the original Slamdance filmmakers.In 2016, Mirvish directed the feature film Bernard and Huey written by Oscar/Pulitzer/Obie-winner Jules Feiffer.Mirvish directed the feature film 18½ which had its world premiere at the 2021 Woodstock Film Festival. The film had its international premiere at the São Paulo International Film Festival The film had its European premiere at the Gijón International Film Festival  The film won the Stubbornly Independent Award at the Tallgrass Film Festival in 2021 Mirvish is widely credited as the discoverer of the Hathaway effect, which indicates that when actress Anne Hathaway is in the news, the share price for Warren Buffett's Berkshire Hathaway increases.He was also a speechwriter for Senator Tom Harkin of Iowa.
+
+Filmography
+18½ (2021)
+Bernard and Huey (2017)
+Between Us (2012)
+The Last Republican (2008)
+Sheldon (2007)
+The Few & the Proud (2007)
+Half Empty (2006)
+A Message from the President of Iran (2006)
+Open House (2004)
+Omaha (1994)
+Passage 7:
+Growing Up American
+Growing Up American: How Vietnamese Children Adapt to Life in the United States, by Min Zhou and Carl L. Bankston III is one of the most influential books on the Vietnamese American experience. Published in 1998 by the Russell Sage Foundation, it is widely used in college classes on international migration, contemporary American history, and Asian Studies. The book emphasizes the role of Vietnamese communities in promoting the adaptation of Vietnamese American young people. 
+One of the unique characteristics of the book is its combination of a general history of the growth and nature of Vietnamese American communities around the United States with an in-depth study of one specific Vietnamese community, on the eastern edge of New Orleans, Louisiana.
+
+Organization of the book
+Chapter 1 traces the history of Vietnamese settlement in the United States, giving special attention to how the process of refugee resettlement and popular opinions of the American public have influenced Vietnamese American children. Chapter 2 gives a description of the demographic and socioeconomic characteristics of the U.S. Vietnamese population and describes the social and economic challenges facing the Vietnamese. Chapter 3 offers examples of how families and surrounding ethnic communities can serve as sources of social capital for young people. Chapter 4 discusses the patterns of social and kinship relations in Vietnamese ethnic communities. Here, Zhou and Bankston develop their theory that ethnic social relations can serve as a form of social capital for young people growing up in immigrant communities. Chapter 5 examines how Vietnamese language abilities promote the adaptation of young Vietnamese to American society by connecting them to the supports of their families and communities. Chapter 6 considers Vietnamese American adaptation to American schools and argues that generally high levels of school performance are products of tightly integrated ethnic communities. Chapter 7 examines bicultural conflict and gender role issues faced by Vietnamese growing up in the United States. Chapter 8 discusses peer group associations and problems of juvenile delinquency. It provides evidence that young people who follow delinquent patterns tend to be those who assimilate to the youth culture of Vietnamese and other subgroups, rather than remain bound within their ethnic communities. Chapter 9 gives a general summary and offers conclusions of relevance to the study of immigrant and minority groups in the United States.
+
+Critical reception
+Growing Up American has received widespread critical praise. Writing in the journal Social Forces, reviewer Jiannbin Shiao described the analysis of delinquency in the Vietnamese community as “contestable but refreshingly bold” and described it as “a fine contribution to the sociology of education, social stratification, social demography, Asian American Studies, and, one hopes, also U.S. urban policy.” In the International Migration Review, Kimberly Goyette praised the book for “…elaborat[ing] a detailed and elegant framework for conceptualizing the relationship between children and their various environments and also the relationship between these environments.” Kelly Chong, reviewing the book for the American Journal of Sociology, observed “this comprehensive investigation of the adaptation process of second generation Vietnamese in the United States fills an important gap in the study of contemporary “new” immigrants and the second generation assimilation experience.”
+In addition to the praise, though, reviewers have also had some reservations. In particular, critics have questioned the generalizability of the books findings to other ethnic groups and they have suggested the book may be too optimistic in its account of the future of young Vietnamese Americans. Critics of more radical orientations have often objected the authors’ acceptance of American society and the focus on adapting to that society. For example, Karin Aguilar-San Juan, in the book Little Saigons: Staying Vietnamese in America, accuses Zhou and Bankston of ignoring the processes of racialization and systemic racism in encouraging Asian immigrant achievement while frustrating black American achievement.
+
+Awards
+1999 Thomas and Znaniecki Award, Outstanding Book in International Migration, American Sociological Association
+2000 Distinguished Book Award, Mid-South Sociological Association
+
+See also
+Asian American
+Diaspora studies
+List of U.S. cities with large Vietnamese American populations
+List of Vietnamese Americans
+Little Saigon
+Overseas Vietnamese
+Refugees
+Vietnamese people
+
+External links
+Article title
+Article title
+http://tulane.edu/liberal-arts/sociology/carlbankston.cfm
+http://www.eric.ed.gov/PDFS/ED439180.pdf
+http://blogs.bauer.uh.edu/vietDiaspora/contributors-5/
+Passage 8:
+The Loud House
+The Loud House is an American animated television series created by Chris Savino that premiered on Nickelodeon on May 2, 2016. The series revolves around the chaotic everyday life of a boy named Lincoln Loud, who is the middle child and only son in a large family of 11 children. It is set in a fictional town in southeastern Michigan called Royal Woods, based on Savino's hometown of Royal Oak. The series was pitched to the network in 2013 as a two-minute short film entered in the annual Animated Shorts Program. It entered production the following year. The series is based on Savino's own childhood growing up in a large family, and its animation is largely influenced by newspaper comic strips.
+Since its debut, the series has gained high ratings, becoming the top-rated children's animated series on American television within its first month on the air. The series has received considerable media attention and nominations at both the 28th and the 29th GLAAD Media Awards for its inclusion of Howard and Harold McBride, two supporting characters who are an interracial gay married couple. Their introduction into the series was reported in the news as being historic and caused a ratings surge. In May 2017, the characters of Lincoln Loud and Clyde McBride were featured on the front cover of Variety as an example of diverse characters in children's television.As of May 2023, seven seasons of the series have been broadcast. The series has spawned a multimedia franchise, including the spin-off series The Casagrandes, which aired from October 2019 to September 2022, an animated feature film that was released on Netflix in August 2021, a live-action television film that premiered in November 2021, and live-action series The Really Loud House that premiered in November 2022. Additionally, a second live-action television film is in development, set to premiere in fall 2023.
+
+Premise
+Lincoln Loud is the only boy and the middle child in a family of eleven children residing in the fictional town of Royal Woods, Michigan. He has ten sisters with distinctive personalities consisting of bossy eldest child Lori, ditzy fashionista Leni, musician Luna, comedian Luan, athletic Lynn Jr., gloomy poetic goth Lucy, polar opposite twins Lana and Lola, child genius Lisa, and baby Lily. Lincoln occasionally breaks the fourth wall to explain to the viewers the chaotic conditions and sibling relationships of the household, and continually devises plans to make his life in the Loud House better.
+During the first four seasons, Lori, Leni, Luna, and Luan were in high school, Lynn was in middle school, and Lincoln, Lucy, Lana, Lola, and Lisa were in elementary school. In the fifth season, the Loud siblings aged up a year with Lori going to Fairway University, Lincoln going to middle school, and Lily going to preschool.
+
+Episodes
+Production
+Development
+The Loud House was created by Chris Savino for Nickelodeon. Savino based the series on his own experiences growing up in a large family. Early in development, the Loud family was going to be composed of rabbits, but this was terminated when an executive, Jenna Boyd, asked Savino to make them human. The idea of the Loud family being rabbits became used as Lincoln's dream in the Season 3 episode "White Hare". He pitched the idea to Nickelodeon in 2013 as a 2+1⁄2-minute short for their annual Animated Shorts Program. In June 2014, Nickelodeon announced that The Loud House had been picked up for a season of 13 episodes. The episode order was later increased to 26. On May 25, 2016, Nickelodeon announced that the series had been picked up for a second season of 14 episodes later increased to 26. On October 19, 2016, the series had been picked up for a third season of 26 episodes. Savino has cited Peanuts and Polly and Her Pals as influences on the show's characterizations and animation. Newspaper comic strips are also influences on the show's background art.
+Episodes are produced at Nickelodeon Animation Studio in Burbank, California, USA and animated by Canadian studio Jam Filled Entertainment.
+
+Savino's firing
+On October 17, 2017, Cartoon Brew reported that Chris Savino was suspended from the studio due to allegations of sexual harassment, the report noting that rumors of Savino's behavior have existed for "at least a decade." On October 19, a Nickelodeon spokesperson confirmed that Savino had been fired from the studio, and that the series will continue production without him. Six days later on October 23, Savino spoke for the first time since his firing saying he said he was "deeply sorry" for his actions. Alongside the announcement of the series being greenlit for a fourth season, it was revealed that story editor Michael Rubiner had now been named executive producer and showrunner. On May 30, 2018, Savino was suspended from The Animation Guild, IATSE Local 839, for one year.
+
+Broadcast
+The series debuted on Nickelodeon on May 2, 2016, with new episodes premiering every weekday that month. The first trailer for the series premiered on March 13, 2016. The series also aired on AFN Family.
+Internationally, the series premiered in Israel and Italy on May 15. It premiered in Latin America, Brazil, Poland, Germany, France and Africa the following day. It began airing in Southeast Asia on May 20. Australia, New Zealand, the United Kingdom and Ireland's Nickelodeon channels premiered the series on May 30. In Canada, YTV aired a sneak peek of the series on September 5, 2016, which was followed by an official premiere on September 6, 2016.The series premiered on May 15, 2016, in the Middle East and North Africa on Nickelodeon, dubbed in Gulf Arabic.
+In India, the series premiered on Nick HD+ on May 18, 2020.
+
+Home media
+Reception
+Critical
+The Loud House has received positive reviews, specifically for its animation, voice acting, characterization, and the heartwarming themes of each episode. Emily Ashby of Common Sense Media praised the show's voice cast and thematic messages, writing that "kids will come to The Loud House for the laughs, but they'll return for the ensemble cast and the surprisingly heartwarming themes that dominate every story." Kevin Johnson of The A.V. Club gave the series a B+, noting that "the female characters are defined by their traits, but never judged for them."It attracted negative attention from some fans and critics later on for its heavy amount of spin-offs and merchandising. Ryan Lewis of CBR.com wrote that "Nickelodeon tried too hard to match SpongeBob's influence and immediately took to creating spin-offs, a Netflix movie, and countless merchandise. These efforts may have been justified had The Loud House not been written with one-note stock characters making up its main cast."
+
+LGBTQIA+ representation
+The characters of Howard and Harold McBride have received praise for being a positive representation of an interracial gay married couple. They are the first married gay couple to be featured in a Nicktoon. Laura Bradley of Vanity Fair stated that The Loud House "handles the topic [of same-sex marriage] in exactly the right way...this kind of casual representation in children's programming is a milestone." De Elizabeth of Teen Vogue wrote, "The best part is that the show doesn't treat these characters any differently, or even introduce them with a heavy asterisk about their marital status." The Frisky's Tai Gooden mentioned that "kids who have two dads (or moms) will be more than thrilled to see a family they can identify with on TV." Time reported that "people are thrilled about Nickelodeon's decision" to include a gay couple. Some conservative groups, by contrast, have criticized the introduction of the characters. The One Million Moms division of the American Family Association objected to scenes featuring the McBride parents and unsuccessfully pushed for the episode in which they first appeared to be edited to exclude the couple, saying that "Nickelodeon should stick to entertaining instead of pushing an agenda." The Kenya Film Classification Board also called for the suspension of the series on pay television service DStv, saying that the animated series "promotes the Lesbian, Gay and Transgender agenda."
+Kenya's film and classification board (KFCB) has called for the suspension of several US-produced children's programs running on channels provided by TV company MultiChoice. The board said the cartoons featured "disturbing content glorifying homosexual behavior" which was not suitable for children.
+The animation programs are The Loud House, The Legend of Korra, and Hey Arnold, which run on the Nickelodeon channel, and Clarence, Steven Universe, and Adventure Time which air on Cartoon Network.
+...
+
+It's wasn't immediately clear if the supposedly offending Nickelodeon episodes ever aired in Kenya. Viacom Africa, which licenses the Nickelodeon shows said last July it would not be airing such shows in South Africa and the rest of sub Saharan Africa.
+
+Ratings
+The Loud House became the number-one children's animated series on television within its first month on the air. Throughout May 2016, it received an average of 68% more viewers in its target audience of children aged 6–11 than broadcasts on Nickelodeon in May of the previous year. As of June 2016, it was Nickelodeon's highest-rated program, beating SpongeBob SquarePants with an average Nielsen rating of 4.9 among the 2–11 demographic at the time.The Los Angeles Times cited The Loud House as a major factor in maintaining Nickelodeon's position as the highest-rated children's network in summer 2016. During the show's fourth week of premieres, Cyma Zarghami announced that it was continuing to draw more viewers than any other program on the channel.The show's highest-rated episode, with 2.28 million viewers upon its premiere, is "Two Boys and a Baby". This was the first episode to air after it was announced that Howard and Harold McBride would be debuting on the program. The first episode of The Loud House shown at prime time, "11 Louds a Leapin'", was the seventh most-viewed telecast across all U.S. households on November 25, 2016.
+
+Awards and nominations
+The Loud House's portrayal of interracial gay married couple Howard and Harold McBride led the series to be nominated for Outstanding Individual Episode at the 28th GLAAD Media Awards and for Outstanding Kids & Family Programming at the 29th, 31st and 32nd GLAAD Media Awards. The series has also been nominated for Favorite Cartoon at the Kids' Choice Awards every year since 2017.
+
+Franchise
+The Loud House has spawned a multimedia franchise, including several video game, graphic novel, and book series adaptations, the spin-off animated series The Casagrandes, which aired from October 2019 to September 2022, an animated feature film which was released on Netflix in August 2021, a live-action television film pilot that premiered in November 2021, and live-action series, The Really Loud House, that premiered in November 2022.
+
+Graphic novel series
+The series has spawned a graphic novel series by publisher Papercutz. The graphic novels are by either crew members or other incoming artists, and dive into the world of the show and the characters within. They are usually anthology comics, however, others are arranged on certain themes, while others have overarching storylines. The first graphic novel, There Will Be Chaos, was released on May 9, 2017. There are currently two series, a running series and a special series focusing on the seasons and certain holidays.
+
+Running series
+List current as of April 2023.
+
+Seasonal/holiday series
+Chapter book series
+The series has also produced a series of chapter books with original stories, initially published by Random House before switching to Scholastic.
+
+Podcast
+Listen Out Loud
+Nickelodeon and its YouTube channel have done a series of podcasts called Listen Out Loud, where each member of the Loud family does a podcast revolving around their topics.
+
+"Meet the Loud Family" – The Loud siblings start their very first podcast, but they can't come up with a topic about it.
+Luna Loud – Luna and her roadie Chunk give the listeners a virtual tour of Luna's home music studio (which is actually her and Luan's bedroom) where Luna talks about her musical instruments and her inspirations, but some of her instruments keep disturbing Bud Grouse.
+Lola Loud – Lola does her podcast called "The Lowdown with Lola" where she starts dishing out the latest Loud family gossip much to the dismay of her siblings.
+Leni Loud – With help from Lincoln as her producer, Leni gives the listeners a virtual tour of the Royal Woods Mall, where she shows her favorite stores and the different shopkeepers that she knows.
+Luan Loud – Luan teaches her listeners the basics of playing pranks on anyone. She demonstrates a few on some of her siblings much to their annoyance. But little does Luan know that she might get pranked right back.
+Lori Loud – With Bobby on her phone helping out from Great Lakes City and Luna providing musical accompaniment, he and Lori talk about how they first met and eventually started dating. However, they over-romanticize the details on their first date so Luan and Lynn Jr. chime in and tell them what really happened and how they had spied on them during the date to make sure that Bobby was good for Lori.
+Lincoln Loud – Lincoln and Clyde give the listeners a virtual tour of their treehouse. When their hammock goes missing, Lincoln and Clyde become Ace Savvy and One-Eyed Jack to find out who stole it. While Lincoln suspects that it's one of his sisters, they soon discover that the culprit is someone they'd least suspect.
+Lynn Loud Jr. – Lynn Jr. leads the listeners in her own at-home workout, arguing that gym memberships are expensive and mentioning how some gyms tend to ban people from bringing spicy submarine sandwiches into the sauna. During every single part of the workout, Lynn causes fitness-type chaos in the house which annoys her family.
+Lana Loud – Lana teaches the listeners how to handle and take care of vehicles. Using the family van Vanzilla as an example, Lana gets some more help from her faithful frog Hops, her parents (Lynn Sr. and Rita), and two of her sisters, Lori and Leni, as they are the ones who drive Vanzilla.
+Lucy Loud – Lucy talks about the five main features of the Royal Woods Cemetery with the help of Lincoln since Luan was unavailable. Though they soon find evidence that there is a ghost in the area.
+Rita Loud – Rita discusses what she does at her dentist job as she runs the dental office while Dr. Feinstein is away at Cavity Con. While she does the dental work on Lola, Lori, and a reluctant Lynn Loud Sr., Rita also has to deal with some malfunctioning equipment which leads to her calling Lana in to take care of them.
+Lisa Loud – Lisa takes a break from solving her family's problems so that she can use her brainpower to solve the greater challenges of humankind by hosting a call-in called "Ask a Brainiac". Though the people who call her up are Lynn Loud Sr., Luan, Rita, Lincoln, and Lynn with their respectful questions.
+Lincoln & Clyde Review Gus' Games & Grub - Lincoln and Clyde work to review Gus's Games & Grub only to find it crowded. While working on reviewing the games, they have a hard time trying to get a table due to the different actions done by Lynn and Chandler.
+Lola Loud's Pageant Tips - With the aid of her pageant coach Lincoln, Lola gives pageant tips to the listeners while preparing for the Little Miss Iron Ore pageant that Cheryl is helping out with. When Lola's ribbon for her ribbon dance routine goes missing, Lincoln works to find it as Lola suspects that Lindsey Sweetwater is responsible.
+Lucy and the Morticians Club - Lucy and the Morticians Club (consisting of Haiku, Persephone, Boris, Dante, and Morpheus) hold a séance to speak to Royal Woods Elementary School's mascot Ricky the Rooster. They try to hold it at different locations like the Royal Woods Cemetery where the groundskeeper Hank is dealing with owls, Lucy's home where the antics of Lynn and Lana disrupt it, and Boris's house where his home decorating mother tries to treat them. When it comes to attempting a séance at Royal Woods Elementary School, Principal Huggins allows it since he still misses Ricky.
+Clyde's Explosive Cooking Problems - Clyde visits Lynn's Table to find out how to run a restaurant from Lynn Loud Sr. as Clyde works as his sous chef for the day. It becomes difficult for Clyde in the kitchen during the lunch rush as Kotaro mentions that it's the weekend of the Rattlesnake Roundup where some of the guests are from the Poconos. While also dealing with Scoots' demands, Clyde does some table service to Mr. Grouse and Flip.
+Lana Loud Rescues Animals - As mentioned two podcasts ago, Lana is volunteering at the Royal Woods Animal Shelter. She is assisted by Sam Sharp who is working as the head volunteer as Lana learns about its Adoption Day. They work to find pets for every one of its visitors like Rocket the German Pinscher, Feline Dion the tabby, and Captain Ron the cockatoo. While Sam goes to pick up lunch, Lana makes efforts to sell pets to possible adopters like Mayor Davis, Cheryl, and Dante.
+Luan Loud Teaches Comedy - Luan and Mr. Coconuts teach a comedy workshop at the Royal Woods Community Center, though Luan gets nervous when she finds that Benny is the co-teacher alongside his marionette, Mrs. Appleblossom. After setting up the classroom, Luan and Benny get Leni, Flip, Boris, and Mrs. Bernardo who arrived on a horse named Hamlet after finishing her directing debut for Sunset Canyon's afternoon dinner theater. Mr. Coconuts makes comments towards the students that cause them to leave one by one.
+
+Films
+Feature film
+On March 28, 2017, Paramount Pictures' president Marc Evans announced a film based on the series, that was originally set for a February 7, 2020 theatrical release. However, in January 2019, Paramount removed the film from their schedule for unknown reasons. On February 5, 2019, it was announced that the film would instead be produced for a release on Netflix. On January 12, 2021, it was reconfirmed that the film would release on Netflix within the same year, with the film's plot focusing on the Loud family traveling to Scotland, where they discover that they are part of Scottish royalty. In April 2021, it was revealed that the film would be released in summer 2021. On June 10, 2021, Netflix announced the film would be released on August 20, 2021.
+
+Television films
+A live-action film based on the series, titled A Loud House Christmas, premiered on Nickelodeon on November 26, 2021. The film was first announced on February 19, 2020, originally titled The Loud House: A Very Loud Christmas!, and was set to premiere in late 2020. The film depicts Lincoln and Clyde working to preserve the Christmas traditions when the Loud sisters plan to have their Christmas plans elsewhere. Filming took place in Atlanta in mid-2021. On March 18, 2021, it was announced that Wolfgang Schaeffer and Jahzir Bruno were cast as Lincoln and Clyde, respectively. On August 23, 2021, other cast members of the film were announced, including Lexi Janicek as Lisa, Ella and Mia Allan as Lola and Lana, Aubin Bradley as Lucy, Morgan McGill as Lynn, Catherine Ashmore Bradley as Luan, Sophia Woodward as Luna, Dora Dolphin as Leni, Lexi DiBenedetto as Lori, Charlotte Ann Tucker as Lily, Brian Stepanek reprising his regular series voice role as Lynn Loud Sr., and Muretta Moss as Rita Loud.In April 2023, a live-action Halloween movie titled A Really Haunted Loud House was announced.
+
+Spin-off
+A spin-off, entitled The Casagrandes, was put into development by Nickelodeon in March 2018. It features Bobby and Ronnie Anne Santiago as well as their extended Casagrande family living in Great Lakes City. On May 7, 2019, it was revealed that Eugenio Derbez, Ken Jeong, and Melissa Joan Hart had joined the cast as Bobby and Ronnie Anne's father Dr. Arturo Santiago and new neighbors Stanley and Rebecca Chang, respectively. The series premiered on October 14, 2019. On February 17, 2022, the series was reported to be cancelled, with its characters set to make more appearances in The Loud House. The series concluded September 30, 2022.
+
+Live-action series
+On March 24, 2022, a live-action series of The Loud House was originally announced for Paramount+. The main cast members of A Loud House Christmas reprise their roles for the series, including Wolfgang Schaeffer as Lincoln and Jahzir Bruno as Clyde. Filming for the series began in Albuquerque, New Mexico in June 2022. In September 2022, it was announced that the series, entitled The Really Loud House, would premiere on Nickelodeon in November 2022. On October 5, 2022, it was announced that the series would premiere on November 3, 2022. The show was renewed for a second season in April 2023.
+
+Games
+A mobile game based on the series called The Loud House: Ultimate Treehouse was released on September 20, 2018, for iOS and Android. The Loud House: Outta Control was released on Apple Arcade on February 14, 2020. In the game, the siblings try to get through to their goals without running into each other.Lincoln, Lucy, and Clyde appear as playable characters, with the rest of Lincoln's sisters appearing as unlockable pit crew characters, in the 2020 racing video game Nickelodeon Kart Racers 2: Grand Prix. Lincoln, Lucy and Clyde return in the 2022 sequel Nickelodeon Kart Racers 3: Slime Speedway, with Bentley Griffin, Jessica DiCicco, and Jaeden White reprising their roles from the show.Lincoln and Lucy are also playable in the 2021 title Nickelodeon All-Star Brawl; a patch to the game added voice acting with their roles being reprised by Bentley Griffin and Jessica DiCicco.
+Passage 9:
+MacGruder and Loud
+MacGruder and Loud is an American crime drama from Aaron Spelling Productions that aired on ABC from January 20 to April 30, 1985.
+
+Premise
+The series stars John Getz and Kathryn Harrold as married police officers Malcolm MacGruder and Jenny Loud in a Los Angeles Police Department-styled police agency (where strict anti-fraternization policies were in effect). They fought a battle every day to keep it a closely guarded secret from their boss, Sgt. Hanson (played by veteran actor Lee de Broux).Malcolm and Jenny lived in a duplex-type apartment complex where there was a secret door behind the grandfather clock in her apartment, where Malcolm could sneak in and enjoy her company.
+
+Cast
+John Getz as Det. Malcolm MacGruder
+Kathryn Harrold as Det. Jenny Loud MacGruder
+Ted Ross as Det. Sgt. Debbin
+Frank McCarthy as Sgt. Myhrum
+
+Episodes
+Production
+This was one of the few failures from Aaron Spelling's production company in its history, since it was picked by ABC to debut right after the Super Bowl in 1985 and was heavily promoted  during the game. The promotion resulted in high ratings at first, but the series was cancelled three months into its run. The ratings decline was blamed on ABC's repeated changing of the show's timeslot before settling on Monday nights at 10:00 p.m., known as "the graveyard slot". It ranked 36th out of 77 shows with a 14.9 rating and a 23 share.Because of the frequent commercials during the Super Bowl, the following night Johnny Carson asked rhetorically during his monologue on The Tonight Show, "Did you see that new show, 'Frequent and Loud'?"The series was rushed into production by ABC in order to capitalize on the popularity of another crime drama at that time, Cagney & Lacey (which aired on CBS).
+Passage 10:
+The Weight of the Nation
+The Weight of the Nation is a four-part documentary series produced by American cable television network HBO. Addressing the growing obesity epidemic in the United States, it was first aired in May 2012. The documentary series included collaboration with National Institutes of Health, Centers for Disease Control and Prevention and the Institute of Medicine. The series was produced by John Hoffman.The scientific commentators featured in the documentary include Francis Collins, Samuel Klein, Rudolph Leibel, Robert Lustig, and Kelly D. Brownell.
+
+Content
+The series consists of four approximately hour-long films:
+
+Consequences
+Choices
+Children in Crisis
+Challenges
+Passage 11:
+List of Italian musical terms used in English
+Many musical terms are in Italian because, in Europe, the vast majority of the most important early composers from the Renaissance to the Baroque period were Italian. That period is when numerous musical indications were used extensively for the first time.
+
+Italian terms and English translations
+Musical instruments
+Voices
+Tempo
+Dynamics – volume
+Moods
+Musical expression (general)
+Patterns within the musical score
+Directions
+Techniques
+Roles
+Criticism
+Musical direction and staging
+See also
+Musical terminology
+Sheet music
+Passage 12:
+Scorpion Swamp
+Scorpion Swamp is a single-player adventuring gamebook written by Steve Jackson (the American game designer, as opposed to the series co-creator), illustrated by Duncan Smith and originally published in 1984 by Puffin Books. It forms part of Steve Jackson and Ian Livingstone's Fighting Fantasy series. It is the 8th in the series in the original Puffin series (ISBN 0-14-031829-1). It was the first Fighting Fantasy book to be written by an author other than the co-creators of the series.
+
+Rules
+Story
+Scorpion Swamp is a fantasy scenario. Having acquired a magical Brass Ring (which detects evil and always indicates which direction is north) from a mysterious old woman, the player enters the notorious Scorpion Swamp.
+Gameplay differed from previous titles in several ways:
+
+The story allows the player to choose one of three quests: the patrons of said quests being either good (locate a rare plant for the wizard Selator), evil (acquire the amulets of animal/insect avatars for the wizard Grimslade) or neutral (map a trade route for the trader Poomchukker) respectively.
+Gameplay has a non-linear design, allowing "free roaming": the player may explore the swamp at will and return to locations previously visited.
+The game design employed a grid system of locations to explore. Whereas in previous titles choosing an option to follow a point of the compass was nebulous and backtracking almost impossible, in this title each location was equidistant from all others and options only led in the four primary compass directions. On entering a location, the player was asked if they had visited previously, and instructed accordingly. This format was an innovation for Fighting Fantasy.
+The 400th reference does not contain an ending to the adventure.
+Passage 13:
+Liliana Mumy
+Liliana Berry Davis Mumy (; born April 16, 1994) is an American actress. Between 2002 and 2006, she appeared as Jessica Baker in Cheaper by the Dozen and its sequel, as well as  Lucy Miller in the second and third films of The Santa Clause trilogy.
+In animation, Mumy performed the voice of Mertle Edmonds in the Lilo & Stitch franchise as well as Twinkle in Higglytown Heroes. For Cartoon Network, she has voiced Panini in Chowder. For Nickelodeon, she has voiced Human Kimberly in Catscratch, Roxy in the Nickelodeon revival of Winx Club, and Leni Loud in The Loud House.
+
+Personal life
+Mumy was born in San Marcos, California, the daughter of Eileen Joy Mumy (née Davis), a childbirth educator, and former child star Bill Mumy. She is the younger sister of former child actor Seth Mumy. She graduated from Laurel Hall School in North Hollywood, California and attended Campbell Hall School. She left there and graduated from Notre Dame High School in Sherman Oaks, California in 2012.
+Liliana appeared with her father, Bill Mumy, in the Twilight Zone revival series' episode "It's Still a Good Life".
+
+Career
+Mumy has appeared in several motion pictures. Her most notable film appearances are in Cheaper by the Dozen, Cheaper by the Dozen 2, The Santa Clause 2, as well as The Santa Clause 3: The Escape Clause. In 2002, Mumy played Audrey Fremont, the daughter of her father Bill's character Anthony, in a sequel to the classic The Twilight Zone episode "It's a Good Life" called "It's Still a Good Life".
+Mumy provided the voice of Mertle Edmonds (Lilo Pelekai's rival) in Stitch! The Movie, Lilo & Stitch: The Series, Lilo & Stitch 2: Stitch Has a Glitch, and Leroy & Stitch, and voicing a character with a smaller role on American Dragon: Jake Long as Haley's rival at school. She is also the voice of Twinkle on Higglytown Heroes and the voice of Human Kimberly on Nickelodeon's Catscratch. Lesser roles included TV appearances playing Rachael/Rachel in six episodes on My Wife and Kids from 2002 to 2004 as well as young Donna on That '70s Show and guest starring in Scrubs as a girl at her birthday party (whose face J.D. daydreams of shoving into her cake). She also voiced Panini in the cartoon Chowder, airing on Cartoon Network and played Lula in The Cleaner in 2008. She also voiced a feisty, fashionable, pink-loving, golden retriever puppy named Rosebud in the Disney movies Snow Buddies, Space Buddies, and Santa Buddies. In June 2012, Mumy started voice work as 'Beth' in Bravest Warriors, an animated series created by Pendleton Ward, produced by Frederator Studios for their channel, Cartoon Hangover, a premium content partner of YouTube. Mumy also provided the voice of Roxy on Nickelodeon's Winx Club and Leni Loud on Nickelodeon's The Loud House.
+
+Filmography
+Television
+Films
+Passage 14:
+A Perfect Sky
+"A Perfect Sky" is Bonnie Pink's twenty-fifth single and first from the album Thinking Out Loud. The single was released under the Warner Music Japan label on June 28, 2006.
+
+Track listing
+A Perfect Sky
+Free
+Interlude -Siesta-
+A Perfect Sky (Instrumental)
+
+
+== Oricon Sales Chart ==
+Passage 15:
+Loud Planes Fly Low
+Loud Planes Fly Low is the fifth album by the American band The Rosebuds, released in 2011 on Merge Records.
+
+Track listing
+Passage 16:
+Ilyasah Shabazz
+Ilyasah Shabazz (born July 22, 1962) is an American author, most notably of a memoir, Growing Up X, community organizer, social activist, and motivational speaker, and the third daughter of Malcolm X and Betty Shabazz.
+
+Early life
+Shabazz was born in Brooklyn, New York, on July 22, 1962. She was named after Elijah Muhammad, leader of the Nation of Islam, the religious and Black nationalist group to which her parents belonged. Shabazz is of African-American, African-Grenadian, English and Scottish descent. 
+In February 1965, when she was two years old, Shabazz was present, with her mother and sisters, at the assassination of her father. She says she has no memory of the event.Shabazz had an apolitical upbringing in a racially integrated neighborhood in Mount Vernon, New York. Her family never took part in demonstrations or attended rallies. Together with her sisters, she joined Jack and Jill, a social club for the children of well-off African Americans. She considered an acting career, though her mother was not supportive. Her mother instead took interest in trying to keep her father's presence alive, and baked her cookies, which she would break a piece off to give the impression that her father had eaten it before she arrived.Concerning her father, Shabazz told an interviewer, "My mother always talked about our father, her husband, but ... she didn't talk about these things that defined my father as the icon." To learn about her father, Shabazz read his autobiography as a college student, and enrolled in a class to learn more.Shabazz was a student at Hackley School. After high school, she attended State University of New York at New Paltz. When she arrived, other African-American students expected her to be a firebrand. They had already elected her an officer of the Black Student Union.After graduating, Shabazz earned a master's degree in Education and Human Resource Development from Fordham University.
+
+Career
+Shabazz worked for the city of Mount Vernon for more than a dozen years, serving at different times as Director of Public Relations, Director of Public Affairs and Special Events, and Director of Cultural Affairs.Shabazz wrote Growing Up X, her memoir of her childhood and her personal views on her father, in 2002. It was nominated for an NAACP Image Award for Outstanding Literary Work, Nonfiction. A devout Muslim, she made the pilgrimage to Mecca, the hajj, in 2006 as her father had in 1964 and her mother did in 1965.In 2014, Shabazz wrote Malcolm Little: The Boy Who Grew Up to Become Malcolm X, a children's book about her father's childhood. It was nominated for an NAACP Image Award for Outstanding Literary Work, Children's. The following year, she wrote a young-adult novel, X, about the same subject. The book was among the ten finalists considered for the National Book Award for Young People's Literature and it won an NAACP Image Award for Outstanding Literary Work, Youth/Teens. It also won honors from the Coretta Scott King Awards and the Walter Dean Myers Awards for Outstanding Children's Literature and was named as a 2016 Bank Street Children's Book Committee's Best Book of the Year. Her middle-grade novel about her mother's childhood, Betty Before X, was published in January 2018 alongside co-author Renée Watson. It was one of the 2019 Bank Street Children's Book Committee Best Books of the Year and received an "Outstanding Merit" recognitionShabazz is a trustee for the Malcolm X and Dr. Betty Shabazz Memorial and Educational Center, the Malcolm X Foundation, and the Harlem Symphony Orchestra. As of 2017, she is an adjunct professor at John Jay College of Criminal Justice.
+
+Personal life
+Shabazz is a longtime resident of Southern Westchester. She grew up in Mount Vernon and presently lives in New Rochelle.
+
+Bibliography
+with Kim McLarin (2002). Growing Up X: A Memoir by the Daughter of Malcolm X. New York: One World. ISBN 978-0-345-44495-0.
+——— (2014). Malcolm Little: The Boy Who Grew Up to Become Malcolm X. Illustrated by A.G. Ford. New York: Atheneum Books for Young Readers. ISBN 978-1-4424-1216-3.
+Boyd, Herb; ———, eds. (2014). The Diary of Malcolm X: 1964. Chicago: Third World Press. ISBN 978-0-88378-351-1.
+with Kekla Magoon (2015). X: A Novel. Somerville, Mass.: Candlewick Press. ISBN 978-0-763-66967-6.
+with Renée Watson (2018). Betty Before X. New York: Farrar, Straus and Giroux. ISBN 978-0-374-30610-6.
+with Tiffany D. Jackson (2021). The Awakening of Malcolm X. Farrar, Straus and Giroux. ISBN 9780374313296.
