@@ -1,4 +1,13 @@
 #!/bin/bash
+dataset="qasper"
+python3 chunking.py \
+    --embedding_model "/data/wk/models/bge-small-en-v1.5" \
+    --chunk_size 512 \
+    --chunk_overlap 10 \
+    --dataset_name $dataset \
+    --docs_dir "../data/${dataset}/documents" \
+    --persist_dir "../docs_store"
+
 
 for k in {1..10}
 do
