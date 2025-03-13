@@ -66,7 +66,6 @@ def print_cmd(parser, args):
     # 格式化为带换行的命令
     formatted_command = " \\\n".join(command_lines)
     print(f"Command:\n{formatted_command}")
-    exit(1)
 
 def main():
     # Parse command-line arguments at global scope
@@ -93,6 +92,7 @@ def main():
     parser.add_argument('--pruning_strategy', type=str, default='None', help='Pruning strategy: None, Naive, rrf_dynamic')
     # log related
     parser.add_argument('--detailed_logging', action='store_true', default=False, help='Whether to enable detailed logging')
+    parser.add_argument('--estimate_cost', action='store_true', default=False, help='Whether to estimate cost of cloud llm api')
     args = parser.parse_args()
     if not check_args(args):     # 检查参数有效性
         return

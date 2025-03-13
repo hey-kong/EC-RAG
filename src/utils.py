@@ -14,3 +14,20 @@ def rrf_fusion(rankings, k=60):
             scores[doc_id] += 1 / (k + rank)
     sorted_scores = sorted(scores.items(), key=lambda item: item[1], reverse=True)
     return [doc_id for doc_id, _ in sorted_scores]
+
+import tiktoken
+encoding = tiktoken.encoding_for_model("gpt-4o-mini")
+
+def calc_cost(
+        input: str, 
+        output: str,
+        input_price: float,
+        output_price: float,
+        model: str = "gpt-4o-mini",) -> float:
+    """
+    估计模型推理的成本
+    price: 价格，单位为 $/1m tokens
+    """
+    input_cost = input_price * len(encoding.encode(input)) / 1000000
+    output_cost = output_price * len(encoding.encode(output)) / 1000000
+    return input_cost + output_cost
