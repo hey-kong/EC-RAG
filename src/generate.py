@@ -45,19 +45,24 @@ def generate_answer(chunk_list, query_text, estimate_cost = False):
     global_statistic.add_to_list("generate_time", generate_time)
 
     # check response
-    if not response or not response.choices:
-        print("错误: 响应无效或choices为空。")
-        return "请求无响应。", len(chunk_list)
+    message_content = ""
+    if not response:
+        print("错误: 响应为空。")
+        return "", len(chunk_list)
+
+    if not response.choices:
+        print("错误: choices为空。")
+        return "", len(chunk_list)
 
     first_choice = response.choices[0]
     if not hasattr(first_choice, 'message'):
         print("错误: choice中缺少message字段。")
-        return "响应格式异常。", len(chunk_list)
+        return "", len(chunk_list)
 
     message_content = first_choice.message.content
     if not message_content:
         print("警告：返回内容为空。")
-        message_content = "未获取到有效回答。"
+        message_content = ""
 
     if estimate_cost:
         cost = calc_cost(prompt, message_content, 0.15, 0.6)

@@ -4,6 +4,8 @@ import argparse
 import os
 import sys
 from tqdm import tqdm
+import random
+
 
 # Llama Index Related
 from llama_index.core import Settings
@@ -100,7 +102,9 @@ def main():
 
     # prepare stage
     global_statistic.init(args)     # 初始化统计模块
-    local_llm.init(args.local_llm_model_path)     # 初始化本地语言模型
+    # 本地模型非必须
+    if args.use_local_llm_for_query or args.pruning_strategy == 'Naive':
+        local_llm.init(args.local_llm_model_path)
     local_reranker.init(args.reranker_layerwise)     # 初始化reranker
     print("Loading index...")
     # Set up embedding model and load index
@@ -122,11 +126,11 @@ def main():
     global_statistic.add("num_questions", len(questions))
 
     with open(args.generation_file, 'a', encoding='utf-8') as file:
-        start = time.perf_counter()
         for item in tqdm(questions):
             query = item["query"]
             
             # retrieve(include rerank and pruning) and generate
+            start = time.perf_counter()
             chunk_list = customed_retriever.retrieve(query)
             if not args.no_generate:
                 if args.use_local_llm_for_query:
@@ -134,15 +138,23 @@ def main():
                     answer = local_llm.generate_answer(chunk_list, query)
                     result = {"id": item["id"], "answer": answer, "num_chunks": n}
                     file.write(json.dumps(result, ensure_ascii=False) + '\n')
+                    end = time.perf_counter()
+                    global_statistic.add_to_list("rag_time", end - start)
                 else:
-                    answer, n = generate_answer(chunk_list, query)
+                    answer, n = generate_answer(chunk_list, query, args.estimate_cost)
                     result = {"id": item["id"], "answer": answer, "num_chunks": n}
                     file.write(json.dumps(result, ensure_ascii=False) + '\n')
+                    end = time.perf_counter()
+                    global_statistic.add_to_list("rag_time", end - start)
+                    # sleep for cloud llm api
+                    # 请求过于频繁经常性地会出错, 暂停随机一段时间
+                    # sleep_time = random.randint(2, 8)
+                    # time.sleep(sleep_time)
 
-        end = time.perf_counter()
-        use_time = end - start
-        avg_time = use_time / len(questions)
-        global_statistic.add("rag_avg_time", avg_time)
+        # end = time.perf_counter()
+        # use_time = end - start
+        # avg_time = use_time / len(questions)
+        # global_statistic.add("rag_avg_time", avg_time)
 
     global_statistic.dump()
     calc_f1_score(args.answer_file, args.generation_file)
