@@ -16,7 +16,7 @@ class RerankerWrapper:
         """
         if use_layerwise:
             # 初始化层间重排序模型
-            model_path = '/data/wk/models/bge-reranker-v2-minicpm-layerwise'
+            model_path = 'BAAI/bge-reranker-v2-minicpm-layerwise'
             self.reranker = LayerWiseFlagLLMReranker(
                 model_path,
                 use_fp16=True,
@@ -24,7 +24,7 @@ class RerankerWrapper:
             )
         else:
             # 初始化普通重排序模型
-            model_path = '/data/wk/models/bge-reranker-v2-m3'
+            model_path = 'BAAI/models/bge-reranker-v2-m3'
             self.reranker = FlagReranker(
                 model_path,
                 use_fp16=True,

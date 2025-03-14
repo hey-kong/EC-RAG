@@ -44,8 +44,7 @@ python3 run.py \
     --similarity_top_k 16 \
     --enable_bm25_retriever \
     --bm25_similarity_top_k 16 \
-    --pruning_strategy rrf_dynamic \
-    --detailed_logging False &> ../test_logs/rrf_dynamic_pruning.log
+    --pruning_strategy rrf_dynamic &> ../test_logs/rrf_dynamic_pruning.log
 
 # use local llm for query
 python3 run.py \
