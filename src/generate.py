@@ -21,9 +21,20 @@ Answer:"""
 
 
 # Load model
-model = "gpt-4o-mini"
-api_key = os.getenv("OPENAI_API_KEY")
-client = OpenAI(api_key=api_key, base_url="https://openrouter.ai/api/v1")
+
+# gpt-4o-mini
+# model = "gpt-4o-mini"
+# api_key = os.getenv("OPENAI_API_KEY")
+# client = OpenAI(api_key=api_key, base_url="https://openrouter.ai/api/v1")
+
+# deepseek-v3 火山引擎
+model="ep-20250208150353-d4wsv"
+client = OpenAI(
+    # 此为默认路径，您可根据业务所在地域进行配置
+    base_url="https://ark.cn-beijing.volces.com/api/v3",
+    # 从环境变量中获取您的 API Key
+    api_key=os.environ.get("ARK_API_KEY"),
+)
 
 def generate_answer(chunk_list, query_text, estimate_cost = False):
     prompt = query_prompt(chunk_list, query_text)
@@ -32,6 +43,7 @@ def generate_answer(chunk_list, query_text, estimate_cost = False):
         response = client.chat.completions.create(
             model=model,
             messages=[
+                {"role": "system", "content": "You are an AI assistant."},
                 {'role': 'user',
                 'content': prompt}
             ],
@@ -65,7 +77,7 @@ def generate_answer(chunk_list, query_text, estimate_cost = False):
         message_content = ""
 
     if estimate_cost:
-        cost = calc_cost(prompt, message_content, 0.15, 0.6)
+        cost = calc_cost(prompt, message_content)
         global_statistic.add_to_list("cloud_api_cost", cost)
 
     return message_content, len(chunk_list)

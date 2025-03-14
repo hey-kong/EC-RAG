@@ -1,5 +1,5 @@
 #!/bin/bash
-dataset="qasper"
+dataset="hotpotqa"
 
 # chunking
 # python3 chunking.py \
@@ -26,13 +26,13 @@ fi
 # clear summary file
 # > $summary_file
 
-for k in {10..10}
+for k in {1..10}
 do
     echo "Testing with rerank_top_k=${k}"
     python3 run.py \
         --embedding_model /data/wk/models/bge-small-en-v1.5 \
         --query_file ../data/${dataset}/questions/questions.jsonl \
-        --generation_file ../generations/${dataset}/basic_hybrid_16_16_${k}.jsonl \
+        --generation_file ../generations/${dataset}/ds_basic_hybrid_16_16_${k}.jsonl \
         --answer_file ../data/${dataset}/answers/answers.jsonl \
         --docstore ../docs_store/${dataset}_512 \
         --similarity_top_k 16 \
@@ -41,10 +41,10 @@ do
         --reranker_layerwise \
         --rerank_top_k $k \
         --pruning_strategy None \
-        --estimate_cost &> "../test_logs/${dataset}/basic_hybrid_16_16_${k}.log"
+        --estimate_cost &> "../test_logs/${dataset}/ds_basic_hybrid_16_16_${k}.log"
     
     # fetch statistics
-    python3 fetch_statistics.py "../test_logs/${dataset}/basic_hybrid_16_16_${k}.log" >> $summary_file
+    python3 fetch_statistics.py "../test_logs/${dataset}/ds_basic_hybrid_16_16_${k}.log" >> $summary_file
 
     echo "Completed test with rerank_top_k=${k}"
 done

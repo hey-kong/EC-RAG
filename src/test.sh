@@ -58,7 +58,7 @@ python3 run.py \
 
 # test choose local llm and reranker
 python3 run.py \
-    --generation_file ../generations/test_choose_local_llm_reranker.jsonl \
+    --generation_file ../generations/hotpotqa/test_choose_local_llm_reranker.jsonl \
     --similarity_top_k 16 \
     --enable_bm25_retriever \
     --bm25_similarity_top_k 16 \
