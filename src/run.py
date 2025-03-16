@@ -81,20 +81,20 @@ def main():
     parser.add_argument('--answer_file', type=str, default='../data/hotpotqa/answers/answers.jsonl', help='Path to the file containing answers')
     # use local llm
     parser.add_argument('--local_llm_model_path', type=str, default='LLM-Research/Meta-Llama-3.1-8B-Instruct', help='Path of local llm model')
-    parser.add_argument('--use_local_llm_for_query', action='store_true', default=False, help='Whether to use local llm for query')
+    parser.add_argument('--use_local_llm_for_query', action='store_true', help='Whether to use local llm for query')
     # retriver related (Basic: vectorIndex)
     parser.add_argument('--docstore', type=str, default='../docs_store/hotpotqa_512', help='Path of nodes')
     parser.add_argument('--similarity_top_k', type=int, default=20, help='Top N of vector retriver')
-    parser.add_argument('--enable_bm25_retriever', action='store_true', default=False, help='Whether to enable BM25 retriever')
+    parser.add_argument('--enable_bm25_retriever', action='store_true', help='Whether to enable BM25 retriever')
     parser.add_argument('--bm25_similarity_top_k', type=int, default=4, help='Top N of BM25 retriever')
     # reranker related
-    parser.add_argument('--reranker_layerwise', action='store_true', default=True, help='Whether to use layerwise reranker')
+    parser.add_argument('--reranker_layerwise', action='store_true', help='Whether to use layerwise reranker')
     parser.add_argument('--rerank_top_k', type=int, default=8, help='Top k')
     # pruning related
     parser.add_argument('--pruning_strategy', type=str, default='None', help='Pruning strategy: None, Naive, rrf_dynamic')
     # log related
-    parser.add_argument('--detailed_logging', action='store_true', default=False, help='Whether to enable detailed logging')
-    parser.add_argument('--estimate_cost', action='store_true', default=False, help='Whether to estimate cost of cloud llm api')
+    parser.add_argument('--detailed_logging', action='store_true', help='Whether to enable detailed logging')
+    parser.add_argument('--estimate_cost', action='store_true', help='Whether to estimate cost of cloud llm api')
     args = parser.parse_args()
     if not check_args(args):     # 检查参数有效性
         return
