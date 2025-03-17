@@ -8,7 +8,7 @@ def query_prompt(chunk_list, query):
 
     prompt_template = f"""<|begin_of_text|>
 <|start_header_id|>system<|end_header_id|>
-You are an AI assistant.<|eot_id|>
+You are an AI assistant for giving short answers based on given context.<|eot_id|>
 <|start_header_id|>user<|end_header_id|>
 
 {chunk_str}
