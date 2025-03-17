@@ -38,7 +38,7 @@ class CustomModelWrapper:
         with torch.no_grad():
             outputs = self.model.generate(
                 input_ids,
-                max_new_tokens=20,
+                max_new_tokens=100,
                 do_sample=False,
                 pad_token_id=self.tokenizer.eos_token_id,
                 eos_token_id=self.eos_token_ids,

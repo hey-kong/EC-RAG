@@ -11,7 +11,6 @@ python3 chunking.py \
 # basic vec search
 python3 run.py \
     --generation_file ../generations/basic.jsonl \
-    --reranker_layerwise \
     --similarity_top_k 20 &> ../test_logs/basic.log
 
 # hybrid search
@@ -19,7 +18,6 @@ python3 run.py \
     --generation_file ../generations/basic_hybrid.jsonl \
     --similarity_top_k 16 \
     --enable_bm25_retriever \
-    --reranker_layerwise \
     --bm25_similarity_top_k 4 &> ../test_logs/basic_hybrid.log
 
 # pruning
@@ -29,7 +27,6 @@ python3 run.py \
     --num_questions 2 \
     --rerank_top_k 20 \
     --pruning_strategy Naive \
-    --reranker_layerwise \
     --no_generate &> ../test_logs/test_prompt_pruning.log
 
 # basic hybrid
@@ -38,7 +35,6 @@ python3 run.py \
     --similarity_top_k 16 \
     --enable_bm25_retriever \
     --bm25_similarity_top_k 16 \
-    --reranker_layerwise \
     --rerank_top_k 8 &> ../test_logs/basic_hybrid_16_16_8.log
 
 
@@ -48,7 +44,6 @@ python3 run.py \
     --similarity_top_k 16 \
     --enable_bm25_retriever \
     --bm25_similarity_top_k 16 \
-    --reranker_layerwise \
     --pruning_strategy rrf_dynamic &> ../test_logs/rrf_dynamic_pruning.log
 
 # rrf_dynamic_pruning with local llm
@@ -57,7 +52,6 @@ python3 run.py \
     --similarity_top_k 16 \
     --enable_bm25_retriever \
     --bm25_similarity_top_k 16 \
-    --reranker_layerwise \
     --pruning_strategy rrf_dynamic \
     --use_local_llm_for_query &> ../test_logs/rrf_dynamic_pruning.log
 
@@ -68,7 +62,6 @@ python3 run.py \
     --enable_bm25_retriever \
     --bm25_similarity_top_k 16 \
     --rerank_top_k 8 \
-    --reranker_layerwise \
     --use_local_llm_for_query &> ../test_logs/use_local_llm_hybrid_16_16_8.log
 
 # test choose local llm and reranker
@@ -79,5 +72,4 @@ python3 run.py \
     --bm25_similarity_top_k 16 \
     --rerank_top_k 8 \
     --use_local_llm_for_query \
-    --reranker_layerwise \
     --num_questions 10 &> ../test_logs/test_choose_local_llm_reranker.log

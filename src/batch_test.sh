@@ -2,13 +2,13 @@
 dataset="hotpotqa"
 
 # chunking
-# python3 chunking.py \
-#     --embedding_model "/data/wk/models/bge-small-en-v1.5" \
-#     --chunk_size 512 \
-#     --chunk_overlap 10 \
-#     --dataset_name $dataset \
-#     --docs_dir "../data/${dataset}/documents" \
-#     --persist_dir "../docs_store"
+python3 chunking.py \
+    --embedding_model "BAAI/bge-small-en-v1.5" \
+    --chunk_size 512 \
+    --chunk_overlap 10 \
+    --dataset_name $dataset \
+    --docs_dir "../data/${dataset}/documents" \
+    --persist_dir "../docs_store"
 
 # run
 generation_dir="../generations/${dataset}"
@@ -30,7 +30,7 @@ for k in {1..10}
 do
     echo "Testing with rerank_top_k=${k}"
     python3 run.py \
-        --embedding_model /data/wk/models/bge-small-en-v1.5 \
+        --embedding_model BAAI/bge-small-en-v1.5 \
         --query_file ../data/${dataset}/questions/questions.jsonl \
         --generation_file ../generations/${dataset}/ds_basic_hybrid_16_16_${k}.jsonl \
         --answer_file ../data/${dataset}/answers/answers.jsonl \
@@ -38,11 +38,10 @@ do
         --similarity_top_k 16 \
         --enable_bm25_retriever \
         --bm25_similarity_top_k 16 \
-        --reranker_layerwise \
         --rerank_top_k $k \
         --pruning_strategy None \
         --estimate_cost &> "../test_logs/${dataset}/ds_basic_hybrid_16_16_${k}.log"
-    
+
     # fetch statistics
     python3 fetch_statistics.py "../test_logs/${dataset}/ds_basic_hybrid_16_16_${k}.log" >> $summary_file
 
