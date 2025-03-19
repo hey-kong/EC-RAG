@@ -156,49 +156,37 @@ class CustomedRetriever:
             exit("No chunk retrieved")
 
         # rrf fusion
-        rankings = [bm25_ranking, vec_ranking]
-        start = time.perf_counter()
-        rrf_ranking = rrf_fusion(rankings)
-        end = time.perf_counter()
-        global_statistic.add_to_list("rrf_fusion_time", end - start)
+        # rankings = [bm25_ranking, vec_ranking]
+        # start = time.perf_counter()
+        # rrf_ranking = rrf_fusion(rankings)
+        # end = time.perf_counter()
+        # global_statistic.add_to_list("rrf_fusion_time", end - start)
 
         # rerank: list(node, score)
+        start = time.perf_counter()
         reranked_nodes = local_reranker.rerank_nodes_with_scores(query_text, nodes)
-        global_statistic.add_to_list("rerank_time", time.perf_counter() - end)
+        global_statistic.add_to_list("rerank_time", time.perf_counter() - start)
 
         # dynamic pruning
         # pruning range in reranked_nodes
         min_k = 2
-        max_k = min(10, len(reranked_nodes))
+        max_k = 10
 
-        # step 1: 找到score gap最大的节点rank
-        max_score_gap = 0
-        max_score_gap_rank = min_k
-        for i in range(min_k, max_k):
-            score_gap = reranked_nodes[i - 1][1] - reranked_nodes[i][1]
-            if score_gap > max_score_gap:
-                max_score_gap_rank = i
-                max_score_gap = score_gap
-
-        # step 2: 根据rrf排名找到可能的裁剪点
-        # 遍历reranked nodes，如果满足:
-        #   （1）在rrf中的排名是否在max_k更后面
-        #   （2）rerank中的排名之前的nodes与在rrf中的排名之后的nodes没有交集
-        pruned_pos = max_k
-        for i in range(min_k, max_k):
-            rrf_rank = rrf_ranking.index(reranked_nodes[i][0].node_id)
-            if rrf_rank <= max_k:
-                continue
-            # check intersection
-            rerank_intersection = set([node.node_id for node, _ in reranked_nodes[:i]])
-            rrf_intersection = set(rrf_ranking[rrf_rank:])
-
-            if len(rerank_intersection.intersection(rrf_intersection)) == 0:
-                pruned_pos = min(pruned_pos, i)
-                break
-
-        # step 3: 裁剪
-        pruned_pos = max(pruned_pos, max_score_gap_rank)
+        pruned_pos = self._find_pruned_pos(reranked_nodes, min_k, max_k)
         pruned_chunk_list = [node.text for node, _ in reranked_nodes[:pruned_pos]]
-        global_statistic.add_to_list("rrf_dynamic_pruning_pos", len(pruned_chunk_list))
+        global_statistic.add_to_list("dynamic_pruning_pos", len(pruned_chunk_list))
         return pruned_chunk_list
+
+    def _find_pruned_pos(self, reranked_nodes, min_k, max_k):
+        n = len(reranked_nodes)
+        if n <= min_k:
+            return n
+
+        max_k = min(max_k, n)
+        multiplier = 2 if reranked_nodes[0][1] > 0 else 0.5
+
+        for i in range(min_k, max_k):
+            if reranked_nodes[i - 1][1] > reranked_nodes[i][1] * multiplier:
+                return i
+
+        return max_k

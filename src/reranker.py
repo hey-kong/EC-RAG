@@ -20,8 +20,10 @@ class RerankerWrapper:
             self.reranker = LayerWiseFlagLLMReranker(
                 model_path,
                 use_fp16=True,
+                devices=["cuda:0"],
                 cutoff_layers=[28]
             )
+            self.is_layerwise = True
         else:
             # 初始化普通重排序模型
             model_path = 'BAAI/bge-reranker-v2-m3'
