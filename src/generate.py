@@ -6,6 +6,7 @@ from openai import OpenAI
 from customed_statistic import global_statistic
 from utils import calc_cost
 
+
 def query_prompt(chunk_list, query):
     chunk_str = "\n\n".join(chunk_list)
 
@@ -28,7 +29,7 @@ Answer:"""
 # client = OpenAI(api_key=api_key, base_url="https://openrouter.ai/api/v1")
 
 # deepseek-v3 火山引擎
-model="ep-20250208150353-d4wsv"
+model = "ep-20250208150353-d4wsv"
 client = OpenAI(
     # 此为默认路径，您可根据业务所在地域进行配置
     base_url="https://ark.cn-beijing.volces.com/api/v3",
@@ -36,7 +37,8 @@ client = OpenAI(
     api_key=os.environ.get("ARK_API_KEY"),
 )
 
-def generate_answer(chunk_list, query_text, estimate_cost = False):
+
+def generate_answer(chunk_list, query_text, estimate_cost=False):
     prompt = query_prompt(chunk_list, query_text)
     try:
         start_time = time.perf_counter()
@@ -45,7 +47,7 @@ def generate_answer(chunk_list, query_text, estimate_cost = False):
             messages=[
                 {"role": "system", "content": "You are an AI assistant."},
                 {'role': 'user',
-                'content': prompt}
+                 'content': prompt}
             ],
         )
         generate_time = time.perf_counter() - start_time

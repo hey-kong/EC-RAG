@@ -38,22 +38,22 @@ python3 run.py \
     --rerank_top_k 8 &> ../test_logs/basic_hybrid_16_16_8.log
 
 
-# rrf_dynamic_pruning
+# dynamic_pruning
 python3 run.py \
-    --generation_file ../generations/rrf_dynamic_pruning.jsonl \
+    --generation_file ../generations/dynamic_pruning.jsonl \
     --similarity_top_k 16 \
     --enable_bm25_retriever \
     --bm25_similarity_top_k 16 \
-    --pruning_strategy rrf_dynamic &> ../test_logs/rrf_dynamic_pruning.log
+    --pruning_strategy dynamic &> ../test_logs/dynamic_pruning.log
 
-# rrf_dynamic_pruning with local llm
+# dynamic_pruning with local llm
 python3 run.py \
-    --generation_file ../generations/rrf_dynamic_pruning.jsonl \
+    --generation_file ../generations/dynamic_pruning.jsonl \
     --similarity_top_k 16 \
     --enable_bm25_retriever \
     --bm25_similarity_top_k 16 \
-    --pruning_strategy rrf_dynamic \
-    --use_local_llm_for_query &> ../test_logs/rrf_dynamic_pruning.log
+    --pruning_strategy dynamic \
+    --use_local_llm_for_query &> ../test_logs/dynamic_pruning.log
 
 # use local llm for query
 python3 run.py \

@@ -40,8 +40,8 @@ class CustomedRetriever:
             )
 
         # pruning strategy
-        self.pruning_strategies = ['Naive', 'rrf_dynamic']
-        if args.pruning_strategy == 'rrf_dynamic':
+        self.pruning_strategies = ['Naive', 'dynamic']
+        if args.pruning_strategy == 'dynamic':
             if args.enable_bm25_retriever == False:
                 exit("rrf retriever requires bm25 retriever")
 
@@ -79,8 +79,8 @@ class CustomedRetriever:
                 global_statistic.add_to_list("relevance_score", score)
             return pruned_chunk_list
 
-        elif self.args.pruning_strategy == 'rrf_dynamic':
-            return self._rrf_dynamic_pruning_retrieve(query_text)
+        elif self.args.pruning_strategy == 'dynamic':
+            return self._dynamic_pruning_retrieve(query_text)
         else:
             exit("Invalid pruning strategy")
 
@@ -117,13 +117,13 @@ class CustomedRetriever:
             exit("No chunk retrieved")
         return nodes
 
-    def _rrf_dynamic_pruning_retrieve(self, query_text):
+    def _dynamic_pruning_retrieve(self, query_text):
         """
-        融合 rrf + rerank + 动态剪枝
+        动态剪枝
         """
         # check args
         if self.args.enable_bm25_retriever == False:
-            exit("rrf retriever requires bm25 retriever")
+            exit("retriever requires bm25 retriever")
 
         # basic retrieve
         query_bundle = QueryBundle(query_str=query_text)
@@ -171,22 +171,27 @@ class CustomedRetriever:
         # pruning range in reranked_nodes
         min_k = 2
         max_k = 10
-
-        pruned_pos = self._find_pruned_pos(reranked_nodes, min_k, max_k)
+        pruned_pos = self._find_pruned_pos(reranked_nodes, query_text, min_k, max_k)
         pruned_chunk_list = [node.text for node, _ in reranked_nodes[:pruned_pos]]
         global_statistic.add_to_list("dynamic_pruning_pos", len(pruned_chunk_list))
         return pruned_chunk_list
 
-    def _find_pruned_pos(self, reranked_nodes, min_k, max_k):
+    def _find_pruned_pos(self, reranked_nodes, query_text, min_k, max_k):
         n = len(reranked_nodes)
         if n <= min_k:
             return n
 
-        max_k = min(max_k, n)
-        multiplier = 2 if reranked_nodes[0][1] > 0 else 0.5
+        left = min_k
+        right = min(max_k, len(reranked_nodes)) - 1
+        last_true_index = min_k - 1
+        while left <= right:
+            mid = (left + right) // 2
+            chunk = reranked_nodes[mid][0].text
 
-        for i in range(min_k, max_k):
-            if reranked_nodes[i - 1][1] > reranked_nodes[i][1] * multiplier:
-                return i
+            if local_llm.judge_relevance(chunk, query_text):
+                last_true_index = mid
+                left = mid + 1
+            else:
+                right = mid - 1
 
-        return max_k
+        return last_true_index + 1

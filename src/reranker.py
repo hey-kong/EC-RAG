@@ -8,7 +8,7 @@ class RerankerWrapper:
 
     def init(self, use_layerwise: bool):
         """初始化重排序模型
-        
+
         Args:
             use_layerwise (bool): 
                 True - 使用LayerWiseFlagLLMReranker

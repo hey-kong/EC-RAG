@@ -32,7 +32,7 @@ do
     python3 run.py \
         --embedding_model BAAI/bge-small-en-v1.5 \
         --query_file ../data/${dataset}/questions/questions.jsonl \
-        --generation_file ../generations/${dataset}/ds_basic_hybrid_16_16_${k}.jsonl \
+        --generation_file ../generations/${dataset}/use_local_llm_hybrid_16_16_${k}.jsonl \
         --answer_file ../data/${dataset}/answers/answers.jsonl \
         --docstore ../docs_store/${dataset}_512 \
         --similarity_top_k 16 \
@@ -40,10 +40,10 @@ do
         --bm25_similarity_top_k 16 \
         --rerank_top_k $k \
         --pruning_strategy None \
-        --estimate_cost &> "../test_logs/${dataset}/ds_basic_hybrid_16_16_${k}.log"
+        --use_local_llm_for_query &> "../test_logs/${dataset}/use_local_llm_hybrid_16_16_${k}.log"
 
     # fetch statistics
-    python3 fetch_statistics.py "../test_logs/${dataset}/ds_basic_hybrid_16_16_${k}.log" >> $summary_file
+    python3 fetch_statistics.py "../test_logs/${dataset}/use_local_llm_hybrid_16_16_${k}.log" >> $summary_file
 
     echo "Completed test with rerank_top_k=${k}"
 done
