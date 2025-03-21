@@ -182,16 +182,25 @@ class CustomedRetriever:
             return n
 
         left = min_k
-        right = min(max_k, len(reranked_nodes)) - 1
+        right = min(max_k, n)
         last_true_index = min_k - 1
-        while left <= right:
-            mid = (left + right) // 2
-            chunk = reranked_nodes[mid][0].text
 
+        while right > left:
+            # 找到 score gap 最大的位置 i
+            max_gap = 0
+            split_index = left
+            for i in range(left, right):
+                gap = reranked_nodes[i - 1][1] - reranked_nodes[i][1]
+                if gap > max_gap:
+                    max_gap = gap
+                    split_index = i
+
+            chunk = reranked_nodes[split_index][0].text
             if local_llm.judge_relevance(chunk, query_text):
-                last_true_index = mid
-                left = mid + 1
+                last_true_index = split_index
+                left = split_index + 1  # 保留当前，向下继续裁剪
             else:
-                right = mid - 1
+                right = split_index  # 丢弃当前及之后，向上继续裁剪
 
         return last_true_index + 1
+

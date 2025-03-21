@@ -84,7 +84,7 @@ def main():
     parser.add_argument('--answer_file', type=str, default='../data/hotpotqa/answers/answers.jsonl',
                         help='Path to the file containing answers')
     # use local llm
-    parser.add_argument('--local_llm_model_path', type=str, default='LLM-Research/Meta-Llama-3.1-8B-Instruct',
+    parser.add_argument('--local_llm_model_path', type=str, default='LLM-Research/Llama-3.2-3B-Instruct',
                         help='Path of local llm model')
     parser.add_argument('--use_local_llm_for_query', action='store_true', help='Whether to use local llm for query')
     # retriver related (Basic: vectorIndex)

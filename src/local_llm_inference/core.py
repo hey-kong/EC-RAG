@@ -21,7 +21,7 @@ def judge_relevance_prompt(chunk, query):
     prompt_template = PROMPT_PREFIX + f"""
 {chunk}
 
-Based on the above information, judge whether it is relevant for answering the given question. If you find the information helpful, respond with "Yes", otherwise respond with "No".
+Based on the above information, judge whether it is relevant to the question. If the information is helpful for answering the given question, respond with "Yes", otherwise respond with "No".
 
 ### Question
 {query}
