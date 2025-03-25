@@ -4,7 +4,6 @@ import argparse
 import os
 import sys
 from tqdm import tqdm
-import random
 
 # Llama Index Related
 from llama_index.core import Settings
@@ -17,7 +16,6 @@ from customed_statistic import global_statistic
 from cal_f1 import calc_f1_score
 from local_llm_inference.core import local_llm
 from reranker import local_reranker
-
 
 def check_args(args) -> bool:
     """检查参数有效性"""
@@ -107,7 +105,6 @@ def main():
 
     # prepare stage
     global_statistic.init(args)  # 初始化统计模块
-    # 本地模型非必须
     local_llm.init(args.local_llm_model_path)
     local_reranker.init(args.reranker_layerwise)  # 初始化reranker
     print("Loading index...")

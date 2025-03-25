@@ -23,8 +23,7 @@ def judge_relevance_prompt(chunk, query):
 
 Based on the above information, judge whether it is relevant to the question. If the information is helpful for answering the given question, respond with "Yes", otherwise respond with "No".
 
-### Question
-{query}
+Question: {query}
 
 Respond with "Yes" or "No" only, do not output any other words.<|eot_id|>
 <|start_header_id|>assistant<|end_header_id|>
@@ -35,12 +34,12 @@ Respond with "Yes" or "No" only, do not output any other words.<|eot_id|>
 
 # query
 def query_prompt(chunk_list, query):
-    chunk_str = "\n\n".join(chunk_list)
+    chunks = "\n\n".join(chunk_list)
 
     prompt_template = PROMPT_PREFIX + f"""
-{chunk_str}
+{chunks}
 
-Based on the above information, only give me the answer and do not output any other words.
+Based on the above information, give me the answer and do not output any other words.
 
 Question: {query}<|eot_id|>
 <|start_header_id|>assistant<|end_header_id|>

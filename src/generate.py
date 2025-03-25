@@ -8,11 +8,11 @@ from utils import calc_cost
 
 
 def query_prompt(chunk_list, query):
-    chunk_str = "\n\n".join(chunk_list)
+    chunks = "\n\n".join(chunk_list)
 
-    prompt_template = f"""{chunk_str}
+    prompt_template = f"""{chunks}
 
-Based on the above information, only give me the answer and do not output any other words.
+Based on the above information, give me the answer and do not output any other words.
 
 Question: {query}
 
