@@ -1,4 +1,5 @@
 import os
+import hashlib
 import argparse
 import tiktoken
 from typing import List
@@ -19,20 +20,28 @@ from llama_index.embeddings.huggingface import HuggingFaceEmbedding
 
 
 def get_nodes_from_documents(
-        documents: List[Document],
-        splitter: SentenceSplitter,
+    documents: List[Document],
+    splitter: SentenceSplitter,
 ) -> List[BaseNode]:
     nodes = []
+    seen_hashes = set()
+
     for doc_id, document in tqdm(enumerate(documents)):
         doc_text = document.get_content()
         chunk_texts = splitter.split_text(doc_text)
 
         for chunk_id, chunk_text in enumerate(chunk_texts):
+            chunk_hash = hashlib.md5(chunk_text.strip().encode('utf-8')).hexdigest()
+            if chunk_hash in seen_hashes:
+                continue
+            seen_hashes.add(chunk_hash)
+
             node = TextNode(
                 text=chunk_text,
-                id_=f"{document.doc_id}_{chunk_id}",  # node id 作为唯一标识
+                id_=f"{document.doc_id}_{chunk_id}",
             )
             nodes.append(node)
+
     return nodes
 
 
