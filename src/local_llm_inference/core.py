@@ -21,11 +21,9 @@ def judge_relevance_prompt(chunk, query):
     prompt_template = PROMPT_PREFIX + f"""
 {chunk}
 
-Based on the above information, judge whether it is relevant to the question. If the information is helpful for answering the given question, respond with "Yes", otherwise respond with "No".
+On a scale from 0 to 4, judge the relevance between the above information and the question: {query}
 
-Question: {query}
-
-Respond with "Yes" or "No" only, do not output any other words.<|eot_id|>
+Respond with the relevance score only, do not output any other words.<|eot_id|>
 <|start_header_id|>assistant<|end_header_id|>
 """
 
@@ -73,9 +71,12 @@ class CustomModelWrapper:
         input_length = input_ids.shape[1]  # 计算原始输入的长度
         # 截取生成部分（排除输入提示）并解码
         answer = self.tokenizer.decode(generated_ids[input_length:], skip_special_tokens=True)
-        if answer == "Yes":
-            return True
-        return False
+        try:
+            score = int(answer.strip())
+        except ValueError:
+            score = 4  # 默认相关
+        is_relevant = score >= 2
+        return is_relevant
 
     def generate_answer(self, chunk_list, query):
         prompt = query_prompt(chunk_list, query)

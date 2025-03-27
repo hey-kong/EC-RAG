@@ -43,7 +43,7 @@ class CustomedRetriever:
         self.pruning_strategies = ['Naive', 'dynamic']
         if args.pruning_strategy == 'dynamic':
             if args.enable_bm25_retriever == False:
-                exit("rrf retriever requires bm25 retriever")
+                exit("bm25 retriever should be enabled")
 
     def retrieve(self, query_text):
         if self.args.pruning_strategy != 'None':
@@ -152,7 +152,7 @@ class CustomedRetriever:
         global_statistic.add_to_list("vec_retrieved_nodes", len(vec_retrieved_nodes))
 
         # check logic
-        if len(nodes) == 0 or len(vec_ranking) == 0 or len(bm25_ranking) == 0:
+        if len(nodes) == 0:
             exit("No chunk retrieved")
 
         # rrf fusion
@@ -203,4 +203,3 @@ class CustomedRetriever:
                 right = split_index  # 丢弃当前及之后，向上继续裁剪
 
         return last_true_index + 1
-
