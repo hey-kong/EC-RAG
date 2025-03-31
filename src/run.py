@@ -16,7 +16,6 @@ from customed_statistic import global_statistic
 from cal_f1 import calc_f1_score
 from slm_inference import slm
 from reranker import local_reranker
-from router import router
 
 
 def check_args(args) -> bool:
@@ -129,18 +128,12 @@ def main():
     global_statistic.add("num_questions", len(questions))
 
     with open(args.generation_file, 'a', encoding='utf-8') as file:
-        i = 0
         for item in tqdm(questions):
             query = item["query"]
 
             # retrieve(include rerank and pruning) and generate
             start = time.perf_counter()
             chunk_list = customed_retriever.retrieve(query)
-            thre = 1.0 / len(chunk_list)
-            print("router", router.pred_win_rate(query), len(chunk_list), thre)
-            if router.pred_win_rate(query) > thre:
-                i += 1
-                print(i)
             if not args.no_generate:
                 if args.use_local_llm_for_query:
                     n = len(chunk_list)

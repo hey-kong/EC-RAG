@@ -1,1 +1,1 @@
-# EcRAG
+# EC-RAG
