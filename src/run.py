@@ -2,7 +2,6 @@ import json
 import time
 import argparse
 import os
-import sys
 from tqdm import tqdm
 
 # Llama Index Related
@@ -88,9 +87,9 @@ def main():
     parser.add_argument('--use_local_llm_for_query', action='store_true', help='Whether to use local llm for query')
     # retriver related (Basic: vectorIndex)
     parser.add_argument('--docstore', type=str, default='../docs_store/hotpotqa_512', help='Path of nodes')
-    parser.add_argument('--similarity_top_k', type=int, default=10, help='Top N of vector retriver')
+    parser.add_argument('--similarity_top_k', type=int, default=20, help='Top N of vector retriver')
     parser.add_argument('--enable_bm25_retriever', action='store_true', help='Whether to enable BM25 retriever')
-    parser.add_argument('--bm25_similarity_top_k', type=int, default=10, help='Top N of BM25 retriever')
+    parser.add_argument('--bm25_similarity_top_k', type=int, default=20, help='Top N of BM25 retriever')
     # reranker related
     parser.add_argument('--reranker_layerwise', action='store_true', help='Whether to use layerwise reranker')
     parser.add_argument('--rerank_top_k', type=int, default=8, help='Top k')

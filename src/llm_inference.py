@@ -10,13 +10,15 @@ from utils import calc_cost
 def query_prompt(chunk_list, query):
     chunks = "\n\n".join(chunk_list)
 
-    prompt_template = f"""{chunks}
+    prompt_template = f"""\
+{chunks}
 
-Based on the above information, answer the following question and do not output any other words.
+Given the above information and not prior knowledge, answer the question.
 
 Question: {query}
 
-Answer:"""
+Respond with a concise answer only, do not output any other words.
+"""
 
     return prompt_template
 
@@ -43,6 +45,7 @@ def generate_answer(chunk_list, query_text, estimate_cost=False):
                 {"role": "system", "content": "You are a helpful assistant."},
                 {'role': 'user', 'content': prompt}
             ],
+            stream=False
         )
         generate_time = time.perf_counter() - start_time
     except Exception as e:

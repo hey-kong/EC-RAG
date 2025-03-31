@@ -1,7 +1,6 @@
 import torch
 from modelscope import AutoTokenizer, AutoModelForCausalLM
 
-
 PROMPT_PREFIX = f"""<|begin_of_text|>
 <|start_header_id|>system<|end_header_id|>
 You are a helpful assistant.<|eot_id|>
@@ -39,9 +38,11 @@ def query_prompt(chunk_list, query):
     prompt_template = PROMPT_PREFIX + f"""
 {chunks}
 
-Based on the above information, answer the following question and do not output any other words.
+Given the above information and not prior knowledge, answer the question.
 
-Question: {query}<|eot_id|>
+Question: {query}
+
+Respond with a concise answer only, do not output any other words.<|eot_id|>
 <|start_header_id|>assistant<|end_header_id|>
 """
 
@@ -56,36 +57,41 @@ class CustomModelWrapper:
             torch_dtype=torch.float16
         ).to(self.device)
         self.tokenizer = AutoTokenizer.from_pretrained(model_path)
+        self.tokenizer.pad_token = self.tokenizer.eos_token
         self.eos_token_ids = [128001, 128009]
 
     def judge_relevance(self, chunk, query):
         prompt = judge_relevance_prompt(chunk, query)
-        input_ids = self.tokenizer.encode(prompt, return_tensors='pt').to(self.device)
+        inputs = self.tokenizer(prompt, return_tensors="pt", padding=True).to(self.device)
+        input_ids = inputs["input_ids"]
+        attention_mask = inputs["attention_mask"]
         with torch.no_grad():
             outputs = self.model.generate(
                 input_ids,
+                attention_mask=attention_mask,
                 max_new_tokens=1,
-                do_sample=False,
-                pad_token_id=self.tokenizer.eos_token_id,
+                pad_token_id=self.tokenizer.pad_token_id,
                 eos_token_id=self.eos_token_ids,
             )
         generated_ids = outputs[0]  # 获取生成的完整序列
         input_length = input_ids.shape[1]  # 计算原始输入的长度
         # 截取生成部分（排除输入提示）并解码
         answer = self.tokenizer.decode(generated_ids[input_length:], skip_special_tokens=True)
-        if answer == "Yes":
-            return True
-        return False
+        if answer == "No":
+            return False
+        return True
 
     def generate_answer(self, chunk_list, query):
         prompt = query_prompt(chunk_list, query)
-        input_ids = self.tokenizer.encode(prompt, return_tensors='pt').to(self.device)
+        inputs = self.tokenizer(prompt, return_tensors="pt", padding=True).to(self.device)
+        input_ids = inputs["input_ids"]
+        attention_mask = inputs["attention_mask"]
         with torch.no_grad():
             outputs = self.model.generate(
                 input_ids,
-                max_new_tokens=100,
-                do_sample=False,
-                pad_token_id=self.tokenizer.eos_token_id,
+                attention_mask=attention_mask,
+                max_new_tokens=50,
+                pad_token_id=self.tokenizer.pad_token_id,
                 eos_token_id=self.eos_token_ids,
             )
         generated_ids = outputs[0]  # 获取生成的完整序列

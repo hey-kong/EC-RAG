@@ -16,10 +16,7 @@ def rrf_fusion(rankings, k=60):
     return [doc_id for doc_id, _ in sorted_scores]
 
 
-# import tiktoken
-# encoding = tiktoken.encoding_for_model("gpt-4o-mini")
-
-# deepseek v3 
+# deepseek v3 cost
 import transformers
 
 chat_tokenizer_dir = "../deepseek_v3_tokenizer"
