@@ -1,15 +1,18 @@
 class CustomedStatistic:
     data = {}
     print_list = False
+
     def init(self, args):
         self.print_list = args.detailed_logging
+
     def add(self, key: str, value):
         self.data[key] = value
+
     def add_to_list(self, key: str, value):
         if key not in self.data:
             self.data[key] = []
         self.data[key].append(value)
-    
+
     def _summarize_statistics(self):
         """求均值"""
         avg_data = {}
@@ -27,7 +30,7 @@ class CustomedStatistic:
             for key, value in input_dict.items():
                 if isinstance(value, list):
                     if not self.print_list:
-                        continue     # 跳过列表类型
+                        continue  # 跳过列表类型
 
                     # 列表类型，逐项缩进显示
                     print(f"  {key}:")
@@ -35,6 +38,7 @@ class CustomedStatistic:
                         print(f"    - {item}")
                 else:
                     print(f"  {key}: {value}")
+
     def dump(self):
         """打印统计结果"""
         self._summarize_statistics()
@@ -44,5 +48,6 @@ class CustomedStatistic:
         # self._print_dict(args_dict)
         print("Statistics:")
         self._print_dict(self.data)
+
 
 global_statistic = CustomedStatistic()

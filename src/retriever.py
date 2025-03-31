@@ -14,7 +14,7 @@ import time
 # custom module
 from reranker import local_reranker
 from customed_statistic import global_statistic
-from local_llm_inference.core import local_llm
+from slm_inference import slm
 from utils import (
     rrf_fusion,
 )
@@ -41,9 +41,6 @@ class CustomedRetriever:
 
         # pruning strategy
         self.pruning_strategies = ['Naive', 'dynamic']
-        if args.pruning_strategy == 'dynamic':
-            if args.enable_bm25_retriever == False:
-                exit("bm25 retriever should be enabled")
 
     def retrieve(self, query_text):
         if self.args.pruning_strategy != 'None':
@@ -73,7 +70,7 @@ class CustomedRetriever:
             # Naive pruning
             pruned_chunk_list = []
             for chunk in chunk_list:
-                relevance, score = local_llm.judge_relevance(chunk, query_text)
+                relevance, score = slm.judge_relevance(chunk, query_text)
                 if relevance:
                     pruned_chunk_list.append(chunk)
                 global_statistic.add_to_list("relevance_score", score)
@@ -121,10 +118,6 @@ class CustomedRetriever:
         """
         动态剪枝
         """
-        # check args
-        if self.args.enable_bm25_retriever == False:
-            exit("retriever requires bm25 retriever")
-
         # basic retrieve
         query_bundle = QueryBundle(query_str=query_text)
 
@@ -182,24 +175,16 @@ class CustomedRetriever:
             return n
 
         left = min_k
-        right = min(max_k, n)
+        right = min(max_k, len(reranked_nodes)) - 1
         last_true_index = min_k - 1
+        while left <= right:
+            mid = (left + right) // 2
+            chunk = reranked_nodes[mid][0].text
 
-        while right > left:
-            # 找到 score gap 最大的位置 i
-            max_gap = 0
-            split_index = left
-            for i in range(left, right):
-                gap = reranked_nodes[i - 1][1] - reranked_nodes[i][1]
-                if gap > max_gap:
-                    max_gap = gap
-                    split_index = i
-
-            chunk = reranked_nodes[split_index][0].text
-            if local_llm.judge_relevance(chunk, query_text):
-                last_true_index = split_index
-                left = split_index + 1  # 保留当前，向下继续裁剪
+            if slm.judge_relevance(chunk, query_text):
+                last_true_index = mid
+                left = mid + 1
             else:
-                right = split_index  # 丢弃当前及之后，向上继续裁剪
+                right = mid - 1
 
         return last_true_index + 1

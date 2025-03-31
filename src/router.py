@@ -1,3 +1,4 @@
-from routellm.routers.routers import MatrixFactorizationRouter
+from matrix_factorization.model import MFModel
 
-router = MatrixFactorizationRouter("routellm/mf_gpt4_augmented")
+router = MFModel()
+router.load("/data/models/mf_model.pth")

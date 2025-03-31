@@ -1,7 +1,6 @@
 import os
 import hashlib
 import argparse
-import tiktoken
 from typing import List
 from tqdm import tqdm
 
@@ -50,15 +49,13 @@ def main():
     parser.add_argument('--embedding_model', type=str, default='BAAI/bge-small-en-v1.5',
                         help='Embedding model name or path')
     parser.add_argument('--chunk_size', type=int, default=512, help='chunk size for splitter')
-    parser.add_argument('--chunk_overlap', type=int, default=10, help='chunk overlap for splitter')
+    parser.add_argument('--chunk_overlap', type=int, default=20, help='chunk overlap for splitter')
     parser.add_argument('--dataset_name', type=str, default='hotpotqa', help='dataset name')
     parser.add_argument('--docs_dir', type=str, default='../data/hotpotqa/documents', help='directory of documents')
     parser.add_argument('--persist_dir', type=str, default='../docs_store', help='persist dir for docstore')
     args = parser.parse_args()
 
-    tokenizer = tiktoken.get_encoding("o200k_base")
     splitter = SentenceSplitter(
-        tokenizer=tokenizer.encode,
         chunk_size=args.chunk_size,
         chunk_overlap=args.chunk_overlap,
     )

@@ -15,23 +15,25 @@ def rrf_fusion(rankings, k=60):
     sorted_scores = sorted(scores.items(), key=lambda item: item[1], reverse=True)
     return [doc_id for doc_id, _ in sorted_scores]
 
+
 # import tiktoken
 # encoding = tiktoken.encoding_for_model("gpt-4o-mini")
 
 # deepseek v3 
-import modelscope
+import transformers
 
 chat_tokenizer_dir = "../deepseek_v3_tokenizer"
 
-ds_tokenizer = modelscope.AutoTokenizer.from_pretrained( 
-        chat_tokenizer_dir, trust_remote_code=True
-        )
+ds_tokenizer = transformers.AutoTokenizer.from_pretrained(
+    chat_tokenizer_dir, trust_remote_code=True
+)
+
 
 def calc_cost(
-        input: str, 
+        input: str,
         output: str,
         input_price: float = 0.27,
-        output_price: float = 1.1,) -> float:
+        output_price: float = 1.1, ) -> float:
     """
     估计模型推理的成本
     price: 价格，单位为 $/1m tokens

@@ -36,7 +36,6 @@ python3 run.py \
     --bm25_similarity_top_k 10 \
     --rerank_top_k 8 &> ../test_logs/basic_hybrid_10_10_8.log
 
-
 # dynamic_pruning
 python3 run.py \
     --generation_file ../generations/dynamic_pruning.jsonl \
@@ -62,12 +61,3 @@ python3 run.py \
     --bm25_similarity_top_k 10 \
     --rerank_top_k 8 \
     --use_local_llm_for_query &> ../test_logs/use_local_llm_hybrid_10_10_8.log
-
-# test choose local llm and reranker
-python3 run.py \
-    --generation_file ../generations/hotpotqa/test_choose_local_llm_reranker.jsonl \
-    --similarity_top_k 10 \
-    --enable_bm25_retriever \
-    --bm25_similarity_top_k 10 \
-    --rerank_top_k 8 \
-    --use_local_llm_for_query &> ../test_logs/test_choose_local_llm_reranker.log

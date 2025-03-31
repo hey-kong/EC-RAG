@@ -10,12 +10,14 @@ from llama_index.core import Settings
 from llama_index.embeddings.huggingface import HuggingFaceEmbedding
 
 # custom modules
-from generate import generate_answer
+from llm_inference import generate_answer
 from retriever import CustomedRetriever
 from customed_statistic import global_statistic
 from cal_f1 import calc_f1_score
-from local_llm_inference.core import local_llm
+from slm_inference import slm
 from reranker import local_reranker
+from router import router
+
 
 def check_args(args) -> bool:
     """检查参数有效性"""
@@ -87,9 +89,9 @@ def main():
     parser.add_argument('--use_local_llm_for_query', action='store_true', help='Whether to use local llm for query')
     # retriver related (Basic: vectorIndex)
     parser.add_argument('--docstore', type=str, default='../docs_store/hotpotqa_512', help='Path of nodes')
-    parser.add_argument('--similarity_top_k', type=int, default=20, help='Top N of vector retriver')
+    parser.add_argument('--similarity_top_k', type=int, default=10, help='Top N of vector retriver')
     parser.add_argument('--enable_bm25_retriever', action='store_true', help='Whether to enable BM25 retriever')
-    parser.add_argument('--bm25_similarity_top_k', type=int, default=4, help='Top N of BM25 retriever')
+    parser.add_argument('--bm25_similarity_top_k', type=int, default=10, help='Top N of BM25 retriever')
     # reranker related
     parser.add_argument('--reranker_layerwise', action='store_true', help='Whether to use layerwise reranker')
     parser.add_argument('--rerank_top_k', type=int, default=8, help='Top k')
@@ -105,7 +107,7 @@ def main():
 
     # prepare stage
     global_statistic.init(args)  # 初始化统计模块
-    local_llm.init(args.local_llm_model_path)
+    slm.init(args.local_llm_model_path)
     local_reranker.init(args.reranker_layerwise)  # 初始化reranker
     print("Loading index...")
     # Set up embedding model and load index
@@ -122,21 +124,27 @@ def main():
         for item in file:
             item = json.loads(item)
             questions.append(item)
-    if args.num_questions > 0 and args.num_questions < len(questions):
+    if 0 < args.num_questions < len(questions):
         questions = questions[:args.num_questions]
     global_statistic.add("num_questions", len(questions))
 
     with open(args.generation_file, 'a', encoding='utf-8') as file:
+        i = 0
         for item in tqdm(questions):
             query = item["query"]
 
             # retrieve(include rerank and pruning) and generate
             start = time.perf_counter()
             chunk_list = customed_retriever.retrieve(query)
+            thre = 1.0 / len(chunk_list)
+            print("router", router.pred_win_rate(query), len(chunk_list), thre)
+            if router.pred_win_rate(query) > thre:
+                i += 1
+                print(i)
             if not args.no_generate:
                 if args.use_local_llm_for_query:
                     n = len(chunk_list)
-                    answer = local_llm.generate_answer(chunk_list, query)
+                    answer = slm.generate_answer(chunk_list, query)
                     result = {"id": item["id"], "answer": answer, "num_chunks": n}
                     file.write(json.dumps(result, ensure_ascii=False) + '\n')
                     end = time.perf_counter()
@@ -147,10 +155,6 @@ def main():
                     file.write(json.dumps(result, ensure_ascii=False) + '\n')
                     end = time.perf_counter()
                     global_statistic.add_to_list("rag_time", end - start)
-                    # sleep for cloud llm api
-                    # 请求过于频繁经常性地会出错, 暂停随机一段时间
-                    # sleep_time = random.randint(2, 8)
-                    # time.sleep(sleep_time)
 
         # end = time.perf_counter()
         # use_time = end - start
