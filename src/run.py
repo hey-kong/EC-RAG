@@ -93,6 +93,7 @@ def main():
     # reranker related
     parser.add_argument('--reranker_layerwise', action='store_true', help='Whether to use layerwise reranker')
     parser.add_argument('--rerank_top_k', type=int, default=8, help='Top k')
+    parser.add_argument('--rerank_batch_size', type=int, default=256, help='Rerank batch size')
     # pruning related
     parser.add_argument('--pruning_strategy', type=str, default='None', help='Pruning strategy: None, Naive, dynamic')
     # log related
@@ -106,7 +107,7 @@ def main():
     # prepare stage
     global_statistic.init(args)  # 初始化统计模块
     slm.init(args.local_llm_model_path)
-    local_reranker.init(args.reranker_layerwise)  # 初始化reranker
+    local_reranker.init(args)  # 初始化reranker
     print("Loading index...")
     # Set up embedding model and load index
     Settings.embed_model = HuggingFaceEmbedding(model_name=args.embedding_model)

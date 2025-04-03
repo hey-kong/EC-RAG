@@ -118,6 +118,9 @@ class CustomedRetriever:
         """
         动态剪枝
         """
+        # dynamic pruning between min_k and max_k
+        min_k = 2
+        max_k = 10
         # basic retrieve
         query_bundle = QueryBundle(query_str=query_text)
 
@@ -149,21 +152,17 @@ class CustomedRetriever:
             exit("No chunk retrieved")
 
         # rrf fusion
-        # rankings = [bm25_ranking, vec_ranking]
-        # start = time.perf_counter()
-        # rrf_ranking = rrf_fusion(rankings)
-        # end = time.perf_counter()
-        # global_statistic.add_to_list("rrf_fusion_time", end - start)
+        rankings = [bm25_ranking, vec_ranking]
+        rrf_ranking = rrf_fusion(rankings)
+        node_id_to_node = {node.node_id: node for node in nodes}
+        nodes = [node_id_to_node[node_id] for node_id in rrf_ranking if node_id in node_id_to_node]
 
         # rerank: list(node, score)
         start = time.perf_counter()
-        reranked_nodes = local_reranker.rerank_nodes_with_scores(query_text, nodes)
+        reranked_nodes = local_reranker.rerank_nodes_with_scores(query_text, nodes, max_k)
         global_statistic.add_to_list("rerank_time", time.perf_counter() - start)
 
-        # dynamic pruning
         # pruning range in reranked_nodes
-        min_k = 2
-        max_k = 10
         pruned_pos = self._find_pruned_pos(reranked_nodes, query_text, min_k, max_k)
         pruned_chunk_list = [node.text for node, _ in reranked_nodes[:pruned_pos]]
         global_statistic.add_to_list("dynamic_pruning_pos", len(pruned_chunk_list))
