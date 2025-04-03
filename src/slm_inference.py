@@ -31,6 +31,18 @@ Respond with "Yes" or "No" only, do not output any other words.<|eot_id|>
     return prompt_template
 
 
+def judge_complexity_prompt(query):
+    prompt_template = PROMPT_PREFIX + f"""Analyze the language and internal structure of the following question, and judge whether it is of high or low complexity to answer.
+
+Question: {query}
+
+Respond with "High" or "Low" only, do not output any other words.<|eot_id|>
+<|start_header_id|>assistant<|end_header_id|>
+"""
+
+    return prompt_template
+
+
 # query
 def query_prompt(chunk_list, query):
     chunks = "\n\n".join(chunk_list)
@@ -80,6 +92,17 @@ class CustomModelWrapper:
         if answer == "No":
             return False
         return True
+
+    def judge_complexity(self, query):
+        prompt = judge_complexity_prompt(query)
+        input_ids = self.tokenizer(prompt, return_tensors="pt", padding=True).to(self.device).input_ids
+        with torch.no_grad():
+            logits = self.model(input_ids).logits[:, -1, :]
+            high_id = self.tokenizer("High", add_special_tokens=False).input_ids[0]
+            low_id = self.tokenizer("Low", add_special_tokens=False).input_ids[0]
+            log_probs = torch.nn.functional.log_softmax(logits, dim=-1)
+            complexity_score = torch.sigmoid(log_probs[0, high_id] - log_probs[0, low_id]).item()
+        return complexity_score
 
     def generate_answer(self, chunk_list, query):
         prompt = query_prompt(chunk_list, query)

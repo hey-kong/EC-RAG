@@ -52,8 +52,7 @@ def generate_answer(chunk_list, query_text, estimate_cost=False):
         print(f"API调用异常: {str(e)}")
         return "未获取到有效回答。", len(chunk_list)
 
-    # print(f"Generation time: {generate_time:.6f} seconds")
-    global_statistic.add_to_list("generate_time", generate_time)
+    global_statistic.add_to_list("llm_generate_time", generate_time)
 
     # check response
     message_content = ""
