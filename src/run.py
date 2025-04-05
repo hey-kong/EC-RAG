@@ -143,11 +143,18 @@ def main():
                     n = len(chunk_list)
                     answer = slm.generate_answer(chunk_list, query)
                     edge_count += 1
+                    generation_location = "edge"
                 else:
                     answer, n = generate_answer(chunk_list, query, args.estimate_cost)
                     cloud_count += 1
+                    generation_location = "cloud"
 
-                result = {"id": item["id"], "answer": answer, "num_chunks": n}
+                result = {
+                    "id": item["id"],
+                    "answer": answer,
+                    "num_chunks": n,
+                    "generation_location": generation_location
+                }
                 file.write(json.dumps(result, ensure_ascii=False) + '\n')
                 end = time.perf_counter()
                 global_statistic.add_to_list("rag_time", end - start)

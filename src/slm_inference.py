@@ -32,7 +32,7 @@ Respond with "Yes" or "No" only, do not output any other words.<|eot_id|>
 
 
 def judge_complexity_prompt(query):
-    prompt_template = PROMPT_PREFIX + f"""Analyze the language and internal structure of the following question, and judge whether it is of high or low complexity to answer.
+    prompt_template = PROMPT_PREFIX + f"""Analyze whether the following question is of high or low complexity to answer.
 
 Question: {query}
 
