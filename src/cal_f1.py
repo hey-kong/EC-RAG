@@ -56,24 +56,45 @@ def load_answers(file_path: str, is_reference: bool):
 
 def calc_f1_score(ref_file: str, pred_file: str):
     ref_answers = load_answers(ref_file, is_reference=True)
-    pred_answers = load_answers(pred_file, is_reference=False)
-    total_f1 = 0.0
-    count = 0
 
-    for id in ref_answers:
-        if id not in pred_answers:
-            continue
+    total_f1, total_count = 0.0, 0
+    edge_f1, cloud_f1 = 0.0, 0.0
+    edge_count, cloud_count = 0, 0
 
-        max_f1 = 0.0
-        for ref_tokens in ref_answers[id]:
-            current_f1 = f1_score(pred_answers[id], ref_tokens)
-            max_f1 = max(max_f1, current_f1)
+    with open(pred_file) as f:
+        for line in f:
+            data = json.loads(line)
+            id = data["id"]
+            if id not in ref_answers:
+                continue
 
-        print(f"ID {id}: {max_f1:.4f}")
-        total_f1 += max_f1
-        count += 1
+            pred_answer = normalize_answer(data["answer"].replace('**', '').replace('\n', ' '))
+            location = data.get("generation_location", "unknown")
 
-    if count > 0:
-        print(f"\nAverage F1: {total_f1 / count:.4f}")
-    else:
-        print("No matching answers")
+            max_f1 = 0.0
+            for ref_tokens in ref_answers[id]:
+                current_f1 = f1_score(pred_answer, ref_tokens)
+                max_f1 = max(max_f1, current_f1)
+
+            print(f"ID {id} [{location}]: {max_f1:.4f}")
+
+            # 总体统计
+            total_f1 += max_f1
+            total_count += 1
+
+            # 分 location 统计
+            if location == "edge":
+                edge_f1 += max_f1
+                edge_count += 1
+            elif location == "cloud":
+                cloud_f1 += max_f1
+                cloud_count += 1
+
+    # 避免除以 0 的保护
+    avg_total = total_f1 / total_count if total_count else 0.0
+    avg_edge = edge_f1 / edge_count if edge_count else 0.0
+    avg_cloud = cloud_f1 / cloud_count if cloud_count else 0.0
+
+    print(f"Overall F1: {avg_total:.4f} ({total_count}) | "
+          f"Edge F1: {avg_edge:.4f} ({edge_count}) | "
+          f"Cloud F1: {avg_cloud:.4f} ({cloud_count})")

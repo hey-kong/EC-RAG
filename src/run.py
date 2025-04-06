@@ -129,6 +129,11 @@ def main():
         questions = questions[:args.num_questions]
     global_statistic.add("num_questions", len(questions))
 
+    # Clear the file before writing new results
+    with open(args.generation_file, 'w', encoding='utf-8'):
+        pass  # just open in write mode to truncate the file
+
+    # Now open in append mode and start writing
     with open(args.generation_file, 'a', encoding='utf-8') as file:
         edge_count = 0
         cloud_count = 0
