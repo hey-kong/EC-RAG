@@ -15,7 +15,7 @@ from customed_statistic import global_statistic
 from cal_f1 import calc_f1_score
 from slm_inference import slm
 from reranker import local_reranker
-from router import is_complex
+from router import route_to_edge
 
 
 def check_args(args) -> bool:
@@ -95,6 +95,8 @@ def main():
     # reranker related
     parser.add_argument('--reranker_layerwise', action='store_true', help='Whether to use layerwise reranker')
     parser.add_argument('--rerank_top_k', type=int, default=8, help='Top k')
+    parser.add_argument('--min_k', type=int, default=2, help='Minimum Top-k used for dynamic pruning')
+    parser.add_argument('--max_k', type=int, default=10, help='Maximum Top-k used for dynamic pruning')
     parser.add_argument('--rerank_batch_size', type=int, default=256, help='Rerank batch size')
     # pruning related
     parser.add_argument('--pruning_strategy', type=str, default='None', help='Pruning strategy: None, Naive, dynamic')
@@ -144,7 +146,8 @@ def main():
             start = time.perf_counter()
             chunk_list = customed_retriever.retrieve(query)
             if not args.no_generate:
-                if args.strategy == "edge_only" or (args.strategy == "hybrid" and not is_complex(query, chunk_list)):
+                if args.strategy == "edge_only" or (
+                        args.strategy == "hybrid" and route_to_edge(query, len(chunk_list), args.min_k, args.max_k)):
                     n = len(chunk_list)
                     answer = slm.generate_answer(chunk_list, query)
                     edge_count += 1

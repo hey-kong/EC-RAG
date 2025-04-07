@@ -118,9 +118,6 @@ class CustomedRetriever:
         """
         动态剪枝
         """
-        # dynamic pruning between min_k and max_k
-        min_k = 2
-        max_k = 10
         # basic retrieve
         query_bundle = QueryBundle(query_str=query_text)
 
@@ -159,11 +156,11 @@ class CustomedRetriever:
 
         # rerank: list(node, score)
         start = time.perf_counter()
-        reranked_nodes = local_reranker.rerank_nodes_with_scores(query_text, nodes, max_k)
+        reranked_nodes = local_reranker.rerank_nodes_with_scores(query_text, nodes, self.args.max_k)
         global_statistic.add_to_list("rerank_time", time.perf_counter() - start)
 
-        # pruning range in reranked_nodes
-        pruned_pos = self._find_pruned_pos(reranked_nodes, query_text, min_k, max_k)
+        # dynamic pruning between min_k and max_k
+        pruned_pos = self._find_pruned_pos(reranked_nodes, query_text, self.args.min_k, self.args.max_k)
         pruned_chunk_list = [node.text for node, _ in reranked_nodes[:pruned_pos]]
         global_statistic.add_to_list("dynamic_pruning_pos", len(pruned_chunk_list))
         return pruned_chunk_list

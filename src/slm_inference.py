@@ -8,14 +8,6 @@ You are a helpful assistant.<|eot_id|>
 """
 
 
-def prefix(chunk):
-    prompt_template = PROMPT_PREFIX + f"""
-{chunk}
-"""
-
-    return prompt_template
-
-
 def judge_relevance_prompt(chunk, query):
     prompt_template = PROMPT_PREFIX + f"""
 {chunk}
@@ -32,7 +24,7 @@ Respond with "Yes" or "No" only, do not output any other words.<|eot_id|>
 
 
 def judge_complexity_prompt(query):
-    prompt_template = PROMPT_PREFIX + f"""Analyze whether the following question is of high or low complexity to answer.
+    prompt_template = PROMPT_PREFIX + f"""Classify the complexity of the following question as High or Low.
 
 Question: {query}
 
@@ -70,7 +62,7 @@ class CustomModelWrapper:
         ).to(self.device)
         self.tokenizer = AutoTokenizer.from_pretrained(model_path)
         self.tokenizer.pad_token = self.tokenizer.eos_token
-        self.eos_token_ids = [128001, 128009]
+        self.eos_token_id = self.model.config.eos_token_id
 
     def judge_relevance(self, chunk, query):
         prompt = judge_relevance_prompt(chunk, query)
@@ -83,12 +75,12 @@ class CustomModelWrapper:
                 attention_mask=attention_mask,
                 max_new_tokens=1,
                 pad_token_id=self.tokenizer.pad_token_id,
-                eos_token_id=self.eos_token_ids,
+                eos_token_id=self.eos_token_id,
             )
         generated_ids = outputs[0]  # 获取生成的完整序列
         input_length = input_ids.shape[1]  # 计算原始输入的长度
         # 截取生成部分（排除输入提示）并解码
-        answer = self.tokenizer.decode(generated_ids[input_length:], skip_special_tokens=True)
+        answer = self.tokenizer.decode(generated_ids[input_length:], skip_special_tokens=True).strip()
         if answer == "No":
             return False
         return True
@@ -97,10 +89,13 @@ class CustomModelWrapper:
         prompt = judge_complexity_prompt(query)
         input_ids = self.tokenizer(prompt, return_tensors="pt", padding=True).to(self.device).input_ids
         with torch.no_grad():
-            logits = self.model(input_ids).logits[:, -1, :]
+            next_token_logits = self.model(input_ids).logits[:, -1, :]
+            # next_token_id = next_token_logits.argmax(dim=-1)
+            # first_token = self.tokenizer.decode(next_token_id[0], skip_special_tokens=True)
+            # print("First Token:", first_token)
             high_id = self.tokenizer("High", add_special_tokens=False).input_ids[0]
             low_id = self.tokenizer("Low", add_special_tokens=False).input_ids[0]
-            log_probs = torch.nn.functional.log_softmax(logits, dim=-1)
+            log_probs = torch.nn.functional.log_softmax(next_token_logits, dim=-1)
             complexity_score = torch.sigmoid(log_probs[0, high_id] - log_probs[0, low_id]).item()
         return complexity_score
 
@@ -115,12 +110,12 @@ class CustomModelWrapper:
                 attention_mask=attention_mask,
                 max_new_tokens=50,
                 pad_token_id=self.tokenizer.pad_token_id,
-                eos_token_id=self.eos_token_ids,
+                eos_token_id=self.eos_token_id,
             )
         generated_ids = outputs[0]  # 获取生成的完整序列
         input_length = input_ids.shape[1]  # 计算原始输入的长度
         # 截取生成部分（排除输入提示）并解码
-        answer = self.tokenizer.decode(generated_ids[input_length:], skip_special_tokens=True)
+        answer = self.tokenizer.decode(generated_ids[input_length:], skip_special_tokens=True).strip()
         return answer
 
 
