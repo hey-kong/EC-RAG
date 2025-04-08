@@ -1,14 +1,9 @@
 import random
-import time
-
 from slm_inference import slm
-from customed_statistic import global_statistic
 
 
 def route_to_edge(query, n, min_val, max_val):
-    start = time.perf_counter()
     complexity_score = slm.judge_complexity(query)
-    global_statistic.add_to_list("judge_complexity_time", time.perf_counter() - start)
     return complexity_score < complexity_threshold(n, min_val, max_val)
 
 

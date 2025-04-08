@@ -48,11 +48,11 @@ class CustomedRetriever:
         else:
             # 默认策略：retrieve + rerank
             nodes = self._basic_retrieve(query_text)
-            chunk_list = [node.text for node in nodes]
             start = time.perf_counter()
-            chunk_list = local_reranker.rerank_chunks(query_text, chunk_list, self.args.rerank_top_k)
+            reranked_nodes = local_reranker.rerank_nodes(query_text, nodes, self.args.rerank_top_k)
             global_statistic.add_to_list("rerank_time", time.perf_counter() - start)
-            return chunk_list
+            nodes = [node for node, _ in reranked_nodes]
+            return nodes
 
     def _retrieve_pruning(self, query_text):
         if self.args.pruning_strategy not in self.pruning_strategies:
@@ -62,19 +62,18 @@ class CustomedRetriever:
         if self.args.pruning_strategy == 'Naive':
             # basic retrieve + rerank
             nodes = self._basic_retrieve(query_text)
-            chunk_list = [node.text for node in nodes]
             start = time.perf_counter()
-            chunk_list = local_reranker.rerank_chunks(query_text, chunk_list, self.args.rerank_top_k)
+            nodes = local_reranker.rerank_nodes(query_text, nodes, self.args.rerank_top_k)
             global_statistic.add_to_list("rerank_time", time.perf_counter() - start)
 
             # Naive pruning
-            pruned_chunk_list = []
-            for chunk in chunk_list:
-                relevance, score = slm.judge_relevance(chunk, query_text)
+            pruned_nodes = []
+            for node in nodes:
+                relevance, score = slm.judge_relevance(node, query_text, self.args.use_kvcache)
                 if relevance:
-                    pruned_chunk_list.append(chunk)
+                    pruned_nodes.append(node)
                 global_statistic.add_to_list("relevance_score", score)
-            return pruned_chunk_list
+            return pruned_nodes
 
         elif self.args.pruning_strategy == 'dynamic':
             return self._dynamic_pruning_retrieve(query_text)
@@ -156,14 +155,14 @@ class CustomedRetriever:
 
         # rerank: list(node, score)
         start = time.perf_counter()
-        reranked_nodes = local_reranker.rerank_nodes_with_scores(query_text, nodes, self.args.max_k)
+        reranked_nodes = local_reranker.rerank_nodes_with_early_stopping(query_text, nodes, self.args.max_k)
         global_statistic.add_to_list("rerank_time", time.perf_counter() - start)
 
         # dynamic pruning between min_k and max_k
         pruned_pos = self._find_pruned_pos(reranked_nodes, query_text, self.args.min_k, self.args.max_k)
-        pruned_chunk_list = [node.text for node, _ in reranked_nodes[:pruned_pos]]
-        global_statistic.add_to_list("dynamic_pruning_pos", len(pruned_chunk_list))
-        return pruned_chunk_list
+        nodes = [node for node, _ in reranked_nodes[:pruned_pos]]
+        global_statistic.add_to_list("dynamic_pruning_pos", len(nodes))
+        return nodes
 
     def _find_pruned_pos(self, reranked_nodes, query_text, min_k, max_k):
         n = len(reranked_nodes)
@@ -175,9 +174,9 @@ class CustomedRetriever:
         last_true_index = min_k - 1
         while left <= right:
             mid = (left + right) // 2
-            chunk = reranked_nodes[mid][0].text
+            node = reranked_nodes[mid][0].node
 
-            if slm.judge_relevance(chunk, query_text):
+            if slm.judge_relevance(node, query_text, self.args.use_kvcache):
                 last_true_index = mid
                 left = mid + 1
             else:

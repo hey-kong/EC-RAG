@@ -100,6 +100,8 @@ def main():
     parser.add_argument('--rerank_batch_size', type=int, default=256, help='Rerank batch size')
     # pruning related
     parser.add_argument('--pruning_strategy', type=str, default='None', help='Pruning strategy: None, Naive, dynamic')
+    # chunk kvcache
+    parser.add_argument('--use_kvcache', action='store_true', help='Whether to use kv cache')
     # log related
     parser.add_argument('--detailed_logging', action='store_true', help='Whether to enable detailed logging')
     parser.add_argument('--estimate_cost', action='store_true', help='Whether to estimate cost of cloud llm api')
@@ -144,16 +146,17 @@ def main():
 
             # retrieve(include rerank and pruning) and generate
             start = time.perf_counter()
-            chunk_list = customed_retriever.retrieve(query)
+            nodes = customed_retriever.retrieve(query)
             if not args.no_generate:
                 if args.strategy == "edge_only" or (
-                        args.strategy == "hybrid" and route_to_edge(query, len(chunk_list), args.min_k, args.max_k)):
-                    n = len(chunk_list)
-                    answer = slm.generate_answer(chunk_list, query)
+                        args.strategy == "hybrid" and route_to_edge(query, len(nodes), args.min_k, args.max_k)):
+                    n = len(nodes)
+                    answer = slm.generate_answer(query, nodes, args.use_kvcache)
                     edge_count += 1
                     generation_location = "edge"
                 else:
-                    answer, n = generate_answer(chunk_list, query, args.estimate_cost)
+                    chunk_list = [node.text for node in nodes]
+                    answer, n = generate_answer(query, chunk_list, args.estimate_cost)
                     cloud_count += 1
                     generation_location = "cloud"
 

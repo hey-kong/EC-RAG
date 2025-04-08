@@ -35,7 +35,7 @@ model = "deepseek-chat"
 client = OpenAI(api_key=os.environ.get("LLM_API_KEY"), base_url="https://api.deepseek.com")
 
 
-def generate_answer(chunk_list, query_text, estimate_cost=False):
+def generate_answer(query_text, chunk_list, estimate_cost=False):
     prompt = query_prompt(chunk_list, query_text)
     try:
         start_time = time.perf_counter()

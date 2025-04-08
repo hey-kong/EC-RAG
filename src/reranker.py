@@ -38,21 +38,7 @@ class RerankerWrapper:
         self.args = args
         print(f'use local reranker: {model_path}')
 
-    def rerank_chunks(self, query_text, chunk_list, top_k=8):
-        """重排序文本片段"""
-        pairs = [(query_text, chunk) for chunk in chunk_list]
-
-        # 根据模型类型调用不同的计算方式
-        if self.is_layerwise:
-            scores = self.reranker.compute_score(pairs, cutoff_layers=[28])
-        else:
-            scores = self.reranker.compute_score(pairs)
-
-        scored_chunks = list(zip(scores, chunk_list))
-        sorted_chunks = sorted(scored_chunks, key=lambda x: x[0], reverse=True)
-        return [chunk for (_, chunk) in sorted_chunks[:top_k]]
-
-    def ori_rerank_nodes_with_scores(self, query_text, nodes, top_k=8):
+    def rerank_nodes(self, query_text, nodes, top_k=8):
         """重排序节点并返回带分数结果"""
         pairs = [(query_text, node.text) for node in nodes]
 
@@ -65,7 +51,7 @@ class RerankerWrapper:
         topk = heapq.nlargest(top_k, zip(scores, nodes), key=lambda x: x[0])
         return [(node, score) for score, node in topk]
 
-    def rerank_nodes_with_scores(self, query_text, nodes, top_k=8):
+    def rerank_nodes_with_early_stopping(self, query_text, nodes, top_k=8):
         """重排序节点并返回得分最高的 top_k 结果，支持 early stopping"""
         pairs = [(query_text, node.text, node) for node in nodes]
         heap = []
