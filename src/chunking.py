@@ -1,8 +1,10 @@
 import os
 import hashlib
 import argparse
+import torch
 from typing import List
 from tqdm import tqdm
+from modelscope import AutoTokenizer, AutoModelForCausalLM
 
 # LlamaIndex related
 from llama_index.core import (
@@ -16,6 +18,22 @@ from llama_index.core.storage.docstore import SimpleDocumentStore
 from llama_index.core.vector_stores import SimpleVectorStore
 from llama_index.core import Settings
 from llama_index.embeddings.huggingface import HuggingFaceEmbedding
+
+device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
+
+PROMPT_PREFIX = f"""<|begin_of_text|>
+<|start_header_id|>system<|end_header_id|>
+You are a helpful assistant.<|eot_id|>
+<|start_header_id|>user<|end_header_id|>
+"""
+
+
+def chunk_with_prefix(chunk_text):
+    chunk = PROMPT_PREFIX + f"""
+{chunk_text}
+"""
+
+    return chunk
 
 
 def get_nodes_from_documents(
@@ -48,11 +66,15 @@ def main():
     parser = argparse.ArgumentParser(description='Run indexing for RAG')
     parser.add_argument('--embedding_model', type=str, default='BAAI/bge-small-en-v1.5',
                         help='Embedding model name or path')
+    parser.add_argument('--slm_model_path', type=str, default='LLM-Research/Llama-3.2-3B-Instruct',
+                        help='Path of local slm model')
     parser.add_argument('--chunk_size', type=int, default=512, help='chunk size for splitter')
-    parser.add_argument('--chunk_overlap', type=int, default=20, help='chunk overlap for splitter')
+    parser.add_argument('--chunk_overlap', type=int, default=0, help='chunk overlap for splitter')
     parser.add_argument('--dataset_name', type=str, default='hotpotqa', help='dataset name')
     parser.add_argument('--docs_dir', type=str, default='../data/hotpotqa/documents', help='directory of documents')
     parser.add_argument('--persist_dir', type=str, default='../docs_store', help='persist dir for docstore')
+    parser.add_argument('--chunk_kvcache_dir', type=str, default='../chunk_kvcache', help='persist dir for chunk kvcache')
+    parser.add_argument('--save_kvcache', action='store_true', help='Whether to save chunk kvcache')
     args = parser.parse_args()
 
     splitter = SentenceSplitter(
@@ -66,6 +88,25 @@ def main():
     print(f"Chunking documents with chunk_size={args.chunk_size}, chunk_overlap={args.chunk_overlap}")
     documents = SimpleDirectoryReader(args.docs_dir).load_data()
     nodes = get_nodes_from_documents(documents, splitter)
+
+    if args.save_kvcache:
+        model = AutoModelForCausalLM.from_pretrained(args.slm_model_path, torch_dtype=torch.float16).to(device)
+        tokenizer = AutoTokenizer.from_pretrained(args.slm_model_path)
+        if not os.path.exists(args.chunk_kvcache_dir):
+            os.makedirs(args.chunk_kvcache_dir)
+        for idx, node in tqdm(enumerate(nodes, 1), total=len(nodes), desc="Processing chunks"):
+            chunk = chunk_with_prefix(node.text)
+            inputs = tokenizer(chunk, return_tensors="pt").to(device)
+            with torch.no_grad():
+                outputs = model(
+                    **inputs,
+                    use_cache=True,
+                )
+            past_key_values = outputs.past_key_values
+            kvcache_file_path = f'{args.chunk_kvcache_dir}/kvcache_chunk_{node.node_id}.pt'
+            torch.save(past_key_values, kvcache_file_path)
+            node.metadata["kvcache_file_path"] = kvcache_file_path
+
 
     # document store: for bm25 retrieval
     doc_store = SimpleDocumentStore()

@@ -4,11 +4,10 @@ dataset="hotpotqa"
 # chunking
 python3 chunking.py \
     --embedding_model "BAAI/bge-small-en-v1.5" \
-    --chunk_size 512 \
-    --chunk_overlap 10 \
     --dataset_name $dataset \
     --docs_dir "../data/${dataset}/documents" \
-    --persist_dir "../docs_store"
+    --persist_dir "../docs_store" \
+    --save_kvcache
 
 # run
 generation_dir="../generations/${dataset}"
@@ -32,18 +31,18 @@ do
     python3 run.py \
         --embedding_model BAAI/bge-small-en-v1.5 \
         --query_file ../data/${dataset}/questions/questions.jsonl \
-        --generation_file ../generations/${dataset}/use_local_llm_hybrid_10_10_${k}.jsonl \
+        --generation_file ../generations/${dataset}/hybrid_top_${k}.jsonl \
         --answer_file ../data/${dataset}/answers/answers.jsonl \
         --docstore ../docs_store/${dataset}_512 \
-        --similarity_top_k 10 \
+        --similarity_top_k 20 \
         --enable_bm25_retriever \
-        --bm25_similarity_top_k 10 \
+        --bm25_similarity_top_k 20 \
         --rerank_top_k $k \
         --pruning_strategy None \
-        --use_local_llm_for_query &> "../test_logs/${dataset}/use_local_llm_hybrid_10_10_${k}.log"
+        --strategy edge_only &> "../test_logs/${dataset}/hybrid_top_${k}.log"
 
     # fetch statistics
-    python3 fetch_statistics.py "../test_logs/${dataset}/use_local_llm_hybrid_10_10_${k}.log" >> $summary_file
+    python3 fetch_statistics.py "../test_logs/${dataset}/hybrid_top_${k}.log" >> $summary_file
 
     echo "Completed test with rerank_top_k=${k}"
 done

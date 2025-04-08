@@ -2,6 +2,7 @@ docs_store/*
 generations/*
 models/*
 test_logs/*
+chunk_kvcache/*
 update_my_env.sh
 
 **/__pycache__

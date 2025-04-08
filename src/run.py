@@ -84,9 +84,9 @@ def main():
                         help='Path to the file containing answers')
     parser.add_argument('--strategy', type=str, default='hybrid', choices=['edge_only', 'cloud_only', 'hybrid'],
                         help="RAG execution strategy")
-    # use local llm
-    parser.add_argument('--local_llm_model_path', type=str, default='LLM-Research/Llama-3.2-3B-Instruct',
-                        help='Path of local llm model')
+    # use local slm
+    parser.add_argument('--slm_model_path', type=str, default='LLM-Research/Llama-3.2-3B-Instruct',
+                        help='Path of local slm model')
     # retriver related (Basic: vectorIndex)
     parser.add_argument('--docstore', type=str, default='../docs_store/hotpotqa_512', help='Path of nodes')
     parser.add_argument('--similarity_top_k', type=int, default=20, help='Top N of vector retriver')
@@ -110,7 +110,7 @@ def main():
 
     # prepare stage
     global_statistic.init(args)  # 初始化统计模块
-    slm.init(args.local_llm_model_path)
+    slm.init(args.slm_model_path)
     local_reranker.init(args)  # 初始化reranker
     print("Loading index...")
     # Set up embedding model and load index
