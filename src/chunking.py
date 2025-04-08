@@ -5,6 +5,8 @@ import torch
 from typing import List
 from tqdm import tqdm
 from modelscope import AutoTokenizer, AutoModelForCausalLM
+from slm_inference import chunk_with_prefix
+from serde import serializer
 
 # LlamaIndex related
 from llama_index.core import (
@@ -21,24 +23,10 @@ from llama_index.embeddings.huggingface import HuggingFaceEmbedding
 
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 
-PROMPT_PREFIX = f"""<|begin_of_text|>
-<|start_header_id|>system<|end_header_id|>
-You are a helpful assistant.<|eot_id|>
-<|start_header_id|>user<|end_header_id|>
-"""
-
-
-def chunk_with_prefix(chunk_text):
-    chunk = PROMPT_PREFIX + f"""
-{chunk_text}
-"""
-
-    return chunk
-
 
 def get_nodes_from_documents(
-    documents: List[Document],
-    splitter: SentenceSplitter,
+        documents: List[Document],
+        splitter: SentenceSplitter,
 ) -> List[BaseNode]:
     nodes = []
     seen_hashes = set()
@@ -73,7 +61,8 @@ def main():
     parser.add_argument('--dataset_name', type=str, default='hotpotqa', help='dataset name')
     parser.add_argument('--docs_dir', type=str, default='../data/hotpotqa/documents', help='directory of documents')
     parser.add_argument('--persist_dir', type=str, default='../docs_store', help='persist dir for docstore')
-    parser.add_argument('--chunk_kvcache_dir', type=str, default='../chunk_kvcache', help='persist dir for chunk kvcache')
+    parser.add_argument('--chunk_kvcache_dir', type=str, default='../chunk_kvcache',
+                        help='persist dir for chunk kvcache')
     parser.add_argument('--save_kvcache', action='store_true', help='Whether to save chunk kvcache')
     args = parser.parse_args()
 
@@ -90,7 +79,10 @@ def main():
     nodes = get_nodes_from_documents(documents, splitter)
 
     if args.save_kvcache:
-        model = AutoModelForCausalLM.from_pretrained(args.slm_model_path, torch_dtype=torch.float16).to(device)
+        model = AutoModelForCausalLM.from_pretrained(
+            args.slm_model_path,
+            torch_dtype=torch.float16
+        ).to(device)
         tokenizer = AutoTokenizer.from_pretrained(args.slm_model_path)
         if not os.path.exists(args.chunk_kvcache_dir):
             os.makedirs(args.chunk_kvcache_dir)
@@ -103,10 +95,11 @@ def main():
                     use_cache=True,
                 )
             past_key_values = outputs.past_key_values
+            past_key_values_bytes = serializer.to_bytes(past_key_values)
             kvcache_file_path = f'{args.chunk_kvcache_dir}/kvcache_chunk_{node.node_id}.pt'
-            torch.save(past_key_values, kvcache_file_path)
+            with open(kvcache_file_path, 'wb') as f:
+                f.write(past_key_values_bytes)
             node.metadata["kvcache_file_path"] = kvcache_file_path
-
 
     # document store: for bm25 retrieval
     doc_store = SimpleDocumentStore()

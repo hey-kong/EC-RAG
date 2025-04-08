@@ -1,11 +1,20 @@
 import torch
 from modelscope import AutoTokenizer, AutoModelForCausalLM
+from serde import deserializer
 
 PROMPT_PREFIX = f"""<|begin_of_text|>
 <|start_header_id|>system<|end_header_id|>
 You are a helpful assistant.<|eot_id|>
 <|start_header_id|>user<|end_header_id|>
 """
+
+
+def chunk_with_prefix(chunk_text):
+    chunk = PROMPT_PREFIX + f"""
+{chunk_text}
+"""
+
+    return chunk
 
 
 def judge_relevance_prompt(chunk, query):
@@ -51,6 +60,12 @@ Respond with a concise answer only, do not output any other words.<|eot_id|>
 """
 
     return prompt_template
+
+
+def load_kvcache(cache_file_path):
+    with open(cache_file_path, 'rb') as file:
+        file_content = file.read()
+    return deserializer.from_bytes(file_content)
 
 
 class CustomModelWrapper:
