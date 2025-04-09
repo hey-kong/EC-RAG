@@ -119,7 +119,6 @@ class CustomModelWrapper:
         return True
 
     def judge_complexity(self, query):
-        start = time.perf_counter()
         prompt = judge_complexity_prompt(query)
         input_ids = self.tokenizer(prompt, return_tensors="pt", padding=True).to(self.device).input_ids
         with torch.no_grad():
@@ -131,8 +130,6 @@ class CustomModelWrapper:
             low_id = self.tokenizer("Low", add_special_tokens=False).input_ids[0]
             log_probs = torch.nn.functional.log_softmax(next_token_logits, dim=-1)
             complexity_score = torch.sigmoid(log_probs[0, high_id] - log_probs[0, low_id]).item()
-        end = time.perf_counter()
-        global_statistic.add_to_list("judge_complexity_time", end - start)
         return complexity_score
 
     def generate_answer(self, query, nodes, use_kvcache=False):

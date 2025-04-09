@@ -131,7 +131,7 @@ class CustomedRetriever:
         nodes.extend(bm25_retrieved_nodes)
         global_statistic.add_to_list("bm25_retrieved_nodes", len(bm25_retrieved_nodes))
         end = time.perf_counter()
-        global_statistic.add_to_list("bm25_retriever_time", end - start)
+        global_statistic.add_to_list("bm25_retrieval_time", end - start)
 
         # vector retriever
         vec_ranking = []
@@ -141,7 +141,7 @@ class CustomedRetriever:
                 nodes.append(node)
                 vec_ranking.append(node.node_id)
         global_statistic.add_to_list("vec_retriever_time", time.perf_counter() - end)
-        global_statistic.add_to_list("vec_retrieved_nodes", len(vec_retrieved_nodes))
+        global_statistic.add_to_list("vec_retrieval_nodes", len(vec_retrieved_nodes))
 
         # check logic
         if len(nodes) == 0:
@@ -156,12 +156,14 @@ class CustomedRetriever:
         # rerank: list(node, score)
         start = time.perf_counter()
         reranked_nodes = local_reranker.rerank_nodes_with_early_stopping(query_text, nodes, self.args.max_k)
-        global_statistic.add_to_list("rerank_time", time.perf_counter() - start)
+        global_statistic.add_to_list("reranking_time", time.perf_counter() - start)
 
         # dynamic pruning between min_k and max_k
+        start = time.perf_counter()
         pruned_pos = self._find_pruned_pos(reranked_nodes, query_text, self.args.min_k, self.args.max_k)
         nodes = [node for node, _ in reranked_nodes[:pruned_pos]]
-        global_statistic.add_to_list("dynamic_pruning_pos", len(nodes))
+        global_statistic.add_to_list("pruning_time", time.perf_counter() - start)
+        global_statistic.add_to_list("avg_chunks", len(nodes))
         return nodes
 
     def _find_pruned_pos(self, reranked_nodes, query_text, min_k, max_k):
