@@ -13,15 +13,13 @@ class TorchSerializer:
 
 
 class TorchDeserializer:
-    def __init__(self, dtype: torch.dtype = torch.float32):
+    def __init__(self, dtype: torch.dtype, device: torch.device):
         self.dtype = dtype
+        self.device = device
 
     def from_bytes_normal(self, b: bytes) -> torch.Tensor:
         with io.BytesIO(b) as f:
-            return torch.load(f)
+            return torch.load(f, map_location=self.device)
 
     def from_bytes(self, b: bytes) -> torch.Tensor:
         return self.from_bytes_normal(b).to(dtype=self.dtype)
-
-
-serializer, deserializer = TorchSerializer(), TorchDeserializer(torch.float16)

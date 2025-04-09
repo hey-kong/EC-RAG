@@ -5,7 +5,7 @@ import torch.serialization
 from transformers.cache_utils import DynamicCache
 from modelscope import AutoTokenizer, AutoModelForCausalLM
 
-from serde import deserializer
+from serde import TorchDeserializer
 from customed_statistic import global_statistic
 
 torch.serialization.add_safe_globals([DynamicCache])
@@ -54,7 +54,7 @@ Respond with "High" or "Low" only, do not output any other words.<|eot_id|>
 
 # query
 def query_prompt(chunk_list, query):
-    chunks = "\n\n".join(chunk_list)
+    chunks = "\n".join(chunk_list)
 
     prompt_template = PROMPT_PREFIX + f"""
 {chunks}
@@ -70,19 +70,10 @@ Respond with a concise answer only, do not output any other words.<|eot_id|>
     return prompt_template
 
 
-def load_kvcache(cache_file_path):
-    start = time.perf_counter()
-    with open(cache_file_path, 'rb') as file:
-        file_content = file.read()
-    kvcache = deserializer.from_bytes(file_content)
-    end = time.perf_counter()
-    global_statistic.add_to_list("load_kvcache_time", end - start)
-    return kvcache
-
-
 class CustomModelWrapper:
     def init(self, model_path):
         self.device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
+        self.deserializer = TorchDeserializer(torch.float16, self.device)
         self.model = AutoModelForCausalLM.from_pretrained(
             model_path,
             torch_dtype=torch.float16
@@ -91,13 +82,22 @@ class CustomModelWrapper:
         self.tokenizer.pad_token = self.tokenizer.eos_token
         self.eos_token_id = self.model.config.eos_token_id
 
+    def load_kvcache(self, cache_file_path):
+        start = time.perf_counter()
+        with open(cache_file_path, 'rb') as file:
+            file_content = file.read()
+        kvcache = self.deserializer.from_bytes(file_content)
+        end = time.perf_counter()
+        global_statistic.add_to_list("load_kvcache_time", end - start)
+        return kvcache
+
     def judge_relevance(self, node, query, use_kvcache=False):
         start = time.perf_counter()
         prompt = judge_relevance_prompt(node.text, query)
         inputs = self.tokenizer(prompt, return_tensors="pt", padding=True).to(self.device)
         input_ids = inputs["input_ids"]
         attention_mask = inputs["attention_mask"]
-        kvcache = load_kvcache(node.metadata["kvcache_file_path"]) if use_kvcache else None
+        kvcache = self.load_kvcache(node.metadata["kvcache_file_path"]) if use_kvcache else None
 
         with torch.no_grad():
             outputs = self.model.generate(
@@ -139,7 +139,7 @@ class CustomModelWrapper:
         inputs = self.tokenizer(prompt, return_tensors="pt", padding=True).to(self.device)
         input_ids = inputs["input_ids"]
         attention_mask = inputs["attention_mask"]
-        kvcache = load_kvcache(nodes[0].metadata["kvcache_file_path"]) if use_kvcache else None
+        kvcache = self.load_kvcache(nodes[0].metadata["kvcache_file_path"]) if use_kvcache else None
 
         with torch.no_grad():
             outputs = self.model.generate(
