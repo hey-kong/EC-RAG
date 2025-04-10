@@ -29,7 +29,7 @@ def judge_relevance_prompt(chunk, query):
     prompt_template = PROMPT_PREFIX + f"""
 {chunk}
 
-Determine whether the above information is relevant to the following question. If the information directly or indirectly helps answer the question, respond with "Yes", otherwise respond with "No".
+Evaluate the relevance of the above information to the following question. If the information directly or indirectly helps answer the question, respond with "Yes", otherwise respond with "No".
 
 Question: {query}
 
@@ -104,6 +104,7 @@ class CustomModelWrapper:
                 input_ids,
                 attention_mask=attention_mask,
                 max_new_tokens=1,
+                do_sample=False,
                 pad_token_id=self.tokenizer.pad_token_id,
                 eos_token_id=self.eos_token_id,
                 past_key_values=kvcache
