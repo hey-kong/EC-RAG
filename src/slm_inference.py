@@ -29,7 +29,7 @@ def judge_relevance_prompt(chunk, query):
     prompt_template = PROMPT_PREFIX + f"""
 {chunk}
 
-Evaluate the relevance of the above information to the following question. If the information directly or indirectly helps answer the question, respond with "Yes", otherwise respond with "No".
+Determine whether the above information is relevant to the following question. If the information directly or indirectly helps answer the question, respond with "Yes", otherwise respond with "No".
 
 Question: {query}
 
@@ -41,9 +41,9 @@ Respond with "Yes" or "No" only, do not output any other words.<|eot_id|>
 
 
 def judge_complexity_prompt(query):
-    prompt_template = PROMPT_PREFIX + f"""Classify the complexity of the following question as High or Low.
+    prompt_template = PROMPT_PREFIX + f"""For the given question: {query}
 
-Question: {query}
+Classify the complexity of the question as High or Low.
 
 Respond with "High" or "Low" only, do not output any other words.<|eot_id|>
 <|start_header_id|>assistant<|end_header_id|>
@@ -52,7 +52,6 @@ Respond with "High" or "Low" only, do not output any other words.<|eot_id|>
     return prompt_template
 
 
-# query
 def query_prompt(chunk_list, query):
     chunks = "\n".join(chunk_list)
 

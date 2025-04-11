@@ -49,33 +49,33 @@ def generate_answer(query_text, chunk_list, estimate_cost=False):
         )
         generate_time = time.perf_counter() - start_time
     except Exception as e:
-        print(f"API调用异常: {str(e)}")
-        return "未获取到有效回答。", len(chunk_list)
+        print(f"API call exception: {str(e)}")
+        return "No valid answer was obtained."
 
     global_statistic.add_to_list("llm_generate_time", generate_time)
 
-    # check response
+    # Check response
     message_content = ""
     if not response:
-        print("错误: 响应为空。")
-        return "", len(chunk_list)
+        print("Error: Response is empty.")
+        return ""
 
     if not response.choices:
-        print("错误: choices为空。")
-        return "", len(chunk_list)
+        print("Error: Response contains no choices.")
+        return ""
 
     first_choice = response.choices[0]
     if not hasattr(first_choice, 'message'):
-        print("错误: choice中缺少message字段。")
-        return "", len(chunk_list)
+        print("Error: Missing 'message' field in choice.")
+        return ""
 
     message_content = first_choice.message.content
     if not message_content:
-        print("警告：返回内容为空。")
+        print("Warning: Response content is empty.")
         message_content = ""
 
     if estimate_cost:
         cost = calc_cost(prompt, message_content)
         global_statistic.add_to_list("cloud_api_cost", cost)
 
-    return message_content, len(chunk_list)
+    return message_content

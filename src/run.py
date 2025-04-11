@@ -147,16 +147,16 @@ def main():
             # retrieve(include rerank and pruning) and generate
             start = time.perf_counter()
             nodes = customed_retriever.retrieve(query)
+            n = len(nodes)
             if not args.no_generate:
                 if args.strategy == "edge_only" or (
                         args.strategy == "hybrid" and route_to_edge(query, len(nodes), args.min_k, args.max_k)):
-                    n = len(nodes)
                     answer = slm.generate_answer(query, nodes, args.use_kvcache)
                     edge_count += 1
                     generation_location = "edge"
                 else:
                     chunk_list = [node.text for node in nodes]
-                    answer, n = generate_answer(query, chunk_list, args.estimate_cost)
+                    answer = generate_answer(query, chunk_list, args.estimate_cost)
                     cloud_count += 1
                     generation_location = "cloud"
 
