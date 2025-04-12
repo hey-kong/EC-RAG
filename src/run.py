@@ -15,7 +15,7 @@ from customed_statistic import global_statistic
 from cal_f1 import calc_f1_score
 from slm_inference import slm
 from reranker import local_reranker
-from router import route_to_edge
+from router import ROUTER_CLS
 
 
 def check_args(args) -> bool:
@@ -83,7 +83,7 @@ def main():
     parser.add_argument('--answer_file', type=str, default='../data/hotpotqa/answers/answers.jsonl',
                         help='Path to the file containing answers')
     parser.add_argument('--strategy', type=str, default='hybrid', choices=['edge_only', 'cloud_only', 'hybrid'],
-                        help="RAG execution strategy")
+                        help="Strategy for selecting inference location: edge, cloud, or hybrid")
     # use local slm
     parser.add_argument('--slm_model_path', type=str, default='LLM-Research/Llama-3.2-3B-Instruct',
                         help='Path of local slm model')
@@ -99,7 +99,12 @@ def main():
     parser.add_argument('--max_k', type=int, default=10, help='Maximum Top-k used for dynamic pruning')
     parser.add_argument('--rerank_batch_size', type=int, default=256, help='Rerank batch size')
     # pruning related
-    parser.add_argument('--pruning_strategy', type=str, default='None', help='Pruning strategy: None, Naive, dynamic')
+    parser.add_argument('--pruning_strategy', type=str, default='dynamic', choices=['topk', 'exhaustive', 'dynamic'],
+                        help="Chunk pruning strategy")
+    # routing related
+    parser.add_argument('--routing_strategy', type=str, default='adaptive',
+                        choices=['adaptive', 'slm_only', 'random', 'mf'],
+                        help="Query routing strategy")
     # chunk kvcache
     parser.add_argument('--use_kvcache', action='store_true', help='Whether to use kv cache')
     # log related
@@ -121,6 +126,11 @@ def main():
     customed_retriever = CustomedRetriever(args)
     end = time.perf_counter()
     global_statistic.add("retriever_init_time", end - start)
+
+    router = None
+    if args.strategy == "hybrid":
+        router_cls = ROUTER_CLS[args.routing_strategy]
+        router = router_cls()
 
     # running stage
     print("Running benchmark...")
@@ -149,8 +159,20 @@ def main():
             nodes = customed_retriever.retrieve(query)
             n = len(nodes)
             if not args.no_generate:
-                if args.strategy == "edge_only" or (
-                        args.strategy == "hybrid" and route_to_edge(query, len(nodes), args.min_k, args.max_k)):
+                to_edge = False
+                if args.strategy == "edge_only":
+                    to_edge = True
+                elif args.strategy == "cloud_only":
+                    to_edge = False
+                elif args.strategy == "hybrid":
+                    to_edge = router.route_to_edge(
+                        query=query,
+                        n=len(nodes),
+                        min_val=args.min_k,
+                        max_val=args.max_k
+                    )
+
+                if to_edge:
                     answer = slm.generate_answer(query, nodes, args.use_kvcache)
                     edge_count += 1
                     generation_location = "edge"

@@ -1,7 +1,7 @@
+import time
+
 from llama_index.core.storage.docstore import SimpleDocumentStore
-from llama_index.core.vector_stores import SimpleVectorStore
 from llama_index.core import (
-    VectorStoreIndex,
     StorageContext,
     QueryBundle,
     load_index_from_storage,
@@ -9,9 +9,6 @@ from llama_index.core import (
 from llama_index.retrievers.bm25 import BM25Retriever
 import Stemmer
 
-import time
-
-# custom module
 from reranker import local_reranker
 from customed_statistic import global_statistic
 from slm_inference import slm
@@ -40,10 +37,10 @@ class CustomedRetriever:
             )
 
         # pruning strategy
-        self.pruning_strategies = ['Naive', 'dynamic']
+        self.pruning_strategies = ['exhaustive', 'dynamic']
 
     def retrieve(self, query_text):
-        if self.args.pruning_strategy != 'None':
+        if self.args.pruning_strategy != 'topk':
             return self._retrieve_pruning(query_text)  # 带有剪枝的retrieve
         else:
             # 默认策略：retrieve + rerank
@@ -58,15 +55,14 @@ class CustomedRetriever:
         if self.args.pruning_strategy not in self.pruning_strategies:
             exit("Invalid pruning strategy")
 
-        # naive pruning: 遍历所有chunk判定相关性
-        if self.args.pruning_strategy == 'Naive':
+        # exhaustive pruning: 遍历所有chunk判定相关性
+        if self.args.pruning_strategy == 'exhaustive':
             # basic retrieve + rerank
             nodes = self._basic_retrieve(query_text)
             start = time.perf_counter()
             nodes = local_reranker.rerank_nodes(query_text, nodes, self.args.rerank_top_k)
             global_statistic.add_to_list("rerank_time", time.perf_counter() - start)
 
-            # Naive pruning
             pruned_nodes = []
             for node in nodes:
                 relevance, score = slm.judge_relevance(node, query_text, self.args.use_kvcache)
