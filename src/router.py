@@ -10,7 +10,7 @@ from matrix_factorization.model import MFModel
 def complexity_threshold(x, min_val, max_val):
     if max_val <= min_val:
         raise ValueError("max_val must be greater than min_val")
-    return -0.5 * (x - min_val) / (max_val - min_val) + 0.5
+    return 0.5 * (1 - (x - min_val) / max_val)
 
 
 class BaseRouter(ABC):
@@ -46,7 +46,7 @@ class MFRouter(BaseRouter):
         self.router.load("/data/models/mf_model.pth")
 
     def route_to_edge(self, query, **kwargs):
-        return self.router.pred_win_rate(query) < 0.5
+        return self.router.pred_win_rate(query) < 0.11593
 
 
 ROUTER_CLS = {

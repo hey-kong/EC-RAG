@@ -43,7 +43,7 @@ Respond with "Yes" or "No" only, do not output any other words.<|eot_id|>
 def judge_complexity_prompt(query):
     prompt_template = PROMPT_PREFIX + f"""For the given question: {query}
 
-Classify the complexity of the question as High or Low.
+Classify the complexity of the question as high or low.
 
 Respond with "High" or "Low" only, do not output any other words.<|eot_id|>
 <|start_header_id|>assistant<|end_header_id|>
