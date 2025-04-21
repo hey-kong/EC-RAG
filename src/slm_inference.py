@@ -53,14 +53,12 @@ Respond with "High" or "Low" only, do not output any other words.<|eot_id|>
 
 
 def query_prompt(chunk_list, query):
-    chunks = "\n".join(chunk_list)
+    chunks = "\n\n".join(chunk_list)
 
     prompt_template = PROMPT_PREFIX + f"""
 {chunks}
 
-Given the above information and not prior knowledge, answer the question.
-
-Question: {query}
+Given the above information and not prior knowledge, answer the question: {query}
 
 Respond with a concise answer only, do not output any other words.<|eot_id|>
 <|start_header_id|>assistant<|end_header_id|>
@@ -146,6 +144,7 @@ class CustomModelWrapper:
                 input_ids,
                 attention_mask=attention_mask,
                 max_new_tokens=50,
+                do_sample=False,
                 pad_token_id=self.tokenizer.pad_token_id,
                 eos_token_id=self.eos_token_id,
                 past_key_values=kvcache

@@ -72,8 +72,7 @@ class CustomedRetriever:
             return pruned_nodes
 
         elif self.args.pruning_strategy == 'dynamic':
-            nodes = self._dynamic_pruning_retrieve(query_text)
-            return self._merge_first_sequence(nodes)
+            return self._dynamic_pruning_retrieve(query_text)
         else:
             exit("Invalid pruning strategy")
 
@@ -182,28 +181,3 @@ class CustomedRetriever:
                 right = mid - 1
 
         return last_true_index + 1
-
-    def _merge_first_sequence(self, nodes):
-        if not nodes:
-            return []
-
-        first_node = nodes[0]
-        doc_id, chunk_id_str = first_node.node_id.rsplit('_', 1)
-        chunk_id = int(chunk_id_str)
-
-        merged_nodes = [first_node]
-        used_indices = {0}
-        next_chunk_id = chunk_id + 1
-
-        for i in range(1, len(nodes)):
-            node = nodes[i]
-            node_doc_id, node_chunk_str = node.node_id.rsplit('_', 1)
-            node_chunk_id = int(node_chunk_str)
-
-            if node_doc_id == doc_id and node_chunk_id == next_chunk_id:
-                merged_nodes.append(node)
-                used_indices.add(i)
-                next_chunk_id += 1
-
-        remaining_nodes = [nodes[i] for i in range(len(nodes)) if i not in used_indices]
-        return merged_nodes + remaining_nodes

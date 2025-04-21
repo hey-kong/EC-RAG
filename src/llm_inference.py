@@ -13,9 +13,7 @@ def query_prompt(chunk_list, query):
     prompt_template = f"""\
 {chunks}
 
-Given the above information and not prior knowledge, answer the question.
-
-Question: {query}
+Given the above information and not prior knowledge, answer the question: {query}
 
 Respond with a concise answer only, do not output any other words.
 """
