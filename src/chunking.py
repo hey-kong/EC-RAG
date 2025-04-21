@@ -80,11 +80,12 @@ def main():
     nodes = get_nodes_from_documents(documents, splitter)
 
     if args.save_kvcache:
+        tokenizer = AutoTokenizer.from_pretrained(args.slm_model_path)
         model = AutoModelForCausalLM.from_pretrained(
             args.slm_model_path,
             torch_dtype=torch.float16
         ).to(device)
-        tokenizer = AutoTokenizer.from_pretrained(args.slm_model_path)
+        model.eval()
         if not os.path.exists(args.chunk_kvcache_dir):
             os.makedirs(args.chunk_kvcache_dir)
         for idx, node in tqdm(enumerate(nodes, 1), total=len(nodes), desc="Processing chunks"):

@@ -71,11 +71,12 @@ class CustomModelWrapper:
     def init(self, model_path):
         self.device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
         self.deserializer = TorchDeserializer(torch.float16, self.device)
+        self.tokenizer = AutoTokenizer.from_pretrained(model_path)
         self.model = AutoModelForCausalLM.from_pretrained(
             model_path,
             torch_dtype=torch.float16
         ).to(self.device)
-        self.tokenizer = AutoTokenizer.from_pretrained(model_path)
+        self.model.eval()
         self.tokenizer.pad_token = self.tokenizer.eos_token
         self.eos_token_id = self.model.config.eos_token_id
 
