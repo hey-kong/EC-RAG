@@ -65,10 +65,9 @@ class CustomedRetriever:
 
             pruned_nodes = []
             for node in nodes:
-                relevance, score = slm.judge_relevance(node, query_text, self.args.use_kvcache)
+                relevance = slm.judge_relevance(node, query_text, self.args.use_kvcache)
                 if relevance:
                     pruned_nodes.append(node)
-                global_statistic.add_to_list("relevance_score", score)
             return pruned_nodes
 
         elif self.args.pruning_strategy == 'dynamic':
@@ -156,28 +155,53 @@ class CustomedRetriever:
 
         # dynamic pruning between min_k and max_k
         start = time.perf_counter()
-        pruned_pos = self._find_pruned_pos(reranked_nodes, query_text, self.args.min_k, self.args.max_k)
+        pruned_pos = self._find_pruned_pos(reranked_nodes, query_text, self.args.min_k)
         nodes = [node for node, _ in reranked_nodes[:pruned_pos]]
         global_statistic.add_to_list("pruning_time", time.perf_counter() - start)
         global_statistic.add_to_list("avg_chunks", len(nodes))
         return nodes
 
-    def _find_pruned_pos(self, reranked_nodes, query_text, min_k, max_k):
+    # def _find_pruned_pos(self, reranked_nodes, query_text, min_k, step=2):
+    #     n = len(reranked_nodes)
+    #     if n == 0:
+    #         return 0
+    #     if min_k <= 0:
+    #         raise ValueError("min_k must be >= 1")
+    #     if n <= min_k:
+    #         return n
+    #
+    #     i = min_k
+    #     while i < n:
+    #         if not slm.judge_relevance(reranked_nodes[i][0].node, query_text, self.args.use_kvcache):
+    #             break
+    #         i += step
+    #
+    #     start = max(min_k, i - step + 1)
+    #     end = min(i, n)
+    #     for j in range(start, end):
+    #         if not slm.judge_relevance(reranked_nodes[j][0].node, query_text, self.args.use_kvcache):
+    #             return j
+    #     return end
+
+    def _find_pruned_pos(self, reranked_nodes, query_text, min_k):
         n = len(reranked_nodes)
+        if n == 0:
+            return 0
+        if min_k <= 0:
+            raise ValueError("min_k must be >= 1")
         if n <= min_k:
             return n
 
-        left = min_k
-        right = min(max_k, len(reranked_nodes)) - 1
-        last_true_index = min_k - 1
-        while left <= right:
-            mid = (left + right) // 2
-            node = reranked_nodes[mid][0].node
+        i = min_k
+        while i < n and slm.judge_relevance(reranked_nodes[i][0].node, query_text, self.args.use_kvcache):
+            i += 2  # step by 2
 
-            if slm.judge_relevance(node, query_text, self.args.use_kvcache):
-                last_true_index = mid
-                left = mid + 1
-            else:
-                right = mid - 1
+        # If the first checked chunk is irrelevant, stop there
+        if i == min_k:
+            return i
 
-        return last_true_index + 1
+        # Check the previous chunk's relevance
+        j = i - 1
+        if j < n and slm.judge_relevance(reranked_nodes[j][0].node, query_text, self.args.use_kvcache):
+            return i
+        return j
