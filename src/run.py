@@ -10,7 +10,7 @@ from llama_index.embeddings.huggingface import HuggingFaceEmbedding
 
 # custom modules
 from llm_inference import generate_answer
-from retriever import CustomedRetriever
+from retriever import Retriever
 from customed_statistic import global_statistic
 from cal_f1 import calc_f1_score
 from slm_inference import slm
@@ -99,7 +99,7 @@ def main():
     parser.add_argument('--max_k', type=int, default=10, help='Maximum Top-k used for dynamic pruning')
     parser.add_argument('--rerank_batch_size', type=int, default=256, help='Rerank batch size')
     # pruning related
-    parser.add_argument('--pruning_strategy', type=str, default='dynamic', choices=['topk', 'exhaustive', 'dynamic'],
+    parser.add_argument('--pruning_strategy', type=str, default='dynamic', choices=['topk', 'dynamic'],
                         help="Chunk pruning strategy")
     # routing related
     parser.add_argument('--routing_strategy', type=str, default='adaptive',
@@ -107,6 +107,7 @@ def main():
                         help="Query routing strategy")
     # chunk kvcache
     parser.add_argument('--use_kvcache', action='store_true', help='Whether to use kv cache')
+    parser.add_argument('--preload_kvcache', action='store_true', help='Whether to preload kv cache')
     # log related
     parser.add_argument('--detailed_logging', action='store_true', help='Whether to enable detailed logging')
     parser.add_argument('--estimate_cost', action='store_true', help='Whether to estimate cost of cloud llm api')
@@ -123,7 +124,7 @@ def main():
     # Set up embedding model and load index
     Settings.embed_model = HuggingFaceEmbedding(model_name=args.embedding_model)
     start = time.perf_counter()
-    customed_retriever = CustomedRetriever(args)
+    retriever = Retriever(args)
     end = time.perf_counter()
     global_statistic.add("retriever_init_time", end - start)
 
@@ -154,9 +155,19 @@ def main():
         for item in tqdm(questions):
             query = item["query"]
 
-            # retrieve(include rerank and pruning) and generate
+            # retrieve and generate
             start = time.perf_counter()
-            nodes = customed_retriever.retrieve(query)
+            reranked_nodes = retriever.retrieve(query)
+            if args.strategy == "hybrid" and args.routing_strategy in ("adaptive", "slm_only"):
+                preload_node = None
+                if args.preload_kvcache:
+                    if args.pruning_strategy == "dynamic" and args.min_k < len(reranked_nodes):
+                        preload_node = reranked_nodes[args.min_k][0].node
+                    else:
+                        preload_node = reranked_nodes[0][0].node
+                complexity_score = slm.judge_complexity(query, preload_node)
+            if args.pruning_strategy == "dynamic":
+                nodes = retriever.dynamic_pruning(reranked_nodes, query, args.min_k)
             n = len(nodes)
             if not args.no_generate:
                 to_edge = False
@@ -167,7 +178,8 @@ def main():
                 elif args.strategy == "hybrid":
                     to_edge = router.route_to_edge(
                         query=query,
-                        n=len(nodes),
+                        complexity_score=complexity_score,
+                        n=n,
                         min_val=args.min_k,
                         max_val=args.max_k
                     )

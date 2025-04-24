@@ -1,9 +1,7 @@
-import time
 import random
 from abc import ABC, abstractmethod
 
 from slm_inference import slm
-from customed_statistic import global_statistic
 from matrix_factorization.model import MFModel
 
 
@@ -20,12 +18,8 @@ class BaseRouter(ABC):
 
 
 class AdaptiveRouter(BaseRouter):
-    def route_to_edge(self, query, n, min_val, max_val, **kwargs):
-        start = time.perf_counter()
-        complexity_score = slm.judge_complexity(query)
-        thre = complexity_threshold(n, min_val, max_val)
-        global_statistic.add_to_list("routing_time", time.perf_counter() - start)
-        return complexity_score < thre
+    def route_to_edge(self, query, complexity_score, n, min_val, max_val, **kwargs):
+        return complexity_score < complexity_threshold(n, min_val, max_val)
 
 
 class SLMRouter(BaseRouter):
