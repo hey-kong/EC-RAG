@@ -157,17 +157,17 @@ def main():
 
             # retrieve and generate
             start = time.perf_counter()
-            reranked_nodes = retriever.retrieve(query)
+            nodes = retriever.retrieve(query)
             if args.strategy == "hybrid" and args.routing_strategy in ("adaptive", "slm_only"):
                 preload_node = None
                 if args.preload_kvcache:
-                    if args.pruning_strategy == "dynamic" and args.min_k < len(reranked_nodes):
-                        preload_node = reranked_nodes[args.min_k][0].node
+                    if args.pruning_strategy == "dynamic" and args.min_k < len(nodes):
+                        preload_node = nodes[args.min_k][0].node
                     else:
-                        preload_node = reranked_nodes[0][0].node
+                        preload_node = nodes[0][0].node
                 complexity_score = slm.judge_complexity(query, preload_node)
             if args.pruning_strategy == "dynamic":
-                nodes = retriever.dynamic_pruning(reranked_nodes, query, args.min_k)
+                nodes = retriever.dynamic_pruning(nodes, query, args.min_k)
             n = len(nodes)
             if not args.no_generate:
                 to_edge = False

@@ -5,10 +5,8 @@ from slm_inference import slm
 from matrix_factorization.model import MFModel
 
 
-def complexity_threshold(x, min_val, max_val):
-    if max_val <= min_val:
-        raise ValueError("max_val must be greater than min_val")
-    return 0.5 * (1 - (x - min_val) / max_val)
+def complexity_threshold(x):
+    return 1.0 / x
 
 
 class BaseRouter(ABC):
@@ -18,8 +16,8 @@ class BaseRouter(ABC):
 
 
 class AdaptiveRouter(BaseRouter):
-    def route_to_edge(self, query, complexity_score, n, min_val, max_val, **kwargs):
-        return complexity_score < complexity_threshold(n, min_val, max_val)
+    def route_to_edge(self, query, complexity_score, n, **kwargs):
+        return complexity_score < complexity_threshold(n)
 
 
 class SLMRouter(BaseRouter):

@@ -61,7 +61,7 @@ def query_prompt(chunk_list, query):
     prompt_template = PROMPT_PREFIX + f"""
 {chunks}
 
-Given the above information and not prior knowledge, answer the question: {query}
+Based on the above information, answer the question: {query}
 
 Respond with a concise answer only, do not output any other words.<|eot_id|>
 <|start_header_id|>assistant<|end_header_id|>
