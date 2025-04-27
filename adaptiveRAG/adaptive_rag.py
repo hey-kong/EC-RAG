@@ -6,13 +6,9 @@ from llama_index.core import (
     load_index_from_storage,
     QueryBundle,
 )
-from llama_index.core.retrievers import VectorIndexRetriever
-from llama_index.core.query_engine import RetrieverQueryEngine, RouterQueryEngine
 from llama_index.core.tools import FunctionTool, ToolMetadata
 from llama_index.llms.deepseek import DeepSeek
 from llama_index.core.selectors import LLMSingleSelector
-from llama_index.core.postprocessor import SimilarityPostprocessor
-from llama_index.core.prompts import PromptTemplate
 from llama_index.embeddings.huggingface import HuggingFaceEmbedding
 
 from reranker import local_reranker
@@ -167,25 +163,26 @@ class AdaptiveRAG:
                 current_answer = response.text
             else:
                 # Combine previous answer with new information
-                combine_prompt = f"""
-                Original question: {original_query}
-                Previous answer: {current_answer}
-                New information: {response.text}
-                
-                Please update the answer to the original question incorporating this new information.
-                Focus on providing a complete answer to the original question. Respond with a concise answer only, do not output any other words.
-                """
+                combine_prompt = (
+                    f"Original question: {original_query}\n"
+                    f"Previous answer: {current_answer}\n"
+                    f"New information: {response.text}\n"
+                    
+                    "Please update the answer to the original question incorporating this new information.\n"
+                    "Focus on providing a complete answer to the original question. "
+                    "Respond with a concise answer only, do not output any other words."
+                )
                 combine_response = self.llm.complete(combine_prompt)
                 current_answer = combine_response.text
 
             # Check if answer is complete
-            evaluation_prompt = f"""
-            Original question: {original_query}
-            Current answer: {current_answer}
-            
-            Task: Determine if the current answer fully addresses all aspects of the original question.
-            Answer with only 'yes' or 'no'.
-            """
+            evaluation_prompt = (
+                f"Original question: {original_query}\n"
+                f"Current answer: {current_answer}\n"
+                
+                "Task: Determine if the current answer fully addresses all aspects of the original question."
+                "Answer with only 'yes' or 'no'."
+            )
             
             evaluation = self.llm.complete(evaluation_prompt)
             can_answer = "yes" in evaluation.text.lower()
@@ -196,17 +193,17 @@ class AdaptiveRAG:
                 
             # Generate new query for next iteration
             all_contexts = "\n\n".join(retrieved_contexts)
-            rewrite_prompt = f"""
-            Original question: {original_query}
-            Current answer: {current_answer}
-            Information retrieved so far:
-            {all_contexts}
-            
-            The current answer is incomplete. Please generate a new specific search query that will help find 
-            additional information needed to fully answer the original question. Focus on aspects not covered yet.
-            
-            New search query (be specific and concise):
-            """
+
+            rewrite_prompt = (
+                f"Original question: {original_query}\n"
+                f"Current answer: {current_answer}\n"
+                f"Information retrieved so far:\n{all_contexts}\n\n"
+                
+                "The current answer is incomplete. Please generate a new specific search query that will help find "
+                "additional information needed to fully answer the original question. Focus on aspects not covered yet.\n\n"
+                
+                "New search query (be specific and concise):"
+            )
             
             rewrite_response = self.llm.complete(rewrite_prompt)
             current_query = rewrite_response.text.strip()
