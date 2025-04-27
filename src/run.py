@@ -158,6 +158,7 @@ def main():
             # retrieve and generate
             start = time.perf_counter()
             nodes = retriever.retrieve(query)
+            complexity_score = None
             if args.strategy == "hybrid" and args.routing_strategy in ("adaptive", "slm_only"):
                 preload_node = None
                 if args.preload_kvcache:
@@ -179,9 +180,7 @@ def main():
                     to_edge = router.route_to_edge(
                         query=query,
                         complexity_score=complexity_score,
-                        n=n,
-                        min_val=args.min_k,
-                        max_val=args.max_k
+                        n=n
                     )
 
                 if to_edge:
