@@ -97,7 +97,7 @@ def main():
     parser.add_argument('--rerank_top_k', type=int, default=8, help='Top k')
     parser.add_argument('--min_k', type=int, default=2, help='Minimum Top-k used for dynamic pruning')
     parser.add_argument('--max_k', type=int, default=10, help='Maximum Top-k used for dynamic pruning')
-    parser.add_argument('--rerank_batch_size', type=int, default=256, help='Rerank batch size')
+    parser.add_argument('--rerank_batch_size', type=int, default=8, help='Rerank batch size for early stopping')
     # pruning related
     parser.add_argument('--pruning_strategy', type=str, default='dynamic', choices=['topk', 'dynamic'],
                         help="Chunk pruning strategy")
@@ -160,8 +160,11 @@ def main():
             bm25_nodes = retriever.bm25_retrieve(query)
             vec_nodes = retriever.vec_retrieve(query)
             nodes = retriever.rrf(bm25_nodes, vec_nodes)
-            nodes = local_reranker.rerank_nodes(query, nodes)
-            n = len(nodes)
+            if args.pruning_strategy == "topk":
+                nodes = local_reranker.rerank_nodes(query, nodes, args.rerank_top_k)
+            elif args.pruning_strategy == "dynamic":
+                # nodes = local_reranker.rerank_nodes(query, nodes, args.max_k)
+                nodes = local_reranker.rerank_nodes_with_early_stopping(query, nodes, args.max_k)
             complexity_score = None
             if args.strategy == "hybrid" and args.routing_strategy in ("adaptive", "slm_only"):
                 preload_node = None
@@ -173,8 +176,6 @@ def main():
                 complexity_score = slm.judge_complexity(query, preload_node)
             if args.pruning_strategy == "dynamic":
                 nodes = retriever.dynamic_pruning(nodes, query, args.min_k)
-            elif args.pruning_strategy == "topk":
-                nodes = nodes[:min(len(nodes), args.rerank_top_k)]
             k = len(nodes)
             if not args.no_generate:
                 to_edge = False
@@ -188,7 +189,7 @@ def main():
                         complexity_score=complexity_score,
                         k=k,
                         min_k=args.min_k,
-                        max_k=n
+                        max_k=args.max_k,
                     )
 
                 if to_edge:
