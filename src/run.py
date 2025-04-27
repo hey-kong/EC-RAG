@@ -157,7 +157,11 @@ def main():
 
             # retrieve and generate
             start = time.perf_counter()
-            nodes = retriever.retrieve(query)
+            bm25_nodes = retriever.bm25_retrieve(query)
+            vec_nodes = retriever.vec_retrieve(query)
+            nodes = retriever.rrf(bm25_nodes, vec_nodes)
+            nodes = local_reranker.rerank_nodes(query, nodes)
+            n = len(nodes)
             complexity_score = None
             if args.strategy == "hybrid" and args.routing_strategy in ("adaptive", "slm_only"):
                 preload_node = None
@@ -169,7 +173,9 @@ def main():
                 complexity_score = slm.judge_complexity(query, preload_node)
             if args.pruning_strategy == "dynamic":
                 nodes = retriever.dynamic_pruning(nodes, query, args.min_k)
-            n = len(nodes)
+            elif args.pruning_strategy == "topk":
+                nodes = nodes[:min(len(nodes), args.rerank_top_k)]
+            k = len(nodes)
             if not args.no_generate:
                 to_edge = False
                 if args.strategy == "edge_only":
@@ -180,7 +186,9 @@ def main():
                     to_edge = router.route_to_edge(
                         query=query,
                         complexity_score=complexity_score,
-                        n=n
+                        k=k,
+                        min_k=args.min_k,
+                        max_k=n
                     )
 
                 if to_edge:
@@ -196,7 +204,7 @@ def main():
                 result = {
                     "id": item["id"],
                     "answer": answer,
-                    "num_chunks": n,
+                    "num_chunks": k,
                     "generation_location": generation_location
                 }
                 file.write(json.dumps(result, ensure_ascii=False) + '\n')

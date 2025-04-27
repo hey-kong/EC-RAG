@@ -1,6 +1,9 @@
+import time
 import heapq
 from itertools import islice
 from FlagEmbedding import FlagReranker, LayerWiseFlagLLMReranker
+
+from customed_statistic import global_statistic
 
 
 class RerankerWrapper:
@@ -38,21 +41,24 @@ class RerankerWrapper:
         self.args = args
         print(f'use local reranker: {model_path}')
 
-    def rerank_nodes(self, query_text, nodes, top_k=8):
+    def rerank_nodes(self, query_text, nodes):
         """重排序节点并返回带分数结果"""
+        start = time.perf_counter()
         pairs = [(query_text, node.text) for node in nodes]
 
-        # 根据模型类型调用不同的计算方式
         if self.is_layerwise:
             scores = self.reranker.compute_score(pairs, cutoff_layers=[28])
         else:
             scores = self.reranker.compute_score(pairs)
+        sorted_pairs = sorted(zip(scores, nodes), key=lambda x: x[0], reverse=True)
 
-        topk = heapq.nlargest(top_k, zip(scores, nodes), key=lambda x: x[0])
-        return [(node, score) for score, node in topk]
+        end = time.perf_counter()
+        global_statistic.add_to_list("reranking_time", end - start)
+        return [(node, score) for score, node in sorted_pairs]
 
     def rerank_nodes_with_early_stopping(self, query_text, nodes, top_k=8):
         """重排序节点并返回得分最高的 top_k 结果，支持 early stopping"""
+        start = time.perf_counter()
         pairs = [(query_text, node.text, node) for node in nodes]
         heap = []
         processed = 0
@@ -79,6 +85,8 @@ class RerankerWrapper:
                 break
 
         topk_results = sorted(heap, key=lambda x: x[0], reverse=True)[:top_k]
+        end = time.perf_counter()
+        global_statistic.add_to_list("reranking_time", end - start)
         return [(node, score) for score, _, node in topk_results]
 
     def _batch_iterable(self, iterable, batch_size):
