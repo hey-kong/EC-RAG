@@ -5,7 +5,7 @@ import os
 from tqdm import tqdm
 
 # custom modules
-from adaptive_rag import AdaptiveRAG
+from chunkrag_agent import ChunkRAGAgent
 from customed_statistic import global_statistic
 from cal_f1 import calc_f1_score
 from reranker import local_reranker
@@ -69,7 +69,8 @@ def main():
 
     # retriver related (Basic: vectorIndex)
     parser.add_argument('--docstore', type=str, default='../docs_store/hotpotqa_512', help='Path of nodes')
-    parser.add_argument('--similarity_top_k', type=int, default=20, help='Top N of vector retriver')
+    parser.add_argument('--vec_topk', type=int, default=20, help='Top N of vector retriver')
+    parser.add_argument('--bm25_topk', type=int, default=20, help='Top N of bm25 retriver')
 
     # reranker related
     parser.add_argument('--reranker_layerwise', action='store_true', help='Whether to use layerwise reranker')
@@ -83,12 +84,13 @@ def main():
         return
     print_cmd(parser, args)
 
-
     local_reranker.init(args)
-    agent = AdaptiveRAG(
-        index_dir=args.docstore + "_vec",
-        similarity_topk=args.similarity_top_k,
-        embedding_model=args.embedding_model,
+    agent = ChunkRAGAgent(
+        docstore=args.docstore,
+        vec_topk=args.vec_topk,
+        bm25_topk=args.bm25_topk,
+        model_name="deepseek-chat",
+        embed_model=args.embedding_model,
     )
     global_statistic.init(args)
 
@@ -107,37 +109,22 @@ def main():
     with open(args.generation_file, 'w', encoding='utf-8'):
         pass  # just open in write mode to truncate the file
 
-    direct_qa_cnt = 0
-    single_step_qa_cnt = 0
-    multi_step_qa_cnt = 0
-
     with open(args.generation_file, 'a', encoding='utf-8') as file:
         for item in tqdm(questions):
             query = item["query"]
 
             # retrieve(include rerank and pruning) and generate
             start = time.perf_counter()
-            answer, selected_tool_index = agent.query(query)
+            answer = agent.query(query)
             end = time.perf_counter()
 
             global_statistic.add_to_list("rag_time", end - start)
             result = {
                 "id": item["id"],
                 "answer": answer,
-                "selected_tool_index": selected_tool_index
             }
             file.write(json.dumps(result, ensure_ascii=False) + '\n')
 
-            if selected_tool_index == 0:
-                direct_qa_cnt += 1
-            elif selected_tool_index == 1:
-                single_step_qa_cnt += 1
-            elif selected_tool_index == 2:
-                multi_step_qa_cnt += 1
-
-    global_statistic.add("direct_qa_cnt", direct_qa_cnt)
-    global_statistic.add("single_step_qa_cnt", single_step_qa_cnt)
-    global_statistic.add("multi_step_qa_cnt", multi_step_qa_cnt)
     global_statistic.dump()
     calc_f1_score(args.answer_file, args.generation_file)
 
