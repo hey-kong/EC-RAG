@@ -13,10 +13,9 @@ from customed_statistic import global_statistic
 
 torch.serialization.add_safe_globals([DynamicCache])
 
-PROMPT_PREFIX = f"""<|begin_of_text|>
-<|start_header_id|>system<|end_header_id|>
-You are a helpful assistant.<|eot_id|>
-<|start_header_id|>user<|end_header_id|>
+PROMPT_PREFIX = f"""<|im_start|>system
+You are a helpful assistant.<|im_end|>
+<|im_start|>user
 """
 
 
@@ -32,22 +31,24 @@ def judge_relevance_prompt(chunk, query):
     prompt_template = PROMPT_PREFIX + f"""
 {chunk}
 
-Determine whether the above information helps answer the question: {query}
+Determine whether the above information directly or indirectly helps answer the question: {query}
 
-Respond with "Yes" or "No" only, do not output any other words.<|eot_id|>
-<|start_header_id|>assistant<|end_header_id|>
+Respond with "Yes" or "No" only, do not output any other words.<|im_end|>
+<|im_start|>assistant
+<think>\n\n</think>\n\n
 """
 
     return prompt_template
 
 
 def judge_complexity_prompt(query):
-    prompt_template = PROMPT_PREFIX + f"""For the question: {query}
+    prompt_template = PROMPT_PREFIX + f"""For the given question: {query}
 
-Classify the complexity of the question as low or high. Queries with low complexity are more like simple yes/no questions, while queries with high complexity are more like "why" questions that require deeper reasoning.
+Classify the complexity of the question as low or high.
 
-Respond with "High" or "Low" only, do not output any other words.<|eot_id|>
-<|start_header_id|>assistant<|end_header_id|>
+Respond with "High" or "Low" only, do not output any other words.<|im_end|>
+<|im_start|>assistant
+<think>\n\n</think>\n\n
 """
 
     return prompt_template
@@ -61,8 +62,9 @@ def query_prompt(chunk_list, query):
 
 Based on the above information, answer the question: {query}
 
-Respond with a concise answer only, do not output any other words.<|eot_id|>
-<|start_header_id|>assistant<|end_header_id|>
+Respond with the most concise answer only, do not output any other words.<|im_end|>
+<|im_start|>assistant
+<think>\n\n</think>\n\n
 """
 
     return prompt_template
@@ -103,7 +105,7 @@ class KVCacheLoader:
 class CustomModelWrapper:
     def init(self, model_path):
         self.device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
-        self.kvcache_loader = KVCacheLoader(TorchDeserializer(torch.float16, self.device))
+        self.kvcache_loader = KVCacheLoader(TorchDeserializer(self.device))
         self.tokenizer = AutoTokenizer.from_pretrained(model_path)
         self.model = AutoModelForCausalLM.from_pretrained(
             model_path,

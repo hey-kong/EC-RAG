@@ -55,7 +55,7 @@ class RerankerWrapper:
         topk = heapq.nlargest(top_k, zip(scores, nodes), key=lambda x: x[0])
         end = time.perf_counter()
         global_statistic.add_to_list("reranking_time", end - start)
-        return [(node, score) for score, node in topk]
+        return [node for score, node in topk]
 
     def rerank_nodes_with_early_stopping(self, query_text, nodes, top_k=8):
         """重排序节点并返回得分最高的 top_k 结果，支持 early stopping"""
@@ -88,7 +88,7 @@ class RerankerWrapper:
         topk_results = sorted(heap, key=lambda x: x[0], reverse=True)[:top_k]
         end = time.perf_counter()
         global_statistic.add_to_list("reranking_time", end - start)
-        return [(node, score) for score, _, node in topk_results]
+        return [node for score, _, node in topk_results]
 
     def _batch_iterable(self, iterable, batch_size):
         """将 iterable 分批"""

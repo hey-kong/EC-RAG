@@ -85,8 +85,7 @@ def main():
     parser.add_argument('--strategy', type=str, default='hybrid', choices=['edge_only', 'cloud_only', 'hybrid'],
                         help="Strategy for selecting inference location: edge, cloud, or hybrid")
     # use local slm
-    parser.add_argument('--slm_model_path', type=str, default='LLM-Research/Llama-3.2-3B-Instruct',
-                        help='Path of local slm model')
+    parser.add_argument('--slm_model_path', type=str, default='Qwen/Qwen3-4B', help='Path of local slm model')
     # retriver related (Basic: vectorIndex)
     parser.add_argument('--docstore', type=str, default='../docs_store/hotpotqa_512', help='Path of nodes')
     parser.add_argument('--similarity_top_k', type=int, default=20, help='Top N of vector retriver')
@@ -170,9 +169,9 @@ def main():
                 preload_node = None
                 if args.preload_kvcache:
                     if args.pruning_strategy == "dynamic" and args.min_k < len(nodes):
-                        preload_node = nodes[args.min_k][0].node
+                        preload_node = nodes[args.min_k]
                     else:
-                        preload_node = nodes[0][0].node
+                        preload_node = nodes[0]
                 complexity_score = slm.judge_complexity(query, preload_node)
             if args.pruning_strategy == "dynamic":
                 nodes = retriever.dynamic_pruning(nodes, query, args.min_k)

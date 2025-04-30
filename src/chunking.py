@@ -52,8 +52,7 @@ def main():
     parser = argparse.ArgumentParser(description='Run indexing for RAG')
     parser.add_argument('--embedding_model', type=str, default='BAAI/bge-small-en-v1.5',
                         help='Embedding model name or path')
-    parser.add_argument('--slm_model_path', type=str, default='LLM-Research/Llama-3.2-3B-Instruct',
-                        help='Path of local slm model')
+    parser.add_argument('--slm_model_path', type=str, default='Qwen/Qwen3-4B', help='Path of local slm model')
     parser.add_argument('--chunk_size', type=int, default=512, help='chunk size for splitter')
     parser.add_argument('--chunk_overlap', type=int, default=20, help='chunk overlap for splitter')
     parser.add_argument('--dataset_name', type=str, default='hotpotqa', help='dataset name')

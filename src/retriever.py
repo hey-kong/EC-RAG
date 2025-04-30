@@ -39,7 +39,6 @@ class Retriever:
         start = time.perf_counter()
         query_bundle = QueryBundle(query_str=query_text)
         nodes = self.bm25_retriever.retrieve(query_bundle)
-        nodes.extend(nodes)
         end = time.perf_counter()
         global_statistic.add_to_list("bm25_retrieval_time", end - start)
         global_statistic.add_to_list("bm25_retrieved_nodes", len(nodes))
@@ -52,7 +51,6 @@ class Retriever:
         start = time.perf_counter()
         query_bundle = QueryBundle(query_str=query_text)
         nodes = self.vec_retriever.retrieve(query_bundle)
-        nodes.extend(nodes)
         end = time.perf_counter()
         global_statistic.add_to_list("vec_retriever_time", end - start)
         global_statistic.add_to_list("vec_retrieved_nodes", len(nodes))
@@ -86,7 +84,7 @@ class Retriever:
     def dynamic_pruning(self, reranked_nodes, query_text, min_k):
         start = time.perf_counter()
         pruned_pos = self._find_pruned_pos(reranked_nodes, query_text, min_k)
-        nodes = [node for node, _ in reranked_nodes[:pruned_pos]]
+        nodes = reranked_nodes[:pruned_pos]
         global_statistic.add_to_list("pruning_time", time.perf_counter() - start)
         global_statistic.add_to_list("avg_chunks", len(nodes))
         return nodes
@@ -125,8 +123,8 @@ class Retriever:
         i = min_k
         step = 2  # step by 2
         while i < n:
-            preload_node = reranked_nodes[i + step][0].node if i + step < n and self.args.preload_kvcache else None
-            if not slm.judge_relevance(reranked_nodes[i][0].node, query_text, self.args.use_kvcache, preload_node):
+            preload_node = reranked_nodes[i + step] if i + step < n and self.args.preload_kvcache else None
+            if not slm.judge_relevance(reranked_nodes[i], query_text, self.args.use_kvcache, preload_node):
                 break
             i += step
 
@@ -136,7 +134,7 @@ class Retriever:
 
         # Check the previous chunk's relevance
         j = i - 1
-        preload_node = reranked_nodes[0][0].node if self.args.preload_kvcache else None
-        if j < n and slm.judge_relevance(reranked_nodes[j][0].node, query_text, self.args.use_kvcache, preload_node):
+        preload_node = reranked_nodes[0] if self.args.preload_kvcache else None
+        if j < n and slm.judge_relevance(reranked_nodes[j], query_text, self.args.use_kvcache, preload_node):
             return i
         return j

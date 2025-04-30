@@ -8,7 +8,7 @@ from matrix_factorization.model import MFModel
 def complexity_threshold(x, min_val, max_val):
     if max_val <= min_val:
         raise ValueError("max_val must be greater than min_val")
-    return 0.5 * (max_val - x) / (max_val - min_val)
+    return 0.5 * (1 - (x - min_val) / max_val)
 
 
 class BaseRouter(ABC):
