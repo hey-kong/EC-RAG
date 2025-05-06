@@ -60,9 +60,9 @@ def query_prompt(chunk_list, query):
     prompt_template = PROMPT_PREFIX + f"""
 {chunks}
 
-Based on the above information, answer the question: {query}
+Given the above information and not prior knowledge, answer the question: {query}
 
-Respond with the most concise answer only, do not output any other words.<|im_end|>
+Respond with a concise answer only, do not output any other words.<|im_end|>
 <|im_start|>assistant
 <think>\n\n</think>\n\n
 """
@@ -178,7 +178,11 @@ class CustomModelWrapper:
                 input_ids,
                 attention_mask=attention_mask,
                 max_new_tokens=50,
-                do_sample=False,
+                do_sample=True,
+                temperature=0.7,
+                top_p=0.8,
+                top_k=20,
+                min_p=0,
                 pad_token_id=self.tokenizer.pad_token_id,
                 eos_token_id=self.eos_token_id,
                 past_key_values=kvcache
