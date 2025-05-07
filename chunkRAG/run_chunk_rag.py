@@ -85,6 +85,8 @@ def main():
     print_cmd(parser, args)
 
     local_reranker.init(args)
+
+    print("Initializing ChunkRAG agent...")
     agent = ChunkRAGAgent(
         docstore=args.docstore,
         vec_topk=args.vec_topk,
@@ -115,7 +117,7 @@ def main():
 
             # retrieve(include rerank and pruning) and generate
             start = time.perf_counter()
-            answer = agent.query(query)
+            answer = agent.basic_query(query)
             end = time.perf_counter()
 
             global_statistic.add_to_list("rag_time", end - start)
