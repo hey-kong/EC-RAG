@@ -7,6 +7,7 @@ from llama_index.core import (
     load_index_from_storage,
 )
 from llama_index.retrievers.bm25 import BM25Retriever
+from llama_index.core.retrievers import QueryFusionRetriever
 import Stemmer
 
 from slm_inference import slm
@@ -32,13 +33,22 @@ class Retriever:
                 language="english",
             )
 
+        # build rrf retriever
+        self.fusion_retriever = QueryFusionRetriever(
+            [self.vec_retriever, self.bm25_retriever],
+            similarity_top_k=args.similarity_top_k + args.bm25_similarity_top_k,
+            num_queries=1,
+            mode="reciprocal_rerank",
+            use_async=True,
+            verbose=True,
+        )
+
         # pruning strategy
         self.pruning_strategies = ['topk', 'dynamic']
 
     def bm25_retrieve(self, query_text):
         start = time.perf_counter()
-        query_bundle = QueryBundle(query_str=query_text)
-        nodes = self.bm25_retriever.retrieve(query_bundle)
+        nodes = self.bm25_retriever.retrieve(query_text)
         end = time.perf_counter()
         global_statistic.add_to_list("bm25_retrieval_time", end - start)
         global_statistic.add_to_list("bm25_retrieved_nodes", len(nodes))
@@ -59,27 +69,16 @@ class Retriever:
             exit("No chunk retrieved")
         return nodes
 
-    def rrf(self, bm25_nodes, vec_nodes, k=60):
+    def fusion_retrieve(self, query_text):
         start = time.perf_counter()
-        from collections import defaultdict
-
-        score_dict = defaultdict(float)
-        node_dict = dict()
-
-        for rank, node in enumerate(bm25_nodes):
-            score_dict[node.node_id] += 1 / (k + rank)
-            node_dict[node.node_id] = node
-
-        for rank, node in enumerate(vec_nodes):
-            score_dict[node.node_id] += 1 / (k + rank)
-            node_dict[node.node_id] = node
-
-        fused_node_ids = sorted(score_dict.keys(), key=lambda nid: score_dict[nid], reverse=True)
-        fused_nodes = [node_dict[nid] for nid in fused_node_ids]
-
+        nodes = self.fusion_retriever.retrieve(query_text)
         end = time.perf_counter()
-        global_statistic.add_to_list("rrf_time", end - start)
-        return fused_nodes
+        global_statistic.add_to_list("bm25_retrieval_time", end - start)
+        global_statistic.add_to_list("bm25_retrieved_nodes", len(nodes))
+
+        if len(nodes) == 0:
+            exit("No chunk retrieved")
+        return nodes
 
     def dynamic_pruning(self, reranked_nodes, query_text, min_k):
         start = time.perf_counter()

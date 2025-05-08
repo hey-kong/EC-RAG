@@ -1,4 +1,5 @@
 import os
+import re
 import hashlib
 import argparse
 import torch
@@ -34,6 +35,7 @@ def get_nodes_from_documents(
         chunk_texts = splitter.split_text(doc_text)
 
         for chunk_id, chunk_text in enumerate(chunk_texts):
+            chunk_text = re.sub(r'\s+', ' ', chunk_text.strip())
             chunk_hash = hashlib.md5(chunk_text.strip().encode('utf-8')).hexdigest()
             if chunk_hash in seen_hashes:
                 continue

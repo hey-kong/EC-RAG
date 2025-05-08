@@ -122,6 +122,7 @@ def main():
     print("Loading index...")
     # Set up embedding model and load index
     Settings.embed_model = HuggingFaceEmbedding(model_name=args.embedding_model)
+    Settings.llm = None
     start = time.perf_counter()
     retriever = Retriever(args)
     end = time.perf_counter()
@@ -156,9 +157,7 @@ def main():
 
             # retrieve and generate
             start = time.perf_counter()
-            bm25_nodes = retriever.bm25_retrieve(query)
-            vec_nodes = retriever.vec_retrieve(query)
-            nodes = retriever.rrf(bm25_nodes, vec_nodes)
+            nodes = retriever.fusion_retrieve(query)
             if args.pruning_strategy == "topk":
                 nodes = local_reranker.rerank_nodes(query, nodes, args.rerank_top_k)
             elif args.pruning_strategy == "dynamic":

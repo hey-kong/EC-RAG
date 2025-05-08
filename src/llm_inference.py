@@ -13,9 +13,9 @@ def query_prompt(chunk_list, query):
     prompt_template = f"""\
 {chunks}
 
-Based on the above information, answer the question: {query}
+Given the above information, answer the question: {query}
 
-Respond with the most concise answer only, do not output any other words.
+Only give me the answer and do not output any other words.
 """
 
     return prompt_template
