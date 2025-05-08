@@ -51,7 +51,7 @@ def main():
     parser.add_argument('--chunk_size', type=int, default=512, help='chunk size for splitter')
     parser.add_argument('--dataset_name', type=str, default='hotpotqa', help='dataset name')
     parser.add_argument('--docs_dir', type=str, default='../data/hotpotqa/documents', help='directory of documents')
-    parser.add_argument('--persist_dir', type=str, default='/pan/docs_store', help='persist dir for docstore')
+    parser.add_argument('--persist_dir', type=str, default='/pan/wk/chunkrag_docs_store', help='persist dir for docstore')
     args = parser.parse_args()
 
     Settings.embed_model = HuggingFaceEmbedding(model_name=args.embedding_model)

@@ -5,7 +5,7 @@ import os
 from tqdm import tqdm
 
 # custom modules
-from chunkrag_agent import ChunkRAGAgent
+from sage_agent import SAGEAgent
 from customed_statistic import global_statistic
 from cal_f1 import calc_f1_score
 from reranker import local_reranker
@@ -69,8 +69,7 @@ def main():
 
     # retriver related (Basic: vectorIndex)
     parser.add_argument('--docstore', type=str, default='../docs_store/hotpotqa_512', help='Path of nodes')
-    parser.add_argument('--vec_topk', type=int, default=20, help='Top N of vector retriver')
-    parser.add_argument('--bm25_topk', type=int, default=20, help='Top N of bm25 retriver')
+    parser.add_argument('--similarity_top_k', type=int, default=20, help='Top N of vector retriver')
 
     # reranker related
     parser.add_argument('--reranker_layerwise', action='store_true', help='Whether to use layerwise reranker')
@@ -87,10 +86,9 @@ def main():
     local_reranker.init(args)
 
     print("Initializing ChunkRAG agent...")
-    agent = ChunkRAGAgent(
+    agent = SAGEAgent(
         docstore=args.docstore,
-        vec_topk=args.vec_topk,
-        bm25_topk=args.bm25_topk,
+        similarity_top_k=args.similarity_top_k,
         model_name="deepseek-chat",
         embed_model=args.embedding_model,
     )
@@ -117,7 +115,7 @@ def main():
 
             # retrieve(include rerank and pruning) and generate
             start = time.perf_counter()
-            answer = agent.basic_query(query)
+            answer = agent.query(query)
             end = time.perf_counter()
 
             global_statistic.add_to_list("rag_time", end - start)

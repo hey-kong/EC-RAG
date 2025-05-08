@@ -11,13 +11,17 @@ from llama_index.retrievers.bm25 import BM25Retriever
 from llama_index.llms.deepseek import DeepSeek
 from llama_index.embeddings.huggingface import HuggingFaceEmbedding
 
+from llama_index.llms.ollama import Ollama
+
 import os
+import time
 import numpy as np
 from typing import List
 import Stemmer
 from scipy import spatial
 
 from reranker import local_reranker
+from customed_statistic import global_statistic
 
 def direct_qa_prompt(query):
     prompt = f'''Answer the following question based on your knowledge, 
@@ -47,6 +51,7 @@ class ChunkRAGAgent:
         vec_topk: int,
         bm25_topk: int,
         model_name: str = "deepseek-chat",
+        local_model_name: str = "qwen2.5:7b",
         embed_model: str = "BAAI/bge-small-en-v1.5",
         similarity_threshold: float = 0.9,
         bm25_weight: float = 0.5,
@@ -60,8 +65,10 @@ class ChunkRAGAgent:
         self.llm = DeepSeek(model=model_name, api_key=os.environ.get("DEEPSEEK_API_KEY"))
         Settings.llm = self.llm
         Settings.embed_model = HuggingFaceEmbedding(model_name=embed_model)
-            
+        self.local_llm = Ollama(model=local_model_name)
+
         # index: vector and bm25
+        print("ChunkRAGAgent: Loading vector and bm25 retrievers...")
         self.storage_context = StorageContext.from_defaults(persist_dir=docstore + "_vec")
         self.vector_index = load_index_from_storage(self.storage_context)
         self.vector_retriever = self.vector_index.as_retriever(similarity_top_k=vec_topk)
@@ -73,6 +80,8 @@ class ChunkRAGAgent:
             stemmer=Stemmer.Stemmer("english"),
             language="english",
         )
+
+        print("ChunkRAGAgent: Successfully loaded vector and bm25 retrievers.")
 
         # para settings
         self.similarity_threshold = similarity_threshold
@@ -181,7 +190,7 @@ class ChunkRAGAgent:
             "Relevance Score (between 0 and 1):"
         )
         
-        response = Settings.llm.complete(prompt)
+        response = self.local_llm.complete(prompt)
         try:
             return float(response.text.strip())
         except ValueError:
@@ -203,7 +212,7 @@ class ChunkRAGAgent:
             "Final Relevance Score (between 0 and 1):"
         )
         
-        response = Settings.llm.complete(prompt)
+        response = self.local_llm.complete(prompt)
         try:
             return float(response.text.strip())
         except ValueError:
@@ -235,21 +244,55 @@ class ChunkRAGAgent:
 
         return filtered_nodes
     
-    def query(self, query: str):
-
-        rewritten_query = self._rewrite_query(query)
-        retrieved_nodes = self._hybrid_retrieval(rewritten_query)
+    def basic_query(self, query: str):
+        start = time.perf_counter()
+        retrieved_nodes = self._hybrid_retrieval(query)
+        retrieve_end = time.perf_counter()
+        global_statistic.add_to_list("hybrid_retrieval_time", retrieve_end - start)
         
-        filtered_nodes = self._filter_redundant_chunks(retrieved_nodes)
-        final_nodes = self._score_and_filter_chunks(filtered_nodes, rewritten_query)
+        if not retrieved_nodes:
+            response = Settings.llm.complete(direct_qa_prompt(query))
+            return response.text
+        # rerank
+        reranked_nodes = local_reranker.rerank_nodes(query, retrieved_nodes)
+        chunk_list = [node.text for node, _ in reranked_nodes]
+        rerank_end = time.perf_counter()
+        global_statistic.add_to_list("rerank_nodes_time", rerank_end - retrieve_end)
+        response = Settings.llm.complete(query_prompt(chunk_list, query))
+        qa_end = time.perf_counter()
+        global_statistic.add_to_list("qa_time", qa_end - rerank_end)
+        return response.text
+
+    def query(self, query: str):
+        # start = time.perf_counter()
+        # query = self._rewrite_query(query)
+        # rewrite_end = time.perf_counter()
+        # global_statistic.add_to_list("rewrite_query_time", rewrite_end - start)
+
+        start = time.perf_counter()
+        retrieved_nodes = self._hybrid_retrieval(query)
+        retrieve_end = time.perf_counter()
+        global_statistic.add_to_list("hybrid_retrieval_time", retrieve_end - start)
+
+        # filtered_nodes = self._filter_redundant_chunks(retrieved_nodes)
+        # filter_end = time.perf_counter()
+        # global_statistic.add_to_list("filter_redundant_chunks_time", filter_end - retrieve_end)
+
+        final_nodes = self._score_and_filter_chunks(retrieved_nodes, query)
+        score_end = time.perf_counter()
+        global_statistic.add_to_list("score_and_filter_chunks_time", score_end - retrieve_end)
 
         if not final_nodes:
-            response = Settings.llm.complete(direct_qa_prompt(rewritten_query))
+            response = Settings.llm.complete(direct_qa_prompt(query))
             return response.text
         
         # rerank
-        reranked_nodes = local_reranker.rerank_nodes(rewritten_query, final_nodes)
+        reranked_nodes = local_reranker.rerank_nodes(query, final_nodes)
         chunk_list = [node.text for node, _ in reranked_nodes]
-        
-        response = Settings.llm.complete(query_prompt(chunk_list, rewritten_query))
+        rerank_end = time.perf_counter()
+        global_statistic.add_to_list("rerank_nodes_time", rerank_end - score_end)
+
+        response = Settings.llm.complete(query_prompt(chunk_list, query))
+        qa_end = time.perf_counter()
+        global_statistic.add_to_list("qa_time", qa_end - rerank_end)
         return response.text
