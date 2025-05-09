@@ -90,7 +90,7 @@ def main():
         if not os.path.exists(args.chunk_kvcache_dir):
             os.makedirs(args.chunk_kvcache_dir)
         for idx, node in tqdm(enumerate(nodes, 1), total=len(nodes), desc="Processing chunks"):
-            chunk = chunk_with_prefix(node.text)
+            chunk = chunk_with_prefix(node.text, args.slm_model_path)
             inputs = tokenizer(chunk, return_tensors="pt").to(device)
             with torch.no_grad():
                 outputs = model(

@@ -13,61 +13,92 @@ from customed_statistic import global_statistic
 
 torch.serialization.add_safe_globals([DynamicCache])
 
-PROMPT_PREFIX = f"""<|im_start|>system
+QWEN_PROMPT_PREFIX = """<|im_start|>system
 You are a helpful assistant.<|im_end|>
 <|im_start|>user
 """
 
-
-def chunk_with_prefix(chunk_text):
-    chunk = PROMPT_PREFIX + f"""
-{chunk_text}
+LLAMA_PROMPT_PREFIX = """<|begin_of_text|>
+<|start_header_id|>system<|end_header_id|>
+You are a helpful assistant.<|eot_id|>
+<|start_header_id|>user<|end_header_id|>
 """
 
-    return chunk
+
+def get_model_type(model_name):
+    model_lower = model_name.lower()
+    if 'qwen3' in model_lower:
+        return 'qwen3'
+    elif 'qwen' in model_lower:
+        return 'qwen'
+    elif 'llama' in model_lower:
+        return 'llama'
+    else:
+        raise ValueError(f"Unsupported model: {model_name}")
 
 
-def judge_relevance_prompt(chunk, query):
-    prompt_template = PROMPT_PREFIX + f"""
-{chunk}
-
-Determine whether the above information directly or indirectly helps answer the question: {query}
-
-Respond with "Yes" or "No" only, do not output any other words.<|im_end|>
-<|im_start|>assistant
-<think>\n\n</think>\n\n
-"""
-
-    return prompt_template
+def chunk_with_prefix(chunk_text, model_name):
+    model_type = get_model_type(model_name)
+    prefix = QWEN_PROMPT_PREFIX if model_type in ('qwen', 'qwen3') else LLAMA_PROMPT_PREFIX
+    return f"{prefix}\n{chunk_text}"
 
 
-def judge_complexity_prompt(query):
-    prompt_template = PROMPT_PREFIX + f"""For the given question: {query}
+def _build_suffix(model_type):
+    suffix_map = {
+        'qwen3': (
+            "<|im_end|>\n"
+            "<|im_start|>assistant\n"
+            "<think>\n\n</think>\n\n\n"
+        ),
+        'qwen': (
+            "<|im_end|>\n"
+            "<|im_start|>assistant\n"
+        ),
+        'llama': (
+            "<|eot_id|>\n"
+            "<|start_header_id|>assistant<|end_header_id|>\n"
+        )
+    }
+    return suffix_map[model_type]
 
-Classify the question as easy or hard to answer.
 
-Respond with "Easy" or "Hard" only, do not output any other words.<|im_end|>
-<|im_start|>assistant
-<think>\n\n</think>\n\n
-"""
+def judge_relevance_prompt(chunk, query, model_name):
+    model_type = get_model_type(model_name)
+    prefix = QWEN_PROMPT_PREFIX if model_type in ('qwen', 'qwen3') else LLAMA_PROMPT_PREFIX
 
-    return prompt_template
+    return (
+        f"{prefix}\n"
+        f"{chunk}\n\n"
+        f"Determine whether the above information directly or indirectly helps answer the question: {query}\n\n"
+        f"Respond with \"Yes\" or \"No\" only, do not output any other words."
+        f"{_build_suffix(model_type)}"
+    )
 
 
-def query_prompt(chunk_list, query):
+def judge_complexity_prompt(query, model_name):
+    model_type = get_model_type(model_name)
+    prefix = QWEN_PROMPT_PREFIX if model_type in ('qwen', 'qwen3') else LLAMA_PROMPT_PREFIX
+
+    return (
+        f"{prefix}For the given question: {query}\n\n"
+        f"Classify the question as easy or hard to answer.\n\n"
+        f"Respond with \"Easy\" or \"Hard\" only, do not output any other words."
+        f"{_build_suffix(model_type)}"
+    )
+
+
+def query_prompt(chunk_list, query, model_name):
+    model_type = get_model_type(model_name)
+    prefix = QWEN_PROMPT_PREFIX if model_type in ('qwen', 'qwen3') else LLAMA_PROMPT_PREFIX
     chunks = "\n\n".join(chunk_list)
 
-    prompt_template = PROMPT_PREFIX + f"""
-{chunks}
-
-Given the above information, answer the question: {query}
-
-Only give me the answer and do not output any other words.<|im_end|>
-<|im_start|>assistant
-<think>\n\n</think>\n\n
-"""
-
-    return prompt_template
+    return (
+        f"{prefix}\n"
+        f"{chunks}\n\n"
+        f"Given the above information, answer the question: {query}\n\n"
+        f"Only give me the answer and do not output any other words."
+        f"{_build_suffix(model_type)}"
+    )
 
 
 class KVCacheLoader:
@@ -114,10 +145,11 @@ class CustomModelWrapper:
         self.model.eval()
         self.tokenizer.pad_token = self.tokenizer.eos_token
         self.eos_token_id = self.model.config.eos_token_id
+        self.model_type = get_model_type(model_path)
 
     def judge_relevance(self, node, query, use_kvcache=False, preload_node: Optional[TextNode] = None):
         start = time.perf_counter()
-        prompt = judge_relevance_prompt(node.text, query)
+        prompt = judge_relevance_prompt(node.text, query, self.model_type)
         inputs = self.tokenizer(prompt, return_tensors="pt", padding=True).to(self.device)
         input_ids = inputs["input_ids"]
         attention_mask = inputs["attention_mask"]
@@ -149,7 +181,7 @@ class CustomModelWrapper:
         start = time.perf_counter()
         if preload_node is not None:
             self.kvcache_loader.preload_kvcache_file(preload_node.metadata["kvcache_file_path"])
-        prompt = judge_complexity_prompt(query)
+        prompt = judge_complexity_prompt(query, self.model_type)
         input_ids = self.tokenizer(prompt, return_tensors="pt", padding=True).to(self.device).input_ids
         with torch.no_grad():
             next_token_logits = self.model(input_ids).logits[:, -1, :]
@@ -167,7 +199,7 @@ class CustomModelWrapper:
     def generate_answer(self, query, nodes, use_kvcache=False):
         start = time.perf_counter()
         chunk_list = [node.text for node in nodes]
-        prompt = query_prompt(chunk_list, query)
+        prompt = query_prompt(chunk_list, query, self.model_type)
         inputs = self.tokenizer(prompt, return_tensors="pt", padding=True).to(self.device)
         input_ids = inputs["input_ids"]
         attention_mask = inputs["attention_mask"]

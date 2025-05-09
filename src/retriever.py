@@ -23,25 +23,24 @@ class Retriever:
         self.vec_index = load_index_from_storage(self.storage_context)
         self.vec_retriever = self.vec_index.as_retriever(similarity_top_k=args.similarity_top_k)
 
-        # build bm25 retriever
         self.docstore = SimpleDocumentStore.from_persist_path(args.docstore + "_docstore.pkl")
         if args.enable_bm25_retriever:
+            # build bm25 retriever
             self.bm25_retriever = BM25Retriever.from_defaults(
                 docstore=self.docstore,  # 直接复用 docstore
                 similarity_top_k=args.bm25_similarity_top_k,
                 stemmer=Stemmer.Stemmer("english"),
                 language="english",
             )
-
-        # build rrf retriever
-        self.fusion_retriever = QueryFusionRetriever(
-            [self.vec_retriever, self.bm25_retriever],
-            similarity_top_k=args.similarity_top_k + args.bm25_similarity_top_k,
-            num_queries=1,
-            mode="reciprocal_rerank",
-            use_async=True,
-            verbose=True,
-        )
+            # build fusion retriever
+            self.fusion_retriever = QueryFusionRetriever(
+                [self.vec_retriever, self.bm25_retriever],
+                similarity_top_k=args.similarity_top_k + args.bm25_similarity_top_k,
+                num_queries=1,
+                mode="reciprocal_rerank",
+                use_async=True,
+                verbose=True,
+            )
 
         # pruning strategy
         self.pruning_strategies = ['topk', 'dynamic']
@@ -73,8 +72,8 @@ class Retriever:
         start = time.perf_counter()
         nodes = self.fusion_retriever.retrieve(query_text)
         end = time.perf_counter()
-        global_statistic.add_to_list("bm25_retrieval_time", end - start)
-        global_statistic.add_to_list("bm25_retrieved_nodes", len(nodes))
+        global_statistic.add_to_list("retrieval_time", end - start)
+        global_statistic.add_to_list("retrieved_nodes", len(nodes))
 
         if len(nodes) == 0:
             exit("No chunk retrieved")
