@@ -81,7 +81,9 @@ def judge_complexity_prompt(query, model_name):
 
     return (
         f"{prefix}For the given question: {query}\n\n"
-        f"Classify the question as easy or hard to answer.\n\n"
+        f"Classify the question as easy or hard to answer.\n"
+        f"If the question is simple, factual, or straightforward, respond with \"Easy\".\n"
+        f"If the question is complex, nuanced, requires multi-step reasoning or in-depth analysis, respond with \"Hard\".\n\n"
         f"Respond with \"Easy\" or \"Hard\" only, do not output any other words."
         f"{_build_suffix(model_type)}"
     )

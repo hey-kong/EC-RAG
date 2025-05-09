@@ -6,7 +6,7 @@ from matrix_factorization.model import MFModel
 
 
 def complexity_threshold(x, min_val):
-    return 0.6 * min_val / x + 0.2
+    return 0.5 * min_val / x
 
 
 class BaseRouter(ABC):
