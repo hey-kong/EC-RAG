@@ -187,7 +187,6 @@ def main():
                         complexity_score=complexity_score,
                         k=k,
                         min_k=args.min_k,
-                        max_k=args.max_k,
                     )
 
                 if to_edge:

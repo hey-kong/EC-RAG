@@ -44,9 +44,9 @@ Respond with "Yes" or "No" only, do not output any other words.<|im_end|>
 def judge_complexity_prompt(query):
     prompt_template = PROMPT_PREFIX + f"""For the given question: {query}
 
-Classify the complexity of the question as low or high.
+Classify the question as easy or hard to answer.
 
-Respond with "High" or "Low" only, do not output any other words.<|im_end|>
+Respond with "Easy" or "Hard" only, do not output any other words.<|im_end|>
 <|im_start|>assistant
 <think>\n\n</think>\n\n
 """
@@ -156,10 +156,10 @@ class CustomModelWrapper:
             # next_token_id = next_token_logits.argmax(dim=-1)
             # first_token = self.tokenizer.decode(next_token_id[0], skip_special_tokens=True)
             # print("First Token:", first_token)
-            high_id = self.tokenizer("High", add_special_tokens=False).input_ids[0]
-            low_id = self.tokenizer("Low", add_special_tokens=False).input_ids[0]
+            easy_id = self.tokenizer("Easy", add_special_tokens=False).input_ids[0]
+            hard_id = self.tokenizer("Hard", add_special_tokens=False).input_ids[0]
             log_probs = torch.nn.functional.log_softmax(next_token_logits, dim=-1)
-            complexity_score = torch.sigmoid(log_probs[0, high_id] - log_probs[0, low_id]).item()
+            complexity_score = torch.sigmoid(log_probs[0, hard_id] - log_probs[0, easy_id]).item()
         end = time.perf_counter()
         global_statistic.add_to_list("judge_complexity_time", end - start)
         return complexity_score
