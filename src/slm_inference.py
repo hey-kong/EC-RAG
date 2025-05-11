@@ -40,7 +40,7 @@ def get_model_type(model_name):
 def chunk_with_prefix(chunk_text, model_name):
     model_type = get_model_type(model_name)
     prefix = QWEN_PROMPT_PREFIX if model_type in ('qwen', 'qwen3') else LLAMA_PROMPT_PREFIX
-    return f"{prefix}\n{chunk_text}"
+    return f"{prefix}{chunk_text}"
 
 
 def _build_suffix(model_type):
@@ -67,9 +67,10 @@ def judge_relevance_prompt(chunk, query, model_name):
     prefix = QWEN_PROMPT_PREFIX if model_type in ('qwen', 'qwen3') else LLAMA_PROMPT_PREFIX
 
     return (
-        f"{prefix}\n"
-        f"{chunk}\n\n"
-        f"Determine whether the above information directly or indirectly helps answer the question: {query}\n\n"
+        f"{prefix}{chunk}\n\n"
+        f"Determine whether the above text is relevant to the question: {query}\n"
+        f"If the text directly or indirectly helps answer the question, respond with \"Yes\".\n"
+        f"If the text does not contain useful information, respond with \"No\".\n\n"
         f"Respond with \"Yes\" or \"No\" only, do not output any other words."
         f"{_build_suffix(model_type)}"
     )
@@ -95,9 +96,8 @@ def query_prompt(chunk_list, query, model_name):
     chunks = "\n\n".join(chunk_list)
 
     return (
-        f"{prefix}\n"
-        f"{chunks}\n\n"
-        f"Given the above information, answer the question: {query}\n\n"
+        f"{prefix}{chunks}\n\n"
+        f"Given the above text, answer the question: {query}\n\n"
         f"Only give me the answer and do not output any other words."
         f"{_build_suffix(model_type)}"
     )
