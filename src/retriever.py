@@ -24,23 +24,22 @@ class Retriever:
         self.vec_retriever = self.vec_index.as_retriever(similarity_top_k=args.similarity_top_k)
 
         self.docstore = SimpleDocumentStore.from_persist_path(args.docstore + "_docstore.pkl")
-        if args.enable_bm25_retriever:
-            # build bm25 retriever
-            self.bm25_retriever = BM25Retriever.from_defaults(
-                docstore=self.docstore,  # 直接复用 docstore
-                similarity_top_k=args.bm25_similarity_top_k,
-                stemmer=Stemmer.Stemmer("english"),
-                language="english",
-            )
-            # build fusion retriever
-            self.fusion_retriever = QueryFusionRetriever(
-                [self.vec_retriever, self.bm25_retriever],
-                similarity_top_k=args.similarity_top_k + args.bm25_similarity_top_k,
-                num_queries=1,
-                mode="reciprocal_rerank",
-                use_async=True,
-                verbose=True,
-            )
+        # build bm25 retriever
+        self.bm25_retriever = BM25Retriever.from_defaults(
+            docstore=self.docstore,  # 直接复用 docstore
+            similarity_top_k=args.bm25_similarity_top_k,
+            stemmer=Stemmer.Stemmer("english"),
+            language="english",
+        )
+        # build fusion retriever
+        self.fusion_retriever = QueryFusionRetriever(
+            [self.vec_retriever, self.bm25_retriever],
+            similarity_top_k=args.similarity_top_k + args.bm25_similarity_top_k,
+            num_queries=1,
+            mode="reciprocal_rerank",
+            use_async=True,
+            verbose=True,
+        )
 
         # pruning strategy
         self.pruning_strategies = ['topk', 'dynamic']
@@ -79,9 +78,9 @@ class Retriever:
             exit("No chunk retrieved")
         return nodes
 
-    def dynamic_pruning(self, reranked_nodes, query_text, min_k):
+    def dynamic_pruning(self, reranked_nodes, query_text, min_k, max_k):
         start = time.perf_counter()
-        pruned_pos = self._find_pruned_pos(reranked_nodes, query_text, min_k)
+        pruned_pos = self._find_pruned_pos(reranked_nodes, query_text, min_k, max_k)
         nodes = reranked_nodes[:pruned_pos]
         global_statistic.add_to_list("pruning_time", time.perf_counter() - start)
         global_statistic.add_to_list("avg_chunks", len(nodes))
@@ -109,30 +108,20 @@ class Retriever:
     #             return j
     #     return end
 
-    def _find_pruned_pos(self, reranked_nodes, query_text, min_k):
-        n = len(reranked_nodes)
-        if n == 0:
+    def _find_pruned_pos(self, reranked_nodes, query_text, min_k, max_k):
+        max_k = min(max_k, len(reranked_nodes))
+        if max_k == 0:
             return 0
         if min_k <= 0:
             raise ValueError("min_k must be >= 1")
-        if n <= min_k:
-            return n
+        if max_k <= min_k:
+            return max_k
 
         i = min_k
-        step = 2  # step by 2
-        while i < n:
-            preload_node = reranked_nodes[i + step] if i + step < n and self.args.preload_kvcache else None
+        while i < max_k:
+            preload_node = reranked_nodes[i + 1] if i + 1 < max_k and self.args.preload_kvcache else None
             if not slm.judge_relevance(reranked_nodes[i], query_text, self.args.use_kvcache, preload_node):
                 break
-            i += step
+            i += 1
 
-        # If the first checked chunk is irrelevant, stop there
-        if i == min_k:
-            return i
-
-        # Check the previous chunk's relevance
-        j = i - 1
-        preload_node = reranked_nodes[0] if self.args.preload_kvcache else None
-        if j < n and slm.judge_relevance(reranked_nodes[j], query_text, self.args.use_kvcache, preload_node):
-            return i
-        return j
+        return i

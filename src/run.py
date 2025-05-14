@@ -75,21 +75,20 @@ def main():
     parser = argparse.ArgumentParser(description='RAG Benchmarking Script')
     parser.add_argument('--embedding_model', type=str, default='BAAI/bge-small-en-v1.5',
                         help='Embedding model name or path')
-    parser.add_argument('--query_file', type=str, default='../data/hotpotqa/questions/questions.jsonl',
+    parser.add_argument('--query_file', type=str, default='../data/dataset/questions/questions.jsonl',
                         help='Path to the file containing queries')
     parser.add_argument('--num_questions', type=int, default=0, help='Number of questions to process, 0 means all')
     parser.add_argument('--generation_file', type=str, help='Path to the output JSONL file to save generations')
     parser.add_argument('--no_generate', action='store_true', default=False, help='Close generate stage for test')
-    parser.add_argument('--answer_file', type=str, default='../data/hotpotqa/answers/answers.jsonl',
+    parser.add_argument('--answer_file', type=str, default='../data/dataset/answers/answers.jsonl',
                         help='Path to the file containing answers')
     parser.add_argument('--strategy', type=str, default='hybrid', choices=['edge_only', 'cloud_only', 'hybrid'],
                         help="Strategy for selecting inference location: edge, cloud, or hybrid")
     # use local slm
     parser.add_argument('--slm_model_path', type=str, default='Qwen/Qwen3-4B', help='Path of local slm model')
     # retriver related (Basic: vectorIndex)
-    parser.add_argument('--docstore', type=str, default='../docs_store/hotpotqa_512', help='Path of nodes')
+    parser.add_argument('--docstore', type=str, default='../docs_store/dataset_512', help='Path of nodes')
     parser.add_argument('--similarity_top_k', type=int, default=20, help='Top N of vector retriver')
-    parser.add_argument('--enable_bm25_retriever', action='store_true', help='Whether to enable BM25 retriever')
     parser.add_argument('--bm25_similarity_top_k', type=int, default=20, help='Top N of BM25 retriever')
     # reranker related
     parser.add_argument('--reranker_layerwise', action='store_true', help='Whether to use layerwise reranker')
@@ -111,14 +110,14 @@ def main():
     parser.add_argument('--detailed_logging', action='store_true', help='Whether to enable detailed logging')
     parser.add_argument('--estimate_cost', action='store_true', help='Whether to estimate cost of cloud llm api')
     args = parser.parse_args()
-    if not check_args(args):  # 检查参数有效性
+    if not check_args(args):
         return
     print_cmd(parser, args)
 
     # prepare stage
-    global_statistic.init(args)  # 初始化统计模块
+    global_statistic.init(args)
     slm.init(args.slm_model_path)
-    local_reranker.init(args)  # 初始化reranker
+    local_reranker.init(args)
     print("Loading index...")
     # Set up embedding model and load index
     Settings.embed_model = HuggingFaceEmbedding(model_name=args.embedding_model)
@@ -155,27 +154,25 @@ def main():
         for item in tqdm(questions):
             query = item["query"]
 
-            # retrieve and generate
             start = time.perf_counter()
+            # retrieve
             nodes = retriever.fusion_retrieve(query)
+            # rerank
             if args.pruning_strategy == "topk":
                 nodes = local_reranker.rerank_nodes(query, nodes, args.rerank_top_k)
             elif args.pruning_strategy == "dynamic":
                 # nodes = local_reranker.rerank_nodes(query, nodes, args.max_k)
                 nodes = local_reranker.rerank_nodes_with_early_stopping(query, nodes, args.max_k)
-            complexity_score = None
-            if args.strategy == "hybrid" and args.routing_strategy in ("adaptive", "slm_only"):
-                preload_node = None
-                if args.preload_kvcache:
-                    if args.pruning_strategy == "dynamic" and args.min_k < len(nodes):
-                        preload_node = nodes[args.min_k]
-                    else:
-                        preload_node = nodes[0]
-                complexity_score = slm.judge_complexity(query, preload_node)
-            if args.pruning_strategy == "dynamic":
-                nodes = retriever.dynamic_pruning(nodes, query, args.min_k)
-            k = len(nodes)
+                # prune
+                nodes = retriever.dynamic_pruning(nodes, query, args.min_k, args.max_k)
             if not args.no_generate:
+                # route
+                complexity_score = None
+                if args.strategy == "hybrid" and args.routing_strategy in ("adaptive", "slm_only"):
+                    if args.preload_kvcache:
+                        slm.kvcache_loader.preload_kvcache(nodes[0].metadata["kvcache_file_path"])
+                    complexity_score = slm.judge_complexity(query)
+                k = len(nodes)
                 to_edge = False
                 if args.strategy == "edge_only":
                     to_edge = True
@@ -187,8 +184,10 @@ def main():
                         complexity_score=complexity_score,
                         k=k,
                         min_k=args.min_k,
+                        max_k=args.max_k,
                     )
 
+                # generate
                 if to_edge:
                     answer = slm.generate_answer(query, nodes, args.use_kvcache)
                     edge_count += 1

@@ -5,9 +5,8 @@ import argparse
 import torch
 from typing import List
 from tqdm import tqdm
-from modelscope import AutoTokenizer, AutoModelForCausalLM
-from slm_inference import chunk_with_prefix
-from serde import TorchSerializer
+from transformers import AutoModelForCausalLM, AutoTokenizer
+from transformers.cache_utils import DynamicCache
 
 # LlamaIndex related
 from llama_index.core import (
@@ -21,6 +20,9 @@ from llama_index.core.storage.docstore import SimpleDocumentStore
 from llama_index.core.vector_stores import SimpleVectorStore
 from llama_index.core import Settings
 from llama_index.embeddings.huggingface import HuggingFaceEmbedding
+
+from serde import TorchSerializer
+from slm_inference import chunk_with_prefix
 
 
 def get_nodes_from_documents(
@@ -57,8 +59,8 @@ def main():
     parser.add_argument('--slm_model_path', type=str, default='Qwen/Qwen3-4B', help='Path of local slm model')
     parser.add_argument('--chunk_size', type=int, default=512, help='chunk size for splitter')
     parser.add_argument('--chunk_overlap', type=int, default=20, help='chunk overlap for splitter')
-    parser.add_argument('--dataset_name', type=str, default='hotpotqa', help='dataset name')
-    parser.add_argument('--docs_dir', type=str, default='../data/hotpotqa/documents', help='directory of documents')
+    parser.add_argument('--dataset_name', type=str, default='dataset', help='dataset name')
+    parser.add_argument('--docs_dir', type=str, default='../data/dataset/documents', help='directory of documents')
     parser.add_argument('--persist_dir', type=str, default='../docs_store', help='persist dir for docstore')
     parser.add_argument('--chunk_kvcache_dir', type=str, default='../chunk_kvcache',
                         help='persist dir for chunk kvcache')
@@ -84,7 +86,7 @@ def main():
         tokenizer = AutoTokenizer.from_pretrained(args.slm_model_path)
         model = AutoModelForCausalLM.from_pretrained(
             args.slm_model_path,
-            torch_dtype=torch.float16
+            torch_dtype=torch.bfloat16
         ).to(device)
         model.eval()
         if not os.path.exists(args.chunk_kvcache_dir):
@@ -92,23 +94,20 @@ def main():
         for idx, node in tqdm(enumerate(nodes, 1), total=len(nodes), desc="Processing chunks"):
             chunk = chunk_with_prefix(node.text, args.slm_model_path)
             inputs = tokenizer(chunk, return_tensors="pt").to(device)
+            prefix_cache = DynamicCache()
             with torch.no_grad():
-                outputs = model(
-                    **inputs,
-                    use_cache=True,
-                )
-            past_key_values = outputs.past_key_values
-            past_key_values_bytes = serializer.to_bytes(past_key_values)
+                prefix_cache = model(**inputs, past_key_values=prefix_cache, use_cache=True).past_key_values
             kvcache_file_path = f'{args.chunk_kvcache_dir}/kvcache_chunk_{node.node_id}.pt'
+            prefix_cache_bytes = serializer.to_bytes(prefix_cache)
             with open(kvcache_file_path, 'wb') as f:
-                f.write(past_key_values_bytes)
+                f.write(prefix_cache_bytes)
             node.metadata["kvcache_file_path"] = kvcache_file_path
 
     # document store: for bm25 retrieval
     doc_store = SimpleDocumentStore()
     doc_store.add_documents(nodes)
 
-    # vector index: 向量索引构建需要较长时间，所以要在这里进行
+    # vector index
     vector_store = SimpleVectorStore()
     index = VectorStoreIndex(
         nodes=nodes,
