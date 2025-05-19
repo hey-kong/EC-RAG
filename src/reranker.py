@@ -10,7 +10,6 @@ class RerankerWrapper:
     def __init__(self):
         self.args = None
         self.reranker = None
-        self.is_layerwise = False
 
     def init(self, args):
         model_path = 'BAAI/bge-reranker-v2-m3'
@@ -27,11 +26,7 @@ class RerankerWrapper:
         start = time.perf_counter()
         pairs = [(query_text, node.text) for node in nodes]
 
-        # 根据模型类型调用不同的计算方式
-        if self.is_layerwise:
-            scores = self.reranker.compute_score(pairs, cutoff_layers=[28])
-        else:
-            scores = self.reranker.compute_score(pairs)
+        scores = self.reranker.compute_score(pairs)
 
         topk = heapq.nlargest(top_k, zip(scores, nodes), key=lambda x: x[0])
         end = time.perf_counter()
@@ -46,11 +41,8 @@ class RerankerWrapper:
 
         for batch in self._batch_iterable(nodes, self.args.rerank_batch_size):
             pairs = [(query_text, node.text) for node in batch]
-            if self.is_layerwise:
-                scores = self.reranker.compute_score(pairs, cutoff_layers=[28])
-            else:
-                scores = self.reranker.compute_score(pairs)
 
+            scores = self.reranker.compute_score(pairs)
             if len(heap) == top_k and max(scores) <= heap[0][0]:
                 # skipped = len(pairs) - processed
                 # if skipped != 0:

@@ -1,6 +1,6 @@
 import time
-from concurrent.futures import ThreadPoolExecutor
 from typing import Optional
+from concurrent.futures import ThreadPoolExecutor, Future
 
 import torch
 import torch.serialization
@@ -8,10 +8,8 @@ from llama_index.core.schema import TextNode
 from transformers import AutoTokenizer, AutoModelForCausalLM
 from transformers.cache_utils import DynamicCache
 
-from serde import TorchDeserializer
+from kvcache_io import read_kvcache
 from customed_statistic import global_statistic
-
-torch.serialization.add_safe_globals([DynamicCache])
 
 QWEN_PROMPT_PREFIX = """<|im_start|>system
 You are a helpful assistant.<|im_end|>
@@ -104,34 +102,29 @@ def query_prompt(chunk_list, query, model_name):
 
 
 class KVCacheLoader:
-    _preload_executor = ThreadPoolExecutor(max_workers=2)
+    _preload_executor = ThreadPoolExecutor(max_workers=1)
 
     def __init__(self, device: torch.device):
-        self.deserializer = TorchDeserializer(device)
+        self.device = device
         self._preloaded_path = None
-        self._file_content_future = None
+        self._kvcache_future: Future = None
 
     def preload_kvcache(self, cache_file_path: str):
-        def _read_file():
-            start = time.perf_counter()
-            with open(cache_file_path, 'rb') as f:
-                data = f.read()
-            end = time.perf_counter()
-            global_statistic.add_to_list("read_kvcache_time", end - start)
-            return data
-
         self._preloaded_path = cache_file_path
-        self._file_content_future = KVCacheLoader._preload_executor.submit(_read_file)
+        self._kvcache_future = KVCacheLoader._preload_executor.submit(
+            read_kvcache, cache_file_path
+        )
 
     def load_kvcache(self, cache_file_path: str):
         start = time.perf_counter()
-        if self._file_content_future is not None and self._preloaded_path == cache_file_path:
-            file_content = self._file_content_future.result()
+        if self._kvcache_future is not None and self._preloaded_path == cache_file_path:
+            kvcache = self._kvcache_future.result()
         else:
-            with open(cache_file_path, 'rb') as file:
-                file_content = file.read()
+            kvcache = read_kvcache(cache_file_path)
 
-        kvcache = self.deserializer.from_bytes(file_content)
+        kvcache.key_cache = [t.to(self.device, non_blocking=True) for t in kvcache.key_cache]
+        kvcache.value_cache = [t.to(self.device, non_blocking=True) for t in kvcache.value_cache]
+        torch.cuda.synchronize()
         end = time.perf_counter()
         global_statistic.add_to_list("load_kvcache_time", end - start)
         return kvcache
@@ -144,7 +137,7 @@ class CustomModelWrapper:
         self.tokenizer = AutoTokenizer.from_pretrained(model_path)
         self.model = AutoModelForCausalLM.from_pretrained(
             model_path,
-            torch_dtype=torch.bfloat16
+            torch_dtype=torch.float16
         ).to(self.device)
         self.model.eval()
         self.tokenizer.pad_token = self.tokenizer.eos_token
@@ -152,24 +145,24 @@ class CustomModelWrapper:
         self.model_type = get_model_type(model_path)
 
     def judge_relevance(self, node, query, use_kvcache=False, preload_node: Optional[TextNode] = None):
+        start = time.perf_counter()
         prompt = judge_relevance_prompt(node.text, query, self.model_type)
-        input_ids = self.tokenizer(prompt, return_tensors="pt").to(self.device).input_ids
+        inputs = self.tokenizer(prompt, return_tensors="pt").to(self.device)
         kvcache = DynamicCache()
         if use_kvcache:
             kvcache = self.kvcache_loader.load_kvcache(node.metadata["kvcache_file_path"])
-            if use_kvcache and preload_node is not None:
-                self.kvcache_loader.preload_kvcache(preload_node.metadata["kvcache_file_path"])
+        if use_kvcache and preload_node is not None:
+            self.kvcache_loader.preload_kvcache(preload_node.metadata["kvcache_file_path"])
 
-        start = time.perf_counter()
         with torch.no_grad():
             outputs = self.model.generate(
-                input_ids,
+                **inputs,
                 max_new_tokens=1,
                 do_sample=False,
                 past_key_values=kvcache
             )
         generated_ids = outputs[0]
-        input_length = input_ids.shape[1]
+        input_length = inputs.input_ids.shape[1]
         answer = self.tokenizer.decode(generated_ids[input_length:], skip_special_tokens=True).strip()
         end = time.perf_counter()
         global_statistic.add_to_list("judge_relevance_time", end - start)
@@ -197,7 +190,7 @@ class CustomModelWrapper:
     def generate_answer(self, query, nodes, use_kvcache=False):
         chunk_list = [node.text for node in nodes]
         prompt = query_prompt(chunk_list, query, self.model_type)
-        input_ids = self.tokenizer(prompt, return_tensors="pt").to(self.device).input_ids
+        inputs = self.tokenizer(prompt, return_tensors="pt").to(self.device)
         kvcache = DynamicCache()
         if use_kvcache:
             kvcache = self.kvcache_loader.load_kvcache(nodes[0].metadata["kvcache_file_path"])
@@ -205,13 +198,13 @@ class CustomModelWrapper:
         start = time.perf_counter()
         with torch.no_grad():
             outputs = self.model.generate(
-                input_ids,
+                **inputs,
                 max_new_tokens=50,
                 do_sample=False,
                 past_key_values=kvcache
             )
         generated_ids = outputs[0]
-        input_length = input_ids.shape[1]
+        input_length = inputs.input_ids.shape[1]
         answer = self.tokenizer.decode(generated_ids[input_length:], skip_special_tokens=True).strip()
         end = time.perf_counter()
         global_statistic.add_to_list("slm_generate_time", end - start)

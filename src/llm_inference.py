@@ -13,7 +13,7 @@ def query_prompt(chunk_list, query):
     prompt_template = f"""\
 {chunks}
 
-Given the above information, answer the question: {query}
+Given the above context, answer the question: {query}
 
 Only give me the answer and do not output any other words.
 """

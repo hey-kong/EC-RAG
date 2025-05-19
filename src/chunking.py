@@ -21,7 +21,7 @@ from llama_index.core.vector_stores import SimpleVectorStore
 from llama_index.core import Settings
 from llama_index.embeddings.huggingface import HuggingFaceEmbedding
 
-from serde import TorchSerializer
+from kvcache_io import save_kvcache
 from slm_inference import chunk_with_prefix
 
 
@@ -68,7 +68,6 @@ def main():
     args = parser.parse_args()
 
     device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
-    serializer = TorchSerializer()
 
     splitter = SentenceSplitter(
         chunk_size=args.chunk_size,
@@ -86,21 +85,20 @@ def main():
         tokenizer = AutoTokenizer.from_pretrained(args.slm_model_path)
         model = AutoModelForCausalLM.from_pretrained(
             args.slm_model_path,
-            torch_dtype=torch.bfloat16
+            torch_dtype=torch.float16
         ).to(device)
         model.eval()
-        if not os.path.exists(args.chunk_kvcache_dir):
-            os.makedirs(args.chunk_kvcache_dir)
+        chunk_kvcache_dir = f'{args.chunk_kvcache_dir}/{args}'
+        if not os.path.exists(chunk_kvcache_dir):
+            os.makedirs(chunk_kvcache_dir)
         for idx, node in tqdm(enumerate(nodes, 1), total=len(nodes), desc="Processing chunks"):
             chunk = chunk_with_prefix(node.text, args.slm_model_path)
             inputs = tokenizer(chunk, return_tensors="pt").to(device)
             prefix_cache = DynamicCache()
             with torch.no_grad():
                 prefix_cache = model(**inputs, past_key_values=prefix_cache, use_cache=True).past_key_values
-            kvcache_file_path = f'{args.chunk_kvcache_dir}/kvcache_chunk_{node.node_id}.pt'
-            prefix_cache_bytes = serializer.to_bytes(prefix_cache)
-            with open(kvcache_file_path, 'wb') as f:
-                f.write(prefix_cache_bytes)
+            kvcache_file_path = f'{chunk_kvcache_dir}/kvcache_chunk_{node.node_id}.safetensors'
+            save_kvcache(prefix_cache, kvcache_file_path)
             node.metadata["kvcache_file_path"] = kvcache_file_path
 
     # document store: for bm25 retrieval
@@ -118,10 +116,10 @@ def main():
     print(f"Persisting docstore and vector index to {args.persist_dir}")
     if not os.path.exists(args.persist_dir):
         os.makedirs(args.persist_dir)
-    persist_path = os.path.join(args.persist_dir, f"{args.dataset_name}_{args.chunk_size}_docstore.pkl")
+    persist_path = os.path.join(args.persist_dir, f"{args.dataset_name}_docstore.pkl")
     doc_store.persist(persist_path)
 
-    index.storage_context.persist(persist_dir=args.persist_dir + f"/{args.dataset_name}_{args.chunk_size}_vec/")
+    index.storage_context.persist(persist_dir=args.persist_dir + f"/{args.dataset_name}_vec/")
     print("Done!")
 
 
