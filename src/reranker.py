@@ -39,7 +39,7 @@ class RerankerWrapper:
         heap = []
         processed = 0
 
-        for batch in self._batch_iterable(nodes, self.args.rerank_batch_size):
+        for batch in self._batch_iterable(nodes, top_k):
             pairs = [(query_text, node.text) for node in batch]
 
             scores = self.reranker.compute_score(pairs)

@@ -88,7 +88,7 @@ def main():
             torch_dtype=torch.float16
         ).to(device)
         model.eval()
-        chunk_kvcache_dir = f'{args.chunk_kvcache_dir}/{args}'
+        chunk_kvcache_dir = f'{args.chunk_kvcache_dir}/{args.dataset_name}'
         if not os.path.exists(chunk_kvcache_dir):
             os.makedirs(chunk_kvcache_dir)
         for idx, node in tqdm(enumerate(nodes, 1), total=len(nodes), desc="Processing chunks"):
