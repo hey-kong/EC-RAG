@@ -4,6 +4,7 @@ from itertools import islice
 from FlagEmbedding import FlagReranker
 
 from customed_statistic import global_statistic
+from slm_inference import slm
 
 
 class RerankerWrapper:
@@ -44,9 +45,9 @@ class RerankerWrapper:
 
             scores = self.reranker.compute_score(pairs)
             if len(heap) == top_k and max(scores) <= heap[0][0]:
-                # skipped = len(pairs) - processed
+                # skipped = len(nodes) - processed - len(pairs)
                 # if skipped != 0:
-                #     print(f"[Early Stop] Total {len(pairs)} pairs, skipped {skipped} pairs")
+                #     print(f"[Early Stop] Total {len(nodes)} pairs, skipped {skipped} pairs")
                 break
 
             for score, node in zip(scores, batch):
@@ -56,6 +57,11 @@ class RerankerWrapper:
                     if score > heap[0][0]:
                         heapq.heappushpop(heap, (score, -processed, node))
                 processed += 1
+
+            # if self.args.preload_kvcache and len(heap) == top_k:
+            #     topk_results = sorted(heap, key=lambda x: x[0], reverse=True)
+            #     preload_node = topk_results[self.args.min_k][2]
+            #     slm.kvcache_loader.preload_kvcache(preload_node.metadata["kvcache_file_path"])
 
         topk_results = sorted(heap, key=lambda x: x[0], reverse=True)[:top_k]
         end = time.perf_counter()

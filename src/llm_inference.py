@@ -2,7 +2,6 @@ import os
 import time
 from openai import OpenAI
 
-# custom modules
 from customed_statistic import global_statistic
 from utils import calc_cost
 
@@ -53,7 +52,6 @@ def generate_answer(query_text, chunk_list, estimate_cost=False):
     global_statistic.add_to_list("llm_generate_time", generate_time)
 
     # Check response
-    message_content = ""
     if not response:
         print("Error: Response is empty.")
         return ""

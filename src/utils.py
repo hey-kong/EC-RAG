@@ -13,10 +13,6 @@ def calc_cost(
         output: str,
         input_price: float = 0.27,
         output_price: float = 1.1, ) -> float:
-    """
-    估计模型推理的成本
-    price: 价格，单位为 $/1m tokens
-    """
     input_cost = input_price * len(ds_tokenizer.encode(input)) / 1000000
     output_cost = output_price * len(ds_tokenizer.encode(output)) / 1000000
     return input_cost + output_cost

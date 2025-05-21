@@ -117,7 +117,11 @@ class KVCacheLoader:
 
     def load_kvcache(self, cache_file_path: str):
         start = time.perf_counter()
-        if self._kvcache_future is not None and self._preloaded_path == cache_file_path:
+        if (
+            self._kvcache_future is not None
+            and self._preloaded_path == cache_file_path
+            and self._kvcache_future.done()
+        ):
             kvcache = self._kvcache_future.result()
         else:
             kvcache = read_kvcache(cache_file_path)
