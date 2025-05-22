@@ -126,9 +126,11 @@ class KVCacheLoader:
         else:
             kvcache = read_kvcache(cache_file_path)
 
-        kvcache.key_cache = [t.to(self.device, non_blocking=True) for t in kvcache.key_cache]
-        kvcache.value_cache = [t.to(self.device, non_blocking=True) for t in kvcache.value_cache]
-        torch.cuda.synchronize()
+        stream = torch.cuda.Stream()
+        with torch.cuda.stream(stream):
+            kvcache.key_cache = [t.to(self.device, non_blocking=True) for t in kvcache.key_cache]
+            kvcache.value_cache = [t.to(self.device, non_blocking=True) for t in kvcache.value_cache]
+        stream.synchronize()
         end = time.perf_counter()
         global_statistic.add_to_list("load_kvcache_time", end - start)
         return kvcache

@@ -14,8 +14,8 @@ def read_kvcache(cache_file_path: str) -> DynamicCache:
     tensors = load_file(cache_file_path, device="cpu")
 
     layer_ids = sorted(set(int(k.split("_")[-1]) for k in tensors.keys()))
-    key_cache = [tensors[f"key_cache_{i}"] for i in layer_ids]
-    value_cache = [tensors[f"value_cache_{i}"] for i in layer_ids]
+    key_cache = [tensors[f"key_cache_{i}"].pin_memory() for i in layer_ids]
+    value_cache = [tensors[f"value_cache_{i}"].pin_memory() for i in layer_ids]
 
     cache = DynamicCache()
     cache.key_cache = key_cache
