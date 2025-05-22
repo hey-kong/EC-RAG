@@ -113,7 +113,7 @@ dependencies = [
     "tiktoken==0.9.0",
     "tokenizers==0.21.1",
     "tqdm==4.67.1",
-    "transformers==4.52.2",
+    "transformers==4.51.3",
     "trec-car-tools==2.6",
     "triton==3.3.0",
     "typing-extensions==4.12.2",
