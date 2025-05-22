@@ -58,12 +58,12 @@ class RerankerWrapper:
                         heapq.heappushpop(heap, (score, -processed, node))
                 processed += 1
 
-            # if self.args.preload_kvcache and len(heap) == top_k:
-            #     topk_results = sorted(heap, key=lambda x: x[0], reverse=True)
-            #     preload_node = topk_results[self.args.min_k][2]
-            #     slm.kvcache_loader.preload_kvcache(preload_node.metadata["kvcache_file_path"])
+            if self.args.preload_kvcache and len(heap) == top_k:
+                topk_results = sorted(heap, key=lambda x: (x[0], x[1]), reverse=True)
+                preload_node = topk_results[self.args.min_k][2]
+                slm.kvcache_loader.preload_kvcache(preload_node.metadata["kvcache_file_path"])
 
-        topk_results = sorted(heap, key=lambda x: x[0], reverse=True)[:top_k]
+        topk_results = sorted(heap, key=lambda x: (x[0], x[1]), reverse=True)[:top_k]
         end = time.perf_counter()
         global_statistic.add_to_list("reranking_time", end - start)
         return [node for _, _, node in topk_results]
