@@ -1,14 +1,13 @@
+import os
 import json
 import time
 import argparse
-import os
-from tqdm import tqdm
 
-# Llama Index Related
+import torch
+from tqdm import tqdm
 from llama_index.core import Settings
 from llama_index.embeddings.huggingface import HuggingFaceEmbedding
 
-# custom modules
 from llm_inference import generate_answer
 from retriever import Retriever
 from customed_statistic import global_statistic
@@ -207,6 +206,7 @@ def main():
                 global_statistic.add_to_list("rag_time", end - start)
                 global_statistic.add("edge_count", edge_count)
                 global_statistic.add("cloud_count", cloud_count)
+                torch.cuda.empty_cache()
 
         # end = time.perf_counter()
         # use_time = end - start
