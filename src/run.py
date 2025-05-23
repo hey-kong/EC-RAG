@@ -87,8 +87,8 @@ def main():
     parser.add_argument('--slm_model_path', type=str, default='Qwen/Qwen3-4B', help='Path of local slm model')
     # retriver related (Basic: vectorIndex)
     parser.add_argument('--docstore', type=str, default='../docs_store/dataset', help='Path of nodes')
-    parser.add_argument('--similarity_top_k', type=int, default=20, help='Top N of vector retriver')
-    parser.add_argument('--bm25_similarity_top_k', type=int, default=20, help='Top N of BM25 retriever')
+    parser.add_argument('--similarity_top_k', type=int, default=40, help='Top N of vector retriver')
+    parser.add_argument('--bm25_similarity_top_k', type=int, default=40, help='Top N of BM25 retriever')
     # reranker related
     parser.add_argument('--rerank_top_k', type=int, default=8, help='Top k')
     parser.add_argument('--min_k', type=int, default=2, help='Minimum Top-k used for dynamic pruning')

@@ -70,6 +70,7 @@ class Retriever:
     def fusion_retrieve(self, query_text):
         start = time.perf_counter()
         nodes = self.fusion_retriever.retrieve(query_text)
+        nodes = nodes[:self.args.similarity_top_k]
         end = time.perf_counter()
         global_statistic.add_to_list("retrieval_time", end - start)
         global_statistic.add_to_list("retrieved_nodes", len(nodes))
