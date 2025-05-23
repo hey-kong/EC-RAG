@@ -27,8 +27,6 @@ def get_model_type(model_name):
     model_lower = model_name.lower()
     if 'qwen3' in model_lower:
         return 'qwen3'
-    elif 'qwen' in model_lower:
-        return 'qwen'
     elif 'llama' in model_lower:
         return 'llama'
     else:
@@ -37,7 +35,7 @@ def get_model_type(model_name):
 
 def chunk_with_prefix(chunk_text, model_name):
     model_type = get_model_type(model_name)
-    prefix = QWEN_PROMPT_PREFIX if model_type in ('qwen', 'qwen3') else LLAMA_PROMPT_PREFIX
+    prefix = QWEN_PROMPT_PREFIX if model_type == 'qwen3' else LLAMA_PROMPT_PREFIX
     return f"{prefix}{chunk_text}\n\n"
 
 
@@ -47,10 +45,6 @@ def _build_suffix(model_type):
             "<|im_end|>\n"
             "<|im_start|>assistant\n"
             "<think>\n\n</think>\n\n\n"
-        ),
-        'qwen': (
-            "<|im_end|>\n"
-            "<|im_start|>assistant\n"
         ),
         'llama': (
             "<|eot_id|>\n"
@@ -62,13 +56,12 @@ def _build_suffix(model_type):
 
 def judge_relevance_prompt(chunk, query, model_name):
     model_type = get_model_type(model_name)
-    prefix = QWEN_PROMPT_PREFIX if model_type in ('qwen', 'qwen3') else LLAMA_PROMPT_PREFIX
+    prefix = QWEN_PROMPT_PREFIX if model_type == 'qwen3' else LLAMA_PROMPT_PREFIX
 
     return (
         f"{prefix}{chunk}\n\n"
-        f"Determine whether the above context is relevant to the question: {query}\n"
-        f"If the context directly or indirectly helps answer the question, respond with \"Yes\".\n"
-        f"If the context does not contain useful information, respond with \"No\".\n\n"
+        f"Determine whether the above context is relevant to the following question: {query}\n\n"
+        f"If the context contains useful information that directly or indirectly helps answer the question, respond with \"Yes\", otherwise respond with \"No\".\n\n"
         f"Respond with \"Yes\" or \"No\" only, do not output any other words."
         f"{_build_suffix(model_type)}"
     )
@@ -76,7 +69,7 @@ def judge_relevance_prompt(chunk, query, model_name):
 
 def judge_complexity_prompt(query, model_name):
     model_type = get_model_type(model_name)
-    prefix = QWEN_PROMPT_PREFIX if model_type in ('qwen', 'qwen3') else LLAMA_PROMPT_PREFIX
+    prefix = QWEN_PROMPT_PREFIX if model_type == 'qwen3' else LLAMA_PROMPT_PREFIX
 
     return (
         f"{prefix}For the given question: {query}\n\n"
@@ -90,7 +83,7 @@ def judge_complexity_prompt(query, model_name):
 
 def query_prompt(chunk_list, query, model_name):
     model_type = get_model_type(model_name)
-    prefix = QWEN_PROMPT_PREFIX if model_type in ('qwen', 'qwen3') else LLAMA_PROMPT_PREFIX
+    prefix = QWEN_PROMPT_PREFIX if model_type == 'qwen3' else LLAMA_PROMPT_PREFIX
     chunks = "\n\n".join(chunk_list)
 
     return (
@@ -206,7 +199,6 @@ class CustomModelWrapper:
             outputs = self.model.generate(
                 **inputs,
                 max_new_tokens=50,
-                do_sample=False,
                 past_key_values=kvcache
             )
         generated_ids = outputs[0]
