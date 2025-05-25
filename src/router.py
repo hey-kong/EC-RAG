@@ -5,8 +5,12 @@ from slm_inference import slm
 from matrix_factorization.model import MFModel
 
 
-def complexity_threshold(x, min_val, max_val):
-    return -0.6 * (x - min_val) / (max_val - min_val) + 0.8
+def complexity_threshold(x, min_val, max_val, lam=0.8):
+    if max_val <= min_val:
+        raise ValueError("max_val must be greater than min_val")
+    if lam < 0.5:
+        raise ValueError("lambda must be greater than or equal to 0.5")
+    return lam - (2 * lam - 1) * ((x - min_val) / (max_val - min_val))
 
 
 class BaseRouter(ABC):
