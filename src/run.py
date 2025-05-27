@@ -18,7 +18,6 @@ from router import ROUTER_CLS
 
 
 def check_args(args) -> bool:
-    """检查参数有效性"""
     if not os.path.exists(args.query_file):
         print(f"Query file {args.query_file} not found.")
         return False
@@ -31,7 +30,6 @@ def check_args(args) -> bool:
     if not os.path.exists(args.docstore + "_vec"):
         print(f"Vector store dir {args.docstore} not found.")
         return False
-    # mkdir for generation_file if necessary
     answer_dir = os.path.dirname(args.generation_file)
     if not os.path.exists(answer_dir):
         os.makedirs(answer_dir)
@@ -39,32 +37,23 @@ def check_args(args) -> bool:
 
 
 def print_cmd(parser, args):
-    # 输出用户输入的命令（方便复制重新运行）
-    # 生成可复用的完整命令
-    command_lines = ["python3 run.py"]  # 假设脚本固定名称，可按需替换为 sys.argv[0]
+    command_lines = ["python3 run.py"]
 
-    # 遍历所有参数定义
     for action in parser._actions:
-        if not action.option_strings:  # 跳过位置参数
+        if not action.option_strings:
             continue
-        # 跳过默认生成的help参数
         if action.dest == "help":
             continue
 
-        # 获取参数名称和值
         option = max(action.option_strings, key=lambda x: len(x))  # 取最长参数名
         value = getattr(args, action.dest)
 
-        # 特殊处理布尔值
         if isinstance(value, bool):
             value = str(value)
-            # bool类型参数，不带值
             if value == "True":
                 command_lines.append(f"    {option}")
             continue
-
         command_lines.append(f"    {option} {value}")
-    # 格式化为带换行的命令
     formatted_command = " \\\n".join(command_lines)
     print(f"Command:\n{formatted_command}")
 

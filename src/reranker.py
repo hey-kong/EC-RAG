@@ -23,7 +23,6 @@ class RerankerWrapper:
         print(f'use local reranker: {model_path}')
 
     def rerank_nodes(self, query_text, nodes, top_k=8):
-        """重排序节点并返回带分数结果"""
         start = time.perf_counter()
         pairs = [(query_text, node.text) for node in nodes]
 
@@ -35,7 +34,6 @@ class RerankerWrapper:
         return [node for _, node in topk]
 
     def rerank_nodes_with_early_stopping(self, query_text, nodes, top_k=8):
-        """重排序节点并返回得分最高的 top_k 结果，支持 early stopping"""
         start = time.perf_counter()
         heap = []
         processed = 0
@@ -58,10 +56,10 @@ class RerankerWrapper:
                         heapq.heappushpop(heap, (score, -processed, node))
                 processed += 1
 
-            if self.args.preload_kvcache and len(heap) == top_k:
-                topk_results = sorted(heap, key=lambda x: (x[0], x[1]), reverse=True)
-                preload_node = topk_results[self.args.min_k][2]
-                slm.kvcache_loader.preload_kvcache(preload_node.metadata["kvcache_file_path"])
+            # if self.args.preload_kvcache and len(heap) == top_k:
+            #     topk_results = sorted(heap, key=lambda x: (x[0], x[1]), reverse=True)
+            #     preload_node = topk_results[self.args.min_k][2]
+            #     slm.kvcache_loader.preload_kvcache(preload_node.metadata["kvcache_file_path"])
 
         topk_results = sorted(heap, key=lambda x: (x[0], x[1]), reverse=True)[:top_k]
         end = time.perf_counter()
