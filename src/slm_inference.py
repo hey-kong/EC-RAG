@@ -108,6 +108,19 @@ class KVCacheLoader:
             read_kvcache, cache_file_path
         )
 
+    def async_kvcache_to_device(self, kvcache):
+        start = time.perf_counter()
+        put_stream = torch.cuda.Stream(device=self.device)
+        with torch.cuda.stream(put_stream):
+            for i in range(len(kvcache.key_cache)):
+                kvcache.key_cache[i] = kvcache.key_cache[i].to(self.device, non_blocking=True)
+                kvcache.value_cache[i] = kvcache.value_cache[i].to(self.device, non_blocking=True)
+                kvcache.key_cache[i].record_stream(put_stream)
+                kvcache.value_cache[i].record_stream(put_stream)
+        put_stream.synchronize()
+        end = time.perf_counter()
+        global_statistic.add_to_list("kvcache_to_gpu_time", end - start)
+
     def load_kvcache(self, cache_file_path: str):
         start = time.perf_counter()
         if (
@@ -119,11 +132,7 @@ class KVCacheLoader:
         else:
             kvcache = read_kvcache(cache_file_path)
 
-        stream = torch.cuda.Stream()
-        with torch.cuda.stream(stream):
-            kvcache.key_cache = [t.to(self.device, non_blocking=True) for t in kvcache.key_cache]
-            kvcache.value_cache = [t.to(self.device, non_blocking=True) for t in kvcache.value_cache]
-        stream.synchronize()
+        self.async_kvcache_to_device(kvcache)
         end = time.perf_counter()
         global_statistic.add_to_list("load_kvcache_time", end - start)
         return kvcache
