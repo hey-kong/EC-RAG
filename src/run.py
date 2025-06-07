@@ -45,7 +45,7 @@ def print_cmd(parser, args):
         if action.dest == "help":
             continue
 
-        option = max(action.option_strings, key=lambda x: len(x))  # 取最长参数名
+        option = max(action.option_strings, key=lambda x: len(x))
         value = getattr(args, action.dest)
 
         if isinstance(value, bool):

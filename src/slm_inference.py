@@ -196,6 +196,7 @@ class CustomModelWrapper:
         return complexity_score
 
     def generate_answer(self, query, nodes, use_kvcache=False):
+        start = time.perf_counter()
         chunk_list = [node.text for node in nodes]
         prompt = query_prompt(chunk_list, query, self.model_type)
         inputs = self.tokenizer(prompt, return_tensors="pt").to(self.device)
@@ -203,7 +204,6 @@ class CustomModelWrapper:
         if use_kvcache:
             kvcache = self.kvcache_loader.load_kvcache(nodes[0].metadata["kvcache_file_path"])
 
-        start = time.perf_counter()
         with torch.no_grad():
             outputs = self.model.generate(
                 **inputs,

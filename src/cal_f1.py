@@ -78,11 +78,9 @@ def calc_f1_score(ref_file: str, pred_file: str):
 
             print(f"ID {id} [{location}]: {max_f1:.4f}")
 
-            # 总体统计
             total_f1 += max_f1
             total_count += 1
 
-            # 分 location 统计
             if location == "edge":
                 edge_f1 += max_f1
                 edge_count += 1
@@ -90,7 +88,6 @@ def calc_f1_score(ref_file: str, pred_file: str):
                 cloud_f1 += max_f1
                 cloud_count += 1
 
-    # 避免除以 0 的保护
     avg_total = total_f1 / total_count if total_count else 0.0
     avg_edge = edge_f1 / edge_count if edge_count else 0.0
     avg_cloud = cloud_f1 / cloud_count if cloud_count else 0.0

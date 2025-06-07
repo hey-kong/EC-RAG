@@ -26,7 +26,7 @@ class Retriever:
         self.docstore = SimpleDocumentStore.from_persist_path(args.docstore + "_docstore.pkl")
         # build bm25 retriever
         self.bm25_retriever = BM25Retriever.from_defaults(
-            docstore=self.docstore,  # 直接复用 docstore
+            docstore=self.docstore,
             similarity_top_k=args.bm25_similarity_top_k,
             stemmer=Stemmer.Stemmer("english"),
             language="english",
