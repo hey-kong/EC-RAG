@@ -31,7 +31,7 @@ def check_args(args) -> bool:
         print(f"Vector store dir {args.docstore} not found.")
         return False
     answer_dir = os.path.dirname(args.generation_file)
-    if not os.path.exists(answer_dir):
+    if answer_dir and not os.path.exists(answer_dir):
         os.makedirs(answer_dir)
     return True
 
