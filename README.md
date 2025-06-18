@@ -56,7 +56,7 @@ To run the main benchmarking script with prefix chunk caching enabled, execute:
 ```
 python3 run.py \
     --query_file ../data/${dataset}/questions/questions.jsonl \
-    --generation_file "$generation_file" \
+    --generation_file ${generation_file} \
     --answer_file ../data/${dataset}/answers/answers.jsonl \
     --docstore ../docs_store/${dataset} \
     --pruning_strategy dynamic \
@@ -73,7 +73,7 @@ If you do not wish to use prefix chunk caching, run:
 ```
 python3 run.py \
     --query_file ../data/${dataset}/questions/questions.jsonl \
-    --generation_file "$generation_file" \
+    --generation_file ${generation_file} \
     --answer_file ../data/${dataset}/answers/answers.jsonl \
     --docstore ../docs_store/${dataset} \
     --pruning_strategy dynamic \
