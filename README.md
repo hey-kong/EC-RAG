@@ -1,6 +1,6 @@
 # EC-RAG
 
-This repository contains the implementation code for the paper "EC-RAG: Towards Efficient Edge-Cloud Retrieval-Augmented Generation Systems".
+This repository contains the implementation code for the paper "EC-RAG: Towards Efficient Edge-Cloud Retrieval-Augmented Generation Systems" (accepted by ICDE 2026).
 
 ### Environment Setup
 
